@@ -99,15 +99,135 @@ export async function loadCert(certId) {
 }
 
 /**
+ * CLF-C02 domain weights → per-exam question counts (largest remainder).
+ * @param {Domain[]} domains
+ * @param {number} total
+ * @returns {Record<string, number>}
+ */
+export function allocateByDomainWeight(domains, total) {
+  /** @type {{ id: string, floor: number, remainder: number }[]} */
+  const parts = domains.map((d) => {
+    const quota = (d.weight / 100) * total;
+    const floor = Math.floor(quota);
+    return { id: d.id, floor, remainder: quota - floor };
+  });
+
+  const result = Object.fromEntries(parts.map((p) => [p.id, p.floor]));
+  let assigned = parts.reduce((sum, p) => sum + p.floor, 0);
+  const byRemainder = [...parts].sort((a, b) => b.remainder - a.remainder);
+
+  let i = 0;
+  while (assigned < total) {
+    const part = byRemainder[i % byRemainder.length];
+    result[part.id]++;
+    assigned++;
+    i++;
+  }
+
+  return result;
+}
+
+/**
  * @param {CertData} cert
- * @param {number} count
+ * @returns {{ domainId: string, required: number, available: number }[]}
+ */
+export function getDomainPoolStatus(cert) {
+  const counts = allocateByDomainWeight(cert.domains, cert.exam.totalQuestions);
+  /** @type {Record<string, number>} */
+  const available = {};
+  for (const q of cert.questions) {
+    available[q.domain] = (available[q.domain] ?? 0) + 1;
+  }
+  return cert.domains.map((d) => ({
+    domainId: d.id,
+    name: d.name,
+    required: counts[d.id] ?? 0,
+    available: available[d.id] ?? 0,
+  }));
+}
+
+/**
+ * Build one exam: domain-weighted random sample, 50 scored / 15 unscored, shuffled order and options.
+ * @param {CertData} cert
  * @returns {Question[]}
  */
-export function selectExamQuestions(cert, count) {
-  const pool = [...cert.questions];
-  shuffle(pool);
-  const n = Math.min(count, pool.length);
-  return pool.slice(0, n);
+export function selectExamQuestions(cert) {
+  const total = cert.exam.totalQuestions;
+  const unscoredCount = total - cert.exam.scoredQuestions;
+  const perDomain = allocateByDomainWeight(cert.domains, total);
+
+  /** @type {Record<string, Question[]>} */
+  const byDomain = {};
+  for (const q of cert.questions) {
+    (byDomain[q.domain] ??= []).push(q);
+  }
+
+  const usedIds = new Set();
+  /** @type {Question[]} */
+  const selected = [];
+
+  for (const domain of cert.domains) {
+    const need = perDomain[domain.id] ?? 0;
+    const pool = (byDomain[domain.id] ?? []).filter((q) => !usedIds.has(q.id));
+    const picked = sampleWithoutReplacement(pool, need);
+    for (const q of picked) {
+      usedIds.add(q.id);
+      selected.push(q);
+    }
+  }
+
+  if (selected.length < total) {
+    const remainder = cert.questions.filter((q) => !usedIds.has(q.id));
+    const extra = sampleWithoutReplacement(remainder, total - selected.length);
+    for (const q of extra) {
+      usedIds.add(q.id);
+      selected.push(q);
+    }
+  }
+
+  shuffle(selected);
+  let examSet = selected.slice(0, total).map(prepareQuestionForExam);
+
+  const unscoredIndices = pickRandomIndices(examSet.length, unscoredCount);
+  examSet = examSet.map((q, index) => ({
+    ...q,
+    scored: !unscoredIndices.has(index),
+  }));
+
+  return examSet;
+}
+
+/**
+ * @param {Question} question
+ * @returns {Question}
+ */
+function prepareQuestionForExam(question) {
+  const options = [...question.options];
+  shuffle(options);
+  return {
+    ...question,
+    options,
+  };
+}
+
+/**
+ * @param {Question[]} pool
+ * @param {number} n
+ */
+function sampleWithoutReplacement(pool, n) {
+  const copy = [...pool];
+  shuffle(copy);
+  return copy.slice(0, Math.min(n, copy.length));
+}
+
+/**
+ * @param {number} size
+ * @param {number} pick
+ */
+function pickRandomIndices(size, pick) {
+  const indices = Array.from({ length: size }, (_, i) => i);
+  shuffle(indices);
+  return new Set(indices.slice(0, pick));
 }
 
 /**

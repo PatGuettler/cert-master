@@ -2,6 +2,7 @@ import {
   loadRegistry,
   loadCert,
   selectExamQuestions,
+  getDomainPoolStatus,
 } from "./cert-loader.js";
 import { loadSettings } from "./storage.js";
 import { initMenu } from "./menu.js";
@@ -85,18 +86,33 @@ function renderHome() {
   document.getElementById("home-cert-code").textContent = cert.code;
 
   const poolWarning = document.getElementById("pool-warning");
-  if (cert.questions.length < cert.exam.totalQuestions) {
+  const poolStatus = getDomainPoolStatus(cert);
+  const shortDomains = poolStatus.filter((d) => d.available < d.required);
+  const bankSize = cert.questions.length;
+  const examSize = cert.exam.totalQuestions;
+
+  if (shortDomains.length > 0) {
     poolWarning?.classList.remove("hidden");
     if (poolWarning) {
-      poolWarning.textContent = `Question bank has ${cert.questions.length} questions. The real CLF-C02 exam uses ${cert.exam.totalQuestions}; add more questions to the cert JSON file for a full-length practice test.`;
+      poolWarning.textContent = `Some exam domains need more questions in the JSON bank: ${shortDomains.map((d) => `${d.name} (${d.available}/${d.required})`).join("; ")}.`;
+    }
+  } else if (bankSize < examSize) {
+    poolWarning?.classList.remove("hidden");
+    if (poolWarning) {
+      poolWarning.textContent = `Question bank has ${bankSize} questions; add more for greater variety across attempts.`;
     }
   } else {
     poolWarning?.classList.add("hidden");
   }
 
-  document.getElementById("meta-questions").textContent = String(
-    Math.min(cert.exam.totalQuestions, cert.questions.length)
-  );
+  const metaQuestions = document.getElementById("meta-questions");
+  if (metaQuestions) {
+    metaQuestions.textContent = String(examSize);
+  }
+  const metaBank = document.getElementById("meta-bank");
+  if (metaBank) {
+    metaBank.textContent = String(bankSize);
+  }
   document.getElementById("meta-time").textContent = String(
     cert.exam.timeLimitMinutes
   );
@@ -119,10 +135,7 @@ function startExam() {
   if (!currentCert) return;
 
   responses = {};
-  examQuestions = selectExamQuestions(
-    currentCert,
-    Math.min(currentCert.exam.totalQuestions, currentCert.questions.length)
-  );
+  examQuestions = selectExamQuestions(currentCert);
 
   showView("exam");
   setHeaderTitle(`${currentCert.code} — Practice Exam`);

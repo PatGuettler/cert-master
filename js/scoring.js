@@ -54,14 +54,21 @@ export function scoreExam(cert, questions, responses) {
   );
   const passed = scaledScore >= cert.exam.passingScore;
 
-  const domainBreakdown = Object.entries(byDomain).map(([id, stats]) => ({
-    id,
-    name: domainMap[id] ?? id,
-    correct: stats.correct,
-    total: stats.total,
-    percent: Math.round((stats.correct / stats.total) * 100) || 0,
-    weak: stats.total > 0 && stats.correct / stats.total < 0.7,
-  }));
+  const domainBreakdown = cert.domains.map((d) => {
+    const stats = byDomain[d.id] ?? { correct: 0, total: 0 };
+    const percent =
+      stats.total > 0
+        ? Math.round((stats.correct / stats.total) * 100)
+        : 0;
+    return {
+      id: d.id,
+      name: d.name,
+      correct: stats.correct,
+      total: stats.total,
+      percent,
+      weak: stats.total > 0 && stats.correct / stats.total < 0.7,
+    };
+  });
 
   const missedQuestions = scoredQs
     .filter((q) => !isQuestionCorrect(q, responses[q.id] ?? []))
