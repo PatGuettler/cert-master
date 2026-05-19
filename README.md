@@ -18,11 +18,23 @@ More certs can be added by creating a new JSON file and registering it in [`data
 
 ## Exam format (CLF-C02)
 
-The practice test mirrors the official exam structure:
+The practice test mirrors the official [CLF-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/examguides/cloud-practitioner-02.html):
 
-- **65 questions** (50 scored, 15 unscored in the real exam — unscored items are marked `"scored": false` in JSON)
+| Official domain | Weight | Questions per attempt |
+|-----------------|--------|------------------------|
+| Domain 1: Cloud Concepts | 24% | ~16 |
+| Domain 2: Security and Compliance | 30% | ~20 |
+| Domain 3: Cloud Technology and Services | 34% | ~22 |
+| Domain 4: Billing, Pricing, and Support | 12% | ~8 |
+
+Each attempt **randomly** selects 65 questions from the bank using those weights, then:
+
+- **Shuffles** question order and answer option order
+- Marks **50 scored** and **15 unscored** (like the real exam; unscored items do not affect your score)
 - **90 minutes** (toggle off in the menu)
-- **Passing score 700 / 1000** (scaled approximation from your scored answers)
+- **Passing score 700 / 1000** (scaled approximation from scored answers only)
+
+Retakes draw a different mix from the bank when enough questions exist per domain.
 
 Open the **hamburger menu** to:
 
@@ -65,17 +77,15 @@ After the exam you get a **pass/fail report**, **domain breakdown**, optional **
 
 - **`type`**: `"multiple-choice"` (one correct) or `"multiple-response"` (two or more correct).
 - **`domain`**: Must match a `domains[].id` in the same file.
-- **`scored`**: Set `false` for practice-only questions (not counted toward pass/fail).
+- **`scored`**: Optional in the bank; each exam assigns 50 scored / 15 unscored at random. You do not need to set this in JSON.
 
-### Regenerate the sample bank
-
-The repo includes a generator script with 65 starter questions:
+### Regenerate or extend the question bank
 
 ```bash
 python3 scripts/generate-questions.py
 ```
 
-This overwrites `data/cloud-practitioner.json`. Prefer editing that file directly once you customize content.
+This merges `scripts/generate-questions.py` (base) + `scripts/question_bank/clf_c02_extended.py` and overwrites `data/cloud-practitioner.json` with the full pool. Prefer editing those Python files or the JSON directly once you customize content. The generator validates that each domain has enough questions for one weighted exam.
 
 ## Project layout
 
