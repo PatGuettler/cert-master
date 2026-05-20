@@ -25,6 +25,9 @@ import { initAds, updateAdVisibility } from "./ads.js";
 import { initStorageNotice } from "./storage-notice.js";
 import { buildTrendLine } from "./history-ui.js";
 import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
+import { renderLanding } from "./landing-ui.js";
+
+const LAST_CERT_KEY = "aws-cert-master:lastCert";
 import { initDataPanel } from "./data-panel.js";
 import { renderBookmarkReview } from "./review-ui.js";
 
@@ -54,7 +57,8 @@ let examController = null;
 let sessionMode = "exam";
 
 const views = {
-  home: document.getElementById("view-home"),
+  landing: document.getElementById("view-landing"),
+  cert: document.getElementById("view-cert"),
   dashboard: document.getElementById("view-dashboard"),
   exam: document.getElementById("view-exam"),
   results: document.getElementById("view-results"),
@@ -79,16 +83,68 @@ function setHeaderTitle(text) {
 
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
+ * @returns {{ type: 'landing' } | { type: 'cert', certId: string }}
  */
-function resolveInitialExamId(exams) {
-  const fromHash = window.location.hash.replace(/^#/, "");
-  if (fromHash && exams.some((e) => e.id === fromHash)) return fromHash;
-  if (activeCertId && exams.some((e) => e.id === activeCertId)) {
-    return activeCertId;
+function parseRoute(exams) {
+  const raw = window.location.hash.replace(/^#/, "").trim();
+  if (!raw) return { type: "landing" };
+
+  let certId = "";
+  if (raw.startsWith("cert/")) {
+    certId = raw.slice(5);
+  } else {
+    certId = raw;
   }
+
+  if (certId && exams.some((e) => e.id === certId)) {
+    return { type: "cert", certId };
+  }
+  return { type: "landing" };
+}
+
+/**
+ * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
+ */
+function getDefaultCertId(exams) {
+  const last = localStorage.getItem(LAST_CERT_KEY);
+  if (last && exams.some((e) => e.id === last)) return last;
   const preferred = exams.find((e) => e.id === "cloud-practitioner");
   if (preferred) return preferred.id;
   return exams[0]?.id ?? "";
+}
+
+function setCertHash(certId) {
+  const base = window.location.pathname + window.location.search;
+  window.location.hash = `cert/${certId}`;
+}
+
+function clearAppHash() {
+  const base = window.location.pathname + window.location.search;
+  history.replaceState(null, "", base);
+}
+
+function saveLastCert(certId) {
+  if (certId) localStorage.setItem(LAST_CERT_KEY, certId);
+}
+
+function showLanding() {
+  showView("landing");
+  setHeaderTitle("AWS Cert Master");
+  renderLanding(examIndexList, openCert);
+}
+
+function showCertView() {
+  if (!currentCert) return;
+  showView("cert");
+  populateCert();
+  setHeaderTitle(currentCert.name);
+}
+
+/**
+ * @param {string} certId
+ */
+async function openCert(certId) {
+  await switchCert(certId);
 }
 
 /**
@@ -144,19 +200,22 @@ function getActiveView() {
   for (const [key, el] of Object.entries(views)) {
     if (el && !el.classList.contains("hidden")) return key;
   }
-  return "home";
+  return "landing";
 }
 
 function refreshDataViews() {
-  if (!currentCert || !activeCertId) return;
-
   const active = getActiveView();
   if (active === "dashboard") {
     renderDashboardForFilter();
     return;
   }
-  if (active === "home") {
-    populateHome();
+  if (active === "landing") {
+    renderLanding(examIndexList, openCert);
+    return;
+  }
+  if (!currentCert || !activeCertId) return;
+  if (active === "cert") {
+    populateCert();
     return;
   }
   if (active === "results" && lastResult) {
@@ -232,7 +291,7 @@ async function init() {
       onSettingsChange: (next) => {
         settings = next;
       },
-      onNavigateHome: () => {},
+      onNavigateHome: goLanding,
       onNavigateDashboard: () => {},
     });
     initDataPanel({
@@ -244,11 +303,22 @@ async function init() {
     return;
   }
 
-  activeCertId = resolveInitialExamId(exams);
+  activeCertId = getDefaultCertId(exams);
   settings = loadSettings(activeCertId);
 
-  await switchCert(activeCertId);
-  await tryResumePrompt();
+  const route = parseRoute(exams);
+  if (route.type === "cert") {
+    await switchCert(route.certId, { fromRoute: true });
+    if (!window.location.hash.includes("cert/")) {
+      setCertHash(route.certId);
+    }
+    await tryResumePrompt();
+  } else {
+    clearAppHash();
+    currentCert = null;
+    showLanding();
+    setHeaderTitle("AWS Cert Master");
+  }
 
   menuApi = initMenu({
     exams,
@@ -258,8 +328,19 @@ async function init() {
     onSettingsChange: (next) => {
       settings = next;
     },
-    onNavigateHome: goHome,
+    onNavigateHome: goLanding,
     onNavigateDashboard: showDashboard,
+  });
+
+  window.addEventListener("hashchange", () => {
+    const route = parseRoute(examIndexList);
+    if (route.type === "landing") {
+      showLanding();
+      return;
+    }
+    if (route.type === "cert" && route.certId !== activeCertId) {
+      switchCert(route.certId, { fromRoute: true });
+    }
   });
 
   initDataPanel({
@@ -286,18 +367,22 @@ async function init() {
 
 /**
  * @param {string} certId
+ * @param {{ fromRoute?: boolean }} [opts]
  */
-async function switchCert(certId) {
+async function switchCert(certId, opts = {}) {
   const exams = await loadExamIndex({ reload: true });
   examIndexList = exams;
   menuApi?.updateExamList(exams);
 
   if (!exams.some((e) => e.id === certId)) {
-    certId = exams[0]?.id ?? certId;
+    certId = getDefaultCertId(exams);
   }
 
   activeCertId = certId;
-  window.location.hash = certId;
+  saveLastCert(certId);
+  if (!opts.fromRoute) {
+    setCertHash(certId);
+  }
 
   currentCert = await loadCert(certId);
   settings = loadSettings(certId);
@@ -311,12 +396,10 @@ async function switchCert(certId) {
   if (dashFilter && !views.dashboard?.classList.contains("hidden")) {
     dashFilter.value = certId;
   }
-  showView("home");
-  populateHome();
-  setHeaderTitle(currentCert.name);
+  showCertView();
 }
 
-function populateHome() {
+function populateCert() {
   if (!currentCert) return;
 
   const cert = currentCert;
@@ -388,14 +471,16 @@ function populateHome() {
   renderProgressTeaser(activeCertId, cert);
 }
 
-function renderHome() {
-  if (!currentCert) return;
-  showView("home");
-  populateHome();
-}
-
 async function showDashboard() {
   if (!examIndexList.length) return;
+  if (!activeCertId) {
+    activeCertId = getDefaultCertId(examIndexList);
+  }
+  if (!currentCert && activeCertId) {
+    currentCert = await loadCert(activeCertId);
+    settings = loadSettings(activeCertId);
+    menuApi?.setActiveCert(activeCertId);
+  }
   showView("dashboard");
   setHeaderTitle("Your progress");
   syncCertFilterOptions(
@@ -639,15 +724,23 @@ function renderStudyPlan() {
   }
 }
 
-function goHome() {
+function goLanding() {
   examController?.stopTimer?.();
-  clearResumeState(activeCertId);
-  renderHome();
+  clearAppHash();
+  showLanding();
 }
 
 document.getElementById("btn-start")?.addEventListener("click", startExam);
 document.getElementById("btn-open-dashboard")?.addEventListener("click", showDashboard);
-document.getElementById("btn-dashboard-home")?.addEventListener("click", goHome);
+document.getElementById("btn-back-landing")?.addEventListener("click", goLanding);
+document.getElementById("btn-dashboard-home")?.addEventListener("click", goLanding);
+document.getElementById("landing-tile-dashboard")?.addEventListener("click", showDashboard);
+document.getElementById("landing-tile-browse")?.addEventListener("click", () => {
+  document.getElementById("landing-cert-grid")?.scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("landing-tile-clf")?.addEventListener("click", () => {
+  openCert("cloud-practitioner");
+});
 document.getElementById("btn-dashboard-start")?.addEventListener("click", async () => {
   const certId =
     document.getElementById("dashboard-cert-filter")?.value || activeCertId;
@@ -655,7 +748,7 @@ document.getElementById("btn-dashboard-start")?.addEventListener("click", async 
   startExam();
 });
 document.getElementById("btn-view-dashboard")?.addEventListener("click", showDashboard);
-document.getElementById("btn-home")?.addEventListener("click", goHome);
+document.getElementById("btn-home")?.addEventListener("click", goLanding);
 document.getElementById("btn-retake")?.addEventListener("click", startExam);
 document.getElementById("btn-drill")?.addEventListener("click", startDrill);
 document.getElementById("btn-study-plan")?.addEventListener("click", renderStudyPlan);

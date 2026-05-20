@@ -56,7 +56,7 @@ Each attempt **randomly** selects 65 questions from the bank using those weights
 - **90 minutes** (toggle off in the menu)
 - **Passing score 700 / 1000** (scaled approximation from scored answers only)
 
-Open the **hamburger menu → AWS Cert** to switch exams. **CompTIA** is a placeholder for future exams. Use **My data** to filter export/clear actions by certification, or the **progress dashboard** filter to view history per cert.
+The **home page** introduces the app, quick-start tiles, and a certification grid. Pick an exam to open its practice page (`#cert/<exam-id>`). **Menu → Home** returns to the app landing (no cert in the URL). **CompTIA** is a placeholder for future exams.
 
 ## Updating questions
 

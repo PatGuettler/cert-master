@@ -6,9 +6,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
-      content="Free AWS CLF-C02 practice exams — no login, no account. 
-      65 questions, domain-weighted scoring, and personalized 
-      study plans. Same format as the real exam."
+      content="Free AWS certification practice exams — no login. Domain-weighted questions, timed exams, progress tracking, and study plans for CLF-C02, SAA-C03, and more."
     />
     <title>AWS Cert Master — Practice Tests</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -116,7 +114,82 @@
 
     <div class="page-shell" id="page-shell">
     <main>
-      <section id="view-home" class="view">
+      <section id="view-landing" class="view">
+        <div class="landing-hero">
+          <h2>Practice AWS certifications — free, in your browser</h2>
+          <p class="landing-lead">
+            AWS Cert Master is an unofficial study tool with exam-style practice tests,
+            domain-weighted question pools, scoring, progress tracking, and links to
+            official AWS documentation. No account or install required.
+          </p>
+        </div>
+
+        <div class="landing-quick-tiles">
+          <button type="button" class="landing-tile landing-tile-action" id="landing-tile-browse">
+            <span class="landing-tile-icon" aria-hidden="true">📋</span>
+            <span class="landing-tile-label">Browse exams</span>
+            <span class="landing-tile-desc">Pick a certification below</span>
+          </button>
+          <button type="button" class="landing-tile landing-tile-action" id="landing-tile-dashboard">
+            <span class="landing-tile-icon" aria-hidden="true">📈</span>
+            <span class="landing-tile-label">Your progress</span>
+            <span class="landing-tile-desc">Scores, trends, and weak areas</span>
+          </button>
+          <button type="button" class="landing-tile landing-tile-action" id="landing-tile-clf">
+            <span class="landing-tile-icon" aria-hidden="true">▶</span>
+            <span class="landing-tile-label">Quick start</span>
+            <span class="landing-tile-desc">Cloud Practitioner (CLF-C02)</span>
+          </button>
+        </div>
+
+        <section class="landing-section" aria-labelledby="landing-certs-heading">
+          <h3 id="landing-certs-heading">
+            AWS certifications
+            <span class="landing-count">(<span id="landing-exam-count">0</span> available)</span>
+          </h3>
+          <p class="landing-hint">
+            Choose an exam to see domains, start a timed practice test, and track your history.
+          </p>
+          <div id="landing-cert-grid" class="landing-cert-grid"></div>
+        </section>
+
+        <section class="landing-section landing-howto" id="how-to">
+          <h3>How to use AWS Cert Master</h3>
+          <ol class="landing-steps">
+            <li>
+              <strong>Pick a certification</strong> from the grid above or the menu
+              (<em>AWS Cert</em>).
+            </li>
+            <li>
+              <strong>Review exam domains</strong> and optional settings in the menu
+              (timer, feedback on Next, doc links).
+            </li>
+            <li>
+              <strong>Start a practice exam</strong> — each attempt draws a new random set
+              weighted like the official exam guide.
+            </li>
+            <li>
+              <strong>Submit and review</strong> your score, domain breakdown, study plan,
+              flagged questions, and drill mode for weak topics.
+            </li>
+            <li>
+              <strong>Track progress</strong> on the dashboard; export or clear your data
+              under <em>My data</em> in the menu.
+            </li>
+          </ol>
+          <p class="landing-note">
+            Progress is saved in this browser only. Use <em>Export backup</em> before switching
+            devices. Practice questions are not copied from real AWS exams.
+          </p>
+        </section>
+      </section>
+
+      <section id="view-cert" class="view hidden">
+        <nav class="cert-breadcrumb">
+          <button type="button" id="btn-back-landing" class="btn-text-link">
+            ← All certifications
+          </button>
+        </nav>
         <div class="hero">
           <h2 id="home-cert-name">AWS Certified Cloud Practitioner</h2>
           <p class="cert-code" id="home-cert-code">CLF-C02</p>
@@ -241,8 +314,7 @@
         </div>
         <p class="disclaimer">
           Scores are approximated from your practice answers and are not
-          official AWS exam results. Passing score 700/1000 mirrors the CLF-C02
-          exam guide.
+          official AWS exam results. Passing scores mirror each exam guide.
         </p>
       </section>
 

@@ -391,7 +391,189 @@ main {
   }
 }
 
-/* Home */
+/* App landing */
+.landing-hero {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
+}
+
+.landing-hero h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.65rem;
+  line-height: 1.3;
+}
+
+.landing-lead {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-quick-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.landing-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s;
+  color: var(--text);
+  font-family: inherit;
+}
+
+.landing-tile-action:hover {
+  border-color: var(--aws-orange);
+  transform: translateY(-2px);
+}
+
+.landing-tile-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.landing-tile-label {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.landing-tile-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.landing-section {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.landing-section h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.landing-count {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.landing-hint {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.landing-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.65rem;
+}
+
+.landing-cert-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.landing-cert-tile:hover {
+  border-color: var(--aws-orange);
+  background: var(--cert-active-bg);
+}
+
+.landing-cert-tile-level {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--aws-orange);
+}
+
+.landing-cert-tile-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.landing-cert-tile-code {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.landing-cert-tile-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.landing-howto .landing-steps {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  line-height: 1.55;
+}
+
+.landing-howto .landing-steps li {
+  margin-bottom: 0.65rem;
+}
+
+.landing-note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.cert-breadcrumb {
+  margin-bottom: 0.75rem;
+}
+
+.btn-text-link {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--aws-blue);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-text-link:hover {
+  text-decoration: underline;
+}
+
+/* Cert practice home */
 .hero {
   text-align: center;
   padding: 2rem 1rem;
