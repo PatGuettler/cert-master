@@ -25,7 +25,7 @@ import { initAds, updateAdVisibility } from "./ads.js";
 import { initStorageNotice } from "./storage-notice.js";
 import { buildTrendLine } from "./history-ui.js";
 import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
-import { renderLanding } from "./landing-ui.js";
+import { renderBrowse, bindBrowseSearch } from "./browse-ui.js";
 import { runAcronymQuiz } from "./acronym-engine.js";
 
 import { initDataPanel } from "./data-panel.js";
@@ -63,6 +63,7 @@ let sessionMode = "exam";
 const views = {
   error: document.getElementById("view-error"),
   landing: document.getElementById("view-landing"),
+  browse: document.getElementById("view-browse"),
   cert: document.getElementById("view-cert"),
   acronyms: document.getElementById("view-acronyms"),
   dashboard: document.getElementById("view-dashboard"),
@@ -98,11 +99,12 @@ function setHeaderTitle(text) {
 
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
- * @returns {{ type: 'landing' } | { type: 'cert', certId: string } | { type: 'acronyms', certId: string }}
+ * @returns {{ type: 'landing' } | { type: 'browse' } | { type: 'cert', certId: string } | { type: 'acronyms', certId: string }}
  */
 function parseRoute(exams) {
   const raw = window.location.hash.replace(/^#/, "").trim();
   if (!raw) return { type: "landing" };
+  if (raw === "browse") return { type: "browse" };
 
   const parts = raw.split("/").filter(Boolean);
 
@@ -130,7 +132,7 @@ function normalizeHash(exams) {
   const raw = window.location.hash.replace(/^#/, "").trim();
   if (!raw) return;
 
-  if (raw.startsWith("cert/")) return;
+  if (raw.startsWith("cert/") || raw === "browse") return;
 
   const legacyId = raw.split("/")[0];
   const base = window.location.pathname + window.location.search;
@@ -171,10 +173,33 @@ function saveLastCert(certId) {
   if (certId) localStorage.setItem(LAST_CERT_KEY, certId);
 }
 
+function setBrowseHash() {
+  if (window.location.hash.replace(/^#/, "") !== "browse") {
+    window.location.hash = "browse";
+  }
+}
+
 function showLanding() {
   showView("landing");
   setHeaderTitle("AWS Cert Master");
-  renderLanding(examIndexList, openCert);
+}
+
+/**
+ * @param {{ fromRoute?: boolean }} [opts]
+ */
+function showBrowse(opts = {}) {
+  showView("browse");
+  setHeaderTitle("Browse certifications");
+  renderBrowse(examIndexList, openCert);
+  if (!opts.fromRoute) {
+    setBrowseHash();
+  }
+  document.getElementById("browse-search")?.focus();
+}
+
+function goBrowse() {
+  if (!appReady) return;
+  applyRoute({ type: "browse" });
 }
 
 function showCertView() {
@@ -260,8 +285,8 @@ function refreshDataViews() {
     renderDashboardForFilter();
     return;
   }
-  if (active === "landing") {
-    renderLanding(examIndexList, openCert);
+  if (active === "browse") {
+    renderBrowse(examIndexList, openCert);
     return;
   }
   if (!currentCert || !activeCertId) return;
@@ -357,6 +382,15 @@ async function applyRoute(route) {
     return;
   }
 
+  if (route.type === "browse") {
+    acronymController?.stop();
+    examController?.stopTimer?.();
+    currentCert = null;
+    const fromHash = window.location.hash.replace(/^#/, "") === "browse";
+    showBrowse({ fromRoute: fromHash });
+    return;
+  }
+
   if (route.type === "acronyms") {
     await switchCert(route.certId, { fromRoute: true });
     showAcronyms({ fromRoute: true });
@@ -393,14 +427,13 @@ async function init() {
       main.innerHTML = `<p role="alert">No exams found. Add a JSON file under <code>data/exams/</code> and run <code>python3 scripts/build-exams-index.py</code>.</p>`;
     }
     menuApi = initMenu({
-      exams: [],
       getActiveCertId: () => "",
       settings,
-      onExamChange: () => {},
       onSettingsChange: (next) => {
         settings = next;
       },
       onNavigateHome: goLanding,
+      onNavigateBrowse: () => {},
       onNavigateDashboard: () => {},
     });
     initDataPanel({
@@ -417,18 +450,17 @@ async function init() {
   settings = loadSettings(activeCertId);
 
   menuApi = initMenu({
-    exams,
     getActiveCertId: () => activeCertId,
     settings,
-    onExamChange: switchCert,
     onSettingsChange: (next) => {
       settings = next;
     },
     onNavigateHome: goLanding,
+    onNavigateBrowse: goBrowse,
     onNavigateDashboard: showDashboard,
   });
 
-  renderLanding(examIndexList, openCert);
+  bindBrowseSearch(examIndexList, openCert);
 
   window.addEventListener("hashchange", () => {
     if (!appReady) return;
@@ -474,7 +506,6 @@ async function init() {
 async function switchCert(certId, opts = {}) {
   const exams = await loadExamIndex({ reload: true });
   examIndexList = exams;
-  menuApi?.updateExamList(exams);
 
   if (!exams.some((e) => e.id === certId)) {
     certId = getDefaultCertId(exams);
@@ -488,7 +519,6 @@ async function switchCert(certId, opts = {}) {
 
   currentCert = await loadCert(certId);
   settings = loadSettings(certId);
-  menuApi?.setActiveCert(certId);
   menuApi?.refreshSettings(settings);
   syncCertFilterOptions(
     document.getElementById("data-cert-filter"),
@@ -629,7 +659,6 @@ async function showDashboard() {
   if (!currentCert && activeCertId) {
     currentCert = await loadCert(activeCertId);
     settings = loadSettings(activeCertId);
-    menuApi?.setActiveCert(activeCertId);
   }
   clearAppHash();
   showView("dashboard");
@@ -882,14 +911,11 @@ function goLanding() {
 
 document.getElementById("btn-start")?.addEventListener("click", startExam);
 document.getElementById("btn-open-dashboard")?.addEventListener("click", showDashboard);
-document.getElementById("btn-back-landing")?.addEventListener("click", goLanding);
+document.getElementById("btn-back-browse")?.addEventListener("click", goBrowse);
+document.getElementById("btn-browse-home")?.addEventListener("click", goLanding);
 document.getElementById("btn-dashboard-home")?.addEventListener("click", goLanding);
 document.getElementById("landing-tile-dashboard")?.addEventListener("click", showDashboard);
-document.getElementById("landing-tile-browse")?.addEventListener("click", () => {
-  document
-    .getElementById("landing-aws-heading")
-    ?.scrollIntoView({ behavior: "smooth" });
-});
+document.getElementById("landing-tile-browse")?.addEventListener("click", goBrowse);
 document.getElementById("landing-tile-clf")?.addEventListener("click", () => {
   openCert("cloud-practitioner");
 });

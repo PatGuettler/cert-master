@@ -56,6 +56,27 @@ function filterAndSort(exams, sortMap, vendor) {
 }
 
 /**
+ * @param {import('./cert-loader.js').ExamIndexEntry} exam
+ * @param {string} query
+ */
+function matchesSearch(exam, query) {
+  if (!query) return true;
+  const vendorLabel = (exam.vendor ?? "aws") === "comptia" ? "comptia" : "aws";
+  const level =
+    vendorLabel === "aws" ? (AWS_LEVEL_LABEL[exam.id] ?? "") : "comptia";
+  const hay = [
+    exam.name,
+    exam.code,
+    exam.id,
+    vendorLabel,
+    level,
+  ]
+    .join(" ")
+    .toLowerCase();
+  return hay.includes(query);
+}
+
+/**
  * @param {HTMLElement|null} grid
  * @param {import('./cert-loader.js').ExamIndexEntry[]} items
  * @param {string} levelDefault
@@ -73,7 +94,10 @@ function renderGrid(grid, items, levelDefault, metaSuffix, onSelectCert) {
 
     const level = document.createElement("span");
     level.className = "landing-cert-tile-level";
-    level.textContent = levelDefault;
+    level.textContent =
+      levelDefault === "AWS"
+        ? (AWS_LEVEL_LABEL[exam.id] ?? "AWS")
+        : levelDefault;
 
     const title = document.createElement("span");
     title.className = "landing-cert-tile-title";
@@ -97,24 +121,56 @@ function renderGrid(grid, items, levelDefault, metaSuffix, onSelectCert) {
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
  * @param {(certId: string) => void} onSelectCert
  */
-export function renderLanding(exams, onSelectCert) {
-  const awsGrid = document.getElementById("landing-cert-grid-aws");
-  const comptiaGrid = document.getElementById("landing-cert-grid-comptia");
-  const awsCount = document.getElementById("landing-aws-count");
-  const comptiaCount = document.getElementById("landing-comptia-count");
+export function renderBrowse(exams, onSelectCert) {
+  const searchInput = document.getElementById("browse-search");
+  const query = (searchInput?.value ?? "").trim().toLowerCase();
 
-  const awsExams = filterAndSort(exams, AWS_CERT_SORT, "aws");
-  const comptiaExams = filterAndSort(exams, COMPTIA_CERT_SORT, "comptia");
+  const awsAll = filterAndSort(exams, AWS_CERT_SORT, "aws");
+  const comptiaAll = filterAndSort(exams, COMPTIA_CERT_SORT, "comptia");
+  const awsExams = awsAll.filter((e) => matchesSearch(e, query));
+  const comptiaExams = comptiaAll.filter((e) => matchesSearch(e, query));
+
+  const awsCount = document.getElementById("browse-aws-count");
+  const comptiaCount = document.getElementById("browse-comptia-count");
+  const awsSection = document.getElementById("browse-aws-section");
+  const comptiaSection = document.getElementById("browse-comptia-section");
+  const noResults = document.getElementById("browse-no-results");
 
   if (awsCount) awsCount.textContent = String(awsExams.length);
   if (comptiaCount) comptiaCount.textContent = String(comptiaExams.length);
 
-  renderGrid(awsGrid, awsExams, "AWS", " in bank", onSelectCert);
+  awsSection?.classList.toggle("hidden", awsExams.length === 0);
+  comptiaSection?.classList.toggle("hidden", comptiaExams.length === 0);
+  noResults?.classList.toggle(
+    "hidden",
+    awsExams.length > 0 || comptiaExams.length > 0
+  );
+
   renderGrid(
-    comptiaGrid,
+    document.getElementById("browse-cert-grid-aws"),
+    awsExams,
+    "AWS",
+    " in bank",
+    onSelectCert
+  );
+  renderGrid(
+    document.getElementById("browse-cert-grid-comptia"),
     comptiaExams,
     "CompTIA",
     " · includes acronym drill",
     onSelectCert
   );
+}
+
+/**
+ * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
+ * @param {(certId: string) => void} onSelectCert
+ */
+export function bindBrowseSearch(exams, onSelectCert) {
+  const searchInput = document.getElementById("browse-search");
+  if (!searchInput || searchInput.dataset.bound === "1") return;
+  searchInput.dataset.bound = "1";
+  searchInput.addEventListener("input", () => {
+    renderBrowse(exams, onSelectCert);
+  });
 }

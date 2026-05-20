@@ -54,31 +54,13 @@
         <button type="button" id="drawer-nav-home" class="drawer-nav-btn">
           Home
         </button>
+        <button type="button" id="drawer-nav-browse" class="drawer-nav-btn">
+          Browse certifications
+        </button>
         <button type="button" id="drawer-nav-dashboard" class="drawer-nav-btn">
           Your progress
         </button>
       </nav>
-      <section class="drawer-section drawer-section-exams">
-        <h3>Certifications</h3>
-        <details class="drawer-cert-group" open>
-          <summary>AWS Cert</summary>
-          <div class="drawer-nested" aria-label="AWS practice exams">
-            <ul id="exam-list-aws" class="cert-list exam-list"></ul>
-            <p id="exam-list-aws-empty" class="exam-list-empty hidden">
-              No AWS exams found. Run <code>python3 scripts/build-exams-index.py</code>.
-            </p>
-          </div>
-        </details>
-        <details class="drawer-cert-group">
-          <summary>CompTIA</summary>
-          <div class="drawer-nested" aria-label="CompTIA practice exams">
-            <ul id="exam-list-comptia" class="cert-list exam-list"></ul>
-            <p id="exam-list-comptia-empty" class="exam-list-empty hidden">
-              No CompTIA exams found. Run <code>python3 scripts/generate_comptia_exams.py</code>.
-            </p>
-          </div>
-        </details>
-      </section>
       <section class="drawer-section">
         <h3>Test options</h3>
         <label class="option-row">
@@ -149,7 +131,7 @@
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-browse">
             <span class="landing-tile-icon" aria-hidden="true">📋</span>
             <span class="landing-tile-label">Browse exams</span>
-            <span class="landing-tile-desc">Pick a certification below</span>
+            <span class="landing-tile-desc">Search all AWS &amp; CompTIA certs</span>
           </button>
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-dashboard">
             <span class="landing-tile-icon" aria-hidden="true">📈</span>
@@ -168,34 +150,12 @@
           </button>
         </div>
 
-        <section class="landing-section" aria-labelledby="landing-aws-heading">
-          <h3 id="landing-aws-heading">
-            AWS certifications
-            <span class="landing-count">(<span id="landing-aws-count">0</span>)</span>
-          </h3>
-          <p class="landing-hint">
-            Choose an exam to see domains, start a timed practice test, and track your history.
-          </p>
-          <div id="landing-cert-grid-aws" class="landing-cert-grid"></div>
-        </section>
-
-        <section class="landing-section" aria-labelledby="landing-comptia-heading">
-          <h3 id="landing-comptia-heading">
-            CompTIA certifications
-            <span class="landing-count">(<span id="landing-comptia-count">0</span>)</span>
-          </h3>
-          <p class="landing-hint">
-            Includes <strong>acronym study</strong> on each exam page — CompTIA tests assume you know common IT abbreviations cold.
-          </p>
-          <div id="landing-cert-grid-comptia" class="landing-cert-grid"></div>
-        </section>
-
         <section class="landing-section landing-howto" id="how-to">
           <h3>How to use AWS Cert Master</h3>
           <ol class="landing-steps">
             <li>
-              <strong>Pick a certification</strong> from the grid above or the menu
-              (<em>AWS Cert</em>).
+              <strong>Pick a certification</strong> from
+              <em>Browse certifications</em> in the menu or on the home page.
             </li>
             <li>
               <strong>Review exam domains</strong> and optional settings in the menu
@@ -225,9 +185,63 @@
         </section>
       </section>
 
+      <section id="view-browse" class="view hidden">
+        <nav class="cert-breadcrumb">
+          <button type="button" id="btn-browse-home" class="btn-text-link">
+            ← Home
+          </button>
+        </nav>
+        <div class="browse-header">
+          <h2>All certifications</h2>
+          <p class="browse-lead">
+            Search or scroll to pick an exam. Each opens a page with domains,
+            practice tests, and progress for that certification.
+          </p>
+        </div>
+        <label class="browse-search-wrap" for="browse-search">
+          <span class="browse-search-label">Search</span>
+          <input
+            type="search"
+            id="browse-search"
+            class="browse-search-input"
+            placeholder="Name or exam code (e.g. CLF, Security+, SAA)…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </label>
+        <p id="browse-no-results" class="browse-no-results hidden" role="status">
+          No exams match your search. Try a shorter keyword or clear the search box.
+        </p>
+        <section
+          id="browse-aws-section"
+          class="landing-section"
+          aria-labelledby="browse-aws-heading"
+        >
+          <h3 id="browse-aws-heading">
+            AWS certifications
+            <span class="landing-count">(<span id="browse-aws-count">0</span>)</span>
+          </h3>
+          <div id="browse-cert-grid-aws" class="landing-cert-grid"></div>
+        </section>
+        <section
+          id="browse-comptia-section"
+          class="landing-section"
+          aria-labelledby="browse-comptia-heading"
+        >
+          <h3 id="browse-comptia-heading">
+            CompTIA certifications
+            <span class="landing-count">(<span id="browse-comptia-count">0</span>)</span>
+          </h3>
+          <p class="landing-hint">
+            Includes <strong>acronym study</strong> on each exam page.
+          </p>
+          <div id="browse-cert-grid-comptia" class="landing-cert-grid"></div>
+        </section>
+      </section>
+
       <section id="view-cert" class="view hidden">
         <nav class="cert-breadcrumb">
-          <button type="button" id="btn-back-landing" class="btn-text-link">
+          <button type="button" id="btn-back-browse" class="btn-text-link">
             ← All certifications
           </button>
         </nav>

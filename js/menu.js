@@ -1,76 +1,25 @@
 import { loadSettings, saveSettings } from "./storage.js";
 
-/** @type {Record<string, number>} */
-const AWS_CERT_SORT = {
-  "cloud-practitioner": 10,
-  "ai-practitioner": 20,
-  "solutions-architect-associate": 30,
-  "developer-associate": 40,
-  "machine-learning-engineer-associate": 50,
-  "data-engineer-associate": 60,
-  "cloudops-engineer-associate": 70,
-  "solutions-architect-professional": 80,
-  "devops-engineer-professional": 90,
-  "generative-ai-developer-professional": 100,
-  "advanced-networking-specialty": 110,
-  "security-specialty": 120,
-};
-
-/** @type {Record<string, number>} */
-const COMPTIA_CERT_SORT = {
-  "comptia-a-plus": 10,
-  "comptia-network-plus": 20,
-  "comptia-security-plus": 30,
-  "comptia-cysa-plus": 40,
-  "comptia-linux-plus": 50,
-};
-
-/**
- * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
- * @param {Record<string, number>} sortMap
- * @param {string} vendor
- */
-function sortVendorExams(exams, sortMap, vendor) {
-  return [...exams]
-    .filter((e) => (e.vendor ?? "aws") === vendor)
-    .sort((a, b) => {
-      const oa = sortMap[a.id] ?? 500;
-      const ob = sortMap[b.id] ?? 500;
-      if (oa !== ob) return oa - ob;
-      return a.name.localeCompare(b.name);
-    });
-}
-
 /**
  * @param {Object} opts
- * @param {import('./cert-loader.js').ExamIndexEntry[]} opts.exams
  * @param {() => string} opts.getActiveCertId
  * @param {import('./config.js').ExamSettings} opts.settings
- * @param {(certId: string) => void} opts.onExamChange
  * @param {(settings: import('./config.js').ExamSettings) => void} opts.onSettingsChange
  * @param {() => void} opts.onNavigateHome
+ * @param {() => void} opts.onNavigateBrowse
  * @param {() => void} opts.onNavigateDashboard
  */
 export function initMenu({
-  exams,
   getActiveCertId,
   settings,
-  onExamChange,
   onSettingsChange,
   onNavigateHome,
+  onNavigateBrowse,
   onNavigateDashboard,
 }) {
-  let activeCertId = getActiveCertId();
-  /** @type {import('./cert-loader.js').ExamIndexEntry[]} */
-  let examList = exams;
-
   const menuBtn = document.getElementById("menu-btn");
   const overlay = document.getElementById("drawer-overlay");
   const drawer = document.getElementById("drawer");
-  const examListAws = document.getElementById("exam-list-aws");
-  const examListAwsEmpty = document.getElementById("exam-list-aws-empty");
-  const examListComptia = document.getElementById("exam-list-comptia");
-  const examListComptiaEmpty = document.getElementById("exam-list-comptia-empty");
   const timeLimitToggle = document.getElementById("opt-time-limit");
   const feedbackToggle = document.getElementById("opt-feedback");
   const docLinksToggle = document.getElementById("opt-doc-links");
@@ -102,57 +51,15 @@ export function initMenu({
     closeDrawer();
   });
 
+  document.getElementById("drawer-nav-browse")?.addEventListener("click", () => {
+    onNavigateBrowse();
+    closeDrawer();
+  });
+
   document.getElementById("drawer-nav-dashboard")?.addEventListener("click", () => {
     onNavigateDashboard();
     closeDrawer();
   });
-
-  /**
-   * @param {HTMLElement|null} listEl
-   * @param {import('./cert-loader.js').ExamIndexEntry[]} items
-   */
-  function renderList(listEl, items) {
-    if (!listEl) return;
-    listEl.innerHTML = "";
-    for (const exam of items) {
-      const li = document.createElement("li");
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.dataset.examId = exam.id;
-      btn.textContent = exam.code
-        ? `${exam.name} (${exam.code})`
-        : exam.name;
-      if (exam.id === activeCertId) btn.classList.add("active");
-      btn.addEventListener("click", () => {
-        onExamChange(exam.id);
-        closeDrawer();
-      });
-      li.appendChild(btn);
-      listEl.appendChild(li);
-    }
-  }
-
-  function renderExamList() {
-    const awsExams = sortVendorExams(examList, AWS_CERT_SORT, "aws");
-    const comptiaExams = sortVendorExams(examList, COMPTIA_CERT_SORT, "comptia");
-
-    if (awsExams.length === 0) {
-      examListAwsEmpty?.classList.remove("hidden");
-    } else {
-      examListAwsEmpty?.classList.add("hidden");
-    }
-
-    if (comptiaExams.length === 0) {
-      examListComptiaEmpty?.classList.remove("hidden");
-    } else {
-      examListComptiaEmpty?.classList.add("hidden");
-    }
-
-    renderList(examListAws, awsExams);
-    renderList(examListComptia, comptiaExams);
-  }
-
-  renderExamList();
 
   if (timeLimitToggle) timeLimitToggle.checked = settings.timeLimitEnabled;
   if (feedbackToggle) feedbackToggle.checked = settings.immediateFeedback;
@@ -172,16 +79,6 @@ export function initMenu({
     el?.addEventListener("change", emitSettings);
   });
 
-  function setActiveCert(certId) {
-    activeCertId = certId;
-    const selector = "button[data-exam-id]";
-    for (const list of [examListAws, examListComptia]) {
-      list?.querySelectorAll(selector).forEach((btn) => {
-        btn.classList.toggle("active", btn.dataset.examId === certId);
-      });
-    }
-  }
-
   function refreshSettings(newSettings) {
     settings = newSettings;
     if (timeLimitToggle) timeLimitToggle.checked = settings.timeLimitEnabled;
@@ -189,13 +86,5 @@ export function initMenu({
     if (docLinksToggle) docLinksToggle.checked = settings.showDocLinks;
   }
 
-  /**
-   * @param {import('./cert-loader.js').ExamIndexEntry[]} nextExams
-   */
-  function updateExamList(nextExams) {
-    examList = nextExams;
-    renderExamList();
-  }
-
-  return { closeDrawer, setActiveCert, refreshSettings, updateExamList };
+  return { closeDrawer, refreshSettings };
 }
