@@ -38,7 +38,9 @@ Open the exam file (e.g. `cloud-practitioner.json`), find the question in the `q
 
 ## Vendors
 
-Use `"vendor": "aws"`, `"azure"`, `"google"`, or `"comptia"`. Every question should include `docs[]` with URLs only from official providers:
+Use `"vendor": "aws"`, `"azure"`, `"google"`, `"comptia"`, or `"keytraining"` (KeyTrain's Key Training). Every question should include `docs[]` with URLs only from official providers:
+
+- Key Training → NIST, CISA, and other authoritative security guidance (see `scripts/generate_key_training_exams.py`)
 
 - AWS → `docs.aws.amazon.com`, `aws.amazon.com`, Skill Builder
 - Azure → `learn.microsoft.com`, `microsoft.com`
