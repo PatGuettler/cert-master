@@ -52,23 +52,28 @@ export function parseRoute(exams, keytrainIds = []) {
 
   if (parts[0] === "browse") return { type: "browse" };
 
-  if (parts[0] === "key-training") {
-    if (!parts[1]) return { type: "key-training-hub" };
-    if (parts[1] === "workshops") return { type: "key-training-workshops" };
-    if (parts[1] === "workshop" && parts[2]) {
-      if (!exams.some((e) => e.id === parts[2])) return { type: "key-training-hub" };
-      return { type: "key-training-workshop", certId: parts[2] };
-    }
-    return { type: "key-training-hub" };
-  }
-
   if (parts[0] === "keytrain") {
     if (!parts[1]) return { type: "keytrain-hub" };
+    if (parts[1] === "workshops") return { type: "keytrain-workshops" };
+    if (parts[1] === "workshop" && parts[2]) {
+      if (!exams.some((e) => e.id === parts[2])) return { type: "keytrain-hub" };
+      return { type: "keytrain-workshop", certId: parts[2] };
+    }
     if (!keytrainIds.includes(parts[1])) return { type: "keytrain-hub" };
     if (parts[2] === "certificate") {
       return { type: "keytrain-certificate", keytrainId: parts[1] };
     }
     return { type: "keytrain-cert", keytrainId: parts[1] };
+  }
+
+  if (parts[0] === "key-training") {
+    if (!parts[1]) return { type: "keytrain-hub" };
+    if (parts[1] === "workshops") return { type: "keytrain-workshops" };
+    if (parts[1] === "workshop" && parts[2]) {
+      if (!exams.some((e) => e.id === parts[2])) return { type: "keytrain-hub" };
+      return { type: "keytrain-workshop", certId: parts[2] };
+    }
+    return { type: "keytrain-hub" };
   }
 
   if (parts[0] === "cert" && parts[1]) {
@@ -111,6 +116,12 @@ export function normalizeLegacyRoutes(exams) {
   const sub = getAppSubpath();
   if (sub.startsWith("questions/")) return;
 
+  if (sub === "key-training" || sub.startsWith("key-training/")) {
+    const rest = sub.replace(/^key-training\/?/, "");
+    history.replaceState(null, "", appPathUrl(rest ? `keytrain/${rest}` : "keytrain"));
+    return;
+  }
+
   const raw = window.location.hash.replace(/^#/, "").trim();
   if (!raw) return;
 
@@ -145,19 +156,15 @@ export function navigateKeytrainHub() {
   history.pushState(null, "", appPathUrl("keytrain"));
 }
 
-export function navigateKeyTrainingHub() {
-  history.pushState(null, "", appPathUrl("key-training"));
-}
-
-export function navigateKeyTrainingWorkshops() {
-  history.pushState(null, "", appPathUrl("key-training/workshops"));
+export function navigateKeytrainWorkshops() {
+  history.pushState(null, "", appPathUrl("keytrain/workshops"));
 }
 
 /**
  * @param {string} certId
  */
-export function navigateKeyTrainingWorkshop(certId) {
-  history.pushState(null, "", appPathUrl(`key-training/workshop/${certId}`));
+export function navigateKeytrainWorkshop(certId) {
+  history.pushState(null, "", appPathUrl(`keytrain/workshop/${certId}`));
 }
 
 /**
@@ -181,4 +188,12 @@ export function navigateCert(certId, sub = "") {
 export function isBrowsePathActive() {
   const sub = getAppSubpath();
   return sub === "browse" || window.location.hash.replace(/^#/, "") === "browse";
+}
+
+export function isKeytrainHubPathActive() {
+  return getAppSubpath() === "keytrain";
+}
+
+export function isKeytrainWorkshopsPathActive() {
+  return getAppSubpath() === "keytrain/workshops";
 }

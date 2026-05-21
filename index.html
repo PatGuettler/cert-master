@@ -111,11 +111,8 @@
         <button type="button" id="drawer-nav-browse" class="drawer-nav-btn">
           Practice certifications
         </button>
-        <button type="button" id="drawer-nav-key-training" class="drawer-nav-btn">
-          KeyTrain's Key Training
-        </button>
         <button type="button" id="drawer-nav-keytrain" class="drawer-nav-btn">
-          KeyTrain Certification
+          KeyTrain
         </button>
         <button type="button" id="drawer-nav-dashboard" class="drawer-nav-btn">
           Your progress
@@ -196,15 +193,10 @@
             <span class="landing-tile-label">Practice certifications</span>
             <span class="landing-tile-desc">Study mode — AWS, Azure, Google, CompTIA</span>
           </button>
-          <button type="button" class="landing-tile landing-tile-action landing-tile-keytraining" id="landing-tile-key-training">
-            <span class="landing-tile-icon" aria-hidden="true">🔐</span>
-            <span class="landing-tile-label">KeyTrain's Key Training</span>
-            <span class="landing-tile-desc">Cybersecurity practice, workshops & certs</span>
-          </button>
           <button type="button" class="landing-tile landing-tile-action landing-tile-keytrain" id="landing-tile-keytrain">
-            <span class="landing-tile-icon" aria-hidden="true">🎓</span>
-            <span class="landing-tile-label">KeyTrain Certification</span>
-            <span class="landing-tile-desc">Pass/fail exam · PDF certificate</span>
+            <span class="landing-tile-icon" aria-hidden="true">🔐</span>
+            <span class="landing-tile-label">KeyTrain</span>
+            <span class="landing-tile-desc">Training, workshops & certification</span>
           </button>
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-dashboard">
             <span class="landing-tile-icon" aria-hidden="true">📈</span>
@@ -268,57 +260,25 @@
           <button type="button" id="btn-keytrain-hub-home" class="btn-text-link">← Home</button>
         </nav>
         <div class="keytrain-hub-header">
-          <h2>KeyTrain Certification</h2>
-          <p class="keytrain-hub-lead" id="keytrain-hub-tagline">
-            Formal certification assessments with pass/fail results and downloadable PDF certificates.
-          </p>
-          <p class="keytrain-hub-note">
-            Unlike <strong>Practice certifications</strong>, KeyTrain runs as a single timed attempt with
-            no feedback until you submit. Pass to unlock a personalized PDF certificate.
+          <h2>KeyTrain</h2>
+          <p class="keytrain-hub-lead">
+            Cybersecurity training across ten domains—identity, email, data protection, endpoint, network,
+            and more. Expand a section below to start <strong>training</strong>, join a
+            <strong>workshop</strong>, or take a formal <strong>certification</strong> exam.
           </p>
         </div>
-        <details id="keytrain-section-keytraining" class="landing-section page-collapse browse-vendor-collapse">
+        <details id="keytrain-section-training" class="page-collapse keytraining-hub-section">
           <summary class="browse-vendor-summary">
-            <span class="browse-vendor-title">KeyTrain's Key Training</span>
-            <span class="landing-count">(<span id="keytrain-keytraining-count">0</span>)</span>
-          </summary>
-          <p class="landing-hint">
-            Formal pass/fail assessments for cybersecurity domains (identity, email, network, compliance, and more).
-          </p>
-          <div id="keytrain-cert-grid-keytraining" class="landing-cert-grid"></div>
-        </details>
-        <details id="keytrain-section-vendor" class="landing-section page-collapse browse-vendor-collapse">
-          <summary class="browse-vendor-summary">
-            <span class="browse-vendor-title">Cloud &amp; vendor certifications</span>
-            <span class="landing-count">(<span id="keytrain-vendor-count">0</span>)</span>
-          </summary>
-          <div id="keytrain-cert-grid-vendor" class="landing-cert-grid"></div>
-        </details>
-      </section>
-
-      <section id="view-key-training-hub" class="view hidden">
-        <nav class="cert-breadcrumb">
-          <button type="button" id="btn-keytraining-hub-home" class="btn-text-link">← Home</button>
-        </nav>
-        <div class="keytraining-hub-header">
-          <h2>KeyTrain's Key Training</h2>
-          <p class="keytraining-hub-lead">
-            Cybersecurity practice across ten domains—from identity and email to network, endpoint,
-            financial, physical, and compliance. Use <strong>practice exams</strong> to study,
-            <strong>workshops</strong> for guided topic drills, and <strong>KeyTrain certification</strong>
-            for formal pass/fail with a PDF certificate.
-          </p>
-        </div>
-        <details id="keytraining-section-practice" class="page-collapse keytraining-hub-section">
-          <summary class="browse-vendor-summary">
-            <span class="browse-vendor-title">Practice tests</span>
+            <span class="browse-vendor-title">Training</span>
           </summary>
           <div class="page-collapse-body">
-            <p class="landing-hint">Study mode with optional feedback, pause &amp; resume, and progress tracking.</p>
-            <div id="keytraining-practice-grid" class="landing-cert-grid"></div>
+            <p class="landing-hint">
+              Practice exams in study mode—optional feedback, pause &amp; resume, and progress tracking.
+            </p>
+            <div id="keytrain-training-grid" class="landing-cert-grid"></div>
           </div>
         </details>
-        <details id="keytraining-section-workshops" class="page-collapse keytraining-hub-section">
+        <details id="keytrain-section-workshops" class="page-collapse keytraining-hub-section">
           <summary class="browse-vendor-summary">
             <span class="browse-vendor-title">Workshops</span>
           </summary>
@@ -326,29 +286,35 @@
             <p class="landing-hint">
               Short guided sessions—about one scenario per topic—with immediate feedback after each question.
             </p>
-            <div id="keytraining-workshop-preview-grid" class="landing-cert-grid"></div>
+            <div id="keytrain-workshop-preview-grid" class="landing-cert-grid"></div>
             <p class="keytraining-hub-more">
-              <button type="button" id="btn-keytraining-all-workshops" class="btn btn-outline">
+              <button type="button" id="btn-keytrain-all-workshops" class="btn btn-outline">
                 View all workshops
               </button>
             </p>
           </div>
         </details>
-        <details id="keytraining-section-formal" class="page-collapse keytraining-hub-section">
+        <details id="keytrain-section-certification" class="page-collapse keytraining-hub-section">
           <summary class="browse-vendor-summary">
-            <span class="browse-vendor-title">KeyTrain certification (formal)</span>
+            <span class="browse-vendor-title">Certification</span>
           </summary>
           <div class="page-collapse-body">
-            <p class="landing-hint">Timed pass/fail attempt; PDF certificate when you pass.</p>
-            <div id="keytraining-formal-grid" class="landing-cert-grid"></div>
+            <p class="landing-hint">
+              Timed pass/fail assessments with no feedback until you submit. Pass to unlock a PDF certificate.
+              Unlike <strong>Practice certifications</strong> on the browse page, these are single-attempt formal exams.
+            </p>
+            <h3 class="keytrain-cert-subhead">Cybersecurity domains</h3>
+            <div id="keytrain-cert-grid-keytraining" class="landing-cert-grid"></div>
+            <h3 class="keytrain-cert-subhead keytrain-cert-subhead-vendor">Cloud &amp; vendor certifications</h3>
+            <div id="keytrain-cert-grid-vendor" class="landing-cert-grid"></div>
           </div>
         </details>
       </section>
 
-      <section id="view-key-training-workshops" class="view hidden">
+      <section id="view-keytrain-workshops" class="view hidden">
         <nav class="cert-breadcrumb">
-          <button type="button" id="btn-keytraining-workshops-back" class="btn-text-link">
-            ← KeyTrain's Key Training
+          <button type="button" id="btn-keytrain-workshops-back" class="btn-text-link">
+            ← KeyTrain
           </button>
         </nav>
         <div class="keytraining-hub-header">
@@ -358,12 +324,12 @@
             in that category (authentication, phishing, patching, fraud indicators, and more).
           </p>
         </div>
-        <details id="keytraining-workshops-all" class="page-collapse keytraining-hub-section">
+        <details id="keytrain-workshops-all" class="page-collapse keytraining-hub-section">
           <summary class="browse-vendor-summary">
             <span class="browse-vendor-title">All workshop categories</span>
           </summary>
           <div class="page-collapse-body">
-            <div id="keytraining-workshop-grid" class="landing-cert-grid"></div>
+            <div id="keytrain-workshop-grid" class="landing-cert-grid"></div>
           </div>
         </details>
       </section>
@@ -371,7 +337,7 @@
       <section id="view-keytrain-cert" class="view hidden">
         <nav class="cert-breadcrumb">
           <button type="button" id="btn-keytrain-back-hub" class="btn-text-link">
-            ← KeyTrain certifications
+            ← KeyTrain
           </button>
         </nav>
         <div class="hero keytrain-hero">
@@ -519,12 +485,12 @@
           class="landing-section page-collapse browse-vendor-collapse"
         >
           <summary class="browse-vendor-summary" id="browse-keytraining-heading">
-            <span class="browse-vendor-title">KeyTrain's Key Training</span>
+            <span class="browse-vendor-title">KeyTrain (practice)</span>
             <span class="landing-count">(<span id="browse-keytraining-count">0</span>)</span>
           </summary>
           <p class="landing-hint">
             Cybersecurity scenarios: identity, email, data protection, endpoint, network, and more.
-            Also available from the <strong>KeyTrain's Key Training</strong> hub (workshops &amp; formal certs).
+            Also available from the <strong>KeyTrain</strong> hub (training, workshops &amp; certification).
           </p>
           <div id="browse-cert-grid-keytraining" class="landing-cert-grid"></div>
         </details>

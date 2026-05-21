@@ -41,16 +41,16 @@ import {
   navigateCert,
   navigateKeytrainHub,
   navigateKeytrainCert,
-  navigateKeyTrainingHub,
-  navigateKeyTrainingWorkshops,
-  navigateKeyTrainingWorkshop,
+  navigateKeytrainWorkshops,
+  navigateKeytrainWorkshop,
   isBrowsePathActive,
+  isKeytrainHubPathActive,
+  isKeytrainWorkshopsPathActive,
   appPathUrl,
 } from "./routes.js";
 import { APP_NAME, APP_SLUG } from "./config.js";
 import { loadKeytrainCatalog, loadKeytrainProgram } from "./keytrain-loader.js";
 import {
-  renderKeytrainHub,
   renderKeytrainCertPage,
   renderKeytrainResults,
   bindKeytrainResultsActions,
@@ -61,10 +61,7 @@ import {
   saveKeytrainIssuance,
   makeCertificateId,
 } from "./keytrain-storage.js";
-import {
-  renderKeyTrainingHub,
-  renderKeyTrainingWorkshops,
-} from "./key-training-ui.js";
+import { renderKeytrainHub, renderKeytrainWorkshops } from "./key-training-ui.js";
 
 const LAST_CERT_KEY = `${APP_SLUG}:lastCert`;
 
@@ -118,8 +115,7 @@ const views = {
   keytrainCert: document.getElementById("view-keytrain-cert"),
   keytrainResults: document.getElementById("view-keytrain-results"),
   keytrainCertificate: document.getElementById("view-keytrain-certificate"),
-  keyTrainingHub: document.getElementById("view-key-training-hub"),
-  keyTrainingWorkshops: document.getElementById("view-key-training-workshops"),
+  keytrainWorkshops: document.getElementById("view-keytrain-workshops"),
 };
 
 /** @type {{ stop: () => void }|null} */
@@ -195,32 +191,17 @@ function goBrowse() {
   applyRoute({ type: "browse" });
 }
 
-function showKeyTrainingHubView() {
-  showView("keyTrainingHub");
-  setHeaderTitle("KeyTrain's Key Training");
-  renderKeyTrainingHub(
-    examIndexList,
-    openCert,
-    startWorkshop,
-    openKeytrainCert,
-    keytrainCatalog
-  );
+function showKeytrainWorkshopsView() {
+  showView("keytrainWorkshops");
+  setHeaderTitle("KeyTrain · Workshops");
+  renderKeytrainWorkshops(examIndexList, startWorkshop);
+  const panel = document.getElementById("view-keytrain-workshops");
+  if (panel) bindAllPageCollapse(panel);
 }
 
-function goKeyTraining() {
+function goKeytrainWorkshops() {
   if (!appReady) return;
-  applyRoute({ type: "key-training-hub" });
-}
-
-function showKeyTrainingWorkshopsView() {
-  showView("keyTrainingWorkshops");
-  setHeaderTitle("Workshops");
-  renderKeyTrainingWorkshops(examIndexList, startWorkshop);
-}
-
-function goKeyTrainingWorkshops() {
-  if (!appReady) return;
-  applyRoute({ type: "key-training-workshops" });
+  applyRoute({ type: "keytrain-workshops" });
 }
 
 function showCertView() {
@@ -443,29 +424,18 @@ async function applyRoute(route) {
     return;
   }
 
-  if (route.type === "key-training-hub") {
+  if (route.type === "keytrain-workshops") {
     acronymController?.stop();
     examController?.stopTimer?.();
     currentCert = null;
-    if (!window.location.pathname.includes("/key-training")) {
-      navigateKeyTrainingHub();
+    if (!isKeytrainWorkshopsPathActive()) {
+      navigateKeytrainWorkshops();
     }
-    showKeyTrainingHubView();
+    showKeytrainWorkshopsView();
     return;
   }
 
-  if (route.type === "key-training-workshops") {
-    acronymController?.stop();
-    examController?.stopTimer?.();
-    currentCert = null;
-    if (!window.location.pathname.includes("/key-training/workshops")) {
-      navigateKeyTrainingWorkshops();
-    }
-    showKeyTrainingWorkshopsView();
-    return;
-  }
-
-  if (route.type === "key-training-workshop" && route.certId) {
+  if (route.type === "keytrain-workshop" && route.certId) {
     await switchCert(route.certId, { fromRoute: true });
     startWorkshop({ fromRoute: true });
     return;
@@ -476,7 +446,7 @@ async function applyRoute(route) {
     examController?.stopTimer?.();
     currentCert = null;
     keytrainProgram = null;
-    if (!window.location.pathname.includes("/keytrain")) navigateKeytrainHub();
+    if (!isKeytrainHubPathActive()) navigateKeytrainHub();
     showKeytrainHubView();
     return;
   }
@@ -497,8 +467,16 @@ function getKeytrainIds() {
 
 function showKeytrainHubView() {
   showView("keytrainHub");
-  setHeaderTitle("KeyTrain Certification");
-  renderKeytrainHub(keytrainCatalog, openKeytrainCert);
+  setHeaderTitle("KeyTrain");
+  renderKeytrainHub(
+    examIndexList,
+    openCert,
+    startWorkshop,
+    openKeytrainCert,
+    keytrainCatalog
+  );
+  const hub = document.getElementById("view-keytrain-hub");
+  if (hub) bindAllPageCollapse(hub);
 }
 
 function goKeytrain() {
@@ -659,7 +637,6 @@ async function init() {
       onNavigateHome: goLanding,
       onNavigateBrowse: () => {},
       onNavigateKeytrain: goKeytrain,
-      onNavigateKeyTraining: goKeyTraining,
       onNavigateDashboard: () => {},
     });
     initDataPanel({
@@ -684,7 +661,6 @@ async function init() {
     onNavigateHome: goLanding,
     onNavigateBrowse: goBrowse,
     onNavigateKeytrain: goKeytrain,
-    onNavigateKeyTraining: goKeyTraining,
     onNavigateDashboard: showDashboard,
   });
 
@@ -1090,7 +1066,7 @@ function startWorkshop(opts = {}) {
     window.alert("No questions available for this workshop.");
     return;
   }
-  if (!opts.fromRoute) navigateKeyTrainingWorkshop(activeCertId);
+  if (!opts.fromRoute) navigateKeytrainWorkshop(activeCertId);
   launchExamSession(questions, "workshop");
 }
 
@@ -1318,7 +1294,7 @@ document.getElementById("btn-discard-resume")?.addEventListener("click", discard
 document.getElementById("btn-pause-exam")?.addEventListener("click", pauseAndExitExam);
 document.getElementById("btn-open-dashboard")?.addEventListener("click", showDashboard);
 function goBackFromCertPage() {
-  if (currentCert?.vendor === "keytraining") goKeyTraining();
+  if (currentCert?.vendor === "keytraining") goKeytrain();
   else goBrowse();
 }
 
@@ -1327,11 +1303,9 @@ document.getElementById("btn-browse-home")?.addEventListener("click", goLanding)
 document.getElementById("btn-dashboard-home")?.addEventListener("click", goLanding);
 document.getElementById("landing-tile-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("landing-tile-browse")?.addEventListener("click", goBrowse);
-document.getElementById("landing-tile-key-training")?.addEventListener("click", goKeyTraining);
 document.getElementById("landing-tile-keytrain")?.addEventListener("click", goKeytrain);
-document.getElementById("btn-keytraining-hub-home")?.addEventListener("click", goLanding);
-document.getElementById("btn-keytraining-workshops-back")?.addEventListener("click", goKeyTraining);
-document.getElementById("btn-keytraining-all-workshops")?.addEventListener("click", goKeyTrainingWorkshops);
+document.getElementById("btn-keytrain-workshops-back")?.addEventListener("click", goKeytrain);
+document.getElementById("btn-keytrain-all-workshops")?.addEventListener("click", goKeytrainWorkshops);
 document.getElementById("btn-start-workshop")?.addEventListener("click", () => startWorkshop());
 document.getElementById("btn-keytrain-hub-home")?.addEventListener("click", goLanding);
 document.getElementById("btn-keytrain-back-hub")?.addEventListener("click", goKeytrain);

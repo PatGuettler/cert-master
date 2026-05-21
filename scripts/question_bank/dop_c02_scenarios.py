@@ -1,8 +1,8 @@
 """
-Original DOP-C02 scenario-style practice questions.
+DOP-C02 scenario practice questions aligned to AWS Skill Builder practice exam topics.
 
-Inspired by public exam guide domains and AWS documentation — not copied from
-Skill Builder, certification exams, or other proprietary training item banks.
+Stems and distractors are paraphrased; correct answers and service choices match the
+official DOP-C02 practice test item bank.
 """
 from __future__ import annotations
 
@@ -13,373 +13,665 @@ DOP_SCENARIO_QUESTIONS: list[RawQuestion] = [
     (
         "config-management-iac",
         "multiple-choice",
-        "A team provisions workloads with a minimal CloudFormation template that only sets required "
-        "properties; optional defaults were applied outside the stack and now drift from the template. "
-        "They want stack updates to realign resources and a low-effort way to catch manual changes. "
-        "Which approach meets the goal with the LEAST custom engineering?",
+        "A company deployed AWS resources with a CloudFormation template that listed only properties "
+        "required to create each resource. Optional settings used service defaults, then operators changed "
+        "those defaults outside the stack. That caused drift from the template. The team wants every "
+        "property value maintained in the template, wants to detect out-of-band changes, and wants the stack "
+        "restored to the template definition. Which solution meets these requirements with the LEAST "
+        "implementation effort?",
         [
-            ("a", "Publish a Lambda function that calls DetectStackDrift on a schedule via EventBridge and "
-             "re-executes the current template when drift is found"),
-            ("b", "Rely on stack exports only; ignore drift until the next full stack delete"),
-            ("c", "Encode every property (including former defaults) in the template and use an AWS Config "
-             "managed rule with automatic remediation via the AWS-UpdateCloudFormationStack SSM runbook"),
-            ("d", "Manually compare the console with the template each week"),
+            (
+                "a",
+                "Update the template to set every property (including former defaults). Create a Lambda function "
+                "that detects stack drift and updates the stack from the template. Schedule it daily with "
+                "Amazon EventBridge.",
+            ),
+            (
+                "b",
+                "Create a Lambda function that detects drift on the existing stack and updates the stack using "
+                "the current template. Invoke it on a daily schedule with Amazon EventBridge.",
+            ),
+            (
+                "c",
+                "Update the template to set every property (including former defaults). Use the "
+                "cloudformation-stack-drift-detection-check AWS Config rule with automatic remediation via the "
+                "AWS-UpdateCloudFormationStack Systems Manager Automation runbook.",
+            ),
+            (
+                "d",
+                "Use the cloudformation-stack-drift-detection-check AWS Config rule with automatic remediation "
+                "via the AWS-UpdateCloudFormationStack Systems Manager Automation runbook only.",
+            ),
         ],
-        ["a"],
-        "Scheduled drift detection plus redeploying the known template is a small, focused automation "
-        "pattern. Full template enumeration plus Config remediation is powerful but heavier to roll out.",
+        ["b"],
+        "Scheduled DetectStackDrift plus redeploying the known template is the lowest-effort path. "
+        "Fully enumerating every property and rolling out org-wide Config remediation is heavier.",
         [
-            ("CloudFormation drift", "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html"),
-            ("DetectStackDrift", "https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DetectStackDrift.html"),
+            (
+                "CloudFormation drift",
+                "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
+            ),
+            (
+                "DetectStackDrift",
+                "https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DetectStackDrift.html",
+            ),
         ],
     ),
     (
         "resilient-cloud-solutions",
         "multiple-choice",
-        "Workers on EC2 consume an SQS queue. During spikes the fleet scales on average CPU, but messages "
-        "still backlog because CPU stays low while queue depth grows. Which scaling approach is MOST reliable?",
+        "An application on Amazon EC2 instances in multiple Availability Zones pulls messages from an "
+        "Amazon SQS queue. During bursts, backlog grows while average CPU on the Auto Scaling group stays low. "
+        "Target tracking on average CPU does not scale out quickly enough. Which solution resolves this in the "
+        "MOST reliable way?",
         [
-            ("a", "Publish a custom CloudWatch metric (visible messages ÷ in-service instances) and scale "
-             "the Auto Scaling group on that metric"),
-            ("b", "Attach an ALB and scale on ALBRequestCountPerTarget even though traffic is queue-driven"),
-            ("c", "Change the target tracking policy to NumberOfMessagesReceived on the queue"),
-            ("d", "Lower the CPU target and shorten the warm-up period only"),
+            (
+                "a",
+                "Publish a custom Amazon CloudWatch metric: visible SQS messages divided by in-service instances. "
+                "Scale the Auto Scaling group on that metric against an acceptable target.",
+            ),
+            (
+                "b",
+                "Place an Application Load Balancer in front of the group and scale on "
+                "ALBRequestCountPerTarget.",
+            ),
+            (
+                "c",
+                "Change the target tracking policy to use the SQS NumberOfMessagesReceived metric instead of CPU.",
+            ),
+            (
+                "d",
+                "Lower the CPU target percentage and shorten the warm-up period on the existing policy.",
+            ),
         ],
         ["a"],
-        "Queue depth per instance directly reflects backlog pressure; CPU is a poor proxy for worker pools "
-        "pulling from SQS.",
+        "Queue depth per running instance reflects worker backlog; CPU is a weak signal for queue consumers.",
         [
-            ("SQS with Auto Scaling", "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html"),
-            ("Custom metrics", "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html"),
+            (
+                "SQS with Auto Scaling",
+                "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+            ),
+            (
+                "Custom metrics",
+                "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html",
+            ),
         ],
     ),
     (
         "monitoring-logging",
         "multiple-choice",
-        "An organization with AWS Organizations must watch service quota utilization across all member "
-        "accounts daily and email owners when usage crosses 80% of a quota. What should they implement?",
+        "A DevOps engineer manages multiple accounts in AWS Organizations and must monitor selected service "
+        "quotas daily in every account. Email alerts are required when usage reaches 80% of a quota. Which "
+        "solution meets these requirements?",
         [
-            ("a", "Enable Service Quotas integration with Organizations, create per-service CloudWatch alarms "
-             "at 80% utilization, and notify an SNS topic in ALARM state"),
-            ("b", "Run Trusted Advisor quota checks weekly from a single Lambda in the management account"),
-            ("c", "Use the same alarms but route ALARM transitions through EventBridge instead of SNS"),
-            ("d", "Refresh Trusted Advisor checks daily and open support cases for WARN results"),
+            (
+                "a",
+                "Enable trusted access between Service Quotas and Organizations. Create a CloudWatch alarm per "
+                "needed service at 80% of quota utilization. Send Amazon SNS notifications when the alarm enters "
+                "ALARM.",
+            ),
+            (
+                "b",
+                "Deploy a Lambda function in each account that calls DescribeTrustedAdvisorCheckResult and opens "
+                "support cases for WARN quota checks. Schedule it daily from the management account over "
+                "EventBridge.",
+            ),
+            (
+                "c",
+                "Enable Service Quotas trusted access and create 80% CloudWatch alarms, but route ALARM events "
+                "through EventBridge instead of SNS.",
+            ),
+            (
+                "d",
+                "Refresh Trusted Advisor checks daily with Lambda and publish to SNS when checks report 80% usage.",
+            ),
         ],
         ["a"],
-        "Service Quotas exposes utilization metrics suitable for CloudWatch alarms; SNS is the standard "
-        "notification path when alarms fire.",
+        "Service Quotas integrates with Organizations and exposes utilization metrics for CloudWatch alarms; "
+        "SNS is the standard notification channel.",
         [
-            ("Service Quotas and Organizations", "https://docs.aws.amazon.com/servicequotas/latest/userguide/organizations.html"),
-            ("CloudWatch alarms", "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html"),
+            (
+                "Service Quotas and Organizations",
+                "https://docs.aws.amazon.com/servicequotas/latest/userguide/organizations.html",
+            ),
+            (
+                "CloudWatch alarms",
+                "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-response",
-        "CodeDeploy performs blue/green releases behind an ALB. Operators today read application logs on "
-        "instances and manually roll back when errors spike. Which TWO steps automate rollback with minimal "
-        "delay? (Select TWO.)",
+        "An application runs on EC2 behind an Application Load Balancer in an Auto Scaling group. AWS CodeDeploy "
+        "performs blue/green deployments. Operators read application logs on instances and manually tell CodeDeploy "
+        "to roll back when error rates are too high. Which TWO steps automate rollback? (Select TWO.)",
         [
-            ("a", "Alarm on ALB HTTPCode_Target_4XX_Count only"),
-            ("b", "Configure the deployment group to fail and roll back when a linked CloudWatch alarm enters ALARM"),
-            ("c", "Schedule a Lambda hourly to call ContinueDeployment"),
-            ("d", "Subscribe CodeDeploy directly to an SNS topic (unsupported target)"),
-            ("e", "Ship logs to CloudWatch Logs, metric-filter error lines, and alarm on the error rate"),
+            (
+                "a",
+                "Create a CloudWatch alarm on the ALB HTTPCode_Target_4XX_Count metric above a threshold.",
+            ),
+            (
+                "b",
+                "Configure the deployment group to monitor the alarm, fail the deployment, and roll back when the "
+                "alarm enters ALARM.",
+            ),
+            (
+                "c",
+                "Use a scheduled Lambda every hour to roll back if an alarm is in ALARM.",
+            ),
+            (
+                "d",
+                "Publish to SNS on ALARM and configure CodeDeploy to subscribe to the topic for rollback.",
+            ),
+            (
+                "e",
+                "Send application logs to CloudWatch Logs, add a metric filter for error lines, and alarm on the "
+                "error rate.",
+            ),
         ],
         ["b", "e"],
-        "CodeDeploy can watch deployment alarms; log metric filters catch application errors described in "
-        "files rather than ALB HTTP codes alone.",
+        "CodeDeploy can tie rollback to deployment alarms; log metric filters catch errors that never appear as "
+        "ALB HTTP codes.",
         [
-            ("CodeDeploy alarms", "https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications.html"),
-            ("Log metric filters", "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData.html"),
+            (
+                "CodeDeploy alarms",
+                "https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications.html",
+            ),
+            (
+                "Log metric filters",
+                "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData.html",
+            ),
         ],
     ),
     (
         "config-management-iac",
         "multiple-choice",
-        "Elastic Beanstalk was launched via the EB CLI with an .ebextensions file that sets instance type "
-        "to t3.medium, but new environments still launch t3.small. What most likely explains the behavior?",
+        "A DevOps engineer launched Elastic Beanstalk with the EB CLI and added an .ebextensions file that sets "
+        "the instance type to t3.medium. The environment picked up new environment variables but still runs "
+        "t3.small instances. What is the most likely root cause?",
         [
-            ("a", "Default service values always override .ebextensions"),
-            ("b", "CLI/API parameters and recommended values take precedence over .ebextensions for settings "
-             "such as instance type"),
-            ("c", "Instance type cannot be set in .ebextensions"),
-            ("d", "The IAM user lacks permission for t3.medium"),
+            ("a", "Default service values cannot be overridden by .ebextensions."),
+            (
+                "b",
+                "Values passed through the Elastic Beanstalk CLI/API (recommended values) take precedence over "
+                ".ebextensions for settings such as instance type.",
+            ),
+            ("c", "Instance type cannot be configured in .ebextensions."),
+            ("d", "The launching IAM principal lacks permission for t3.medium."),
         ],
         ["b"],
-        "Elastic Beanstalk applies settings in order: direct environment/API changes, saved config, "
-        ".ebextensions, then defaults. CLI launches can set recommended values that win over extensions.",
+        "Precedence is direct environment/API settings, saved configuration, .ebextensions, then defaults. "
+        "CLI launches can apply recommended values that win over extensions.",
         [
-            ("Configuration precedence", "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.EB.Environment.html"),
+            (
+                "Configuration precedence",
+                "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.EB.Environment.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-choice",
-        "API Gateway fronts Lambda for a production API. A new Lambda version is ready; the team needs 10% "
-        "of traffic on the new version for one week with no client-side URL changes. What is the MOST "
-        "efficient approach?",
+        "Amazon API Gateway fronts Lambda for a REST API. Route 53 provides DNS. A new Lambda version is ready; "
+        "10% of production traffic must hit the new functions for one week with no URL change for clients. "
+        "What is the MOST operationally efficient deployment?",
         [
-            ("a", "Create a second API stage and split traffic with a simple Route 53 record"),
-            ("b", "Enable a canary release on the existing production stage (10% to new version, 90% to current)"),
-            ("c", "Stand up a second API and weighted Route 53 records to a new hostname"),
-            ("d", "Switch the integration to Lambda proxy and route inside the function"),
+            (
+                "a",
+                "Deploy a new API stage and custom domain; use a simple Route 53 record to split 10%/90% traffic.",
+            ),
+            (
+                "b",
+                "Add a canary release on the existing production stage: 10% to the new Lambda integration and 90% "
+                "to the current integration.",
+            ),
+            (
+                "c",
+                "Create a second API and second Route 53 domain; use weighted routing 10%/90%.",
+            ),
+            (
+                "d",
+                "Switch to Lambda proxy integration and route 10% of requests inside the function.",
+            ),
         ],
         ["b"],
-        "API Gateway canary deployments shift traffic on the same stage customers already call.",
+        "API Gateway canary deployments on the same stage shift traffic without client-side hostname changes.",
         [
-            ("Canary release", "https://docs.aws.amazon.com/apigateway/latest/developerguide/canary-release.html"),
+            (
+                "Canary release",
+                "https://docs.aws.amazon.com/apigateway/latest/developerguide/canary-release.html",
+            ),
         ],
     ),
     (
         "monitoring-logging",
         "multiple-choice",
-        "JSON application logs on EC2 include PII. A vendor needs near-real-time access to troubleshoot "
-        "errors but must not see PII and cannot receive SSH. What is the MOST cost-effective pattern?",
+        "JSON logs on EC2 include PII. A third party must troubleshoot application events without PII and "
+        "without SSH to production. Which solution is MOST cost-effective?",
         [
-            ("a", "Central syslog on EC2 with a nightly Batch job copying filtered logs to S3"),
-            ("b", "Stream logs with the CloudWatch agent; subscription filter + Lambda writes non-PII events to "
-             "OpenSearch always on"),
-            ("c", "Agent to Kinesis Data Firehose with Lambda transformation to S3"),
-            ("d", "Agent to CloudWatch Logs; subscription filter + Lambda writes filtered events to S3 for vendor access"),
+            (
+                "a",
+                "Central syslog on EC2; AWS Batch copies filtered logs to Amazon S3 once per day.",
+            ),
+            (
+                "b",
+                "CloudWatch agent to CloudWatch Logs; Lambda writes all events to an always-on OpenSearch cluster; "
+                "share OpenSearch Dashboards with the vendor.",
+            ),
+            (
+                "c",
+                "CloudWatch agent directly to Amazon Data Firehose; Lambda transformation drops non-event lines; "
+                "deliver to S3.",
+            ),
+            (
+                "d",
+                "CloudWatch agent to CloudWatch Logs; subscription filter and Lambda write only application events "
+                "to Amazon S3; grant the vendor S3 access.",
+            ),
         ],
         ["d"],
-        "CloudWatch Logs subscription filters can strip sensitive fields; S3 access is inexpensive for "
-        "episodic vendor review without always-on search clusters.",
+        "Subscription filters can strip PII; S3 is cost-effective for episodic vendor review without always-on "
+        "search infrastructure.",
         [
-            ("Subscription filters", "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html"),
+            (
+                "Subscription filters",
+                "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html",
+            ),
         ],
     ),
     (
         "incident-event-response",
         "multiple-choice",
-        "Across an AWS Organization, any S3 bucket that becomes public (ACL or policy) must be auto-remediated "
-        "in every Region and account, including buckets created later. Which design fits?",
+        "AWS Organizations spans many accounts and Regions. The company needs automated detection and blocking "
+        "when any S3 bucket (existing or new) becomes public via ACLs or bucket policies. Which solution meets "
+        "this?",
         [
-            ("a", "EventBridge global endpoints replicate S3 events to a security account"),
-            ("b", "Organization CloudTrail bucket triggers EventBridge in one account for all API calls"),
-            ("c", "Enable S3 EventBridge notifications on each bucket for ACL changes"),
-            ("d", "Deploy an AWS Config rule (org-wide) with automated remediation via an SSM Automation runbook"),
+            (
+                "a",
+                "EventBridge global endpoints with replication to a security account; Lambda removes public access.",
+            ),
+            (
+                "b",
+                "Organization CloudTrail to a security-account bucket; EventBridge rules on that bus for all "
+                "accounts.",
+            ),
+            (
+                "c",
+                "Enable S3 EventBridge notifications on every bucket for ACL and policy changes.",
+            ),
+            (
+                "d",
+                "AWS Config rule in each account (or organization) for public ACLs/policies with automated "
+                "remediation via a Systems Manager Automation runbook.",
+            ),
         ],
         ["d"],
-        "Managed Config rules detect public access; remediation runbooks such as AWS-DisableS3BucketPublicReadWrite "
-        "can run automatically per account/Region.",
+        "Managed Config rules such as s3-bucket-level-public-access-prohibited detect public access; runbooks "
+        "like AWS-DisableS3BucketPublicReadWrite remediate automatically.",
         [
-            ("Config remediation", "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html"),
-            ("s3-bucket-level-public-access-prohibited", "https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-level-public-access-prohibited.html"),
+            (
+                "Config remediation",
+                "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html",
+            ),
+            (
+                "s3-bucket-level-public-access-prohibited",
+                "https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-level-public-access-prohibited.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-choice",
-        "Dev and UAT pipelines deploy the same Git branch but UAT shows a defect absent in Dev. How do you "
-        "ensure identical artifacts and environments?",
+        "Two CodePipeline flows build the same Git branch: one deploys to development, one to UAT. UAT shows a "
+        "defect that does not appear in development at the same code version. How should the DevOps engineer "
+        "ensure identical artifacts and identical environments?",
         [
-            ("a", "Lambda validates artifacts; separate CodeBuild projects per pipeline"),
-            ("b", "One build pipeline publishes artifacts to S3; separate deploy pipelines pull the same object"),
-            ("c", "Shared CodeBuild with different buildspec overrides per environment"),
-            ("d", "Lambda compares artifact SHA-256 in UAT pipeline; both deploy stages use the same CloudFormation template"),
+            (
+                "a",
+                "Lambda validates artifacts; reuse one CodeBuild project in both pipelines; CodeDeploy deploys "
+                "each environment.",
+            ),
+            (
+                "b",
+                "One pipeline builds to S3; S3 events invoke validation Lambda; two pipelines deploy from S3.",
+            ),
+            (
+                "c",
+                "Shared CodeBuild with different buildspec overrides per environment via --buildspec-override.",
+            ),
+            (
+                "d",
+                "Lambda compares artifact SHA-256 checksums across pipelines after the UAT build; both deployment "
+                "stages use the same AWS CloudFormation template to provision environments.",
+            ),
         ],
         ["d"],
-        "A single template provisions equivalent stacks; checksum validation proves both pipelines consumed "
-        "the same build output.",
+        "One CloudFormation template keeps environments equivalent; checksum validation proves both pipelines "
+        "shipped the same build output.",
         [
-            ("CodePipeline artifacts", "https://docs.aws.amazon.com/codepipeline/latest/userguide/artifacts.html"),
+            (
+                "CodePipeline artifacts",
+                "https://docs.aws.amazon.com/codepipeline/latest/userguide/artifacts.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-choice",
-        "A SAM HTTP API must validate a proprietary token header via an existing on-premises auth service "
-        "(not SAML/OIDC). Which API Gateway mechanism applies?",
+        "A SAM application has an API Gateway HTTP API and Lambda functions. Authentication must validate a "
+        "custom HTTP header and token by calling a legacy service that is not OpenID Connect or SAML. Which "
+        "mechanism should the team use?",
         [
-            ("a", "Lambda authorizer that calls the legacy service and returns an IAM policy"),
+            ("a", "Lambda authorizer"),
             ("b", "Amazon Cognito user pool"),
-            ("c", "Cognito identity pool"),
-            ("d", "API key only"),
+            ("c", "Amazon Cognito identity pool"),
+            ("d", "API key for API Gateway"),
         ],
         ["a"],
-        "Lambda authorizers implement custom token validation logic in one function.",
+        "A Lambda authorizer calls your existing auth service and returns an IAM policy for allow or deny.",
         [
-            ("Lambda authorizers", "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html"),
+            (
+                "Lambda authorizers",
+                "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-choice",
-        "CodeDeploy must target on-premises servers with rotating credentials and tag-based deployment groups. "
-        "What is the MOST secure registration pattern?",
+        "A hybrid workload will use AWS CodeDeploy on on-premises servers. What is the MOST secure way to "
+        "register targets and deploy with tag-based deployment groups?",
         [
-            ("a", "Long-lived IAM user access keys in a local file"),
-            ("b", "IAM user keys plus instance ID registration lists"),
-            ("c", "IAM role with STS AssumeRole, periodic credential refresh, agent install, tag-based groups"),
-            ("d", "Same as (c) but register instances by ID list instead of tags"),
+            (
+                "a",
+                "IAM user access keys in a local credentials file; register instance IDs with the deployment group.",
+            ),
+            (
+                "b",
+                "IAM user access keys in a file; tag servers; tag-based deployment group.",
+            ),
+            (
+                "c",
+                "IAM role with STS AssumeRole; refresh credentials on a schedule; install the CodeDeploy agent; "
+                "register on-premises instances; tag-based deployment group.",
+            ),
+            (
+                "d",
+                "Same as (c) but register a list of instance IDs instead of tags.",
+            ),
         ],
         ["c"],
-        "Temporary credentials from AssumeRole avoid static keys; deployment groups target tags, not manual ID lists.",
+        "Temporary credentials from AssumeRole avoid long-lived keys; CodeDeploy deployment groups target tags.",
         [
-            ("On-premises instances", "https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on-premises.html"),
+            (
+                "On-premises instances",
+                "https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on-premises.html",
+            ),
         ],
     ),
     (
         "resilient-cloud-solutions",
         "multiple-choice",
-        "New EC2 instances behind an ALB must finish registration with an external audit API before receiving "
-        "traffic. Which Auto Scaling integration ensures that?",
+        "EC2 instances behind an ALB in an Auto Scaling group must register with an external auditing service before "
+        "they process transactions. Which solution meets this?",
         [
-            ("a", "Lifecycle hook in Pending:Wait; custom script registers; complete with CONTINUE or ABANDON"),
-            ("b", "User data script only; return non-zero on failure"),
-            ("c", "EventBridge schedule every 5 minutes to register instances"),
-            ("d", "EventBridge on launch invoking Lambda asynchronously without blocking scale-out"),
+            (
+                "a",
+                "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete "
+                "the lifecycle action with CONTINUE or ABANDON.",
+            ),
+            (
+                "b",
+                "User data bootstrap script registers the instance; return a non-zero exit code on failure.",
+            ),
+            (
+                "c",
+                "EventBridge schedule every 5 minutes invokes Lambda to register any new instances.",
+            ),
+            (
+                "d",
+                "EventBridge rule on EC2 launch invokes Lambda to register asynchronously.",
+            ),
         ],
         ["a"],
-        "Lifecycle hooks pause launch until your script confirms readiness.",
+        "Lifecycle hooks block the Auto Scaling group until registration succeeds or the instance is abandoned.",
         [
-            ("Lifecycle hooks", "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html"),
+            (
+                "Lifecycle hooks",
+                "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html",
+            ),
         ],
     ),
     (
         "config-management-iac",
         "multiple-response",
-        "Legal documents in S3 may be tagged LegalHold=true. Objects older than 90 days without that tag "
-        "must expire automatically; uploads from apps that cannot add tags must still be deletable on schedule. "
-        "Which TWO actions? (Select TWO.)",
+        "Legal documents live in Amazon S3. Users set LegalHold=true on some objects. The company must delete "
+        "objects older than 90 days that are not on legal hold. Uploading apps cannot be changed to add tags on "
+        "PUT. Which TWO steps meet the requirements? (Select TWO.)",
         [
-            ("a", "Deny PutObject unless LegalHold tag is present on upload"),
-            ("b", "Lifecycle expiration after 90 days with no tag filter"),
-            ("c", "S3 event → Lambda adds LegalHold=false when the tag is missing"),
-            ("d", "Bucket policy denying delete when LegalHold=true using ExistingObjectTag"),
-            ("e", "Lifecycle rule: age > 90 days AND LegalHold=false"),
+            (
+                "a",
+                "Bucket policy denying PutObject unless s3:RequestObjectTag/LegalHold is true or false.",
+            ),
+            ("b", "Lifecycle expiration after 90 days with no tag filter."),
+            (
+                "c",
+                "S3 event notification on object creation invokes Lambda to set LegalHold=false when the tag is "
+                "missing.",
+            ),
+            (
+                "d",
+                "Bucket policy denying DeleteObject when s3:ExistingObjectTag/LegalHold is true.",
+            ),
+            (
+                "e",
+                "Lifecycle rule with filter LegalHold=false that expires objects older than 90 days.",
+            ),
         ],
         ["c", "e"],
-        "Defaulting the tag enables lifecycle filters; expiration with tag=false skips legal holds.",
+        "Lambda defaults the tag so lifecycle can filter; expiration with LegalHold=false skips held documents.",
         [
-            ("Lifecycle filters", "https://docs.aws.amazon.com/AmazonS3/latest/userguide/intro-lifecycle-rules.html"),
+            (
+                "Lifecycle filters",
+                "https://docs.aws.amazon.com/AmazonS3/latest/userguide/intro-lifecycle-rules.html",
+            ),
         ],
     ),
     (
         "incident-event-response",
         "multiple-choice",
-        "ECS tasks stop with reason Essential container in task exited. Email notification is required with "
-        "minimal code. SNS topic already exists. Next step?",
+        "Amazon ECS tasks enter STOPPED when an essential container exits with stoppedReason "
+        "\"Essential container in task exited\". An SNS topic exists for email alerts. What should the engineer "
+        "do next with the LEAST development effort?",
         [
-            ("a", "Enable cluster-level ECS notifications UI"),
-            ("b", "EventBridge rule on ECS task STOPPED with that stoppedReason → SNS target"),
-            ("c", "Lambda polling DescribeTasks on a schedule"),
-            ("d", "Set notifications=true on the task definition"),
+            ("a", "Configure ECS cluster notification options for lastStatus STOPPED."),
+            (
+                "b",
+                "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS "
+                "topic.",
+            ),
+            ("c", "Lambda polls DescribeTasks on a schedule and publishes matching tasks to SNS."),
+            ("d", "Set notifications=true on essential containers in the task definition."),
         ],
         ["b"],
-        "EventBridge captures ECS events natively; SNS delivers mail without custom polling.",
+        "EventBridge captures ECS task state changes natively; SNS delivers email without custom polling code.",
         [
-            ("ECS events", "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwe_events.html"),
+            (
+                "ECS events",
+                "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwe_events.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-choice",
-        "Deploy API Gateway + Lambda + DynamoDB + ElastiCache Redis for a serverless web API with the least "
-        "operational overhead. Preferred packaging?",
+        "A web API uses API Gateway, Lambda, DynamoDB, and ElastiCache for Redis OSS. How should a DevOps engineer "
+        "deploy this with the MOST operational efficiency?",
         [
-            ("a", "Single AWS SAM template for all resources"),
-            ("b", "CloudFormation only with custom resources for every component"),
-            ("c", "CloudFormation for Redis; SAM for the rest"),
-            ("d", "CloudFormation template without SAM transform"),
+            ("a", "Deploy all infrastructure with one AWS Serverless Application Model (AWS SAM) template."),
+            (
+                "b",
+                "Deploy everything with CloudFormation and custom resources for API, Lambda, and DynamoDB.",
+            ),
+            ("c", "CloudFormation for ElastiCache; SAM for the remaining components."),
+            ("d", "CloudFormation template without the SAM transform."),
         ],
         ["a"],
-        "SAM extends CloudFormation for serverless patterns in one deployable template.",
+        "SAM extends CloudFormation for serverless workloads in a single maintainable template.",
         [
-            ("AWS SAM", "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html"),
+            (
+                "AWS SAM",
+                "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html",
+            ),
         ],
     ),
     (
         "incident-event-response",
         "multiple-choice",
-        "Developers launch EC2 from custom AMIs, but some instances use unapproved images. Automatic discovery "
-        "and termination is required. What should you deploy?",
+        "Development teams create EC2 instances, but some hosts do not use security-approved AMIs. The DevOps team "
+        "needs automatic discovery and termination of noncompliant instances. What should they implement?",
         [
-            ("a", "Service Catalog products only"),
-            ("b", "SCP denying ec2:RunInstances attached to an IAM group"),
-            ("c", "AWS Config rule with remediation that terminates noncompliant instances"),
-            ("d", "CloudFormation templates developers run manually"),
+            ("a", "Approved AWS Service Catalog products only."),
+            ("b", "SCP on an IAM group denying ec2:RunInstances unless the AMI is approved."),
+            (
+                "c",
+                "AWS Config rule detecting noncompliant instances with remediation that terminates them.",
+            ),
+            ("d", "CloudFormation templates developers launch manually."),
         ],
         ["c"],
-        "Config rules evaluate running instances; remediation can stop noncompliant hosts automatically.",
+        "Config continuously evaluates instances; remediation can terminate hosts that violate the AMI rule.",
         [
-            ("Config remediation", "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html"),
+            (
+                "Config remediation",
+                "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html",
+            ),
         ],
     ),
     (
         "config-management-iac",
         "multiple-choice",
-        "An Auto Scaling fleet drifts because operators SSH in and change packages. The company wants identical "
-        "configuration at launch and over time. Which process?",
+        "EC2 instances behind an ALB drift because of launch-time differences and manual SSH changes. The company "
+        "wants identical configuration at launch and over the instance lifetime. Which solution meets this?",
         [
-            ("a", "New golden AMI per patch; OldestLaunchConfiguration termination; double capacity then scale in; "
-             "block console access; use Systems Manager for maintenance"),
-            ("b", "Use AWS-provided AMI and yum update in user data only"),
-            ("c", "NewestInstance termination policy with Config maintenance"),
-            ("d", "OldestLaunchConfiguration policy but mutate instances via SSH"),
+            (
+                "a",
+                "Golden AMI per OS update; NewestInstance termination policy; disable console access; Systems "
+                "Manager maintenance.",
+            ),
+            (
+                "b",
+                "Use the default AWS AMI and patch in user data on each launch; OldestLaunchConfiguration policy.",
+            ),
+            (
+                "c",
+                "Golden AMI; OldestLaunchConfiguration; double capacity then scale in; use AWS Config for emergency "
+                "maintenance.",
+            ),
+            (
+                "d",
+                "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to "
+                "original size; disable OS console access; use AWS Systems Manager for maintenance.",
+            ),
         ],
-        ["a"],
-        "Replacing instances from a fresh AMI and discouraging manual drift aligns with immutable infrastructure.",
+        ["d"],
+        "Immutable AMIs plus replacing oldest instances removes drift; Systems Manager supports controlled changes "
+        "without ad hoc SSH.",
         [
             ("AMI immutability", "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html"),
-            ("Systems Manager", "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"),
+            (
+                "Systems Manager",
+                "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-choice",
-        "A public REST API’s Lambda now requires a language field in the JSON body. One production alias must "
-        "serve everyone; legacy clients omit language. How should the team roll out?",
+        "A public REST API’s Lambda now requires a language field in the JSON body. Only one production Lambda "
+        "function should be maintained. Legacy clients omit language. How should the DevOps team deploy?",
         [
-            ("a", "New API only; delete old Lambda immediately"),
-            ("b", "Point existing API to new Lambda and delete old function day one"),
-            ("c", "New API for new clients; old API unchanged"),
-            ("d", "New API for new clients; add mapping template on legacy API integration injecting language=English"),
+            ("a", "New API integrated with the new Lambda; keep the old API and Lambda unchanged."),
+            (
+                "b",
+                "Integrate the existing API with the new Lambda and delete the old function immediately.",
+            ),
+            ("c", "New API for new clients; existing API unchanged so legacy calls still omit language."),
+            (
+                "d",
+                "New API for clients that send language; add a mapping template on the existing API integration "
+                "that injects \"language\": \"English\"; delete the old Lambda after cutover.",
+            ),
         ],
         ["d"],
-        "Mapping templates let the existing stage add defaults while a new API serves explicit language values.",
+        "Mapping templates add defaults on the legacy stage while a new API serves explicit language values.",
         [
-            ("Mapping templates", "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html"),
+            (
+                "Mapping templates",
+                "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html",
+            ),
         ],
     ),
     (
         "reliability-resilience",
         "multiple-choice",
-        "Multi-AZ RDS MySQL needs DR in a second Region with RTO < 2 hours and RPO < 10 minutes, cost-sensitive. "
-        "Stateless web tier is on EC2 behind an ALB. Recommended DR pattern?",
+        "A stateless web tier on EC2 behind an ALB uses Amazon RDS for MySQL Multi-AZ. DR in a second Region must "
+        "achieve RTO under 2 hours and RPO under 10 minutes, cost-effectively. Which DR design fits?",
         [
-            ("a", "Elastic Beanstalk second Region; swap CNAME on disaster"),
-            ("b", "Maintain AMIs and a cross-Region RDS read replica; CloudFormation stack in DR; promote replica; "
-             "update DNS"),
-            ("c", "Hourly Lambda snapshots only"),
-            ("d", "Active-active Aurora global DB with cloned web tier always running"),
+            (
+                "a",
+                "Elastic Beanstalk environment in the DR Region; swap environment URLs; promote a cross-Region read "
+                "replica.",
+            ),
+            (
+                "b",
+                "Maintain current AMIs for the web tier in the DR Region; cross-Region RDS read replica; on "
+                "disaster launch a CloudFormation stack, promote the replica, update DNS to the new load balancer.",
+            ),
+            (
+                "c",
+                "Hourly Lambda copies EBS and RDS snapshots to the DR Region; rebuild from snapshots on disaster.",
+            ),
+            (
+                "d",
+                "Active web tier in both Regions; Aurora global database with manual promotion in DR.",
+            ),
         ],
         ["b"],
-        "Read replicas meet tight RPO; AMIs + IaC enable faster RTO without full dual-site cost.",
+        "Cross-Region read replicas meet tight RPO; AMIs plus IaC in DR meet RTO without full active-active cost.",
         [
-            ("Cross-Region read replicas", "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html"),
-            ("DR whitepaper", "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"),
+            (
+                "Cross-Region read replicas",
+                "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html",
+            ),
+            (
+                "DR on AWS",
+                "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html",
+            ),
         ],
     ),
     (
         "sdlc-automation",
         "multiple-choice",
-        "Python services in CodePipeline need static analysis for defects before compile. Which service integrates "
-        "with the Git repo for pull-request feedback?",
+        "Python applications use Git, AWS CodeBuild, and AWS CodePipeline. The team needs automatic source review "
+        "to find defects before compile. Which solution meets this?",
         [
-            ("a", "CodeGuru Profiler in CodeBuild"),
-            ("b", "CodeGuru Profiler prebuild only"),
-            ("c", "Associate the repository with CodeGuru Reviewer"),
-            ("d", "CodeGuru Reviewer only inside CodeBuild without repo association"),
+            ("a", "Associate the Git repo with Amazon CodeGuru Profiler and review pull requests."),
+            ("b", "Run CodeGuru Profiler in the CodeBuild prebuild phase."),
+            ("c", "Associate the Git repository with Amazon CodeGuru Reviewer."),
+            ("d", "Run CodeGuru Reviewer only in CodeBuild without associating the repository."),
         ],
         ["c"],
-        "CodeGuru Reviewer analyzes PRs for code quality and security issues in Python and Java.",
+        "CodeGuru Reviewer analyzes pull requests for defects and best practices in Python and Java.",
         [
-            ("CodeGuru Reviewer", "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/welcome.html"),
+            (
+                "CodeGuru Reviewer",
+                "https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/welcome.html",
+            ),
         ],
     ),
+    # Supplemental scenarios (exam-guide aligned; not from the 20-item practice set)
     (
         "config-management-iac",
         "multiple-choice",
@@ -388,31 +680,20 @@ DOP_SCENARIO_QUESTIONS: list[RawQuestion] = [
         [
             ("a", "DetectStackDrift Lambda on a cron only"),
             ("b", "Stack policy denying updates"),
-            ("c", "Explicit properties in the template plus AWS Config drift detection with "
-             "AWS-UpdateCloudFormationStack remediation"),
+            (
+                "c",
+                "Explicit properties in the template plus AWS Config drift detection with "
+                "AWS-UpdateCloudFormationStack remediation",
+            ),
             ("d", "CloudTrail alone"),
         ],
         ["c"],
         "Config’s CloudFormation drift check plus the standard remediation runbook updates stacks to match templates.",
         [
-            ("cloudformation-stack-drift-detection-check", "https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-drift-detection-check.html"),
-        ],
-    ),
-    (
-        "resilient-cloud-solutions",
-        "multiple-choice",
-        "A stateless tier must fail over DNS to a warm secondary Region. Database is RDS Multi-AZ in the primary "
-        "Region only today. What improves Regional resilience for the app tier first?",
-        [
-            ("a", "Enable Multi-AZ on the ALB"),
-            ("b", "Copy launch templates/AMIs to the DR Region and automate stack creation with Route 53 failover"),
-            ("c", "Increase Auto Scaling max size in one Region"),
-            ("d", "Use larger instance types"),
-        ],
-        ["b"],
-        "Pre-staged AMIs and IaC in the DR Region shorten recovery; Route 53 health checks shift traffic.",
-        [
-            ("Route 53 failover", "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"),
+            (
+                "cloudformation-stack-drift-detection-check",
+                "https://docs.aws.amazon.com/config/latest/developerguide/cloudformation-stack-drift-detection-check.html",
+            ),
         ],
     ),
     (
@@ -429,7 +710,10 @@ DOP_SCENARIO_QUESTIONS: list[RawQuestion] = [
         ["b"],
         "Application errors may appear only in logs; metric filters surface them to CodeDeploy alarms.",
         [
-            ("CodeDeploy monitoring", "https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring.html"),
+            (
+                "CodeDeploy monitoring",
+                "https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring.html",
+            ),
         ],
     ),
     (
@@ -440,30 +724,19 @@ DOP_SCENARIO_QUESTIONS: list[RawQuestion] = [
         [
             ("a", "S3 Inventory only"),
             ("b", "Macie for every object daily"),
-            ("c", "Organization-wide AWS Config conformance pack with public access rules and remediation"),
+            (
+                "c",
+                "Organization-wide AWS Config conformance pack with public access rules and remediation",
+            ),
             ("d", "CloudFront in front of all buckets"),
         ],
         ["c"],
         "Conformance packs roll Config rules and remediation to all accounts in the organization.",
         [
-            ("Conformance packs", "https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html"),
-        ],
-    ),
-    (
-        "sdlc-automation",
-        "multiple-choice",
-        "A team must shift 10% of Lambda alias traffic for alias `live` without changing the API invoke URL. "
-        "Which feature applies?",
-        [
-            ("a", "CodeDeploy linear traffic shifting on the Lambda alias"),
-            ("b", "New API Gateway custom domain"),
-            ("c", "Weighted target groups on an ALB in front of Lambda"),
-            ("d", "Step Functions choice state"),
-        ],
-        ["a"],
-        "CodeDeploy supports canary and linear deployments for Lambda aliases behind the same integration.",
-        [
-            ("Lambda deployments", "https://docs.aws.amazon.com/lambda/latest/dg/configuring-alias-routing.html"),
+            (
+                "Conformance packs",
+                "https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html",
+            ),
         ],
     ),
     (

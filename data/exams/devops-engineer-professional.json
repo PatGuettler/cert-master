@@ -108,29 +108,29 @@
       "id": "dop-q001",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "A team provisions workloads with a minimal CloudFormation template that only sets required properties; optional defaults were applied outside the stack and now drift from the template. They want stack updates to realign resources and a low-effort way to catch manual changes. Which approach meets the goal with the LEAST custom engineering?",
+      "text": "A company deployed AWS resources with a CloudFormation template that listed only properties required to create each resource. Optional settings used service defaults, then operators changed those defaults outside the stack. That caused drift from the template. The team wants every property value maintained in the template, wants to detect out-of-band changes, and wants the stack restored to the template definition. Which solution meets these requirements with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
-          "text": "Publish a Lambda function that calls DetectStackDrift on a schedule via EventBridge and re-executes the current template when drift is found"
+          "text": "Update the template to set every property (including former defaults). Create a Lambda function that detects stack drift and updates the stack from the template. Schedule it daily with Amazon EventBridge."
         },
         {
           "id": "b",
-          "text": "Rely on stack exports only; ignore drift until the next full stack delete"
+          "text": "Create a Lambda function that detects drift on the existing stack and updates the stack using the current template. Invoke it on a daily schedule with Amazon EventBridge."
         },
         {
           "id": "c",
-          "text": "Encode every property (including former defaults) in the template and use an AWS Config managed rule with automatic remediation via the AWS-UpdateCloudFormationStack SSM runbook"
+          "text": "Update the template to set every property (including former defaults). Use the cloudformation-stack-drift-detection-check AWS Config rule with automatic remediation via the AWS-UpdateCloudFormationStack Systems Manager Automation runbook."
         },
         {
           "id": "d",
-          "text": "Manually compare the console with the template each week"
+          "text": "Use the cloudformation-stack-drift-detection-check AWS Config rule with automatic remediation via the AWS-UpdateCloudFormationStack Systems Manager Automation runbook only."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Scheduled drift detection plus redeploying the known template is a small, focused automation pattern. Full template enumeration plus Config remediation is powerful but heavier to roll out.",
+      "explanation": "Scheduled DetectStackDrift plus redeploying the known template is the lowest-effort path. Fully enumerating every property and rolling out org-wide Config remediation is heavier.",
       "docs": [
         {
           "title": "CloudFormation drift",
@@ -146,29 +146,29 @@
       "id": "dop-q002",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Workers on EC2 consume an SQS queue. During spikes the fleet scales on average CPU, but messages still backlog because CPU stays low while queue depth grows. Which scaling approach is MOST reliable?",
+      "text": "An application on Amazon EC2 instances in multiple Availability Zones pulls messages from an Amazon SQS queue. During bursts, backlog grows while average CPU on the Auto Scaling group stays low. Target tracking on average CPU does not scale out quickly enough. Which solution resolves this in the MOST reliable way?",
       "options": [
         {
           "id": "a",
-          "text": "Publish a custom CloudWatch metric (visible messages \u00f7 in-service instances) and scale the Auto Scaling group on that metric"
+          "text": "Publish a custom Amazon CloudWatch metric: visible SQS messages divided by in-service instances. Scale the Auto Scaling group on that metric against an acceptable target."
         },
         {
           "id": "b",
-          "text": "Attach an ALB and scale on ALBRequestCountPerTarget even though traffic is queue-driven"
+          "text": "Place an Application Load Balancer in front of the group and scale on ALBRequestCountPerTarget."
         },
         {
           "id": "c",
-          "text": "Change the target tracking policy to NumberOfMessagesReceived on the queue"
+          "text": "Change the target tracking policy to use the SQS NumberOfMessagesReceived metric instead of CPU."
         },
         {
           "id": "d",
-          "text": "Lower the CPU target and shorten the warm-up period only"
+          "text": "Lower the CPU target percentage and shorten the warm-up period on the existing policy."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Queue depth per instance directly reflects backlog pressure; CPU is a poor proxy for worker pools pulling from SQS.",
+      "explanation": "Queue depth per running instance reflects worker backlog; CPU is a weak signal for queue consumers.",
       "docs": [
         {
           "title": "SQS with Auto Scaling",
@@ -184,29 +184,29 @@
       "id": "dop-q003",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "An organization with AWS Organizations must watch service quota utilization across all member accounts daily and email owners when usage crosses 80% of a quota. What should they implement?",
+      "text": "A DevOps engineer manages multiple accounts in AWS Organizations and must monitor selected service quotas daily in every account. Email alerts are required when usage reaches 80% of a quota. Which solution meets these requirements?",
       "options": [
         {
           "id": "a",
-          "text": "Enable Service Quotas integration with Organizations, create per-service CloudWatch alarms at 80% utilization, and notify an SNS topic in ALARM state"
+          "text": "Enable trusted access between Service Quotas and Organizations. Create a CloudWatch alarm per needed service at 80% of quota utilization. Send Amazon SNS notifications when the alarm enters ALARM."
         },
         {
           "id": "b",
-          "text": "Run Trusted Advisor quota checks weekly from a single Lambda in the management account"
+          "text": "Deploy a Lambda function in each account that calls DescribeTrustedAdvisorCheckResult and opens support cases for WARN quota checks. Schedule it daily from the management account over EventBridge."
         },
         {
           "id": "c",
-          "text": "Use the same alarms but route ALARM transitions through EventBridge instead of SNS"
+          "text": "Enable Service Quotas trusted access and create 80% CloudWatch alarms, but route ALARM events through EventBridge instead of SNS."
         },
         {
           "id": "d",
-          "text": "Refresh Trusted Advisor checks daily and open support cases for WARN results"
+          "text": "Refresh Trusted Advisor checks daily with Lambda and publish to SNS when checks report 80% usage."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Service Quotas exposes utilization metrics suitable for CloudWatch alarms; SNS is the standard notification path when alarms fire.",
+      "explanation": "Service Quotas integrates with Organizations and exposes utilization metrics for CloudWatch alarms; SNS is the standard notification channel.",
       "docs": [
         {
           "title": "Service Quotas and Organizations",
@@ -222,34 +222,34 @@
       "id": "dop-q004",
       "domain": "sdlc-automation",
       "type": "multiple-response",
-      "text": "CodeDeploy performs blue/green releases behind an ALB. Operators today read application logs on instances and manually roll back when errors spike. Which TWO steps automate rollback with minimal delay? (Select TWO.)",
+      "text": "An application runs on EC2 behind an Application Load Balancer in an Auto Scaling group. AWS CodeDeploy performs blue/green deployments. Operators read application logs on instances and manually tell CodeDeploy to roll back when error rates are too high. Which TWO steps automate rollback? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Alarm on ALB HTTPCode_Target_4XX_Count only"
+          "text": "Create a CloudWatch alarm on the ALB HTTPCode_Target_4XX_Count metric above a threshold."
         },
         {
           "id": "b",
-          "text": "Configure the deployment group to fail and roll back when a linked CloudWatch alarm enters ALARM"
+          "text": "Configure the deployment group to monitor the alarm, fail the deployment, and roll back when the alarm enters ALARM."
         },
         {
           "id": "c",
-          "text": "Schedule a Lambda hourly to call ContinueDeployment"
+          "text": "Use a scheduled Lambda every hour to roll back if an alarm is in ALARM."
         },
         {
           "id": "d",
-          "text": "Subscribe CodeDeploy directly to an SNS topic (unsupported target)"
+          "text": "Publish to SNS on ALARM and configure CodeDeploy to subscribe to the topic for rollback."
         },
         {
           "id": "e",
-          "text": "Ship logs to CloudWatch Logs, metric-filter error lines, and alarm on the error rate"
+          "text": "Send application logs to CloudWatch Logs, add a metric filter for error lines, and alarm on the error rate."
         }
       ],
       "correct": [
         "b",
         "e"
       ],
-      "explanation": "CodeDeploy can watch deployment alarms; log metric filters catch application errors described in files rather than ALB HTTP codes alone.",
+      "explanation": "CodeDeploy can tie rollback to deployment alarms; log metric filters catch errors that never appear as ALB HTTP codes.",
       "docs": [
         {
           "title": "CodeDeploy alarms",
@@ -265,29 +265,29 @@
       "id": "dop-q005",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Elastic Beanstalk was launched via the EB CLI with an .ebextensions file that sets instance type to t3.medium, but new environments still launch t3.small. What most likely explains the behavior?",
+      "text": "A DevOps engineer launched Elastic Beanstalk with the EB CLI and added an .ebextensions file that sets the instance type to t3.medium. The environment picked up new environment variables but still runs t3.small instances. What is the most likely root cause?",
       "options": [
         {
           "id": "a",
-          "text": "Default service values always override .ebextensions"
+          "text": "Default service values cannot be overridden by .ebextensions."
         },
         {
           "id": "b",
-          "text": "CLI/API parameters and recommended values take precedence over .ebextensions for settings such as instance type"
+          "text": "Values passed through the Elastic Beanstalk CLI/API (recommended values) take precedence over .ebextensions for settings such as instance type."
         },
         {
           "id": "c",
-          "text": "Instance type cannot be set in .ebextensions"
+          "text": "Instance type cannot be configured in .ebextensions."
         },
         {
           "id": "d",
-          "text": "The IAM user lacks permission for t3.medium"
+          "text": "The launching IAM principal lacks permission for t3.medium."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "Elastic Beanstalk applies settings in order: direct environment/API changes, saved config, .ebextensions, then defaults. CLI launches can set recommended values that win over extensions.",
+      "explanation": "Precedence is direct environment/API settings, saved configuration, .ebextensions, then defaults. CLI launches can apply recommended values that win over extensions.",
       "docs": [
         {
           "title": "Configuration precedence",
@@ -299,29 +299,29 @@
       "id": "dop-q006",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "API Gateway fronts Lambda for a production API. A new Lambda version is ready; the team needs 10% of traffic on the new version for one week with no client-side URL changes. What is the MOST efficient approach?",
+      "text": "Amazon API Gateway fronts Lambda for a REST API. Route 53 provides DNS. A new Lambda version is ready; 10% of production traffic must hit the new functions for one week with no URL change for clients. What is the MOST operationally efficient deployment?",
       "options": [
         {
           "id": "a",
-          "text": "Create a second API stage and split traffic with a simple Route 53 record"
+          "text": "Deploy a new API stage and custom domain; use a simple Route 53 record to split 10%/90% traffic."
         },
         {
           "id": "b",
-          "text": "Enable a canary release on the existing production stage (10% to new version, 90% to current)"
+          "text": "Add a canary release on the existing production stage: 10% to the new Lambda integration and 90% to the current integration."
         },
         {
           "id": "c",
-          "text": "Stand up a second API and weighted Route 53 records to a new hostname"
+          "text": "Create a second API and second Route 53 domain; use weighted routing 10%/90%."
         },
         {
           "id": "d",
-          "text": "Switch the integration to Lambda proxy and route inside the function"
+          "text": "Switch to Lambda proxy integration and route 10% of requests inside the function."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "API Gateway canary deployments shift traffic on the same stage customers already call.",
+      "explanation": "API Gateway canary deployments on the same stage shift traffic without client-side hostname changes.",
       "docs": [
         {
           "title": "Canary release",
@@ -333,29 +333,29 @@
       "id": "dop-q007",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "JSON application logs on EC2 include PII. A vendor needs near-real-time access to troubleshoot errors but must not see PII and cannot receive SSH. What is the MOST cost-effective pattern?",
+      "text": "JSON logs on EC2 include PII. A third party must troubleshoot application events without PII and without SSH to production. Which solution is MOST cost-effective?",
       "options": [
         {
           "id": "a",
-          "text": "Central syslog on EC2 with a nightly Batch job copying filtered logs to S3"
+          "text": "Central syslog on EC2; AWS Batch copies filtered logs to Amazon S3 once per day."
         },
         {
           "id": "b",
-          "text": "Stream logs with the CloudWatch agent; subscription filter + Lambda writes non-PII events to OpenSearch always on"
+          "text": "CloudWatch agent to CloudWatch Logs; Lambda writes all events to an always-on OpenSearch cluster; share OpenSearch Dashboards with the vendor."
         },
         {
           "id": "c",
-          "text": "Agent to Kinesis Data Firehose with Lambda transformation to S3"
+          "text": "CloudWatch agent directly to Amazon Data Firehose; Lambda transformation drops non-event lines; deliver to S3."
         },
         {
           "id": "d",
-          "text": "Agent to CloudWatch Logs; subscription filter + Lambda writes filtered events to S3 for vendor access"
+          "text": "CloudWatch agent to CloudWatch Logs; subscription filter and Lambda write only application events to Amazon S3; grant the vendor S3 access."
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "CloudWatch Logs subscription filters can strip sensitive fields; S3 access is inexpensive for episodic vendor review without always-on search clusters.",
+      "explanation": "Subscription filters can strip PII; S3 is cost-effective for episodic vendor review without always-on search infrastructure.",
       "docs": [
         {
           "title": "Subscription filters",
@@ -367,29 +367,29 @@
       "id": "dop-q008",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Across an AWS Organization, any S3 bucket that becomes public (ACL or policy) must be auto-remediated in every Region and account, including buckets created later. Which design fits?",
+      "text": "AWS Organizations spans many accounts and Regions. The company needs automated detection and blocking when any S3 bucket (existing or new) becomes public via ACLs or bucket policies. Which solution meets this?",
       "options": [
         {
           "id": "a",
-          "text": "EventBridge global endpoints replicate S3 events to a security account"
+          "text": "EventBridge global endpoints with replication to a security account; Lambda removes public access."
         },
         {
           "id": "b",
-          "text": "Organization CloudTrail bucket triggers EventBridge in one account for all API calls"
+          "text": "Organization CloudTrail to a security-account bucket; EventBridge rules on that bus for all accounts."
         },
         {
           "id": "c",
-          "text": "Enable S3 EventBridge notifications on each bucket for ACL changes"
+          "text": "Enable S3 EventBridge notifications on every bucket for ACL and policy changes."
         },
         {
           "id": "d",
-          "text": "Deploy an AWS Config rule (org-wide) with automated remediation via an SSM Automation runbook"
+          "text": "AWS Config rule in each account (or organization) for public ACLs/policies with automated remediation via a Systems Manager Automation runbook."
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Managed Config rules detect public access; remediation runbooks such as AWS-DisableS3BucketPublicReadWrite can run automatically per account/Region.",
+      "explanation": "Managed Config rules such as s3-bucket-level-public-access-prohibited detect public access; runbooks like AWS-DisableS3BucketPublicReadWrite remediate automatically.",
       "docs": [
         {
           "title": "Config remediation",
@@ -405,29 +405,29 @@
       "id": "dop-q009",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Dev and UAT pipelines deploy the same Git branch but UAT shows a defect absent in Dev. How do you ensure identical artifacts and environments?",
+      "text": "Two CodePipeline flows build the same Git branch: one deploys to development, one to UAT. UAT shows a defect that does not appear in development at the same code version. How should the DevOps engineer ensure identical artifacts and identical environments?",
       "options": [
         {
           "id": "a",
-          "text": "Lambda validates artifacts; separate CodeBuild projects per pipeline"
+          "text": "Lambda validates artifacts; reuse one CodeBuild project in both pipelines; CodeDeploy deploys each environment."
         },
         {
           "id": "b",
-          "text": "One build pipeline publishes artifacts to S3; separate deploy pipelines pull the same object"
+          "text": "One pipeline builds to S3; S3 events invoke validation Lambda; two pipelines deploy from S3."
         },
         {
           "id": "c",
-          "text": "Shared CodeBuild with different buildspec overrides per environment"
+          "text": "Shared CodeBuild with different buildspec overrides per environment via --buildspec-override."
         },
         {
           "id": "d",
-          "text": "Lambda compares artifact SHA-256 in UAT pipeline; both deploy stages use the same CloudFormation template"
+          "text": "Lambda compares artifact SHA-256 checksums across pipelines after the UAT build; both deployment stages use the same AWS CloudFormation template to provision environments."
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "A single template provisions equivalent stacks; checksum validation proves both pipelines consumed the same build output.",
+      "explanation": "One CloudFormation template keeps environments equivalent; checksum validation proves both pipelines shipped the same build output.",
       "docs": [
         {
           "title": "CodePipeline artifacts",
@@ -439,11 +439,11 @@
       "id": "dop-q010",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "A SAM HTTP API must validate a proprietary token header via an existing on-premises auth service (not SAML/OIDC). Which API Gateway mechanism applies?",
+      "text": "A SAM application has an API Gateway HTTP API and Lambda functions. Authentication must validate a custom HTTP header and token by calling a legacy service that is not OpenID Connect or SAML. Which mechanism should the team use?",
       "options": [
         {
           "id": "a",
-          "text": "Lambda authorizer that calls the legacy service and returns an IAM policy"
+          "text": "Lambda authorizer"
         },
         {
           "id": "b",
@@ -451,17 +451,17 @@
         },
         {
           "id": "c",
-          "text": "Cognito identity pool"
+          "text": "Amazon Cognito identity pool"
         },
         {
           "id": "d",
-          "text": "API key only"
+          "text": "API key for API Gateway"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Lambda authorizers implement custom token validation logic in one function.",
+      "explanation": "A Lambda authorizer calls your existing auth service and returns an IAM policy for allow or deny.",
       "docs": [
         {
           "title": "Lambda authorizers",
@@ -473,29 +473,29 @@
       "id": "dop-q011",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "CodeDeploy must target on-premises servers with rotating credentials and tag-based deployment groups. What is the MOST secure registration pattern?",
+      "text": "A hybrid workload will use AWS CodeDeploy on on-premises servers. What is the MOST secure way to register targets and deploy with tag-based deployment groups?",
       "options": [
         {
           "id": "a",
-          "text": "Long-lived IAM user access keys in a local file"
+          "text": "IAM user access keys in a local credentials file; register instance IDs with the deployment group."
         },
         {
           "id": "b",
-          "text": "IAM user keys plus instance ID registration lists"
+          "text": "IAM user access keys in a file; tag servers; tag-based deployment group."
         },
         {
           "id": "c",
-          "text": "IAM role with STS AssumeRole, periodic credential refresh, agent install, tag-based groups"
+          "text": "IAM role with STS AssumeRole; refresh credentials on a schedule; install the CodeDeploy agent; register on-premises instances; tag-based deployment group."
         },
         {
           "id": "d",
-          "text": "Same as (c) but register instances by ID list instead of tags"
+          "text": "Same as (c) but register a list of instance IDs instead of tags."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Temporary credentials from AssumeRole avoid static keys; deployment groups target tags, not manual ID lists.",
+      "explanation": "Temporary credentials from AssumeRole avoid long-lived keys; CodeDeploy deployment groups target tags.",
       "docs": [
         {
           "title": "On-premises instances",
@@ -507,29 +507,29 @@
       "id": "dop-q012",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "New EC2 instances behind an ALB must finish registration with an external audit API before receiving traffic. Which Auto Scaling integration ensures that?",
+      "text": "EC2 instances behind an ALB in an Auto Scaling group must register with an external auditing service before they process transactions. Which solution meets this?",
       "options": [
         {
           "id": "a",
-          "text": "Lifecycle hook in Pending:Wait; custom script registers; complete with CONTINUE or ABANDON"
+          "text": "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete the lifecycle action with CONTINUE or ABANDON."
         },
         {
           "id": "b",
-          "text": "User data script only; return non-zero on failure"
+          "text": "User data bootstrap script registers the instance; return a non-zero exit code on failure."
         },
         {
           "id": "c",
-          "text": "EventBridge schedule every 5 minutes to register instances"
+          "text": "EventBridge schedule every 5 minutes invokes Lambda to register any new instances."
         },
         {
           "id": "d",
-          "text": "EventBridge on launch invoking Lambda asynchronously without blocking scale-out"
+          "text": "EventBridge rule on EC2 launch invokes Lambda to register asynchronously."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Lifecycle hooks pause launch until your script confirms readiness.",
+      "explanation": "Lifecycle hooks block the Auto Scaling group until registration succeeds or the instance is abandoned.",
       "docs": [
         {
           "title": "Lifecycle hooks",
@@ -541,34 +541,34 @@
       "id": "dop-q013",
       "domain": "config-management-iac",
       "type": "multiple-response",
-      "text": "Legal documents in S3 may be tagged LegalHold=true. Objects older than 90 days without that tag must expire automatically; uploads from apps that cannot add tags must still be deletable on schedule. Which TWO actions? (Select TWO.)",
+      "text": "Legal documents live in Amazon S3. Users set LegalHold=true on some objects. The company must delete objects older than 90 days that are not on legal hold. Uploading apps cannot be changed to add tags on PUT. Which TWO steps meet the requirements? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Deny PutObject unless LegalHold tag is present on upload"
+          "text": "Bucket policy denying PutObject unless s3:RequestObjectTag/LegalHold is true or false."
         },
         {
           "id": "b",
-          "text": "Lifecycle expiration after 90 days with no tag filter"
+          "text": "Lifecycle expiration after 90 days with no tag filter."
         },
         {
           "id": "c",
-          "text": "S3 event \u2192 Lambda adds LegalHold=false when the tag is missing"
+          "text": "S3 event notification on object creation invokes Lambda to set LegalHold=false when the tag is missing."
         },
         {
           "id": "d",
-          "text": "Bucket policy denying delete when LegalHold=true using ExistingObjectTag"
+          "text": "Bucket policy denying DeleteObject when s3:ExistingObjectTag/LegalHold is true."
         },
         {
           "id": "e",
-          "text": "Lifecycle rule: age > 90 days AND LegalHold=false"
+          "text": "Lifecycle rule with filter LegalHold=false that expires objects older than 90 days."
         }
       ],
       "correct": [
         "c",
         "e"
       ],
-      "explanation": "Defaulting the tag enables lifecycle filters; expiration with tag=false skips legal holds.",
+      "explanation": "Lambda defaults the tag so lifecycle can filter; expiration with LegalHold=false skips held documents.",
       "docs": [
         {
           "title": "Lifecycle filters",
@@ -580,29 +580,29 @@
       "id": "dop-q014",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "ECS tasks stop with reason Essential container in task exited. Email notification is required with minimal code. SNS topic already exists. Next step?",
+      "text": "Amazon ECS tasks enter STOPPED when an essential container exits with stoppedReason \"Essential container in task exited\". An SNS topic exists for email alerts. What should the engineer do next with the LEAST development effort?",
       "options": [
         {
           "id": "a",
-          "text": "Enable cluster-level ECS notifications UI"
+          "text": "Configure ECS cluster notification options for lastStatus STOPPED."
         },
         {
           "id": "b",
-          "text": "EventBridge rule on ECS task STOPPED with that stoppedReason \u2192 SNS target"
+          "text": "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS topic."
         },
         {
           "id": "c",
-          "text": "Lambda polling DescribeTasks on a schedule"
+          "text": "Lambda polls DescribeTasks on a schedule and publishes matching tasks to SNS."
         },
         {
           "id": "d",
-          "text": "Set notifications=true on the task definition"
+          "text": "Set notifications=true on essential containers in the task definition."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "EventBridge captures ECS events natively; SNS delivers mail without custom polling.",
+      "explanation": "EventBridge captures ECS task state changes natively; SNS delivers email without custom polling code.",
       "docs": [
         {
           "title": "ECS events",
@@ -614,29 +614,29 @@
       "id": "dop-q015",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Deploy API Gateway + Lambda + DynamoDB + ElastiCache Redis for a serverless web API with the least operational overhead. Preferred packaging?",
+      "text": "A web API uses API Gateway, Lambda, DynamoDB, and ElastiCache for Redis OSS. How should a DevOps engineer deploy this with the MOST operational efficiency?",
       "options": [
         {
           "id": "a",
-          "text": "Single AWS SAM template for all resources"
+          "text": "Deploy all infrastructure with one AWS Serverless Application Model (AWS SAM) template."
         },
         {
           "id": "b",
-          "text": "CloudFormation only with custom resources for every component"
+          "text": "Deploy everything with CloudFormation and custom resources for API, Lambda, and DynamoDB."
         },
         {
           "id": "c",
-          "text": "CloudFormation for Redis; SAM for the rest"
+          "text": "CloudFormation for ElastiCache; SAM for the remaining components."
         },
         {
           "id": "d",
-          "text": "CloudFormation template without SAM transform"
+          "text": "CloudFormation template without the SAM transform."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SAM extends CloudFormation for serverless patterns in one deployable template.",
+      "explanation": "SAM extends CloudFormation for serverless workloads in a single maintainable template.",
       "docs": [
         {
           "title": "AWS SAM",
@@ -648,29 +648,29 @@
       "id": "dop-q016",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Developers launch EC2 from custom AMIs, but some instances use unapproved images. Automatic discovery and termination is required. What should you deploy?",
+      "text": "Development teams create EC2 instances, but some hosts do not use security-approved AMIs. The DevOps team needs automatic discovery and termination of noncompliant instances. What should they implement?",
       "options": [
         {
           "id": "a",
-          "text": "Service Catalog products only"
+          "text": "Approved AWS Service Catalog products only."
         },
         {
           "id": "b",
-          "text": "SCP denying ec2:RunInstances attached to an IAM group"
+          "text": "SCP on an IAM group denying ec2:RunInstances unless the AMI is approved."
         },
         {
           "id": "c",
-          "text": "AWS Config rule with remediation that terminates noncompliant instances"
+          "text": "AWS Config rule detecting noncompliant instances with remediation that terminates them."
         },
         {
           "id": "d",
-          "text": "CloudFormation templates developers run manually"
+          "text": "CloudFormation templates developers launch manually."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Config rules evaluate running instances; remediation can stop noncompliant hosts automatically.",
+      "explanation": "Config continuously evaluates instances; remediation can terminate hosts that violate the AMI rule.",
       "docs": [
         {
           "title": "Config remediation",
@@ -682,29 +682,29 @@
       "id": "dop-q017",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "An Auto Scaling fleet drifts because operators SSH in and change packages. The company wants identical configuration at launch and over time. Which process?",
+      "text": "EC2 instances behind an ALB drift because of launch-time differences and manual SSH changes. The company wants identical configuration at launch and over the instance lifetime. Which solution meets this?",
       "options": [
         {
           "id": "a",
-          "text": "New golden AMI per patch; OldestLaunchConfiguration termination; double capacity then scale in; block console access; use Systems Manager for maintenance"
+          "text": "Golden AMI per OS update; NewestInstance termination policy; disable console access; Systems Manager maintenance."
         },
         {
           "id": "b",
-          "text": "Use AWS-provided AMI and yum update in user data only"
+          "text": "Use the default AWS AMI and patch in user data on each launch; OldestLaunchConfiguration policy."
         },
         {
           "id": "c",
-          "text": "NewestInstance termination policy with Config maintenance"
+          "text": "Golden AMI; OldestLaunchConfiguration; double capacity then scale in; use AWS Config for emergency maintenance."
         },
         {
           "id": "d",
-          "text": "OldestLaunchConfiguration policy but mutate instances via SSH"
+          "text": "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to original size; disable OS console access; use AWS Systems Manager for maintenance."
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
-      "explanation": "Replacing instances from a fresh AMI and discouraging manual drift aligns with immutable infrastructure.",
+      "explanation": "Immutable AMIs plus replacing oldest instances removes drift; Systems Manager supports controlled changes without ad hoc SSH.",
       "docs": [
         {
           "title": "AMI immutability",
@@ -720,29 +720,29 @@
       "id": "dop-q018",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "A public REST API\u2019s Lambda now requires a language field in the JSON body. One production alias must serve everyone; legacy clients omit language. How should the team roll out?",
+      "text": "A public REST API\u2019s Lambda now requires a language field in the JSON body. Only one production Lambda function should be maintained. Legacy clients omit language. How should the DevOps team deploy?",
       "options": [
         {
           "id": "a",
-          "text": "New API only; delete old Lambda immediately"
+          "text": "New API integrated with the new Lambda; keep the old API and Lambda unchanged."
         },
         {
           "id": "b",
-          "text": "Point existing API to new Lambda and delete old function day one"
+          "text": "Integrate the existing API with the new Lambda and delete the old function immediately."
         },
         {
           "id": "c",
-          "text": "New API for new clients; old API unchanged"
+          "text": "New API for new clients; existing API unchanged so legacy calls still omit language."
         },
         {
           "id": "d",
-          "text": "New API for new clients; add mapping template on legacy API integration injecting language=English"
+          "text": "New API for clients that send language; add a mapping template on the existing API integration that injects \"language\": \"English\"; delete the old Lambda after cutover."
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Mapping templates let the existing stage add defaults while a new API serves explicit language values.",
+      "explanation": "Mapping templates add defaults on the legacy stage while a new API serves explicit language values.",
       "docs": [
         {
           "title": "Mapping templates",
@@ -754,36 +754,36 @@
       "id": "dop-q019",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Multi-AZ RDS MySQL needs DR in a second Region with RTO < 2 hours and RPO < 10 minutes, cost-sensitive. Stateless web tier is on EC2 behind an ALB. Recommended DR pattern?",
+      "text": "A stateless web tier on EC2 behind an ALB uses Amazon RDS for MySQL Multi-AZ. DR in a second Region must achieve RTO under 2 hours and RPO under 10 minutes, cost-effectively. Which DR design fits?",
       "options": [
         {
           "id": "a",
-          "text": "Elastic Beanstalk second Region; swap CNAME on disaster"
+          "text": "Elastic Beanstalk environment in the DR Region; swap environment URLs; promote a cross-Region read replica."
         },
         {
           "id": "b",
-          "text": "Maintain AMIs and a cross-Region RDS read replica; CloudFormation stack in DR; promote replica; update DNS"
+          "text": "Maintain current AMIs for the web tier in the DR Region; cross-Region RDS read replica; on disaster launch a CloudFormation stack, promote the replica, update DNS to the new load balancer."
         },
         {
           "id": "c",
-          "text": "Hourly Lambda snapshots only"
+          "text": "Hourly Lambda copies EBS and RDS snapshots to the DR Region; rebuild from snapshots on disaster."
         },
         {
           "id": "d",
-          "text": "Active-active Aurora global DB with cloned web tier always running"
+          "text": "Active web tier in both Regions; Aurora global database with manual promotion in DR."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "Read replicas meet tight RPO; AMIs + IaC enable faster RTO without full dual-site cost.",
+      "explanation": "Cross-Region read replicas meet tight RPO; AMIs plus IaC in DR meet RTO without full active-active cost.",
       "docs": [
         {
           "title": "Cross-Region read replicas",
           "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html"
         },
         {
-          "title": "DR whitepaper",
+          "title": "DR on AWS",
           "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
         }
       ]
@@ -792,29 +792,29 @@
       "id": "dop-q020",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Python services in CodePipeline need static analysis for defects before compile. Which service integrates with the Git repo for pull-request feedback?",
+      "text": "Python applications use Git, AWS CodeBuild, and AWS CodePipeline. The team needs automatic source review to find defects before compile. Which solution meets this?",
       "options": [
         {
           "id": "a",
-          "text": "CodeGuru Profiler in CodeBuild"
+          "text": "Associate the Git repo with Amazon CodeGuru Profiler and review pull requests."
         },
         {
           "id": "b",
-          "text": "CodeGuru Profiler prebuild only"
+          "text": "Run CodeGuru Profiler in the CodeBuild prebuild phase."
         },
         {
           "id": "c",
-          "text": "Associate the repository with CodeGuru Reviewer"
+          "text": "Associate the Git repository with Amazon CodeGuru Reviewer."
         },
         {
           "id": "d",
-          "text": "CodeGuru Reviewer only inside CodeBuild without repo association"
+          "text": "Run CodeGuru Reviewer only in CodeBuild without associating the repository."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "CodeGuru Reviewer analyzes PRs for code quality and security issues in Python and Java.",
+      "explanation": "CodeGuru Reviewer analyzes pull requests for defects and best practices in Python and Java.",
       "docs": [
         {
           "title": "CodeGuru Reviewer",
@@ -858,40 +858,6 @@
     },
     {
       "id": "dop-q022",
-      "domain": "resilient-cloud-solutions",
-      "type": "multiple-choice",
-      "text": "A stateless tier must fail over DNS to a warm secondary Region. Database is RDS Multi-AZ in the primary Region only today. What improves Regional resilience for the app tier first?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Enable Multi-AZ on the ALB"
-        },
-        {
-          "id": "b",
-          "text": "Copy launch templates/AMIs to the DR Region and automate stack creation with Route 53 failover"
-        },
-        {
-          "id": "c",
-          "text": "Increase Auto Scaling max size in one Region"
-        },
-        {
-          "id": "d",
-          "text": "Use larger instance types"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Pre-staged AMIs and IaC in the DR Region shorten recovery; Route 53 health checks shift traffic.",
-      "docs": [
-        {
-          "title": "Route 53 failover",
-          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q023",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
       "text": "During a blue/green CodeDeploy cutover, target 5xx rates from the load balancer are not rising, but application log errors are. Which signal should drive automated rollback?",
@@ -925,7 +891,7 @@
       ]
     },
     {
-      "id": "dop-q024",
+      "id": "dop-q023",
       "domain": "incident-event-response",
       "type": "multiple-choice",
       "text": "Security needs daily detection of public S3 buckets across many accounts without writing custom drift Lambdas per account. Which managed capability applies?",
@@ -959,41 +925,7 @@
       ]
     },
     {
-      "id": "dop-q025",
-      "domain": "sdlc-automation",
-      "type": "multiple-choice",
-      "text": "A team must shift 10% of Lambda alias traffic for alias `live` without changing the API invoke URL. Which feature applies?",
-      "options": [
-        {
-          "id": "a",
-          "text": "CodeDeploy linear traffic shifting on the Lambda alias"
-        },
-        {
-          "id": "b",
-          "text": "New API Gateway custom domain"
-        },
-        {
-          "id": "c",
-          "text": "Weighted target groups on an ALB in front of Lambda"
-        },
-        {
-          "id": "d",
-          "text": "Step Functions choice state"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CodeDeploy supports canary and linear deployments for Lambda aliases behind the same integration.",
-      "docs": [
-        {
-          "title": "Lambda deployments",
-          "url": "https://docs.aws.amazon.com/lambda/latest/dg/configuring-alias-routing.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q026",
+      "id": "dop-q024",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
       "text": "Chaos testing should inject EC2 stop failures in a non-production environment with guardrails. Which AWS service is purpose-built?",
@@ -1027,10 +959,10 @@
       ]
     },
     {
-      "id": "dop-q027",
+      "id": "dop-q025",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "For cost and security, the team must orchestrate CI/CD with manual approvals. What is the recommended approach? orchestrate CI/CD with manual approvals.",
+      "text": "A company needs to orchestrate CI/CD with manual approvals. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -1061,10 +993,10 @@
       ]
     },
     {
-      "id": "dop-q028",
+      "id": "dop-q026",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Operations reports a need to run tests in isolated build environments. What is the MOST operationally efficient solution? run tests in isolated build environments.",
+      "text": "After a design review, leadership requires the team to run tests in isolated build environments. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -1095,10 +1027,10 @@
       ]
     },
     {
-      "id": "dop-q029",
+      "id": "dop-q027",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "For cost and security, the team must implement GitOps for EKS. What is the recommended approach? implement GitOps for EKS.",
+      "text": "The DevOps team is automating releases and must implement GitOps for EKS. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -1129,10 +1061,10 @@
       ]
     },
     {
-      "id": "dop-q030",
+      "id": "dop-q028",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "A regulated workload requires the organization to sign and verify container images. Which solution is BEST? sign and verify container images.",
+      "text": "The DevOps team is automating releases and must sign and verify container images. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -1163,10 +1095,10 @@
       ]
     },
     {
-      "id": "dop-q031",
+      "id": "dop-q029",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "An audit found gaps: the organization must deploy Lambda with canary traffic shifting. Which option addresses this? deploy Lambda with canary traffic shifting.",
+      "text": "The DevOps team is automating releases and must deploy Lambda with canary traffic shifting. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -1197,10 +1129,10 @@
       ]
     },
     {
-      "id": "dop-q032",
+      "id": "dop-q030",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "A company needs to store pipeline artifacts immutably. Which option meets the requirement with the LEAST implementation effort? store pipeline artifacts immutably.",
+      "text": "A company needs to store pipeline artifacts immutably. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -1231,10 +1163,10 @@
       ]
     },
     {
-      "id": "dop-q033",
+      "id": "dop-q031",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "The DevOps team is automating releases and must trigger pipelines from Git webhooks securely. Which design fits best? trigger pipelines from Git webhooks securely.",
+      "text": "During peak traffic, the platform team must trigger pipelines from Git webhooks securely. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -1265,10 +1197,10 @@
       ]
     },
     {
-      "id": "dop-q034",
+      "id": "dop-q032",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "While troubleshooting latency, engineers determine they must run compliance tests in pipeline. Which action is appropriate? run compliance tests in pipeline.",
+      "text": "Operations reports a need to run compliance tests in pipeline. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1299,10 +1231,10 @@
       ]
     },
     {
-      "id": "dop-q035",
+      "id": "dop-q033",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which service should you use to orchestrate CI/CD with manual approvals?",
+      "text": "Two designs were proposed. Design A would orchestrate CI/CD with manual approvals. Design B would run tests in isolated build environments. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -1310,33 +1242,75 @@
         },
         {
           "id": "b",
-          "text": "Direct prod deploy on commit"
+          "text": "AWS CodeBuild with privileged mode only when needed"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Direct prod deploy on commit"
         },
         {
           "id": "d",
-          "text": "Shared prod creds in repo"
+          "text": "No tests"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Manual approvals gate production.",
+      "explanation": "Manual approvals gate production. Compare with AWS CodeBuild with privileged mode only when needed: CodeBuild scales build fleet elastically.",
       "docs": [
         {
           "title": "CodePipeline approvals",
           "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html"
+        },
+        {
+          "title": "CodeBuild",
+          "url": "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html"
         }
       ]
     },
     {
-      "id": "dop-q036",
+      "id": "dop-q034",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Two designs were proposed. Design A would run tests in isolated build environments. Design B would implement GitOps for EKS. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodeBuild with privileged mode only when needed"
+        },
+        {
+          "id": "b",
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+        },
+        {
+          "id": "c",
+          "text": "Build on prod server"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CodeBuild scales build fleet elastically. Compare with Flux/Argo CD on EKS or CodePipeline to cluster: GitOps reconciles cluster state from Git.",
+      "docs": [
+        {
+          "title": "CodeBuild",
+          "url": "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html"
+        },
+        {
+          "title": "EKS GitOps",
+          "url": "https://docs.aws.amazon.com/eks/latest/userguide/argocd.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q035",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "After a design review, leadership requires the team to define reusable infrastructure modules. Which approach is MOST reliable? define reusable infrastructure modules.",
+      "text": "Operations reports a need to define reusable infrastructure modules. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1367,10 +1341,10 @@
       ]
     },
     {
-      "id": "dop-q037",
+      "id": "dop-q036",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "A company needs to detect configuration drift on servers. Which option meets the requirement with the LEAST implementation effort? detect configuration drift on servers.",
+      "text": "Operations reports a need to detect configuration drift on servers. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1401,10 +1375,10 @@
       ]
     },
     {
-      "id": "dop-q038",
+      "id": "dop-q037",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "A company needs to manage Ansible/Chef at scale. Which option meets the requirement with the LEAST implementation effort? manage Ansible/Chef at scale.",
+      "text": "A company needs to manage Ansible/Chef at scale. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -1435,10 +1409,10 @@
       ]
     },
     {
-      "id": "dop-q039",
+      "id": "dop-q038",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "A regulated workload requires the organization to import existing resources into IaC. Which solution is BEST? import existing resources into IaC.",
+      "text": "After a design review, leadership requires the team to import existing resources into IaC. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -1469,10 +1443,10 @@
       ]
     },
     {
-      "id": "dop-q040",
+      "id": "dop-q039",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "While troubleshooting latency, engineers determine they must use stack sets for multi-account rollout. Which action is appropriate? use stack sets for multi-account rollout.",
+      "text": "During peak traffic, the platform team must use stack sets for multi-account rollout. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -1503,10 +1477,10 @@
       ]
     },
     {
-      "id": "dop-q041",
+      "id": "dop-q040",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "The DevOps team is automating releases and must parameterize environments safely. Which design fits best? parameterize environments safely.",
+      "text": "A company needs to parameterize environments safely. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -1537,10 +1511,10 @@
       ]
     },
     {
-      "id": "dop-q042",
+      "id": "dop-q041",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "During peak traffic, the platform team must validate templates before deploy. What should they do FIRST? validate templates before deploy.",
+      "text": "A company needs to validate templates before deploy. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -1571,10 +1545,10 @@
       ]
     },
     {
-      "id": "dop-q043",
+      "id": "dop-q042",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "For cost and security, the team must manage SAM transforms for serverless. What is the recommended approach? manage SAM transforms for serverless.",
+      "text": "A regulated workload requires the organization to manage SAM transforms for serverless. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -1605,10 +1579,10 @@
       ]
     },
     {
-      "id": "dop-q044",
+      "id": "dop-q043",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which service should you use to define reusable infrastructure modules?",
+      "text": "Two designs were proposed. Design A would define reusable infrastructure modules. Design B would detect configuration drift on servers. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -1616,33 +1590,37 @@
         },
         {
           "id": "b",
-          "text": "Copy-paste templates"
+          "text": "Systems Manager Compliance and AWS Config"
         },
         {
           "id": "c",
-          "text": "Undocumented params"
+          "text": "Copy-paste templates"
         },
         {
           "id": "d",
-          "text": "No versioning"
+          "text": "Undocumented params"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Modules promote reuse and standards.",
+      "explanation": "Modules promote reuse and standards. Compare with Systems Manager Compliance and AWS Config: Compliance reports deviations.",
       "docs": [
         {
           "title": "CDK",
           "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
+        },
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
         }
       ]
     },
     {
-      "id": "dop-q045",
+      "id": "dop-q044",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "A company needs to run chaos experiments safely. Which option meets the requirement with the LEAST implementation effort? run chaos experiments safely.",
+      "text": "A hybrid environment must support a goal to run chaos experiments safely without changing application code. What should you implement?",
       "options": [
         {
           "id": "a",
@@ -1673,10 +1651,10 @@
       ]
     },
     {
-      "id": "dop-q046",
+      "id": "dop-q045",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "A company needs to define RTO/RPO in resilience hub. Which option meets the requirement with the LEAST implementation effort? define RTO/RPO in resilience hub.",
+      "text": "A hybrid environment must support a goal to define RTO/RPO in resilience hub without changing application code. What should you implement?",
       "options": [
         {
           "id": "a",
@@ -1707,10 +1685,10 @@
       ]
     },
     {
-      "id": "dop-q047",
+      "id": "dop-q046",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "For cost and security, the team must multi-AZ RDS with automatic failover. What is the recommended approach? multi-AZ RDS with automatic failover.",
+      "text": "Operations reports a need to multi-AZ RDS with automatic failover. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1741,10 +1719,10 @@
       ]
     },
     {
-      "id": "dop-q048",
+      "id": "dop-q047",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "After a design review, leadership requires the team to queue-based load leveling. Which approach is MOST reliable? queue-based load leveling.",
+      "text": "Operations reports a need to queue-based load leveling. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1775,10 +1753,10 @@
       ]
     },
     {
-      "id": "dop-q049",
+      "id": "dop-q048",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "A regulated workload requires the organization to regional failover for stateless tier. Which solution is BEST? regional failover for stateless tier.",
+      "text": "A company needs to regional failover for stateless tier. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -1809,10 +1787,10 @@
       ]
     },
     {
-      "id": "dop-q050",
+      "id": "dop-q049",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "After a design review, leadership requires the team to use circuit breaker pattern in microservices. Which approach is MOST reliable? use circuit breaker pattern in microservices.",
+      "text": "While troubleshooting latency, engineers determine they must use circuit breaker pattern in microservices. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -1843,10 +1821,10 @@
       ]
     },
     {
-      "id": "dop-q051",
+      "id": "dop-q050",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "The DevOps team is automating releases and must deploy ECS services across AZs. Which design fits best? deploy ECS services across AZs.",
+      "text": "While troubleshooting latency, engineers determine they must deploy ECS services across AZs. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -1877,10 +1855,10 @@
       ]
     },
     {
-      "id": "dop-q052",
+      "id": "dop-q051",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Operations reports a need to immutable infrastructure for EC2. What is the MOST operationally efficient solution? immutable infrastructure for EC2.",
+      "text": "A company needs to immutable infrastructure for EC2. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -1911,10 +1889,10 @@
       ]
     },
     {
-      "id": "dop-q053",
+      "id": "dop-q052",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which service should you use to run chaos experiments safely?",
+      "text": "Two designs were proposed. Design A would run chaos experiments safely. Design B would define RTO/RPO in resilience hub. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -1922,25 +1900,67 @@
         },
         {
           "id": "b",
-          "text": "Chaos in prod without guardrails"
+          "text": "AWS Resilience Hub"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Chaos in prod without guardrails"
         },
         {
           "id": "d",
-          "text": "Ignore blast radius"
+          "text": "No rollback"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "FIS injects controlled failures.",
+      "explanation": "FIS injects controlled failures. Compare with AWS Resilience Hub: Resilience Hub assesses apps against policies.",
       "docs": [
         {
           "title": "FIS",
           "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        },
+        {
+          "title": "Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q053",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Two designs were proposed. Design A would define RTO/RPO in resilience hub. Design B would multi-AZ RDS with automatic failover. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resilience Hub"
+        },
+        {
+          "id": "b",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
+          "id": "c",
+          "text": "No targets"
+        },
+        {
+          "id": "d",
+          "text": "Hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilience Hub assesses apps against policies. Compare with Amazon RDS Multi-AZ: Multi-AZ fails over to standby.",
+      "docs": [
+        {
+          "title": "Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        },
+        {
+          "title": "RDS Multi-AZ",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html"
         }
       ]
     },
@@ -1948,33 +1968,37 @@
       "id": "dop-q054",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to run chaos experiments safely?",
+      "text": "Two designs were proposed. Design A would multi-AZ RDS with automatic failover. Design B would queue-based load leveling. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
-          "text": "AWS Fault Injection Simulator"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "b",
-          "text": "Chaos in prod without guardrails"
+          "text": "SQS with Auto Scaling on queue depth"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Single AZ prod"
         },
         {
           "id": "d",
-          "text": "Ignore blast radius"
+          "text": "No backups"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "FIS injects controlled failures.",
+      "explanation": "Multi-AZ fails over to standby. Compare with SQS with Auto Scaling on queue depth: Backpressure protects downstream systems.",
       "docs": [
         {
-          "title": "FIS",
-          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+          "title": "RDS Multi-AZ",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html"
+        },
+        {
+          "title": "SQS scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html"
         }
       ]
     },
@@ -1982,7 +2006,7 @@
       "id": "dop-q055",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "An audit found gaps: the organization must correlate logs metrics and traces. Which option addresses this? correlate logs metrics and traces.",
+      "text": "For cost and security, the team must correlate logs metrics and traces. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2016,7 +2040,7 @@
       "id": "dop-q056",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "While troubleshooting latency, engineers determine they must create composite alarms to reduce noise. Which action is appropriate? create composite alarms to reduce noise.",
+      "text": "A regulated workload requires the organization to create composite alarms to reduce noise. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -2050,7 +2074,7 @@
       "id": "dop-q057",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "An audit found gaps: the organization must export logs to SIEM. Which option addresses this? export logs to SIEM.",
+      "text": "The DevOps team is automating releases and must export logs to SIEM. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -2084,7 +2108,7 @@
       "id": "dop-q058",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "During peak traffic, the platform team must audit privileged actions. What should they do FIRST? audit privileged actions.",
+      "text": "The DevOps team is automating releases and must audit privileged actions. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -2118,7 +2142,7 @@
       "id": "dop-q059",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "A hybrid environment must support a goal to monitor CI/CD pipeline failures without changing application code. What should you implement? monitor CI/CD pipeline failures.",
+      "text": "A regulated workload requires the organization to monitor CI/CD pipeline failures. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -2152,7 +2176,7 @@
       "id": "dop-q060",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "After a design review, leadership requires the team to track deployment frequency DORA metrics. Which approach is MOST reliable? track deployment frequency DORA metrics.",
+      "text": "During peak traffic, the platform team must track deployment frequency DORA metrics. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -2186,7 +2210,7 @@
       "id": "dop-q061",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Operations reports a need to use Synthetics for critical user journeys. What is the MOST operationally efficient solution? use Synthetics for critical user journeys.",
+      "text": "After a design review, leadership requires the team to use Synthetics for critical user journeys. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -2220,7 +2244,7 @@
       "id": "dop-q062",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "The DevOps team is automating releases and must alert on Auto Scaling failures. Which design fits best? alert on Auto Scaling failures.",
+      "text": "A company needs to alert on Auto Scaling failures. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -2254,7 +2278,7 @@
       "id": "dop-q063",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which service should you use to correlate logs metrics and traces?",
+      "text": "Two designs were proposed. Design A would correlate logs metrics and traces. Design B would create composite alarms to reduce noise. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -2262,124 +2286,26 @@
         },
         {
           "id": "b",
-          "text": "grep only"
-        },
-        {
-          "id": "c",
-          "text": "No tracing"
-        },
-        {
-          "id": "d",
-          "text": "Delete logs"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Unified observability speeds incident response.",
-      "docs": [
-        {
-          "title": "Application Signals",
-          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q064",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to correlate logs metrics and traces?",
-      "options": [
-        {
-          "id": "a",
-          "text": "CloudWatch Application Signals / X-Ray / Logs"
-        },
-        {
-          "id": "b",
-          "text": "grep only"
-        },
-        {
-          "id": "c",
-          "text": "No tracing"
-        },
-        {
-          "id": "d",
-          "text": "Delete logs"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Unified observability speeds incident response.",
-      "docs": [
-        {
-          "title": "Application Signals",
-          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q065",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "A team must correlate logs metrics and traces. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "CloudWatch Application Signals / X-Ray / Logs"
-        },
-        {
-          "id": "b",
-          "text": "grep only"
-        },
-        {
-          "id": "c",
-          "text": "No tracing"
-        },
-        {
-          "id": "d",
-          "text": "Delete logs"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Unified observability speeds incident response.",
-      "docs": [
-        {
-          "title": "Application Signals",
-          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q066",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "Which service should you use to create composite alarms to reduce noise?",
-      "options": [
-        {
-          "id": "a",
           "text": "CloudWatch composite alarms"
         },
         {
-          "id": "b",
-          "text": "Alert on every blip"
-        },
-        {
           "id": "c",
-          "text": "No runbooks"
+          "text": "grep only"
         },
         {
           "id": "d",
-          "text": "Pager for dev metrics"
+          "text": "No tracing"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Composite alarms combine child alarms logically.",
+      "explanation": "Unified observability speeds incident response. Compare with CloudWatch composite alarms: Composite alarms combine child alarms logically.",
       "docs": [
+        {
+          "title": "Application Signals",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
+        },
         {
           "title": "Composite alarms",
           "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
@@ -2387,10 +2313,124 @@
       ]
     },
     {
+      "id": "dop-q064",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Two designs were proposed. Design A would create composite alarms to reduce noise. Design B would export logs to SIEM. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch composite alarms"
+        },
+        {
+          "id": "b",
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+        },
+        {
+          "id": "c",
+          "text": "Alert on every blip"
+        },
+        {
+          "id": "d",
+          "text": "No runbooks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Composite alarms combine child alarms logically. Compare with CloudWatch subscription filters to Kinesis/Firehose/OpenSearch: Streaming exports integrate with analytics/SIEM.",
+      "docs": [
+        {
+          "title": "Composite alarms",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
+        },
+        {
+          "title": "Subscription filters",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q065",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Two designs were proposed. Design A would export logs to SIEM. Design B would audit privileged actions. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+        },
+        {
+          "id": "b",
+          "text": "CloudTrail management events and CloudTrail Lake"
+        },
+        {
+          "id": "c",
+          "text": "Manual copy logs"
+        },
+        {
+          "id": "d",
+          "text": "Public log bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming exports integrate with analytics/SIEM. Compare with CloudTrail management events and CloudTrail Lake: CloudTrail Lake enables SQL analytics on events.",
+      "docs": [
+        {
+          "title": "Subscription filters",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html"
+        },
+        {
+          "title": "CloudTrail Lake",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q066",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Two designs were proposed. Design A would audit privileged actions. Design B would monitor CI/CD pipeline failures. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudTrail management events and CloudTrail Lake"
+        },
+        {
+          "id": "b",
+          "text": "CodePipeline CloudWatch events and notifications"
+        },
+        {
+          "id": "c",
+          "text": "Disable trail"
+        },
+        {
+          "id": "d",
+          "text": "No integrity validation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail Lake enables SQL analytics on events. Compare with CodePipeline CloudWatch events and notifications: Event-driven notifications alert owners.",
+      "docs": [
+        {
+          "title": "CloudTrail Lake",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html"
+        },
+        {
+          "title": "CodePipeline events",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html"
+        }
+      ]
+    },
+    {
       "id": "dop-q067",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "While troubleshooting latency, engineers determine they must route operational events to targets. Which action is appropriate? route operational events to targets.",
+      "text": "The DevOps team is automating releases and must route operational events to targets. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -2424,7 +2464,7 @@
       "id": "dop-q068",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "After a design review, leadership requires the team to manage incidents with runbooks. Which approach is MOST reliable? manage incidents with runbooks.",
+      "text": "For cost and security, the team must manage incidents with runbooks. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2458,7 +2498,7 @@
       "id": "dop-q069",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "During peak traffic, the platform team must auto-remediate non-compliant resources. What should they do FIRST? auto-remediate non-compliant resources.",
+      "text": "A company needs to auto-remediate non-compliant resources. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -2492,7 +2532,7 @@
       "id": "dop-q070",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "A company needs to isolate compromised EC2 quickly. Which option meets the requirement with the LEAST implementation effort? isolate compromised EC2 quickly.",
+      "text": "While troubleshooting latency, engineers determine they must isolate compromised EC2 quickly. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -2526,7 +2566,7 @@
       "id": "dop-q071",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "While troubleshooting latency, engineers determine they must aggregate security findings for triage. Which action is appropriate? aggregate security findings for triage.",
+      "text": "Operations reports a need to aggregate security findings for triage. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -2560,7 +2600,7 @@
       "id": "dop-q072",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "For cost and security, the team must capture forensics disk/memory. What is the recommended approach? capture forensics disk/memory.",
+      "text": "While troubleshooting latency, engineers determine they must capture forensics disk/memory. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -2594,7 +2634,7 @@
       "id": "dop-q073",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "For cost and security, the team must notify on-call from alarms. What is the recommended approach? notify on-call from alarms.",
+      "text": "While troubleshooting latency, engineers determine they must notify on-call from alarms. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -2628,7 +2668,7 @@
       "id": "dop-q074",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "A hybrid environment must support a goal to document post-incident reviews without changing application code. What should you implement? document post-incident reviews.",
+      "text": "While troubleshooting latency, engineers determine they must document post-incident reviews. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -2662,7 +2702,7 @@
       "id": "dop-q075",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "The DevOps team is automating releases and must validate recovery procedures regularly. Which design fits best? validate recovery procedures regularly.",
+      "text": "A regulated workload requires the organization to validate recovery procedures regularly. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -2696,7 +2736,7 @@
       "id": "dop-q076",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "After a design review, leadership requires the team to use cell-based blast isolation for EKS. Which approach is MOST reliable? use cell-based blast isolation for EKS.",
+      "text": "The DevOps team is automating releases and must use cell-based blast isolation for EKS. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -2730,7 +2770,7 @@
       "id": "dop-q077",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "A hybrid environment must support a goal to protect against regional failure without changing application code. What should you implement? protect against regional failure.",
+      "text": "While troubleshooting latency, engineers determine they must protect against regional failure. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -2764,7 +2804,7 @@
       "id": "dop-q078",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "A regulated workload requires the organization to ensure idempotent deployments. Which solution is BEST? ensure idempotent deployments.",
+      "text": "While troubleshooting latency, engineers determine they must ensure idempotent deployments. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -2798,7 +2838,7 @@
       "id": "dop-q079",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Operations reports a need to load test before peak events. What is the MOST operationally efficient solution? load test before peak events.",
+      "text": "During peak traffic, the platform team must load test before peak events. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -2832,7 +2872,7 @@
       "id": "dop-q080",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "After a design review, leadership requires the team to use SQS visibility timeout correctly. Which approach is MOST reliable? use SQS visibility timeout correctly.",
+      "text": "Operations reports a need to use SQS visibility timeout correctly. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -2866,7 +2906,7 @@
       "id": "dop-q081",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "A company needs to design EKS control plane resilience. Which option meets the requirement with the LEAST implementation effort? design EKS control plane resilience.",
+      "text": "A regulated workload requires the organization to design EKS control plane resilience. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -2900,7 +2940,7 @@
       "id": "dop-q082",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "A hybrid environment must support a goal to backup EKS etcd application state without changing application code. What should you implement? backup EKS etcd application state.",
+      "text": "A regulated workload requires the organization to backup EKS etcd application state. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -2934,7 +2974,7 @@
       "id": "dop-q083",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which service should you use to validate recovery procedures regularly?",
+      "text": "Two designs were proposed. Design A would validate recovery procedures regularly. Design B would use cell-based blast isolation for EKS. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -2942,25 +2982,29 @@
         },
         {
           "id": "b",
-          "text": "Never test restore"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "c",
-          "text": "Hope"
+          "text": "Never test restore"
         },
         {
           "id": "d",
-          "text": "Outdated runbook"
+          "text": "Hope"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Testing confirms RTO/RPO assumptions.",
+      "explanation": "Testing confirms RTO/RPO assumptions. Compare with Separate clusters/accounts per cell: Cells contain failures.",
       "docs": [
         {
           "title": "DR testing",
           "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        },
+        {
+          "title": "EKS best practices",
+          "url": "https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html"
         }
       ]
     },
@@ -2968,151 +3012,37 @@
       "id": "dop-q084",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to validate recovery procedures regularly?",
+      "text": "Two designs were proposed. Design A would use cell-based blast isolation for EKS. Design B would protect against regional failure. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
-          "text": "Scheduled DR drills with CloudFormation"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "b",
-          "text": "Never test restore"
+          "text": "Multi-Region active-passive or active-active"
         },
         {
           "id": "c",
-          "text": "Hope"
+          "text": "One cluster everything"
         },
         {
           "id": "d",
-          "text": "Outdated runbook"
+          "text": "Cluster-admin for all devs prod"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Testing confirms RTO/RPO assumptions.",
+      "explanation": "Cells contain failures. Compare with Multi-Region active-passive or active-active: Multi-Region designs address Regional disasters.",
       "docs": [
         {
-          "title": "DR testing",
+          "title": "EKS best practices",
+          "url": "https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html"
+        },
+        {
+          "title": "DR whitepaper",
           "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q085",
-      "domain": "sdlc-automation",
-      "type": "multiple-response",
-      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Design for failure and automate recovery"
-        },
-        {
-          "id": "b",
-          "text": "Ignore monitoring to reduce cost"
-        },
-        {
-          "id": "c",
-          "text": "Test recovery procedures"
-        },
-        {
-          "id": "d",
-          "text": "Use single-AZ for all production data stores"
-        },
-        {
-          "id": "e",
-          "text": "Document architecture decisions"
-        }
-      ],
-      "correct": [
-        "a",
-        "c",
-        "e"
-      ],
-      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
-      "docs": [
-        {
-          "title": "Well-Architected Framework",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q086",
-      "domain": "sdlc-automation",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified DevOps Engineer \u2013 Professional? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "DOP-C02 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "AWS CodePipeline"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "DOP-C02 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
-        }
-      ]
-    },
-    {
-      "id": "dop-q087",
-      "domain": "config-management-iac",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     }

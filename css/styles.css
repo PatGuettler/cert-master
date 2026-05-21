@@ -655,10 +655,12 @@ main {
   border-left: 3px solid #3d7ab8;
 }
 
+.keytrain-hub-header h2,
 .keytraining-hub-header h2 {
   margin: 0 0 0.5rem;
 }
 
+.keytrain-hub-lead,
 .keytraining-hub-lead {
   margin: 0 0 1.25rem;
   color: var(--text-muted);
@@ -670,6 +672,17 @@ main {
 }
 
 .keytraining-hub-section .landing-hint {
+  margin-top: 0;
+}
+
+.keytrain-cert-subhead {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.keytrain-cert-subhead:first-of-type {
   margin-top: 0;
 }
 
