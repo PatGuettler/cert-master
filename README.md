@@ -4,9 +4,10 @@ Unofficial **static** practice exams for AWS certifications, designed for [GitHu
 
 ## Live site
 
-After enabling GitHub Pages (see [Deploy](#deploy)), your site will be at:
+Production site: **[https://practicecert.com/](https://practicecert.com/)**
 
-`https://<your-github-username>.github.io/aws-cert-master/`
+GitHub Pages serves the repo root with custom domain `practicecert.com` (see `CNAME`).
+Legacy project URL `https://<user>.github.io/aws-cert-master/` still works if you use that layout locally.
 
 ## Exams (dynamic list)
 

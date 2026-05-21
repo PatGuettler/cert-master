@@ -3006,6 +3006,45 @@
       "id": "ans-q087",
       "domain": "network-design",
       "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Advanced Networking \u2013 Specialty? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "ANS-C01 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon VPC"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "ANS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "ans-q088",
+      "domain": "network-design",
+      "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
       "options": [
         {
@@ -3039,45 +3078,6 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q088",
-      "domain": "network-design",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Advanced Networking \u2013 Specialty? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "ANS-C01 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon VPC"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "ANS-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
         }
       ]
     },

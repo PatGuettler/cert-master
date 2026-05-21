@@ -179,9 +179,10 @@ async function openCert(certId) {
 function syncCertFilterOptions(select, selectedId) {
   if (!select) return;
   const allExams = [...examIndexList].sort((a, b) => {
-    const va = a.vendor ?? "aws";
-    const vb = b.vendor ?? "aws";
-    if (va !== vb) return va.localeCompare(vb);
+    const order = { aws: 0, azure: 1, google: 2, comptia: 3 };
+    const va = order[a.vendor ?? "aws"] ?? 9;
+    const vb = order[b.vendor ?? "aws"] ?? 9;
+    if (va !== vb) return va - vb;
     return a.name.localeCompare(b.name);
   });
 
@@ -190,8 +191,13 @@ function syncCertFilterOptions(select, selectedId) {
   for (const exam of allExams) {
     const opt = document.createElement("option");
     opt.value = exam.id;
-    const vendor =
-      exam.vendor === "comptia" ? "CompTIA" : "AWS";
+    const vendorLabels = {
+      aws: "AWS",
+      azure: "Azure",
+      google: "Google",
+      comptia: "CompTIA",
+    };
+    const vendor = vendorLabels[exam.vendor ?? "aws"] ?? exam.vendor ?? "Cert";
     opt.textContent = exam.code
       ? `[${vendor}] ${exam.name} (${exam.code})`
       : `[${vendor}] ${exam.name}`;
@@ -208,7 +214,16 @@ function syncCertFilterOptions(select, selectedId) {
 function buildCertDescription(cert) {
   const weights = cert.domains.map((d) => `${d.weight}%`).join(" / ");
   const e = cert.exam;
-  return `Each attempt draws <strong>${e.totalQuestions} random questions</strong> from the bank using official <strong>${cert.code}</strong> domain weights (${weights}), with shuffled order and answer choices. Mirrors the real exam format: ${e.scoredQuestions} scored questions, ${e.timeLimitMinutes} minutes, pass/fail at ${e.passingScore}. Unofficial practice — not actual exam content.`;
+  const vendor = cert.vendor ?? "aws";
+  const vendorName =
+    vendor === "azure"
+      ? "Microsoft"
+      : vendor === "google"
+        ? "Google Cloud"
+        : vendor === "comptia"
+          ? "CompTIA"
+          : "AWS";
+  return `Each attempt draws <strong>${e.totalQuestions} random questions</strong> from the bank using official <strong>${cert.code}</strong> domain weights (${weights}), with shuffled order and answer choices. Mirrors the real exam format: ${e.scoredQuestions} scored questions, ${e.timeLimitMinutes} minutes, pass/fail at ${e.passingScore}. Original practice aligned to ${vendorName} exam guides—with reference links to official documentation, not copied exam items.`;
 }
 
 async function renderDashboardForFilter() {

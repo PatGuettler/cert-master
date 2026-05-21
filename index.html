@@ -6,9 +6,9 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
-      content="Free AWS and CompTIA certification practice exams — no login. Timed exams, acronym drills, progress tracking, and study plans."
+      content="Free AWS, Azure, Google Cloud, and CompTIA practice exams — original questions with official documentation links. No login required."
     />
-    <title>AWS Cert Master — Practice Tests</title>
+    <title>AWS Cert Master — Multi-Cloud Practice Tests</title>
     <link rel="sitemap" type="application/xml" href="sitemap.xml" />
     <script>
       (function () {
@@ -33,14 +33,16 @@
     </script>
     <script>
       (function () {
-        var p = location.pathname;
-        if (/\.html$/i.test(p)) {
-          p = p.slice(0, p.lastIndexOf("/") + 1);
-        } else if (!p.endsWith("/")) {
-          p = p + "/";
+        var path = location.pathname;
+        var first = path.split("/").filter(Boolean)[0] || "";
+        var appRoutes = { cert: 1, browse: 1, questions: 1 };
+        var deployBase = "/";
+        if (first && !appRoutes[first] && path.indexOf("/" + first) === 0) {
+          deployBase = "/" + first + "/";
         }
+        window.__DEPLOY_BASE__ = deployBase;
         var b = document.createElement("base");
-        b.href = p;
+        b.href = deployBase;
         document.head.appendChild(b);
       })();
     </script>
@@ -141,10 +143,11 @@
         <div class="landing-hero">
           <h2>Certification practice — free, in your browser</h2>
           <p class="landing-lead">
-            AWS Cert Master is an unofficial study tool for <strong>AWS</strong> and
-            <strong>CompTIA</strong> certifications: exam-style practice tests,
-            domain-weighted question pools, progress dashboards, and
-            <strong>acronym drills</strong> for CompTIA (a prep mode most tools skip).
+            AWS Cert Master is an unofficial study tool for <strong>AWS</strong>,
+            <strong>Microsoft Azure</strong>, <strong>Google Cloud</strong>, and
+            <strong>CompTIA</strong> certifications: original practice questions aligned to
+            official exam guides, each with links to vendor documentation. Includes
+            domain-weighted exams, progress dashboards, and CompTIA acronym drills.
             No account or install required.
           </p>
         </div>
@@ -153,7 +156,7 @@
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-browse">
             <span class="landing-tile-icon" aria-hidden="true">📋</span>
             <span class="landing-tile-label">Browse exams</span>
-            <span class="landing-tile-desc">Search all AWS &amp; CompTIA certs</span>
+            <span class="landing-tile-desc">AWS, Azure, Google, CompTIA</span>
           </button>
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-dashboard">
             <span class="landing-tile-icon" aria-hidden="true">📈</span>
@@ -202,7 +205,8 @@
           </ol>
           <p class="landing-note">
             Progress is saved in this browser only. Use <em>Export backup</em> before switching
-            devices. Practice questions are not copied from real AWS exams.
+            devices. Questions are original practice items aligned to official exam objectives—not
+            copied from real certification exams.
           </p>
           <p class="landing-note">
             <a href="questions/">Browse the practice question library</a> — each question has its
@@ -230,7 +234,7 @@
             type="search"
             id="browse-search"
             class="browse-search-input"
-            placeholder="Name or exam code (e.g. CLF, Security+, SAA)…"
+            placeholder="Name or code (e.g. CLF, AZ-104, ACE, Security+)…"
             autocomplete="off"
             spellcheck="false"
           />
@@ -248,6 +252,28 @@
             <span class="landing-count">(<span id="browse-aws-count">0</span>)</span>
           </h3>
           <div id="browse-cert-grid-aws" class="landing-cert-grid"></div>
+        </section>
+        <section
+          id="browse-azure-section"
+          class="landing-section"
+          aria-labelledby="browse-azure-heading"
+        >
+          <h3 id="browse-azure-heading">
+            Microsoft Azure certifications
+            <span class="landing-count">(<span id="browse-azure-count">0</span>)</span>
+          </h3>
+          <div id="browse-cert-grid-azure" class="landing-cert-grid"></div>
+        </section>
+        <section
+          id="browse-google-section"
+          class="landing-section"
+          aria-labelledby="browse-google-heading"
+        >
+          <h3 id="browse-google-heading">
+            Google Cloud certifications
+            <span class="landing-count">(<span id="browse-google-count">0</span>)</span>
+          </h3>
+          <div id="browse-cert-grid-google" class="landing-cert-grid"></div>
         </section>
         <section
           id="browse-comptia-section"
@@ -425,8 +451,9 @@
           </button>
         </div>
         <p class="disclaimer">
-          Scores are approximated from your practice answers and are not
-          official AWS exam results. Passing scores mirror each exam guide.
+          Scores are approximated from practice answers and are not official exam results.
+          Questions are original study items aligned to vendor exam guides—not copied from
+          real certification exams. Reference links point to official provider documentation.
         </p>
       </section>
 
@@ -461,9 +488,8 @@
           </button>
         </div>
         <p class="disclaimer">
-          All links point to aws.amazon.com, docs.aws.amazon.com, or
-          explore.skillbuilder.aws. Verify URLs remain current before your exam
-          date.
+          Study plan links point to official AWS, Microsoft Learn, Google Cloud, or CompTIA
+          resources. Verify URLs remain current before your exam date.
         </p>
       </section>
     </main>
@@ -480,9 +506,8 @@
 
     <footer class="site-footer">
       <p>
-        Unofficial practice tool. Not affiliated with Amazon Web Services.
-        Questions are community-maintained in JSON — edit and push to update
-        this site.
+        Unofficial practice tool. Not affiliated with AWS, Microsoft, Google, or CompTIA.
+        Questions are original practice items in JSON—edit generators and push to update this site.
       </p>
     </footer>
 

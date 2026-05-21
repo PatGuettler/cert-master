@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EXAMS_DIR = ROOT / "data" / "exams"
 
 # Default canonical site root (override with SITE_ORIGIN env in build script)
-DEFAULT_SITE_ORIGIN = "https://patguettler.github.io/aws-cert-master"
+DEFAULT_SITE_ORIGIN = "https://practicecert.com"
 
 STOP_WORDS = frozenset(
     """
@@ -28,7 +28,12 @@ STOP_WORDS = frozenset(
     """.split()
 )
 
-VENDOR_PREFIX = {"aws": "aws", "comptia": "comptia"}
+VENDOR_PREFIX = {
+    "aws": "aws",
+    "azure": "azure",
+    "google": "google",
+    "comptia": "comptia",
+}
 
 
 def exam_code_slug(exam: dict) -> str:

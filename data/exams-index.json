@@ -41,6 +41,14 @@
       "questionCount": 102
     },
     {
+      "id": "comptia-cloud-plus",
+      "name": "CompTIA Cloud+",
+      "code": "CV0-004",
+      "vendor": "comptia",
+      "dataFile": "data/exams/comptia-cloud-plus.json",
+      "questionCount": 85
+    },
+    {
       "id": "comptia-cysa-plus",
       "name": "CompTIA CySA+",
       "code": "CS0-003",
@@ -81,6 +89,14 @@
       "questionCount": 97
     },
     {
+      "id": "database-specialty",
+      "name": "AWS Certified Database \u2013 Specialty",
+      "code": "DBS-C01",
+      "vendor": "aws",
+      "dataFile": "data/exams/database-specialty.json",
+      "questionCount": 94
+    },
+    {
       "id": "developer-associate",
       "name": "AWS Certified Developer \u2013 Associate",
       "code": "DVA-C02",
@@ -113,6 +129,14 @@
       "questionCount": 97
     },
     {
+      "id": "machine-learning-specialty",
+      "name": "AWS Certified Machine Learning \u2013 Specialty",
+      "code": "MLS-C01",
+      "vendor": "aws",
+      "dataFile": "data/exams/machine-learning-specialty.json",
+      "questionCount": 93
+    },
+    {
       "id": "security-specialty",
       "name": "AWS Certified Security \u2013 Specialty",
       "code": "SCS-C02",
@@ -137,5 +161,5 @@
       "questionCount": 103
     }
   ],
-  "generatedAt": "2026-05-20T21:27:21.718066+00:00"
+  "generatedAt": "2026-05-21T02:30:10.077007+00:00"
 }

@@ -10,8 +10,11 @@ ROOT = Path(__file__).resolve().parents[1]
 EXAMS_DIR = ROOT / "data" / "exams"
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from question_bank.cloud_factory import AWS_CONFIG, build_vendor_payload  # noqa: E402
 from question_bank.common import validate_pool, write_exam  # noqa: E402
-from question_bank.exam_catalog import EXAMS  # noqa: E402
+from question_bank.exam_catalog import EXAM_BY_ID, EXAMS  # noqa: E402
+from question_bank.multi_vendor_fact_banks import AWS_EXTRA_BANKS  # noqa: E402
+from question_bank.official_docs import assert_official_exam  # noqa: E402
 from question_bank.question_factory import build_exam_payload  # noqa: E402
 
 GENERATE_IDS = [
@@ -26,7 +29,11 @@ GENERATE_IDS = [
     "generative-ai-developer-professional",
     "advanced-networking-specialty",
     "security-specialty",
+    "database-specialty",
+    "machine-learning-specialty",
 ]
+
+CLOUD_FACTORY_AWS_IDS = frozenset({"database-specialty", "machine-learning-specialty"})
 
 CLF_PATH = EXAMS_DIR / "cloud-practitioner.json"
 
@@ -56,9 +63,13 @@ def patch_cloud_practitioner_vendor() -> int:
 
 
 def generate_exam(exam_id: str) -> tuple[Path, int]:
-    spec = next(e for e in EXAMS if e["id"] == exam_id)
-    payload = build_exam_payload(exam_id)
+    spec = EXAM_BY_ID[exam_id]
+    if exam_id in CLOUD_FACTORY_AWS_IDS:
+        payload = build_vendor_payload(exam_id, EXAM_BY_ID, AWS_EXTRA_BANKS, AWS_CONFIG)
+    else:
+        payload = build_exam_payload(exam_id)
     validate_pool(payload["questions"], payload["domains"], spec.get("min_questions", 70))
+    assert_official_exam(payload)
     out = EXAMS_DIR / f"{exam_id}.json"
     write_exam(out, payload)
     return out, len(payload["questions"])

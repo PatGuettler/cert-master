@@ -22,14 +22,18 @@ QUESTIONS_DIR = ROOT / "questions"
 DATA_DIR = ROOT / "data"
 
 SITE_ORIGIN = os.environ.get("SITE_ORIGIN", DEFAULT_SITE_ORIGIN).rstrip("/")
-SITE_PATH = os.environ.get("SITE_PATH", "/aws-cert-master").rstrip("/")
+SITE_PATH = os.environ.get("SITE_PATH", "").rstrip("/")
+if SITE_PATH == "/":
+    SITE_PATH = ""
 if SITE_PATH and not SITE_PATH.startswith("/"):
     SITE_PATH = "/" + SITE_PATH
 
 
 def site_url(path: str = "") -> str:
     p = path if path.startswith("/") else f"/{path}" if path else ""
-    return f"{SITE_ORIGIN}{SITE_PATH}{p}"
+    if SITE_PATH:
+        return f"{SITE_ORIGIN}{SITE_PATH}{p}"
+    return f"{SITE_ORIGIN}{p}"
 
 
 def rel_root(depth: int) -> str:

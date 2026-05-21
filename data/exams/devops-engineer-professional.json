@@ -3268,45 +3268,6 @@
     },
     {
       "id": "dop-q094",
-      "domain": "config-management-iac",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q095",
       "domain": "sdlc-automation",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified DevOps Engineer \u2013 Professional? (Select TWO.)",
@@ -3341,6 +3302,45 @@
         {
           "title": "DOP-C02 Exam Guide",
           "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q095",
+      "domain": "config-management-iac",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     },

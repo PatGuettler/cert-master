@@ -1,0 +1,2981 @@
+{
+  "id": "comptia-cloud-plus",
+  "name": "CompTIA Cloud+",
+  "code": "CV0-004",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 90,
+    "scoredQuestions": 80,
+    "timeLimitMinutes": 90,
+    "passingScore": 720,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "cloud-architecture",
+      "name": "Domain 1: Cloud Architecture and Design",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cloud+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        },
+        {
+          "title": "NIST cloud definition",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Domain 2: Cloud Security",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cloud+ security objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "name": "Domain 3: Cloud Deployment",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cloud+ deployment objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Domain 4: Cloud Operations and Support",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cloud+ operations objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptcld-q001",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Cloud Architecture and Design for CompTIA Cloud+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud+ Exam Objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud+ Exam Objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q002",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud+ Exam Objectives', what is a documented best practice for Cloud Architecture and Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud+ Exam Objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q003",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "According to 'NIST cloud definition', what is a documented best practice for Cloud Architecture and Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "NIST cloud definition reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "NIST cloud definition",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q004",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Cloud Security for CompTIA Cloud+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud+ security objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud+ security objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud+ security objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q005",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud+ security objectives', what is a documented best practice for Cloud Security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud+ security objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud+ security objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q006",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Cloud Deployment for CompTIA Cloud+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud+ deployment objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud+ deployment objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud+ deployment objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q007",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud+ deployment objectives', what is a documented best practice for Cloud Deployment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud+ deployment objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud+ deployment objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q008",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Cloud Operations and Support for CompTIA Cloud+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud+ operations objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud+ operations objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud+ operations objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q009",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud+ operations objectives', what is a documented best practice for Cloud Operations and Support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud+ operations objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud+ operations objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q010",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to design highly available cloud workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HA spans failure domains.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q011",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to compare IaaS PaaS SaaS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
+          "id": "b",
+          "text": "IaaS is only email"
+        },
+        {
+          "id": "c",
+          "text": "SaaS is cabling"
+        },
+        {
+          "id": "d",
+          "text": "PaaS is DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models define management responsibility.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q012",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to design hybrid connectivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN or dedicated interconnect to cloud"
+        },
+        {
+          "id": "b",
+          "text": "Expose DB to internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid links on-prem to cloud.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q013",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to design highly available cloud workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HA spans failure domains.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q014",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to design highly available cloud workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HA spans failure domains.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q015",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "A technician must design highly available cloud workloads. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HA spans failure domains.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q016",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to compare IaaS PaaS SaaS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
+          "id": "b",
+          "text": "IaaS is only email"
+        },
+        {
+          "id": "c",
+          "text": "SaaS is cabling"
+        },
+        {
+          "id": "d",
+          "text": "PaaS is DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models define management responsibility.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q017",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to compare IaaS PaaS SaaS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
+          "id": "b",
+          "text": "IaaS is only email"
+        },
+        {
+          "id": "c",
+          "text": "SaaS is cabling"
+        },
+        {
+          "id": "d",
+          "text": "PaaS is DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models define management responsibility.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q018",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "A technician must compare IaaS PaaS SaaS. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
+          "id": "b",
+          "text": "IaaS is only email"
+        },
+        {
+          "id": "c",
+          "text": "SaaS is cabling"
+        },
+        {
+          "id": "d",
+          "text": "PaaS is DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models define management responsibility.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q019",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to design hybrid connectivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN or dedicated interconnect to cloud"
+        },
+        {
+          "id": "b",
+          "text": "Expose DB to internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid links on-prem to cloud.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q020",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to design hybrid connectivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN or dedicated interconnect to cloud"
+        },
+        {
+          "id": "b",
+          "text": "Expose DB to internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid links on-prem to cloud.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q021",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "A technician must design hybrid connectivity. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN or dedicated interconnect to cloud"
+        },
+        {
+          "id": "b",
+          "text": "Expose DB to internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid links on-prem to cloud.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q022",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "On the job, you need to design highly available cloud workloads.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HA spans failure domains.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q023",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should compare IaaS PaaS SaaS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
+          "id": "b",
+          "text": "IaaS is only email"
+        },
+        {
+          "id": "c",
+          "text": "SaaS is cabling"
+        },
+        {
+          "id": "d",
+          "text": "PaaS is DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models define management responsibility.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q024",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must design hybrid connectivity.",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN or dedicated interconnect to cloud"
+        },
+        {
+          "id": "b",
+          "text": "Expose DB to internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid links on-prem to cloud.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q025",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Multi-region deployment with load balancing rather than IaaS provides VMs; PaaS managed runtime; SaaS applications when you need to design highly available cloud workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "b",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
+          "id": "c",
+          "text": "Single server"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HA spans failure domains. Compare with IaaS provides VMs; PaaS managed runtime; SaaS applications: Models define management responsibility.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        },
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q026",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by IaaS provides VMs; PaaS managed runtime; SaaS applications rather than VPN or dedicated interconnect to cloud when you need to compare IaaS PaaS SaaS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
+          "id": "b",
+          "text": "VPN or dedicated interconnect to cloud"
+        },
+        {
+          "id": "c",
+          "text": "IaaS is only email"
+        },
+        {
+          "id": "d",
+          "text": "SaaS is cabling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models define management responsibility. Compare with VPN or dedicated interconnect to cloud: Hybrid links on-prem to cloud.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        },
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q027",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by VPN or dedicated interconnect to cloud rather than Multi-region deployment with load balancing when you need to design hybrid connectivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN or dedicated interconnect to cloud"
+        },
+        {
+          "id": "b",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "c",
+          "text": "Expose DB to internet"
+        },
+        {
+          "id": "d",
+          "text": "Telnet admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid links on-prem to cloud. Compare with Multi-region deployment with load balancing: HA spans failure domains.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        },
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q028",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to apply IAM least privilege in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Role-based access with regular reviews"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "No MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q029",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to encrypt data at rest in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provider-managed encryption and customer keys"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext only"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Email secrets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects stored data.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q030",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to segment workloads in cloud networks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC/VNet subnets and security groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat network"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 admin"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Segmentation limits lateral movement.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q031",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to scan images for vulnerabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline scanning before deploy"
+        },
+        {
+          "id": "b",
+          "text": "Deploy :latest only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "d",
+          "text": "Disable updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image scanning catches known issues.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q032",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to manage API keys securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secrets vault with rotation"
+        },
+        {
+          "id": "b",
+          "text": "Commit keys to git"
+        },
+        {
+          "id": "c",
+          "text": "Email keys"
+        },
+        {
+          "id": "d",
+          "text": "Paste in chat"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets management reduces exposure.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q033",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to apply IAM least privilege in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Role-based access with regular reviews"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "No MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q034",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to apply IAM least privilege in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Role-based access with regular reviews"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "No MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q035",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A technician must apply IAM least privilege in cloud. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Role-based access with regular reviews"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "No MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q036",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to encrypt data at rest in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provider-managed encryption and customer keys"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext only"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Email secrets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects stored data.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q037",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to encrypt data at rest in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provider-managed encryption and customer keys"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext only"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Email secrets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects stored data.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q038",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A technician must encrypt data at rest in cloud. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provider-managed encryption and customer keys"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext only"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Email secrets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects stored data.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q039",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to segment workloads in cloud networks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC/VNet subnets and security groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat network"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 admin"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Segmentation limits lateral movement.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q040",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to segment workloads in cloud networks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC/VNet subnets and security groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat network"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 admin"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Segmentation limits lateral movement.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q041",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A technician must segment workloads in cloud networks. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC/VNet subnets and security groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat network"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 admin"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Segmentation limits lateral movement.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q042",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to scan images for vulnerabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline scanning before deploy"
+        },
+        {
+          "id": "b",
+          "text": "Deploy :latest only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "d",
+          "text": "Disable updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image scanning catches known issues.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q043",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to scan images for vulnerabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline scanning before deploy"
+        },
+        {
+          "id": "b",
+          "text": "Deploy :latest only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "d",
+          "text": "Disable updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image scanning catches known issues.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q044",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A technician must scan images for vulnerabilities. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline scanning before deploy"
+        },
+        {
+          "id": "b",
+          "text": "Deploy :latest only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "d",
+          "text": "Disable updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image scanning catches known issues.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q045",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to manage API keys securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secrets vault with rotation"
+        },
+        {
+          "id": "b",
+          "text": "Commit keys to git"
+        },
+        {
+          "id": "c",
+          "text": "Email keys"
+        },
+        {
+          "id": "d",
+          "text": "Paste in chat"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets management reduces exposure.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q046",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to manage API keys securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secrets vault with rotation"
+        },
+        {
+          "id": "b",
+          "text": "Commit keys to git"
+        },
+        {
+          "id": "c",
+          "text": "Email keys"
+        },
+        {
+          "id": "d",
+          "text": "Paste in chat"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets management reduces exposure.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q047",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A technician must manage API keys securely. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secrets vault with rotation"
+        },
+        {
+          "id": "b",
+          "text": "Commit keys to git"
+        },
+        {
+          "id": "c",
+          "text": "Email keys"
+        },
+        {
+          "id": "d",
+          "text": "Paste in chat"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets management reduces exposure.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q048",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to automate infrastructure provisioning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Infrastructure as code templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual clicks only"
+        },
+        {
+          "id": "c",
+          "text": "USB scripts"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q049",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to use CI/CD for cloud releases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline with tests and approvals"
+        },
+        {
+          "id": "b",
+          "text": "FTP to prod"
+        },
+        {
+          "id": "c",
+          "text": "Skip QA"
+        },
+        {
+          "id": "d",
+          "text": "Shared password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CI/CD reduces deployment risk.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q050",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to use immutable infrastructure patterns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace servers instead of patching in place"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH drift"
+        },
+        {
+          "id": "c",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Immutable infra improves consistency.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q051",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to validate templates before apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy checks in CI"
+        },
+        {
+          "id": "b",
+          "text": "Apply prod first"
+        },
+        {
+          "id": "c",
+          "text": "No lint"
+        },
+        {
+          "id": "d",
+          "text": "Skip peer review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Policy gates catch misconfigurations.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q052",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to blue/green or canary releases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gradual traffic shift"
+        },
+        {
+          "id": "b",
+          "text": "Big bang only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Progressive delivery limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q053",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to automate infrastructure provisioning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Infrastructure as code templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual clicks only"
+        },
+        {
+          "id": "c",
+          "text": "USB scripts"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q054",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to automate infrastructure provisioning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Infrastructure as code templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual clicks only"
+        },
+        {
+          "id": "c",
+          "text": "USB scripts"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q055",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "A technician must automate infrastructure provisioning. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Infrastructure as code templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual clicks only"
+        },
+        {
+          "id": "c",
+          "text": "USB scripts"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q056",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to use CI/CD for cloud releases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline with tests and approvals"
+        },
+        {
+          "id": "b",
+          "text": "FTP to prod"
+        },
+        {
+          "id": "c",
+          "text": "Skip QA"
+        },
+        {
+          "id": "d",
+          "text": "Shared password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CI/CD reduces deployment risk.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q057",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to use CI/CD for cloud releases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline with tests and approvals"
+        },
+        {
+          "id": "b",
+          "text": "FTP to prod"
+        },
+        {
+          "id": "c",
+          "text": "Skip QA"
+        },
+        {
+          "id": "d",
+          "text": "Shared password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CI/CD reduces deployment risk.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q058",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "A technician must use CI/CD for cloud releases. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pipeline with tests and approvals"
+        },
+        {
+          "id": "b",
+          "text": "FTP to prod"
+        },
+        {
+          "id": "c",
+          "text": "Skip QA"
+        },
+        {
+          "id": "d",
+          "text": "Shared password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CI/CD reduces deployment risk.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q059",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to use immutable infrastructure patterns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace servers instead of patching in place"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH drift"
+        },
+        {
+          "id": "c",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Immutable infra improves consistency.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q060",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to use immutable infrastructure patterns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace servers instead of patching in place"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH drift"
+        },
+        {
+          "id": "c",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Immutable infra improves consistency.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q061",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "A technician must use immutable infrastructure patterns. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace servers instead of patching in place"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH drift"
+        },
+        {
+          "id": "c",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Immutable infra improves consistency.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q062",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to validate templates before apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy checks in CI"
+        },
+        {
+          "id": "b",
+          "text": "Apply prod first"
+        },
+        {
+          "id": "c",
+          "text": "No lint"
+        },
+        {
+          "id": "d",
+          "text": "Skip peer review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Policy gates catch misconfigurations.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q063",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to validate templates before apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy checks in CI"
+        },
+        {
+          "id": "b",
+          "text": "Apply prod first"
+        },
+        {
+          "id": "c",
+          "text": "No lint"
+        },
+        {
+          "id": "d",
+          "text": "Skip peer review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Policy gates catch misconfigurations.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q064",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "A technician must validate templates before apply. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy checks in CI"
+        },
+        {
+          "id": "b",
+          "text": "Apply prod first"
+        },
+        {
+          "id": "c",
+          "text": "No lint"
+        },
+        {
+          "id": "d",
+          "text": "Skip peer review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Policy gates catch misconfigurations.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q065",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to blue/green or canary releases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gradual traffic shift"
+        },
+        {
+          "id": "b",
+          "text": "Big bang only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Progressive delivery limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q066",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to blue/green or canary releases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gradual traffic shift"
+        },
+        {
+          "id": "b",
+          "text": "Big bang only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Progressive delivery limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q067",
+      "domain": "deployment",
+      "type": "multiple-choice",
+      "text": "A technician must blue/green or canary releases. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gradual traffic shift"
+        },
+        {
+          "id": "b",
+          "text": "Big bang only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Progressive delivery limits blast radius.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q068",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to right-size resources for cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitoring utilization and scaling policies"
+        },
+        {
+          "id": "b",
+          "text": "Always max SKU"
+        },
+        {
+          "id": "c",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FinOps uses data to optimize spend.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q069",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to restore service after outage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and tested backups"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RTO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operations includes recovery procedures.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q070",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to monitor SLA and SLO metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual manual check"
+        },
+        {
+          "id": "d",
+          "text": "Disable paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs guide operational focus.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q071",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to right-size resources for cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitoring utilization and scaling policies"
+        },
+        {
+          "id": "b",
+          "text": "Always max SKU"
+        },
+        {
+          "id": "c",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FinOps uses data to optimize spend.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q072",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to right-size resources for cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitoring utilization and scaling policies"
+        },
+        {
+          "id": "b",
+          "text": "Always max SKU"
+        },
+        {
+          "id": "c",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FinOps uses data to optimize spend.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q073",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A technician must right-size resources for cost. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitoring utilization and scaling policies"
+        },
+        {
+          "id": "b",
+          "text": "Always max SKU"
+        },
+        {
+          "id": "c",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FinOps uses data to optimize spend.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q074",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to restore service after outage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and tested backups"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RTO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operations includes recovery procedures.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q075",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to restore service after outage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and tested backups"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RTO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operations includes recovery procedures.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q076",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A technician must restore service after outage. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and tested backups"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RTO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operations includes recovery procedures.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q077",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to monitor SLA and SLO metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual manual check"
+        },
+        {
+          "id": "d",
+          "text": "Disable paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs guide operational focus.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q078",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to monitor SLA and SLO metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual manual check"
+        },
+        {
+          "id": "d",
+          "text": "Disable paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs guide operational focus.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q079",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A technician must monitor SLA and SLO metrics. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual manual check"
+        },
+        {
+          "id": "d",
+          "text": "Disable paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs guide operational focus.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q080",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must right-size resources for cost.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitoring utilization and scaling policies"
+        },
+        {
+          "id": "b",
+          "text": "Always max SKU"
+        },
+        {
+          "id": "c",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FinOps uses data to optimize spend.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q081",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should restore service after outage.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and tested backups"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RTO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operations includes recovery procedures.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q082",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "On the job, you need to monitor SLA and SLO metrics.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual manual check"
+        },
+        {
+          "id": "d",
+          "text": "Disable paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs guide operational focus.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q083",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Monitoring utilization and scaling policies rather than Runbooks and tested backups when you need to right-size resources for cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitoring utilization and scaling policies"
+        },
+        {
+          "id": "b",
+          "text": "Runbooks and tested backups"
+        },
+        {
+          "id": "c",
+          "text": "Always max SKU"
+        },
+        {
+          "id": "d",
+          "text": "Ignore metrics"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FinOps uses data to optimize spend. Compare with Runbooks and tested backups: Operations includes recovery procedures.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        },
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q084",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Runbooks and tested backups rather than Dashboards with alerting on error budgets when you need to restore service after outage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and tested backups"
+        },
+        {
+          "id": "b",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
+          "id": "c",
+          "text": "Hope for best"
+        },
+        {
+          "id": "d",
+          "text": "No RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operations includes recovery procedures. Compare with Dashboards with alerting on error budgets: SLOs guide operational focus.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        },
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q085",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Dashboards with alerting on error budgets rather than Monitoring utilization and scaling policies when you need to monitor SLA and SLO metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
+          "id": "b",
+          "text": "Monitoring utilization and scaling policies"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Annual manual check"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs guide operational focus. Compare with Monitoring utilization and scaling policies: FinOps uses data to optimize spend.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        },
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://www.comptia.org/en-us/certifications/cloud"
+}

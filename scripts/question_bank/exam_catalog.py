@@ -619,6 +619,100 @@ EXAMS: list[dict[str, Any]] = [
             ),
         ],
     },
+    {
+        "id": "database-specialty",
+        "name": "AWS Certified Database – Specialty",
+        "code": "DBS-C01",
+        "min_questions": 70,
+        "exam": SPECIALTY_EXAM,
+        "guide_url": "https://aws.amazon.com/certification/certified-database-specialty/",
+        "domains": [
+            domain(
+                "workload-design",
+                "Domain 1: Workload-Specific Database Design",
+                26,
+                [
+                    ("DBS-C01 Exam Guide", "https://aws.amazon.com/certification/certified-database-specialty/"),
+                    ("Amazon Aurora", "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"),
+                    ("Amazon DynamoDB", "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"),
+                ],
+            ),
+            domain(
+                "deployment-migration",
+                "Domain 2: Deployment and Migration",
+                29,
+                [
+                    ("AWS Database Migration Service", "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"),
+                    ("RDS blue/green deployments", "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"),
+                ],
+            ),
+            domain(
+                "management-operations",
+                "Domain 3: Management and Operations",
+                24,
+                [
+                    ("RDS Performance Insights", "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"),
+                    ("Amazon ElastiCache", "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"),
+                ],
+            ),
+            domain(
+                "monitoring-troubleshooting",
+                "Domain 4: Monitoring and Troubleshooting",
+                21,
+                [
+                    ("RDS CloudWatch metrics", "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"),
+                    ("Database Insights", "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"),
+                ],
+            ),
+        ],
+    },
+    {
+        "id": "machine-learning-specialty",
+        "name": "AWS Certified Machine Learning – Specialty",
+        "code": "MLS-C01",
+        "min_questions": 70,
+        "exam": SPECIALTY_EXAM,
+        "guide_url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
+        "domains": [
+            domain(
+                "data-engineering",
+                "Domain 1: Data Engineering",
+                28,
+                [
+                    ("MLS-C01 Exam Guide", "https://aws.amazon.com/certification/certified-machine-learning-specialty/"),
+                    ("Amazon SageMaker Data Wrangler", "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"),
+                    ("AWS Glue", "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"),
+                ],
+            ),
+            domain(
+                "eda",
+                "Domain 2: Exploratory Data Analysis",
+                24,
+                [
+                    ("SageMaker Studio", "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"),
+                    ("Amazon Athena", "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"),
+                ],
+            ),
+            domain(
+                "modeling",
+                "Domain 3: Modeling",
+                36,
+                [
+                    ("SageMaker training", "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"),
+                    ("SageMaker model tuning", "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"),
+                ],
+            ),
+            domain(
+                "ml-operations",
+                "Domain 4: Machine Learning Implementation and Operations",
+                12,
+                [
+                    ("SageMaker endpoints", "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"),
+                    ("SageMaker Model Monitor", "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"),
+                ],
+            ),
+        ],
+    },
 ]
 
 

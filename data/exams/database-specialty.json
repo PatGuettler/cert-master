@@ -1,0 +1,3287 @@
+{
+  "id": "database-specialty",
+  "name": "AWS Certified Database \u2013 Specialty",
+  "code": "DBS-C01",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 180,
+    "passingScore": 750,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "workload-design",
+      "name": "Domain 1: Workload-Specific Database Design",
+      "weight": 26,
+      "resources": [
+        {
+          "title": "DBS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-database-specialty/"
+        },
+        {
+          "title": "Amazon Aurora",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
+        },
+        {
+          "title": "Amazon DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "deployment-migration",
+      "name": "Domain 2: Deployment and Migration",
+      "weight": 29,
+      "resources": [
+        {
+          "title": "AWS Database Migration Service",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        },
+        {
+          "title": "RDS blue/green deployments",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"
+        }
+      ]
+    },
+    {
+      "id": "management-operations",
+      "name": "Domain 3: Management and Operations",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "RDS Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        },
+        {
+          "title": "Amazon ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "monitoring-troubleshooting",
+      "name": "Domain 4: Monitoring and Troubleshooting",
+      "weight": 21,
+      "resources": [
+        {
+          "title": "RDS CloudWatch metrics",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        },
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "dbs-q001",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Workload-Specific Database Design for AWS Certified Database \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DBS-C01 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use DBS-C01 Exam Guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "DBS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-database-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q002",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "According to 'DBS-C01 Exam Guide', what is a documented best practice for Workload-Specific Database Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DBS-C01 Exam Guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "DBS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-database-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q003",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "According to 'Amazon Aurora', what is a documented best practice for Workload-Specific Database Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Amazon Aurora reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Amazon Aurora",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q004",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "According to 'Amazon DynamoDB', what is a documented best practice for Workload-Specific Database Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Amazon DynamoDB reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Amazon DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q005",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Deployment and Migration for AWS Certified Database \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Database Migration Service"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AWS Database Migration Service and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AWS Database Migration Service",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q006",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "According to 'AWS Database Migration Service', what is a documented best practice for Deployment and Migration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS Database Migration Service reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AWS Database Migration Service",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q007",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "According to 'RDS blue/green deployments', what is a documented best practice for Deployment and Migration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS blue/green deployments reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "RDS blue/green deployments",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q008",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Management and Operations for AWS Certified Database \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use RDS Performance Insights and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "RDS Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q009",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "According to 'RDS Performance Insights', what is a documented best practice for Management and Operations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS Performance Insights reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "RDS Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q010",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "According to 'Amazon ElastiCache', what is a documented best practice for Management and Operations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Amazon ElastiCache reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Amazon ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q011",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Monitoring and Troubleshooting for AWS Certified Database \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS CloudWatch metrics"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use RDS CloudWatch metrics and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch metrics",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q012",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "According to 'RDS CloudWatch metrics', what is a documented best practice for Monitoring and Troubleshooting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS CloudWatch metrics reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch metrics",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q013",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "According to 'Database Insights', what is a documented best practice for Monitoring and Troubleshooting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Database Insights reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q014",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to OLTP with MySQL compatibility on Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Aurora"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 only for OLTP"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 only"
+        },
+        {
+          "id": "d",
+          "text": "SNS email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aurora provides high-performance relational storage.",
+      "docs": [
+        {
+          "title": "Amazon Aurora",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q015",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to key-value single-digit ms latency at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS for key-value"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB is managed NoSQL key-value.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q016",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to graph relationships at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Neptune"
+        },
+        {
+          "id": "b",
+          "text": "Relational star schema only"
+        },
+        {
+          "id": "c",
+          "text": "Local notepad"
+        },
+        {
+          "id": "d",
+          "text": "SMTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Neptune supports graph query workloads.",
+      "docs": [
+        {
+          "title": "Neptune",
+          "url": "https://docs.aws.amazon.com/neptune/latest/userguide/intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q017",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to cache relational read workloads in memory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ElastiCache for Redis"
+        },
+        {
+          "id": "b",
+          "text": "Store cache in S3 only"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 health checks only"
+        },
+        {
+          "id": "d",
+          "text": "SNS fanout"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ElastiCache reduces database read load.",
+      "docs": [
+        {
+          "title": "ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q018",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to time-series IoT telemetry storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Timestream"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Timestream is purpose-built for time series.",
+      "docs": [
+        {
+          "title": "Amazon Timestream",
+          "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q019",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to OLTP with MySQL compatibility on Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Aurora"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 only for OLTP"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 only"
+        },
+        {
+          "id": "d",
+          "text": "SNS email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aurora provides high-performance relational storage.",
+      "docs": [
+        {
+          "title": "Amazon Aurora",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q020",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to OLTP with MySQL compatibility on Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Aurora"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 only for OLTP"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 only"
+        },
+        {
+          "id": "d",
+          "text": "SNS email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aurora provides high-performance relational storage.",
+      "docs": [
+        {
+          "title": "Amazon Aurora",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q021",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "A team must OLTP with MySQL compatibility on Aurora. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Aurora"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 only for OLTP"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 only"
+        },
+        {
+          "id": "d",
+          "text": "SNS email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aurora provides high-performance relational storage.",
+      "docs": [
+        {
+          "title": "Amazon Aurora",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q022",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to key-value single-digit ms latency at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS for key-value"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB is managed NoSQL key-value.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q023",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to key-value single-digit ms latency at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS for key-value"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB is managed NoSQL key-value.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q024",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "A team must key-value single-digit ms latency at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS for key-value"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB is managed NoSQL key-value.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q025",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to graph relationships at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Neptune"
+        },
+        {
+          "id": "b",
+          "text": "Relational star schema only"
+        },
+        {
+          "id": "c",
+          "text": "Local notepad"
+        },
+        {
+          "id": "d",
+          "text": "SMTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Neptune supports graph query workloads.",
+      "docs": [
+        {
+          "title": "Neptune",
+          "url": "https://docs.aws.amazon.com/neptune/latest/userguide/intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q026",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to graph relationships at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Neptune"
+        },
+        {
+          "id": "b",
+          "text": "Relational star schema only"
+        },
+        {
+          "id": "c",
+          "text": "Local notepad"
+        },
+        {
+          "id": "d",
+          "text": "SMTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Neptune supports graph query workloads.",
+      "docs": [
+        {
+          "title": "Neptune",
+          "url": "https://docs.aws.amazon.com/neptune/latest/userguide/intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q027",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "A team must graph relationships at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Neptune"
+        },
+        {
+          "id": "b",
+          "text": "Relational star schema only"
+        },
+        {
+          "id": "c",
+          "text": "Local notepad"
+        },
+        {
+          "id": "d",
+          "text": "SMTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Neptune supports graph query workloads.",
+      "docs": [
+        {
+          "title": "Neptune",
+          "url": "https://docs.aws.amazon.com/neptune/latest/userguide/intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q028",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to cache relational read workloads in memory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ElastiCache for Redis"
+        },
+        {
+          "id": "b",
+          "text": "Store cache in S3 only"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 health checks only"
+        },
+        {
+          "id": "d",
+          "text": "SNS fanout"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ElastiCache reduces database read load.",
+      "docs": [
+        {
+          "title": "ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q029",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to cache relational read workloads in memory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ElastiCache for Redis"
+        },
+        {
+          "id": "b",
+          "text": "Store cache in S3 only"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 health checks only"
+        },
+        {
+          "id": "d",
+          "text": "SNS fanout"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ElastiCache reduces database read load.",
+      "docs": [
+        {
+          "title": "ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q030",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "A team must cache relational read workloads in memory. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ElastiCache for Redis"
+        },
+        {
+          "id": "b",
+          "text": "Store cache in S3 only"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 health checks only"
+        },
+        {
+          "id": "d",
+          "text": "SNS fanout"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ElastiCache reduces database read load.",
+      "docs": [
+        {
+          "title": "ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q031",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to time-series IoT telemetry storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Timestream"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Timestream is purpose-built for time series.",
+      "docs": [
+        {
+          "title": "Amazon Timestream",
+          "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q032",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to time-series IoT telemetry storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Timestream"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Timestream is purpose-built for time series.",
+      "docs": [
+        {
+          "title": "Amazon Timestream",
+          "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q033",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "A team must time-series IoT telemetry storage. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Timestream"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Timestream is purpose-built for time series.",
+      "docs": [
+        {
+          "title": "Amazon Timestream",
+          "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q034",
+      "domain": "workload-design",
+      "type": "multiple-choice",
+      "text": "A development team must OLTP with MySQL compatibility on Aurora.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Aurora"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 only for OLTP"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 only"
+        },
+        {
+          "id": "d",
+          "text": "SNS email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aurora provides high-performance relational storage.",
+      "docs": [
+        {
+          "title": "Amazon Aurora",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q035",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to migrate databases with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Database Migration Service"
+        },
+        {
+          "id": "b",
+          "text": "Email SQL dump"
+        },
+        {
+          "id": "c",
+          "text": "USB sneaker net only"
+        },
+        {
+          "id": "d",
+          "text": "Disable replication"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports homogeneous and heterogeneous migration.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q036",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to provision Aurora quickly from templates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS Aurora cloning"
+        },
+        {
+          "id": "b",
+          "text": "Manual reinstall"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloning creates copy-on-write databases.",
+      "docs": [
+        {
+          "title": "Aurora cloning",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q037",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to blue/green database upgrades?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS blue/green deployments"
+        },
+        {
+          "id": "b",
+          "text": "In-place only always"
+        },
+        {
+          "id": "c",
+          "text": "No testing"
+        },
+        {
+          "id": "d",
+          "text": "Delete old"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blue/green reduces cutover risk.",
+      "docs": [
+        {
+          "title": "Blue/green deployments",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q038",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to schema conversion Oracle to PostgreSQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Schema Conversion Tool with DMS"
+        },
+        {
+          "id": "b",
+          "text": "Manual rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore types"
+        },
+        {
+          "id": "d",
+          "text": "No assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCT automates schema conversion.",
+      "docs": [
+        {
+          "title": "AWS SCT",
+          "url": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q039",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ongoing replication for CDC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DMS ongoing replication tasks"
+        },
+        {
+          "id": "b",
+          "text": "Nightly zip only"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Disable logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CDC keeps target in sync.",
+      "docs": [
+        {
+          "title": "DMS CDC",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q040",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to export/import large datasets to RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS snapshot export to S3"
+        },
+        {
+          "id": "b",
+          "text": "Email mbox"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "Ping flood"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snapshot export enables analytics on backups.",
+      "docs": [
+        {
+          "title": "Snapshot export",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q041",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to migrate databases with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Database Migration Service"
+        },
+        {
+          "id": "b",
+          "text": "Email SQL dump"
+        },
+        {
+          "id": "c",
+          "text": "USB sneaker net only"
+        },
+        {
+          "id": "d",
+          "text": "Disable replication"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports homogeneous and heterogeneous migration.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q042",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to migrate databases with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Database Migration Service"
+        },
+        {
+          "id": "b",
+          "text": "Email SQL dump"
+        },
+        {
+          "id": "c",
+          "text": "USB sneaker net only"
+        },
+        {
+          "id": "d",
+          "text": "Disable replication"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports homogeneous and heterogeneous migration.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q043",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "A team must migrate databases with minimal downtime. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Database Migration Service"
+        },
+        {
+          "id": "b",
+          "text": "Email SQL dump"
+        },
+        {
+          "id": "c",
+          "text": "USB sneaker net only"
+        },
+        {
+          "id": "d",
+          "text": "Disable replication"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports homogeneous and heterogeneous migration.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q044",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to provision Aurora quickly from templates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS Aurora cloning"
+        },
+        {
+          "id": "b",
+          "text": "Manual reinstall"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloning creates copy-on-write databases.",
+      "docs": [
+        {
+          "title": "Aurora cloning",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q045",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to provision Aurora quickly from templates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS Aurora cloning"
+        },
+        {
+          "id": "b",
+          "text": "Manual reinstall"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloning creates copy-on-write databases.",
+      "docs": [
+        {
+          "title": "Aurora cloning",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q046",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "A team must provision Aurora quickly from templates. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS Aurora cloning"
+        },
+        {
+          "id": "b",
+          "text": "Manual reinstall"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloning creates copy-on-write databases.",
+      "docs": [
+        {
+          "title": "Aurora cloning",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q047",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to blue/green database upgrades?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS blue/green deployments"
+        },
+        {
+          "id": "b",
+          "text": "In-place only always"
+        },
+        {
+          "id": "c",
+          "text": "No testing"
+        },
+        {
+          "id": "d",
+          "text": "Delete old"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blue/green reduces cutover risk.",
+      "docs": [
+        {
+          "title": "Blue/green deployments",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q048",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to blue/green database upgrades?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS blue/green deployments"
+        },
+        {
+          "id": "b",
+          "text": "In-place only always"
+        },
+        {
+          "id": "c",
+          "text": "No testing"
+        },
+        {
+          "id": "d",
+          "text": "Delete old"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blue/green reduces cutover risk.",
+      "docs": [
+        {
+          "title": "Blue/green deployments",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q049",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "A team must blue/green database upgrades. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS blue/green deployments"
+        },
+        {
+          "id": "b",
+          "text": "In-place only always"
+        },
+        {
+          "id": "c",
+          "text": "No testing"
+        },
+        {
+          "id": "d",
+          "text": "Delete old"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blue/green reduces cutover risk.",
+      "docs": [
+        {
+          "title": "Blue/green deployments",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q050",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to schema conversion Oracle to PostgreSQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Schema Conversion Tool with DMS"
+        },
+        {
+          "id": "b",
+          "text": "Manual rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore types"
+        },
+        {
+          "id": "d",
+          "text": "No assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCT automates schema conversion.",
+      "docs": [
+        {
+          "title": "AWS SCT",
+          "url": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q051",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to schema conversion Oracle to PostgreSQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Schema Conversion Tool with DMS"
+        },
+        {
+          "id": "b",
+          "text": "Manual rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore types"
+        },
+        {
+          "id": "d",
+          "text": "No assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCT automates schema conversion.",
+      "docs": [
+        {
+          "title": "AWS SCT",
+          "url": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q052",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "A team must schema conversion Oracle to PostgreSQL. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Schema Conversion Tool with DMS"
+        },
+        {
+          "id": "b",
+          "text": "Manual rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore types"
+        },
+        {
+          "id": "d",
+          "text": "No assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCT automates schema conversion.",
+      "docs": [
+        {
+          "title": "AWS SCT",
+          "url": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q053",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to ongoing replication for CDC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DMS ongoing replication tasks"
+        },
+        {
+          "id": "b",
+          "text": "Nightly zip only"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Disable logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CDC keeps target in sync.",
+      "docs": [
+        {
+          "title": "DMS CDC",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q054",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to ongoing replication for CDC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DMS ongoing replication tasks"
+        },
+        {
+          "id": "b",
+          "text": "Nightly zip only"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Disable logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CDC keeps target in sync.",
+      "docs": [
+        {
+          "title": "DMS CDC",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q055",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "A team must ongoing replication for CDC. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DMS ongoing replication tasks"
+        },
+        {
+          "id": "b",
+          "text": "Nightly zip only"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Disable logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CDC keeps target in sync.",
+      "docs": [
+        {
+          "title": "DMS CDC",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q056",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to export/import large datasets to RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS snapshot export to S3"
+        },
+        {
+          "id": "b",
+          "text": "Email mbox"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "Ping flood"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snapshot export enables analytics on backups.",
+      "docs": [
+        {
+          "title": "Snapshot export",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q057",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to export/import large datasets to RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS snapshot export to S3"
+        },
+        {
+          "id": "b",
+          "text": "Email mbox"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "Ping flood"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snapshot export enables analytics on backups.",
+      "docs": [
+        {
+          "title": "Snapshot export",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q058",
+      "domain": "deployment-migration",
+      "type": "multiple-choice",
+      "text": "A team must export/import large datasets to RDS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS snapshot export to S3"
+        },
+        {
+          "id": "b",
+          "text": "Email mbox"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "Ping flood"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snapshot export enables analytics on backups.",
+      "docs": [
+        {
+          "title": "Snapshot export",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q059",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to automate patching for RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS maintenance windows and minor version auto-apply"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Disable backups"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed maintenance reduces operational toil.",
+      "docs": [
+        {
+          "title": "RDS maintenance",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q060",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to monitor DB performance insights?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "Guesswork only"
+        },
+        {
+          "id": "c",
+          "text": "Disable metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Performance Insights shows wait events.",
+      "docs": [
+        {
+          "title": "Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q061",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to global read scaling for Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aurora global database"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ only"
+        },
+        {
+          "id": "c",
+          "text": "No replicas"
+        },
+        {
+          "id": "d",
+          "text": "Public write endpoint"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global database replicates across regions.",
+      "docs": [
+        {
+          "title": "Aurora global database",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q062",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to secrets rotation for database credentials?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Secrets Manager with RDS integration"
+        },
+        {
+          "id": "b",
+          "text": "Password in code"
+        },
+        {
+          "id": "c",
+          "text": "Email creds"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets Manager rotates credentials safely.",
+      "docs": [
+        {
+          "title": "Secrets Manager",
+          "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q063",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to automate patching for RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS maintenance windows and minor version auto-apply"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Disable backups"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed maintenance reduces operational toil.",
+      "docs": [
+        {
+          "title": "RDS maintenance",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q064",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to automate patching for RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS maintenance windows and minor version auto-apply"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Disable backups"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed maintenance reduces operational toil.",
+      "docs": [
+        {
+          "title": "RDS maintenance",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q065",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "A team must automate patching for RDS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS maintenance windows and minor version auto-apply"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Disable backups"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed maintenance reduces operational toil.",
+      "docs": [
+        {
+          "title": "RDS maintenance",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q066",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to monitor DB performance insights?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "Guesswork only"
+        },
+        {
+          "id": "c",
+          "text": "Disable metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Performance Insights shows wait events.",
+      "docs": [
+        {
+          "title": "Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q067",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to monitor DB performance insights?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "Guesswork only"
+        },
+        {
+          "id": "c",
+          "text": "Disable metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Performance Insights shows wait events.",
+      "docs": [
+        {
+          "title": "Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q068",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "A team must monitor DB performance insights. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "Guesswork only"
+        },
+        {
+          "id": "c",
+          "text": "Disable metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Performance Insights shows wait events.",
+      "docs": [
+        {
+          "title": "Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q069",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to global read scaling for Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aurora global database"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ only"
+        },
+        {
+          "id": "c",
+          "text": "No replicas"
+        },
+        {
+          "id": "d",
+          "text": "Public write endpoint"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global database replicates across regions.",
+      "docs": [
+        {
+          "title": "Aurora global database",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q070",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to global read scaling for Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aurora global database"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ only"
+        },
+        {
+          "id": "c",
+          "text": "No replicas"
+        },
+        {
+          "id": "d",
+          "text": "Public write endpoint"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global database replicates across regions.",
+      "docs": [
+        {
+          "title": "Aurora global database",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q071",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "A team must global read scaling for Aurora. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aurora global database"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ only"
+        },
+        {
+          "id": "c",
+          "text": "No replicas"
+        },
+        {
+          "id": "d",
+          "text": "Public write endpoint"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global database replicates across regions.",
+      "docs": [
+        {
+          "title": "Aurora global database",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q072",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to secrets rotation for database credentials?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Secrets Manager with RDS integration"
+        },
+        {
+          "id": "b",
+          "text": "Password in code"
+        },
+        {
+          "id": "c",
+          "text": "Email creds"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets Manager rotates credentials safely.",
+      "docs": [
+        {
+          "title": "Secrets Manager",
+          "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q073",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to secrets rotation for database credentials?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Secrets Manager with RDS integration"
+        },
+        {
+          "id": "b",
+          "text": "Password in code"
+        },
+        {
+          "id": "c",
+          "text": "Email creds"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets Manager rotates credentials safely.",
+      "docs": [
+        {
+          "title": "Secrets Manager",
+          "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q074",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "A team must secrets rotation for database credentials. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Secrets Manager with RDS integration"
+        },
+        {
+          "id": "b",
+          "text": "Password in code"
+        },
+        {
+          "id": "c",
+          "text": "Email creds"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets Manager rotates credentials safely.",
+      "docs": [
+        {
+          "title": "Secrets Manager",
+          "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q075",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "A solutions architect needs to automate patching for RDS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS maintenance windows and minor version auto-apply"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Disable backups"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed maintenance reduces operational toil.",
+      "docs": [
+        {
+          "title": "RDS maintenance",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q076",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "An organization wants to monitor DB performance insights.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "Guesswork only"
+        },
+        {
+          "id": "c",
+          "text": "Disable metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Performance Insights shows wait events.",
+      "docs": [
+        {
+          "title": "Performance Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q077",
+      "domain": "management-operations",
+      "type": "multiple-choice",
+      "text": "An organization wants to global read scaling for Aurora.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aurora global database"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ only"
+        },
+        {
+          "id": "c",
+          "text": "No replicas"
+        },
+        {
+          "id": "d",
+          "text": "Public write endpoint"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global database replicates across regions.",
+      "docs": [
+        {
+          "title": "Aurora global database",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q078",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to slow query analysis for Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q079",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to alarms on replica lag?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "c",
+          "text": "Email once a year"
+        },
+        {
+          "id": "d",
+          "text": "Disable replicas"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q080",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit SQL activity on RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit"
+        },
+        {
+          "id": "c",
+          "text": "Public logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q081",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which service should you use to slow query analysis for Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q082",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to slow query analysis for Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q083",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A team must slow query analysis for Aurora. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q084",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which service should you use to alarms on replica lag?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "c",
+          "text": "Email once a year"
+        },
+        {
+          "id": "d",
+          "text": "Disable replicas"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q085",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to alarms on replica lag?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "c",
+          "text": "Email once a year"
+        },
+        {
+          "id": "d",
+          "text": "Disable replicas"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q086",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A team must alarms on replica lag. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "c",
+          "text": "Email once a year"
+        },
+        {
+          "id": "d",
+          "text": "Disable replicas"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q087",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which service should you use to audit SQL activity on RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit"
+        },
+        {
+          "id": "c",
+          "text": "Public logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q088",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to audit SQL activity on RDS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit"
+        },
+        {
+          "id": "c",
+          "text": "Public logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q089",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A team must audit SQL activity on RDS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit"
+        },
+        {
+          "id": "c",
+          "text": "Public logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q090",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A development team must slow query analysis for Aurora.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q091",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "For a regulated workload, you should alarms on replica lag.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "c",
+          "text": "Email once a year"
+        },
+        {
+          "id": "d",
+          "text": "Disable replicas"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q092",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A development team must audit SQL activity on RDS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit"
+        },
+        {
+          "id": "c",
+          "text": "Public logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q093",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Database Insights and Performance Insights rather than Amazon CloudWatch metrics for RDS when you need to slow query analysis for Aurora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "c",
+          "text": "No logs"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks. Compare with Amazon CloudWatch metrics for RDS: CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        },
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q094",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Amazon CloudWatch metrics for RDS rather than Database Activity Streams when you need to alarms on replica lag?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "c",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "d",
+          "text": "Email once a year"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation. Compare with Database Activity Streams: Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        },
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://aws.amazon.com/certification/certified-database-specialty/"
+}

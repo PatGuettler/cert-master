@@ -1516,7 +1516,7 @@
       "explanation": "Caching repeated prompts lowers inference spend and improves UX.",
       "docs": [
         {
-          "title": "Caching best practices",
+          "title": "Amazon ElastiCache",
           "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
         }
       ]
@@ -2264,7 +2264,7 @@
       "explanation": "Collect only necessary data and remove identifiers where possible.",
       "docs": [
         {
-          "title": "Data privacy",
+          "title": "Data protection on AWS",
           "url": "https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/data-protection.html"
         }
       ]
@@ -3092,45 +3092,6 @@
     },
     {
       "id": "aif-q089",
-      "domain": "generative-ai-fundamentals",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q090",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3166,6 +3127,45 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q090",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     },

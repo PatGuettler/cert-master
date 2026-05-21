@@ -191,6 +191,70 @@ COMPTIA_EXAMS: list[dict[str, Any]] = [
             ]),
         ],
     },
+    {
+        "id": "comptia-cloud-plus",
+        "name": "CompTIA Cloud+",
+        "code": "CV0-004",
+        "vendor": COMPTIA_VENDOR,
+        "min_questions": 65,
+        "exam": NETWORK_PLUS_EXAM,
+        "guide_url": "https://www.comptia.org/en-us/certifications/cloud",
+        "domains": [
+            domain("cloud-architecture", "Domain 1: Cloud Architecture and Design", 25, [
+                ("Cloud+ Exam Objectives", "https://www.comptia.org/en-us/certifications/cloud"),
+                ("NIST cloud definition", "https://www.comptia.org/en-us/certifications/cloud"),
+            ]),
+            domain("security", "Domain 2: Cloud Security", 25, [
+                ("Cloud+ security objectives", "https://www.comptia.org/en-us/certifications/cloud"),
+            ]),
+            domain("deployment", "Domain 3: Cloud Deployment", 25, [
+                ("Cloud+ deployment objectives", "https://www.comptia.org/en-us/certifications/cloud"),
+            ]),
+            domain("operations", "Domain 4: Cloud Operations and Support", 25, [
+                ("Cloud+ operations objectives", "https://www.comptia.org/en-us/certifications/cloud"),
+            ]),
+        ],
+    },
+    {
+        "id": "comptia-data-plus",
+        "name": "CompTIA Data+",
+        "code": "DA0-001",
+        "vendor": COMPTIA_VENDOR,
+        "min_questions": 55,
+        "exam": CYSA_EXAM,
+        "guide_url": "https://www.comptia.org/en-us/certifications/data",
+        "domains": [
+            domain("data-concepts", "Domain 1: Data Concepts and Environments", 25, [
+                ("Data+ Exam Objectives", "https://www.comptia.org/en-us/certifications/data"),
+            ]),
+            domain("mining-analytics", "Domain 2: Data Mining, Analysis, and Visualization", 35, [
+                ("Data+ Exam Objectives", "https://www.comptia.org/en-us/certifications/data"),
+            ]),
+            domain("governance", "Domain 3: Data Governance, Quality, and Controls", 40, [
+                ("Data+ Exam Objectives", "https://www.comptia.org/en-us/certifications/data"),
+            ]),
+        ],
+    },
+    {
+        "id": "comptia-pentest-plus",
+        "name": "CompTIA PenTest+",
+        "code": "PT0-002",
+        "vendor": COMPTIA_VENDOR,
+        "min_questions": 55,
+        "exam": SECURITY_PLUS_EXAM,
+        "guide_url": "https://www.comptia.org/en-us/certifications/pentest",
+        "domains": [
+            domain("planning-scoping", "Domain 1: Planning and Scoping", 20, [
+                ("PenTest+ Exam Objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            ]),
+            domain("attacks-exploits", "Domain 2: Attacks and Exploits", 45, [
+                ("PenTest+ Exam Objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            ]),
+            domain("reporting", "Domain 3: Reporting and Communication", 35, [
+                ("PenTest+ Exam Objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            ]),
+        ],
+    },
 ]
 
 COMPTIA_BY_ID = {e["id"]: e for e in COMPTIA_EXAMS}

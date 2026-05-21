@@ -77,7 +77,7 @@ No Google account required. Good for a single affiliate or training link.
 ### 1. Create an AdSense account
 
 1. Go to [https://www.google.com/adsense/](https://www.google.com/adsense/).
-2. Sign in with Google and add your site URL (e.g. `https://yourusername.github.io/aws-cert-master/`).
+2. Sign in with Google and add your site URL: `https://practicecert.com/`.
 3. Complete verification (DNS, HTML file, or meta tag — Google will guide you).
 
 GitHub Pages tip: use the **HTML tag** or **ads.txt** method in repo root if offered.

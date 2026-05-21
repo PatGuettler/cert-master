@@ -1716,7 +1716,7 @@
       "explanation": "OpsWorks automates configuration with Chef/Puppet.",
       "docs": [
         {
-          "title": "Systems Manager State Manager",
+          "title": "OpsWorks",
           "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
         }
       ]
@@ -3185,45 +3185,6 @@
     },
     {
       "id": "soa-q092",
-      "domain": "reliability-continuity",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q093",
       "domain": "monitoring-logging",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3263,7 +3224,7 @@
       ]
     },
     {
-      "id": "soa-q094",
+      "id": "soa-q093",
       "domain": "monitoring-logging",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified CloudOps Engineer \u2013 Associate? (Select TWO.)",
@@ -3298,6 +3259,45 @@
         {
           "title": "Amazon CloudWatch",
           "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q094",
+      "domain": "reliability-continuity",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     },
@@ -3475,7 +3475,7 @@
       "id": "soa-q100",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS OpsWorks', what should you do FIRST when addressing Deployment, Provisioning, and Automation objectives?",
+      "text": "According to AWS best practices documented in 'Systems Manager State Manager', what should you do FIRST when addressing Deployment, Provisioning, and Automation objectives?",
       "options": [
         {
           "id": "a",
@@ -3497,7 +3497,7 @@
       "correct": [
         "a"
       ],
-      "explanation": "Official guides such as AWS OpsWorks describe domain objectives; practice designs should follow AWS documented best practices.",
+      "explanation": "Official guides such as Systems Manager State Manager describe domain objectives; practice designs should follow AWS documented best practices.",
       "docs": [
         {
           "title": "Systems Manager State Manager",

@@ -2898,45 +2898,6 @@
     },
     {
       "id": "aip-q084",
-      "domain": "foundation-model-integration",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Generative AI Developer \u2013 Professional? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon Bedrock"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon Bedrock Runtime API"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q085",
       "domain": "rag-knowledge",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -2971,6 +2932,45 @@
         {
           "title": "AWS KMS",
           "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q085",
+      "domain": "foundation-model-integration",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Generative AI Developer \u2013 Professional? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Bedrock Runtime API"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
         }
       ]
     },

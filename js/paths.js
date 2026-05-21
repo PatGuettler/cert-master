@@ -1,18 +1,30 @@
 /**
- * Resolve static asset URLs for GitHub Pages project sites (e.g. /aws-cert-master/)
- * and local dev. Ignores the URL hash so #cloud-practitioner does not break fetch paths.
+ * Resolve static asset URLs for the deployed site root.
+ * Supports custom domain at / (practicecert.com) and legacy GitHub project pages (/repo-name/).
  */
-export function getSiteRoot() {
-  const { origin, pathname } = window.location;
-  let base = pathname;
+const APP_ROUTE_SEGMENTS = new Set(["cert", "browse", "questions"]);
 
-  if (/\.html$/i.test(base)) {
-    base = base.slice(0, base.lastIndexOf("/") + 1);
-  } else if (!base.endsWith("/")) {
-    base = `${base}/`;
+/**
+ * Deployment root path: "/" for custom domain, "/aws-cert-master/" for project pages.
+ * Set early by inline script in index.html as window.__DEPLOY_BASE__.
+ */
+export function getDeployBasePath() {
+  if (typeof window.__DEPLOY_BASE__ === "string" && window.__DEPLOY_BASE__) {
+    const b = window.__DEPLOY_BASE__;
+    return b.endsWith("/") ? b : `${b}/`;
   }
 
-  return `${origin}${base}`;
+  const path = window.location.pathname;
+  const first = path.split("/").filter(Boolean)[0] ?? "";
+  if (first && !APP_ROUTE_SEGMENTS.has(first) && path.startsWith(`/${first}`)) {
+    return `/${first}/`;
+  }
+  return "/";
+}
+
+export function getSiteRoot() {
+  const { origin } = window.location;
+  return `${origin}${getDeployBasePath()}`;
 }
 
 /**

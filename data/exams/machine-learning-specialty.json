@@ -1,0 +1,3261 @@
+{
+  "id": "machine-learning-specialty",
+  "name": "AWS Certified Machine Learning \u2013 Specialty",
+  "code": "MLS-C01",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 180,
+    "passingScore": 750,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "data-engineering",
+      "name": "Domain 1: Data Engineering",
+      "weight": 28,
+      "resources": [
+        {
+          "title": "MLS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+        },
+        {
+          "title": "Amazon SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        },
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "eda",
+      "name": "Domain 2: Exploratory Data Analysis",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        },
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "modeling",
+      "name": "Domain 3: Modeling",
+      "weight": 36,
+      "resources": [
+        {
+          "title": "SageMaker training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
+        },
+        {
+          "title": "SageMaker model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "ml-operations",
+      "name": "Domain 4: Machine Learning Implementation and Operations",
+      "weight": 12,
+      "resources": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        },
+        {
+          "title": "SageMaker Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "mls-q001",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Data Engineering for AWS Certified Machine Learning \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MLS-C01 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use MLS-C01 Exam Guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "MLS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "mls-q002",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "According to 'MLS-C01 Exam Guide', what is a documented best practice for Data Engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MLS-C01 Exam Guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "MLS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "mls-q003",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "According to 'Amazon SageMaker Data Wrangler', what is a documented best practice for Data Engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Amazon SageMaker Data Wrangler reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q004",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "According to 'AWS Glue', what is a documented best practice for Data Engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS Glue reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q005",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Exploratory Data Analysis for AWS Certified Machine Learning \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Studio"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use SageMaker Studio and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q006",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "According to 'SageMaker Studio', what is a documented best practice for Exploratory Data Analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker Studio reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q007",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "According to 'Amazon Athena', what is a documented best practice for Exploratory Data Analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Amazon Athena reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q008",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Modeling for AWS Certified Machine Learning \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker training"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use SageMaker training and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "SageMaker training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q009",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "According to 'SageMaker training', what is a documented best practice for Modeling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker training reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "SageMaker training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q010",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "According to 'SageMaker model tuning', what is a documented best practice for Modeling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker model tuning reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "SageMaker model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q011",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "Per official AWS exam guides and documentation, which source should you use when studying Machine Learning Implementation and Operations for AWS Certified Machine Learning \u2013 Specialty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use SageMaker endpoints and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q012",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "According to 'SageMaker endpoints', what is a documented best practice for Machine Learning Implementation and Operations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker endpoints reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q013",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "According to 'SageMaker Model Monitor', what is a documented best practice for Machine Learning Implementation and Operations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker Model Monitor reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "SageMaker Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q014",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to prepare ML features at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Data Wrangler"
+        },
+        {
+          "id": "b",
+          "text": "Excel only forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual copy USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data Wrangler accelerates feature engineering.",
+      "docs": [
+        {
+          "title": "SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q015",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ETL for ML datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Public FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue provides serverless Spark ETL.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q016",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to label training data at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Manual sticky notes"
+        },
+        {
+          "id": "c",
+          "text": "No QA"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth manages labeling workflows.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q017",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store features for reuse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV email"
+        },
+        {
+          "id": "c",
+          "text": "No schema"
+        },
+        {
+          "id": "d",
+          "text": "Delete versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares consistent features.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q018",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ingest streaming data for ML?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Firehose to S3"
+        },
+        {
+          "id": "b",
+          "text": "FTP batch only"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firehose loads streams for training pipelines.",
+      "docs": [
+        {
+          "title": "Kinesis Data Firehose",
+          "url": "https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q019",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which service should you use to prepare ML features at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Data Wrangler"
+        },
+        {
+          "id": "b",
+          "text": "Excel only forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual copy USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data Wrangler accelerates feature engineering.",
+      "docs": [
+        {
+          "title": "SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q020",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to prepare ML features at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Data Wrangler"
+        },
+        {
+          "id": "b",
+          "text": "Excel only forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual copy USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data Wrangler accelerates feature engineering.",
+      "docs": [
+        {
+          "title": "SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q021",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "A team must prepare ML features at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Data Wrangler"
+        },
+        {
+          "id": "b",
+          "text": "Excel only forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual copy USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data Wrangler accelerates feature engineering.",
+      "docs": [
+        {
+          "title": "SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q022",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which service should you use to ETL for ML datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Public FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue provides serverless Spark ETL.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q023",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to ETL for ML datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Public FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue provides serverless Spark ETL.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q024",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "A team must ETL for ML datasets. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Public FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue provides serverless Spark ETL.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q025",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which service should you use to label training data at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Manual sticky notes"
+        },
+        {
+          "id": "c",
+          "text": "No QA"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth manages labeling workflows.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q026",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to label training data at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Manual sticky notes"
+        },
+        {
+          "id": "c",
+          "text": "No QA"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth manages labeling workflows.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q027",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "A team must label training data at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Manual sticky notes"
+        },
+        {
+          "id": "c",
+          "text": "No QA"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth manages labeling workflows.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q028",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which service should you use to store features for reuse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV email"
+        },
+        {
+          "id": "c",
+          "text": "No schema"
+        },
+        {
+          "id": "d",
+          "text": "Delete versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares consistent features.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q029",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to store features for reuse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV email"
+        },
+        {
+          "id": "c",
+          "text": "No schema"
+        },
+        {
+          "id": "d",
+          "text": "Delete versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares consistent features.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q030",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "A team must store features for reuse. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV email"
+        },
+        {
+          "id": "c",
+          "text": "No schema"
+        },
+        {
+          "id": "d",
+          "text": "Delete versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares consistent features.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q031",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "Which service should you use to ingest streaming data for ML?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Firehose to S3"
+        },
+        {
+          "id": "b",
+          "text": "FTP batch only"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firehose loads streams for training pipelines.",
+      "docs": [
+        {
+          "title": "Kinesis Data Firehose",
+          "url": "https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q032",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to ingest streaming data for ML?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Firehose to S3"
+        },
+        {
+          "id": "b",
+          "text": "FTP batch only"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firehose loads streams for training pipelines.",
+      "docs": [
+        {
+          "title": "Kinesis Data Firehose",
+          "url": "https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q033",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "A team must ingest streaming data for ML. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Firehose to S3"
+        },
+        {
+          "id": "b",
+          "text": "FTP batch only"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firehose loads streams for training pipelines.",
+      "docs": [
+        {
+          "title": "Kinesis Data Firehose",
+          "url": "https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q034",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "An organization wants to prepare ML features at scale.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Data Wrangler"
+        },
+        {
+          "id": "b",
+          "text": "Excel only forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual copy USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data Wrangler accelerates feature engineering.",
+      "docs": [
+        {
+          "title": "SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q035",
+      "domain": "data-engineering",
+      "type": "multiple-choice",
+      "text": "A development team must ETL for ML datasets.",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Public FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue provides serverless Spark ETL.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q036",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to managed Jupyter for exploration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Studio notebooks"
+        },
+        {
+          "id": "b",
+          "text": "Notepad only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Studio provides collaborative ML IDE.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q037",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to query data lakes for features?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena SQL explores S3 data.",
+      "docs": [
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q038",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to visualize dataset bias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Ignore segments"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify analyzes bias during EDA.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q039",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to profile large tabular datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Data Wrangler insights"
+        },
+        {
+          "id": "b",
+          "text": "Eyeball only"
+        },
+        {
+          "id": "c",
+          "text": "Sample one row"
+        },
+        {
+          "id": "d",
+          "text": "No stats"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Profiling guides cleaning steps.",
+      "docs": [
+        {
+          "title": "Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q040",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which service should you use to managed Jupyter for exploration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Studio notebooks"
+        },
+        {
+          "id": "b",
+          "text": "Notepad only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Studio provides collaborative ML IDE.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q041",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to managed Jupyter for exploration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Studio notebooks"
+        },
+        {
+          "id": "b",
+          "text": "Notepad only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Studio provides collaborative ML IDE.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q042",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "A team must managed Jupyter for exploration. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Studio notebooks"
+        },
+        {
+          "id": "b",
+          "text": "Notepad only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Studio provides collaborative ML IDE.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q043",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which service should you use to query data lakes for features?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena SQL explores S3 data.",
+      "docs": [
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q044",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to query data lakes for features?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena SQL explores S3 data.",
+      "docs": [
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q045",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "A team must query data lakes for features. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena SQL explores S3 data.",
+      "docs": [
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q046",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which service should you use to visualize dataset bias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Ignore segments"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify analyzes bias during EDA.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q047",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to visualize dataset bias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Ignore segments"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify analyzes bias during EDA.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q048",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "A team must visualize dataset bias. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Ignore segments"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify analyzes bias during EDA.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q049",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "Which service should you use to profile large tabular datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Data Wrangler insights"
+        },
+        {
+          "id": "b",
+          "text": "Eyeball only"
+        },
+        {
+          "id": "c",
+          "text": "Sample one row"
+        },
+        {
+          "id": "d",
+          "text": "No stats"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Profiling guides cleaning steps.",
+      "docs": [
+        {
+          "title": "Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q050",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to profile large tabular datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Data Wrangler insights"
+        },
+        {
+          "id": "b",
+          "text": "Eyeball only"
+        },
+        {
+          "id": "c",
+          "text": "Sample one row"
+        },
+        {
+          "id": "d",
+          "text": "No stats"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Profiling guides cleaning steps.",
+      "docs": [
+        {
+          "title": "Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q051",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "A team must profile large tabular datasets. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Data Wrangler insights"
+        },
+        {
+          "id": "b",
+          "text": "Eyeball only"
+        },
+        {
+          "id": "c",
+          "text": "Sample one row"
+        },
+        {
+          "id": "d",
+          "text": "No stats"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Profiling guides cleaning steps.",
+      "docs": [
+        {
+          "title": "Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q052",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "For a regulated workload, you should managed Jupyter for exploration.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Studio notebooks"
+        },
+        {
+          "id": "b",
+          "text": "Notepad only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Studio provides collaborative ML IDE.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q053",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "A development team must query data lakes for features.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena SQL explores S3 data.",
+      "docs": [
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q054",
+      "domain": "eda",
+      "type": "multiple-choice",
+      "text": "An organization wants to visualize dataset bias.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Ignore segments"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify analyzes bias during EDA.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q055",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to train models with built-in algorithms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker built-in algorithms"
+        },
+        {
+          "id": "b",
+          "text": "Manual C only"
+        },
+        {
+          "id": "c",
+          "text": "No evaluation"
+        },
+        {
+          "id": "d",
+          "text": "Leak test labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Built-ins cover common ML tasks.",
+      "docs": [
+        {
+          "title": "Built-in algorithms",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q056",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to hyperparameter tuning jobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker automatic model tuning"
+        },
+        {
+          "id": "b",
+          "text": "Guess parameters"
+        },
+        {
+          "id": "c",
+          "text": "One manual run"
+        },
+        {
+          "id": "d",
+          "text": "Disable validation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tuning searches hyperparameter space.",
+      "docs": [
+        {
+          "title": "Model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q057",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to distributed training on GPU clusters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker distributed training"
+        },
+        {
+          "id": "b",
+          "text": "Single thread only"
+        },
+        {
+          "id": "c",
+          "text": "No GPU"
+        },
+        {
+          "id": "d",
+          "text": "FTP data"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Distributed jobs scale training.",
+      "docs": [
+        {
+          "title": "Distributed training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q058",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to feature store for training and serving?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV in email"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares features across teams.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q059",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to batch transform for large inference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker batch transform"
+        },
+        {
+          "id": "b",
+          "text": "Real-time only always"
+        },
+        {
+          "id": "c",
+          "text": "Manual loop"
+        },
+        {
+          "id": "d",
+          "text": "No S3"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Batch transform scores large datasets.",
+      "docs": [
+        {
+          "title": "Batch transform",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q060",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which service should you use to train models with built-in algorithms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker built-in algorithms"
+        },
+        {
+          "id": "b",
+          "text": "Manual C only"
+        },
+        {
+          "id": "c",
+          "text": "No evaluation"
+        },
+        {
+          "id": "d",
+          "text": "Leak test labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Built-ins cover common ML tasks.",
+      "docs": [
+        {
+          "title": "Built-in algorithms",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q061",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to train models with built-in algorithms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker built-in algorithms"
+        },
+        {
+          "id": "b",
+          "text": "Manual C only"
+        },
+        {
+          "id": "c",
+          "text": "No evaluation"
+        },
+        {
+          "id": "d",
+          "text": "Leak test labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Built-ins cover common ML tasks.",
+      "docs": [
+        {
+          "title": "Built-in algorithms",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q062",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A team must train models with built-in algorithms. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker built-in algorithms"
+        },
+        {
+          "id": "b",
+          "text": "Manual C only"
+        },
+        {
+          "id": "c",
+          "text": "No evaluation"
+        },
+        {
+          "id": "d",
+          "text": "Leak test labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Built-ins cover common ML tasks.",
+      "docs": [
+        {
+          "title": "Built-in algorithms",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q063",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which service should you use to hyperparameter tuning jobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker automatic model tuning"
+        },
+        {
+          "id": "b",
+          "text": "Guess parameters"
+        },
+        {
+          "id": "c",
+          "text": "One manual run"
+        },
+        {
+          "id": "d",
+          "text": "Disable validation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tuning searches hyperparameter space.",
+      "docs": [
+        {
+          "title": "Model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q064",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to hyperparameter tuning jobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker automatic model tuning"
+        },
+        {
+          "id": "b",
+          "text": "Guess parameters"
+        },
+        {
+          "id": "c",
+          "text": "One manual run"
+        },
+        {
+          "id": "d",
+          "text": "Disable validation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tuning searches hyperparameter space.",
+      "docs": [
+        {
+          "title": "Model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q065",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A team must hyperparameter tuning jobs. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker automatic model tuning"
+        },
+        {
+          "id": "b",
+          "text": "Guess parameters"
+        },
+        {
+          "id": "c",
+          "text": "One manual run"
+        },
+        {
+          "id": "d",
+          "text": "Disable validation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tuning searches hyperparameter space.",
+      "docs": [
+        {
+          "title": "Model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q066",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which service should you use to distributed training on GPU clusters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker distributed training"
+        },
+        {
+          "id": "b",
+          "text": "Single thread only"
+        },
+        {
+          "id": "c",
+          "text": "No GPU"
+        },
+        {
+          "id": "d",
+          "text": "FTP data"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Distributed jobs scale training.",
+      "docs": [
+        {
+          "title": "Distributed training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q067",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to distributed training on GPU clusters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker distributed training"
+        },
+        {
+          "id": "b",
+          "text": "Single thread only"
+        },
+        {
+          "id": "c",
+          "text": "No GPU"
+        },
+        {
+          "id": "d",
+          "text": "FTP data"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Distributed jobs scale training.",
+      "docs": [
+        {
+          "title": "Distributed training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q068",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A team must distributed training on GPU clusters. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker distributed training"
+        },
+        {
+          "id": "b",
+          "text": "Single thread only"
+        },
+        {
+          "id": "c",
+          "text": "No GPU"
+        },
+        {
+          "id": "d",
+          "text": "FTP data"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Distributed jobs scale training.",
+      "docs": [
+        {
+          "title": "Distributed training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q069",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which service should you use to feature store for training and serving?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV in email"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares features across teams.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q070",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to feature store for training and serving?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV in email"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares features across teams.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q071",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A team must feature store for training and serving. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV in email"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares features across teams.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q072",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which service should you use to batch transform for large inference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker batch transform"
+        },
+        {
+          "id": "b",
+          "text": "Real-time only always"
+        },
+        {
+          "id": "c",
+          "text": "Manual loop"
+        },
+        {
+          "id": "d",
+          "text": "No S3"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Batch transform scores large datasets.",
+      "docs": [
+        {
+          "title": "Batch transform",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q073",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to batch transform for large inference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker batch transform"
+        },
+        {
+          "id": "b",
+          "text": "Real-time only always"
+        },
+        {
+          "id": "c",
+          "text": "Manual loop"
+        },
+        {
+          "id": "d",
+          "text": "No S3"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Batch transform scores large datasets.",
+      "docs": [
+        {
+          "title": "Batch transform",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q074",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A team must batch transform for large inference. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker batch transform"
+        },
+        {
+          "id": "b",
+          "text": "Real-time only always"
+        },
+        {
+          "id": "c",
+          "text": "Manual loop"
+        },
+        {
+          "id": "d",
+          "text": "No S3"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Batch transform scores large datasets.",
+      "docs": [
+        {
+          "title": "Batch transform",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q075",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A development team must train models with built-in algorithms.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker built-in algorithms"
+        },
+        {
+          "id": "b",
+          "text": "Manual C only"
+        },
+        {
+          "id": "c",
+          "text": "No evaluation"
+        },
+        {
+          "id": "d",
+          "text": "Leak test labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Built-ins cover common ML tasks.",
+      "docs": [
+        {
+          "title": "Built-in algorithms",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q076",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "An organization wants to hyperparameter tuning jobs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker automatic model tuning"
+        },
+        {
+          "id": "b",
+          "text": "Guess parameters"
+        },
+        {
+          "id": "c",
+          "text": "One manual run"
+        },
+        {
+          "id": "d",
+          "text": "Disable validation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tuning searches hyperparameter space.",
+      "docs": [
+        {
+          "title": "Model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q077",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A development team must distributed training on GPU clusters.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker distributed training"
+        },
+        {
+          "id": "b",
+          "text": "Single thread only"
+        },
+        {
+          "id": "c",
+          "text": "No GPU"
+        },
+        {
+          "id": "d",
+          "text": "FTP data"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Distributed jobs scale training.",
+      "docs": [
+        {
+          "title": "Distributed training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q078",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "An organization wants to feature store for training and serving.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "b",
+          "text": "CSV in email"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature Store shares features across teams.",
+      "docs": [
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q079",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "A development team must batch transform for large inference.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker batch transform"
+        },
+        {
+          "id": "b",
+          "text": "Real-time only always"
+        },
+        {
+          "id": "c",
+          "text": "Manual loop"
+        },
+        {
+          "id": "d",
+          "text": "No S3"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Batch transform scores large datasets.",
+      "docs": [
+        {
+          "title": "Batch transform",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q080",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Amazon SageMaker built-in algorithms rather than Amazon SageMaker automatic model tuning when you need to train models with built-in algorithms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker built-in algorithms"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SageMaker automatic model tuning"
+        },
+        {
+          "id": "c",
+          "text": "Manual C only"
+        },
+        {
+          "id": "d",
+          "text": "No evaluation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Built-ins cover common ML tasks. Compare with Amazon SageMaker automatic model tuning: Tuning searches hyperparameter space.",
+      "docs": [
+        {
+          "title": "Built-in algorithms",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html"
+        },
+        {
+          "title": "Model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q081",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Amazon SageMaker automatic model tuning rather than SageMaker distributed training when you need to hyperparameter tuning jobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker automatic model tuning"
+        },
+        {
+          "id": "b",
+          "text": "SageMaker distributed training"
+        },
+        {
+          "id": "c",
+          "text": "Guess parameters"
+        },
+        {
+          "id": "d",
+          "text": "One manual run"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tuning searches hyperparameter space. Compare with SageMaker distributed training: Distributed jobs scale training.",
+      "docs": [
+        {
+          "title": "Model tuning",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
+        },
+        {
+          "title": "Distributed training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q082",
+      "domain": "modeling",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by SageMaker distributed training rather than Amazon SageMaker Feature Store when you need to distributed training on GPU clusters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker distributed training"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SageMaker Feature Store"
+        },
+        {
+          "id": "c",
+          "text": "Single thread only"
+        },
+        {
+          "id": "d",
+          "text": "No GPU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Distributed jobs scale training. Compare with Amazon SageMaker Feature Store: Feature Store shares features across teams.",
+      "docs": [
+        {
+          "title": "Distributed training",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
+        },
+        {
+          "title": "Feature Store",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q083",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deploy real-time inference endpoints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Batch only always"
+        },
+        {
+          "id": "c",
+          "text": "FTP model"
+        },
+        {
+          "id": "d",
+          "text": "Email weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints host models for low-latency inference.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q084",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect model drift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Model Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Ignore drift"
+        },
+        {
+          "id": "c",
+          "text": "No baselines"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Model Monitor tracks data and quality drift.",
+      "docs": [
+        {
+          "title": "Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q085",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to deploy real-time inference endpoints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Batch only always"
+        },
+        {
+          "id": "c",
+          "text": "FTP model"
+        },
+        {
+          "id": "d",
+          "text": "Email weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints host models for low-latency inference.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q086",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to deploy real-time inference endpoints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Batch only always"
+        },
+        {
+          "id": "c",
+          "text": "FTP model"
+        },
+        {
+          "id": "d",
+          "text": "Email weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints host models for low-latency inference.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q087",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "A team must deploy real-time inference endpoints. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Batch only always"
+        },
+        {
+          "id": "c",
+          "text": "FTP model"
+        },
+        {
+          "id": "d",
+          "text": "Email weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints host models for low-latency inference.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q088",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to detect model drift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Model Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Ignore drift"
+        },
+        {
+          "id": "c",
+          "text": "No baselines"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Model Monitor tracks data and quality drift.",
+      "docs": [
+        {
+          "title": "Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q089",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to detect model drift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Model Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Ignore drift"
+        },
+        {
+          "id": "c",
+          "text": "No baselines"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Model Monitor tracks data and quality drift.",
+      "docs": [
+        {
+          "title": "Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q090",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "A team must detect model drift. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Model Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Ignore drift"
+        },
+        {
+          "id": "c",
+          "text": "No baselines"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Model Monitor tracks data and quality drift.",
+      "docs": [
+        {
+          "title": "Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q091",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "For a regulated workload, you should deploy real-time inference endpoints.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Batch only always"
+        },
+        {
+          "id": "c",
+          "text": "FTP model"
+        },
+        {
+          "id": "d",
+          "text": "Email weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints host models for low-latency inference.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q092",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "An organization wants to detect model drift.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Model Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Ignore drift"
+        },
+        {
+          "id": "c",
+          "text": "No baselines"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Model Monitor tracks data and quality drift.",
+      "docs": [
+        {
+          "title": "Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    },
+    {
+      "id": "mls-q093",
+      "domain": "ml-operations",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Amazon SageMaker endpoints rather than Amazon SageMaker Model Monitor when you need to deploy real-time inference endpoints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SageMaker Model Monitor"
+        },
+        {
+          "id": "c",
+          "text": "Batch only always"
+        },
+        {
+          "id": "d",
+          "text": "FTP model"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints host models for low-latency inference. Compare with Amazon SageMaker Model Monitor: Model Monitor tracks data and quality drift.",
+      "docs": [
+        {
+          "title": "SageMaker endpoints",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+        },
+        {
+          "title": "Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+}
