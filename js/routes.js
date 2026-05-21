@@ -3,6 +3,7 @@
  * Legacy hash routes (#cert/..., #browse) are normalized to paths on load.
  */
 import { getSiteRoot } from "./paths.js";
+import { KEYTRAIN_WORKSHOP_IDS } from "./workshops/keytrain-workshop-content.js";
 
 /**
  * @returns {string} Pathname prefix for the app, e.g. /cert-master/
@@ -56,7 +57,7 @@ export function parseRoute(exams, keytrainIds = []) {
     if (!parts[1]) return { type: "keytrain-hub" };
     if (parts[1] === "workshops") return { type: "keytrain-workshops" };
     if (parts[1] === "workshop" && parts[2]) {
-      if (!exams.some((e) => e.id === parts[2])) return { type: "keytrain-hub" };
+      if (!KEYTRAIN_WORKSHOP_IDS.includes(parts[2])) return { type: "keytrain-hub" };
       return { type: "keytrain-workshop", certId: parts[2] };
     }
     if (!keytrainIds.includes(parts[1])) return { type: "keytrain-hub" };
@@ -70,7 +71,7 @@ export function parseRoute(exams, keytrainIds = []) {
     if (!parts[1]) return { type: "keytrain-hub" };
     if (parts[1] === "workshops") return { type: "keytrain-workshops" };
     if (parts[1] === "workshop" && parts[2]) {
-      if (!exams.some((e) => e.id === parts[2])) return { type: "keytrain-hub" };
+      if (!KEYTRAIN_WORKSHOP_IDS.includes(parts[2])) return { type: "keytrain-hub" };
       return { type: "keytrain-workshop", certId: parts[2] };
     }
     return { type: "keytrain-hub" };

@@ -8,7 +8,7 @@ import { loadSettings, saveSettings } from "./storage.js";
  * @param {() => void} opts.onNavigateHome
  * @param {() => void} opts.onNavigateBrowse
  * @param {() => void} opts.onNavigateDashboard
- * @param {() => void} [opts.onNavigateKeytrain]
+ * @param {() => void} opts.onNavigateKeytrain
  */
 export function initMenu({
   getActiveCertId,
@@ -19,6 +19,8 @@ export function initMenu({
   onNavigateKeytrain,
   onNavigateDashboard,
 }) {
+  pruneLegacyDrawerNav();
+
   const menuBtn = document.getElementById("menu-btn");
   const overlay = document.getElementById("drawer-overlay");
   const drawer = document.getElementById("drawer");
@@ -59,7 +61,7 @@ export function initMenu({
   });
 
   document.getElementById("drawer-nav-keytrain")?.addEventListener("click", () => {
-    onNavigateKeytrain?.();
+    onNavigateKeytrain();
     closeDrawer();
   });
 
@@ -94,4 +96,18 @@ export function initMenu({
   }
 
   return { closeDrawer, refreshSettings };
+}
+
+/** Remove duplicate KeyTrain entries from older HTML builds. */
+function pruneLegacyDrawerNav() {
+  const nav = document.querySelector(".drawer-nav");
+  if (!nav) return;
+
+  nav.querySelector("#drawer-nav-key-training")?.remove();
+  nav.querySelector("#drawer-nav-keytrain-cert")?.remove();
+
+  const keytrainBtns = nav.querySelectorAll("#drawer-nav-keytrain");
+  for (let i = 1; i < keytrainBtns.length; i++) {
+    keytrainBtns[i].remove();
+  }
 }

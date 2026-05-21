@@ -4,6 +4,8 @@
 
 /** @typedef {import('./cert-loader.js').ExamIndexEntry} ExamIndexEntry */
 
+import { listKeytrainWorkshops } from "./workshops/keytrain-workshop-content.js";
+
 const KEY_TRAINING_VENDOR = "keytraining";
 
 /**
@@ -32,7 +34,7 @@ function renderExamGrid(grid, items, onSelect, metaSuffix = " in bank") {
 
     const level = document.createElement("span");
     level.className = "landing-cert-tile-level";
-    level.textContent = "Key Training";
+    level.textContent = "Training";
 
     const title = document.createElement("span");
     title.className = "landing-cert-tile-title";
@@ -49,6 +51,41 @@ function renderExamGrid(grid, items, onSelect, metaSuffix = " in bank") {
 
     tile.append(level, title, code, meta);
     tile.addEventListener("click", () => onSelect(exam.id));
+    grid.appendChild(tile);
+  }
+}
+
+/**
+ * @param {HTMLElement|null} grid
+ * @param {(workshopId: string) => void} onStart
+ */
+function renderWorkshopGrid(grid, onStart) {
+  if (!grid) return;
+  grid.innerHTML = "";
+  for (const w of listKeytrainWorkshops()) {
+    const tile = document.createElement("button");
+    tile.type = "button";
+    tile.className = "landing-cert-tile keytraining-tile workshop-tile";
+    tile.dataset.workshopId = w.id;
+
+    const level = document.createElement("span");
+    level.className = "landing-cert-tile-level";
+    level.textContent = "Interactive workshop";
+
+    const title = document.createElement("span");
+    title.className = "landing-cert-tile-title";
+    title.textContent = w.title;
+
+    const code = document.createElement("span");
+    code.className = "landing-cert-tile-code";
+    code.textContent = w.code;
+
+    const meta = document.createElement("span");
+    meta.className = "landing-cert-tile-meta";
+    meta.textContent = `${w.steps.length} steps · ~${w.estimatedMinutes} min`;
+
+    tile.append(level, title, code, meta);
+    tile.addEventListener("click", () => onStart(w.id));
     grid.appendChild(tile);
   }
 }
@@ -91,7 +128,7 @@ function renderKeytrainCertTiles(items, grid, onSelect) {
 /**
  * @param {ExamIndexEntry[]} exams
  * @param {(certId: string) => void} onPractice
- * @param {(certId: string) => void} onWorkshop
+ * @param {(workshopId: string) => void} onWorkshop
  * @param {(keytrainId: string) => void} onKeytrainCert
  * @param {import('./keytrain-loader.js').KeytrainCertSummary[]} keytrainCatalog
  */
@@ -111,12 +148,7 @@ export function renderKeytrainHub(
     " · study mode"
   );
 
-  renderExamGrid(
-    document.getElementById("keytrain-workshop-preview-grid"),
-    practice,
-    onWorkshop,
-    " · workshop (~1 per topic)"
-  );
+  renderWorkshopGrid(document.getElementById("keytrain-workshop-preview-grid"), onWorkshop);
 
   const cyber = keytrainCatalog.filter((c) => c.group === "key-training");
   const vendor = keytrainCatalog.filter((c) => c.group !== "key-training");
@@ -136,21 +168,14 @@ export function renderKeytrainHub(
 }
 
 /**
- * @param {ExamIndexEntry[]} exams
- * @param {(certId: string) => void} onStartWorkshop
+ * @param {(workshopId: string) => void} onStartWorkshop
  */
-export function renderKeytrainWorkshops(exams, onStartWorkshop) {
-  const practice = filterKeyTrainingExams(exams);
-  renderExamGrid(
-    document.getElementById("keytrain-workshop-grid"),
-    practice,
-    onStartWorkshop,
-    " · workshop"
-  );
+export function renderKeytrainWorkshops(onStartWorkshop) {
+  renderWorkshopGrid(document.getElementById("keytrain-workshop-grid"), onStartWorkshop);
 }
 
-/** @deprecated Use renderKeytrainHub */
+/** @deprecated */
 export const renderKeyTrainingHub = renderKeytrainHub;
 
-/** @deprecated Use renderKeytrainWorkshops */
+/** @deprecated */
 export const renderKeyTrainingWorkshops = renderKeytrainWorkshops;

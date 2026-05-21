@@ -111,7 +111,12 @@
         <button type="button" id="drawer-nav-browse" class="drawer-nav-btn">
           Practice certifications
         </button>
-        <button type="button" id="drawer-nav-keytrain" class="drawer-nav-btn">
+        <button
+          type="button"
+          id="drawer-nav-keytrain"
+          class="drawer-nav-btn"
+          aria-label="KeyTrain — training, workshops, and certification"
+        >
           KeyTrain
         </button>
         <button type="button" id="drawer-nav-dashboard" class="drawer-nav-btn">
@@ -284,7 +289,8 @@
           </summary>
           <div class="page-collapse-body">
             <p class="landing-hint">
-              Short guided sessions—about one scenario per topic—with immediate feedback after each question.
+              Interactive lessons (~15 min each): concepts, real-world scenarios, habits checklists, and
+              knowledge checks with instant feedback.
             </p>
             <div id="keytrain-workshop-preview-grid" class="landing-cert-grid"></div>
             <p class="keytraining-hub-more">
@@ -320,8 +326,8 @@
         <div class="keytraining-hub-header">
           <h2>Workshops</h2>
           <p class="keytraining-hub-lead">
-            Pick a domain to run a guided workshop. Each session samples scenarios across the sub-topics
-            in that category (authentication, phishing, patching, fraud indicators, and more).
+            Pick a category for an interactive lesson: core concepts, scenarios, checklists, and knowledge
+            checks with instant feedback (~15 minutes each).
           </p>
         </div>
         <details id="keytrain-workshops-all" class="page-collapse keytraining-hub-section">
@@ -332,6 +338,13 @@
             <div id="keytrain-workshop-grid" class="landing-cert-grid"></div>
           </div>
         </details>
+      </section>
+
+      <section id="view-keytrain-workshop" class="view hidden">
+        <nav class="cert-breadcrumb">
+          <button type="button" id="btn-workshop-exit" class="btn-text-link">← KeyTrain</button>
+        </nav>
+        <div id="workshop-root" class="workshop-root"></div>
       </section>
 
       <section id="view-keytrain-cert" class="view hidden">

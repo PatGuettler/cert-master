@@ -690,6 +690,186 @@ main {
   margin-top: 1rem;
 }
 
+.workshop-root {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.workshop-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.workshop-progress-wrap {
+  margin-bottom: 0.25rem;
+}
+
+.workshop-progress-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.workshop-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.35rem;
+}
+
+.workshop-step-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.workshop-p {
+  margin: 0 0 0.75rem;
+  line-height: 1.55;
+}
+
+.workshop-prompt {
+  font-weight: 500;
+}
+
+.workshop-bullets {
+  margin: 0 0 0.75rem;
+  padding-left: 1.25rem;
+  line-height: 1.5;
+}
+
+.workshop-hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.workshop-quiz-options {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.workshop-quiz-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  background: var(--bg);
+}
+
+.workshop-quiz-option.is-selected {
+  border-color: var(--aws-orange);
+  background: var(--cert-active-bg);
+}
+
+.workshop-quiz-option input {
+  margin-top: 0.2rem;
+}
+
+.workshop-check-btn {
+  margin-top: 0.75rem;
+}
+
+.workshop-feedback {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.workshop-feedback.is-correct {
+  border-color: #2e7d32;
+  background: rgba(46, 125, 50, 0.08);
+}
+
+.workshop-feedback.is-incorrect {
+  border-color: #c62828;
+  background: rgba(198, 40, 40, 0.08);
+}
+
+.workshop-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.workshop-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.workshop-checklist-item.is-checked {
+  border-color: var(--aws-orange);
+  background: var(--cert-active-bg);
+}
+
+.workshop-check-box {
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--aws-orange);
+}
+
+.workshop-checklist-item.is-checked .workshop-check-box {
+  border-color: var(--aws-orange);
+}
+
+.workshop-check-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.workshop-check-detail {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.workshop-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: flex-end;
+}
+
+.workshop-score {
+  font-size: 1.05rem;
+}
+
+.workshop-tile .landing-cert-tile-level {
+  color: var(--aws-orange);
+}
+
 .keytrain-hub-header h2 {
   margin: 0 0 0.5rem;
 }
