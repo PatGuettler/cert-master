@@ -1,0 +1,2769 @@
+{
+  "id": "professional-cloud-security-engineer",
+  "name": "Google Professional Cloud Security Engineer",
+  "code": "PCSE",
+  "vendor": "google",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "org-governance",
+      "name": "Configuring access within a cloud solution environment",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "PCSE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-security-engineer"
+        },
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "network-security",
+      "name": "Configuring network security",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        },
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "data-protection",
+      "name": "Ensuring data protection",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        },
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Managing operations in a cloud solution environment",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "pcse-q001",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Configuring access within a cloud solution environment for Google Professional Cloud Security Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PCSE exam guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use PCSE exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "PCSE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-security-engineer"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q002",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "According to 'PCSE exam guide', what is a documented best practice for Configuring access within a cloud solution environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PCSE exam guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "PCSE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-security-engineer"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q003",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "According to 'Organization policy', what is a documented best practice for Configuring access within a cloud solution environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Organization policy reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q004",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Configuring network security for Google Professional Cloud Security Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud Armor and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q005",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud Armor', what is a documented best practice for Configuring network security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q006",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "According to 'VPC Service Controls', what is a documented best practice for Configuring network security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC Service Controls reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q007",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Ensuring data protection for Google Professional Cloud Security Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud KMS and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q008",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud KMS', what is a documented best practice for Ensuring data protection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud KMS reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q009",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "According to 'Secret Manager', what is a documented best practice for Ensuring data protection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q010",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Managing operations in a cloud solution environment for Google Professional Cloud Security Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Security Command Center and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q011",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "According to 'Security Command Center', what is a documented best practice for Managing operations in a cloud solution environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Command Center reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q012",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to restrict resource locations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q013",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to restrict resource locations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q014",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to restrict resource locations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q015",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "A platform team must restrict resource locations. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q016",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to restrict resource locations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q017",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to restrict resource locations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q018",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "A data team must restrict resource locations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q019",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should restrict resource locations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q020",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to restrict resource locations (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q021",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to restrict resource locations (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q022",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "A platform team must restrict resource locations (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q023",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to restrict resource locations (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q024",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to restrict resource locations (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q025",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "A platform team must restrict resource locations (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q026",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to restrict resource locations (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q027",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to restrict resource locations (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q028",
+      "domain": "org-governance",
+      "type": "multiple-choice",
+      "text": "A platform team must restrict resource locations (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organization policies"
+        },
+        {
+          "id": "b",
+          "text": "Allow all regions"
+        },
+        {
+          "id": "c",
+          "text": "No constraints"
+        },
+        {
+          "id": "d",
+          "text": "Public admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Org policies enforce guardrails.",
+      "docs": [
+        {
+          "title": "Organization policy",
+          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q029",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to DDoS protection at edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q030",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to service perimeter for data exfiltration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q031",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to DDoS protection at edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q032",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to DDoS protection at edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q033",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A platform team must DDoS protection at edge. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q034",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to service perimeter for data exfiltration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q035",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to service perimeter for data exfiltration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q036",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A platform team must service perimeter for data exfiltration. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q037",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to DDoS protection at edge.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q038",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A data team must service perimeter for data exfiltration.",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q039",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should DDoS protection at edge.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q040",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to service perimeter for data exfiltration.",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q041",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Cloud Armor rather than VPC Service Controls when you need to DDoS protection at edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "c",
+          "text": "Open all ports"
+        },
+        {
+          "id": "d",
+          "text": "Disable TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic. Compare with VPC Service Controls: VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        },
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q042",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by VPC Service Controls rather than Cloud Armor when you need to service perimeter for data exfiltration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "c",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement. Compare with Cloud Armor: Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        },
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q043",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to DDoS protection at edge (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q044",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to service perimeter for data exfiltration (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q045",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A platform team must DDoS protection at edge (variant 2). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Armor"
+        },
+        {
+          "id": "b",
+          "text": "Open all ports"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Armor filters malicious traffic.",
+      "docs": [
+        {
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q046",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to store API keys securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q047",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store API keys securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q048",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store API keys securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q049",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A platform team must store API keys securely. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q050",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to store API keys securely.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q051",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to store API keys securely.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q052",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should store API keys securely.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q053",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A data team must store API keys securely.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q054",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store API keys securely (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q055",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store API keys securely (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q056",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A platform team must store API keys securely (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q057",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store API keys securely (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q058",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store API keys securely (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q059",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A platform team must store API keys securely (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q060",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store API keys securely (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q061",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store API keys securely (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q062",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A platform team must store API keys securely (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "b",
+          "text": "Git commit secrets"
+        },
+        {
+          "id": "c",
+          "text": "Env in public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secret Manager versions secrets.",
+      "docs": [
+        {
+          "title": "Secret Manager",
+          "url": "https://cloud.google.com/secret-manager/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q063",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to centralize security findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q064",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to centralize security findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q065",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to centralize security findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q066",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A platform team must centralize security findings. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q067",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A data team must centralize security findings.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q068",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to centralize security findings.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q069",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to centralize security findings.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q070",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should centralize security findings.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q071",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to centralize security findings (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q072",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to centralize security findings (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q073",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A platform team must centralize security findings (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q074",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to centralize security findings (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q075",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to centralize security findings (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q076",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A platform team must centralize security findings (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q077",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to centralize security findings (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q078",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to centralize security findings (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q079",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A platform team must centralize security findings (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "No scanning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCC aggregates risk findings.",
+      "docs": [
+        {
+          "title": "Security Command Center",
+          "url": "https://cloud.google.com/security-command-center/docs"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://cloud.google.com/learn/certification/cloud-security-engineer"
+}

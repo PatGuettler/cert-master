@@ -75,7 +75,7 @@ def generate_exam(exam_id: str) -> tuple[Path, int]:
     return out, len(payload["questions"])
 
 
-def main() -> None:
+def main() -> int:
     results: list[tuple[str, int]] = []
 
     clf_count = patch_cloud_practitioner_vendor()
@@ -101,7 +101,8 @@ def main() -> None:
     print("\n=== Summary ===")
     for name, count in results:
         print(f"  {name}: {count} questions")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

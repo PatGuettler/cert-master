@@ -1,0 +1,2731 @@
+{
+  "id": "az-500",
+  "name": "Microsoft Azure Security Engineer Associate",
+  "code": "AZ-500",
+  "vendor": "azure",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "identity-access",
+      "name": "Secure identity and access",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "AZ-500 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"
+        },
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "platform-security",
+      "name": "Secure networking, compute, and storage",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        },
+        {
+          "title": "Azure Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "security-operations",
+      "name": "Secure operations",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "security-posture",
+      "name": "Secure data and applications",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Defender for Cloud recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "az500-q001",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Secure identity and access for Microsoft Azure Security Engineer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AZ-500 study guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AZ-500 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AZ-500 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"
+        }
+      ]
+    },
+    {
+      "id": "az500-q002",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "According to 'AZ-500 study guide', what is a documented best practice for Secure identity and access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AZ-500 study guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AZ-500 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"
+        }
+      ]
+    },
+    {
+      "id": "az500-q003",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "According to 'Conditional Access', what is a documented best practice for Secure identity and access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q004",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Secure networking, compute, and storage for Microsoft Azure Security Engineer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Firewall and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q005",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Firewall', what is a documented best practice for Secure networking, compute, and storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q006",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Key Vault', what is a documented best practice for Secure networking, compute, and storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Key Vault reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q007",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Secure operations for Microsoft Azure Security Engineer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Microsoft Sentinel and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q008",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "According to 'Microsoft Sentinel', what is a documented best practice for Secure operations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft Sentinel reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q009",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Secure data and applications for Microsoft Azure Security Engineer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Defender for Cloud recommendations and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Defender for Cloud recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q010",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "According to 'Defender for Cloud recommendations', what is a documented best practice for Secure data and applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud recommendations reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Defender for Cloud recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q011",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to require MFA based on risk signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q012",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to require MFA based on risk signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q013",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to require MFA based on risk signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q014",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Your team must require MFA based on risk signals. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q015",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "An Azure architect must require MFA based on risk signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q016",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to require MFA based on risk signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q017",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Your organization plans to require MFA based on risk signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q018",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should require MFA based on risk signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q019",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to require MFA based on risk signals (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q020",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to require MFA based on risk signals (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q021",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Your team must require MFA based on risk signals (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q022",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to require MFA based on risk signals (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q023",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to require MFA based on risk signals (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q024",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Your team must require MFA based on risk signals (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q025",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to require MFA based on risk signals (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q026",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to require MFA based on risk signals (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q027",
+      "domain": "identity-access",
+      "type": "multiple-choice",
+      "text": "Your team must require MFA based on risk signals (variant 9). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entra Conditional Access"
+        },
+        {
+          "id": "b",
+          "text": "Password only forever"
+        },
+        {
+          "id": "c",
+          "text": "Shared break-glass daily"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous blob write"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Conditional Access enforces adaptive policies.",
+      "docs": [
+        {
+          "title": "Conditional Access",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q028",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to centralize secrets and keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q029",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to filter traffic to Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q030",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to centralize secrets and keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q031",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to centralize secrets and keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q032",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Your team must centralize secrets and keys. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q033",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to filter traffic to Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q034",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to filter traffic to Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q035",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Your team must filter traffic to Azure resources. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q036",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "An Azure architect must centralize secrets and keys.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q037",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Your organization plans to filter traffic to Azure resources.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q038",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to centralize secrets and keys.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q039",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should filter traffic to Azure resources.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q040",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Key Vault rather than Azure Firewall when you need to centralize secrets and keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "c",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "d",
+          "text": "Env files in blob public"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates. Compare with Azure Firewall: Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        },
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q041",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Firewall rather than Azure Key Vault when you need to filter traffic to Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "c",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "d",
+          "text": "Disable NSGs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall. Compare with Azure Key Vault: Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        },
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q042",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to centralize secrets and keys (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q043",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to filter traffic to Azure resources (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q044",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Your team must centralize secrets and keys (variant 2). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q045",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to filter traffic to Azure resources (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q046",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to centralize secrets and keys (variant 3)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Key Vault"
+        },
+        {
+          "id": "b",
+          "text": "Secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "Env files in blob public"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Key Vault protects keys, secrets, certificates.",
+      "docs": [
+        {
+          "title": "Key Vault",
+          "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q047",
+      "domain": "platform-security",
+      "type": "multiple-choice",
+      "text": "Your team must filter traffic to Azure resources (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Open 0.0.0.0/0 always"
+        },
+        {
+          "id": "c",
+          "text": "Disable NSGs"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Firewall is managed cloud firewall.",
+      "docs": [
+        {
+          "title": "Azure Firewall",
+          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q048",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to SIEM for cloud and on-prem signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q049",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to SIEM for cloud and on-prem signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q050",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to SIEM for cloud and on-prem signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q051",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Your team must SIEM for cloud and on-prem signals. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q052",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Your organization plans to SIEM for cloud and on-prem signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q053",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to SIEM for cloud and on-prem signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q054",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should SIEM for cloud and on-prem signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q055",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "An Azure architect must SIEM for cloud and on-prem signals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q056",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to SIEM for cloud and on-prem signals (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q057",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to SIEM for cloud and on-prem signals (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q058",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Your team must SIEM for cloud and on-prem signals (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q059",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to SIEM for cloud and on-prem signals (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q060",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to SIEM for cloud and on-prem signals (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q061",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Your team must SIEM for cloud and on-prem signals (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q062",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to SIEM for cloud and on-prem signals (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q063",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to SIEM for cloud and on-prem signals (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q064",
+      "domain": "security-operations",
+      "type": "multiple-choice",
+      "text": "Your team must SIEM for cloud and on-prem signals (variant 9). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "id": "b",
+          "text": "Notepad logs"
+        },
+        {
+          "id": "c",
+          "text": "Ignore incidents"
+        },
+        {
+          "id": "d",
+          "text": "Disable audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sentinel collects and correlates security events.",
+      "docs": [
+        {
+          "title": "Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+        }
+      ]
+    },
+    {
+      "id": "az500-q065",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to prioritize remediations from secure score?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q066",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to prioritize remediations from secure score?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q067",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to prioritize remediations from secure score?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q068",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Your team must prioritize remediations from secure score. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q069",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should prioritize remediations from secure score.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q070",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Your organization plans to prioritize remediations from secure score.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q071",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "An Azure architect must prioritize remediations from secure score.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q072",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to prioritize remediations from secure score.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q073",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to prioritize remediations from secure score (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q074",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to prioritize remediations from secure score (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q075",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Your team must prioritize remediations from secure score (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q076",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to prioritize remediations from secure score (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q077",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to prioritize remediations from secure score (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    },
+    {
+      "id": "az500-q078",
+      "domain": "security-posture",
+      "type": "multiple-choice",
+      "text": "Your team must prioritize remediations from secure score (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defender for Cloud recommendations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recommendations map to MITRE and best practices.",
+      "docs": [
+        {
+          "title": "Security recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/"
+}

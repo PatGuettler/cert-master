@@ -1,0 +1,2970 @@
+{
+  "id": "associate-cloud-engineer",
+  "name": "Google Associate Cloud Engineer",
+  "code": "ACE",
+  "vendor": "google",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "planning",
+      "name": "Setting up a cloud solution environment",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "ACE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-engineer"
+        },
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "compute-storage",
+      "name": "Planning and configuring compute and storage",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        },
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Planning and configuring cloud network solutions",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "VPC networks",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        },
+        {
+          "title": "Cloud Load Balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "security-iam",
+      "name": "Configuring access and security",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "IAM overview",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Deploying and implementing solutions",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        },
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ace-q001",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Setting up a cloud solution environment for Google Associate Cloud Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ACE exam guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use ACE exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "ACE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-engineer"
+        }
+      ]
+    },
+    {
+      "id": "ace-q002",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "According to 'ACE exam guide', what is a documented best practice for Setting up a cloud solution environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ACE exam guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "ACE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-engineer"
+        }
+      ]
+    },
+    {
+      "id": "ace-q003",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "According to 'Resource hierarchy', what is a documented best practice for Setting up a cloud solution environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resource hierarchy reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q004",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Planning and configuring compute and storage for Google Associate Cloud Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Compute Engine and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "ace-q005",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "According to 'Compute Engine', what is a documented best practice for Planning and configuring compute and storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compute Engine reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "ace-q006",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud Storage', what is a documented best practice for Planning and configuring compute and storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Storage reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q007",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Planning and configuring cloud network solutions for Google Associate Cloud Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use VPC networks and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "VPC networks",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q008",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "According to 'VPC networks', what is a documented best practice for Planning and configuring cloud network solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC networks reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "VPC networks",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q009",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud Load Balancing', what is a documented best practice for Planning and configuring cloud network solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Load Balancing reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud Load Balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q010",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Configuring access and security for Google Associate Cloud Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM overview"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use IAM overview and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "IAM overview",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q011",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "According to 'IAM overview', what is a documented best practice for Configuring access and security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM overview reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "IAM overview",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q012",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Deploying and implementing solutions for Google Associate Cloud Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud Run and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q013",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud Run', what is a documented best practice for Deploying and implementing solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q014",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "According to 'GKE', what is a documented best practice for Deploying and implementing solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q015",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to organize projects and folders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q016",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to organize projects and folders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q017",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to organize projects and folders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q018",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "A platform team must organize projects and folders. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q019",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should organize projects and folders.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q020",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to organize projects and folders.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q021",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to organize projects and folders.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q022",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "A data team must organize projects and folders.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q023",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to organize projects and folders (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q024",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to organize projects and folders (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q025",
+      "domain": "planning",
+      "type": "multiple-choice",
+      "text": "A platform team must organize projects and folders (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resource hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Flat list no IAM"
+        },
+        {
+          "id": "c",
+          "text": "Shared root password"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchy enables policy inheritance.",
+      "docs": [
+        {
+          "title": "Resource hierarchy",
+          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "ace-q026",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to object storage for applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q027",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to create VMs with startup scripts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Telnet deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q028",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to object storage for applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q029",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to object storage for applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q030",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "A platform team must object storage for applications. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q031",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to create VMs with startup scripts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Telnet deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q032",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to create VMs with startup scripts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Telnet deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q033",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "A platform team must create VMs with startup scripts. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Telnet deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q034",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "A data team must object storage for applications.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q035",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to create VMs with startup scripts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Telnet deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q036",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should object storage for applications.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q037",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to create VMs with startup scripts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Telnet deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q038",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Cloud Storage buckets rather than Compute Engine metadata and scripts when you need to object storage for applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "c",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "d",
+          "text": "SMTP relay"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes. Compare with Compute Engine metadata and scripts: Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        },
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q039",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Compute Engine metadata and scripts rather than Cloud Storage buckets when you need to create VMs with startup scripts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "c",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "d",
+          "text": "No automation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances. Compare with Cloud Storage buckets: GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        },
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q040",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to object storage for applications (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q041",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to create VMs with startup scripts (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine metadata and scripts"
+        },
+        {
+          "id": "b",
+          "text": "Manual GUI only policy"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Telnet deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup scripts bootstrap instances.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs/instances/startup-scripts"
+        }
+      ]
+    },
+    {
+      "id": "ace-q042",
+      "domain": "compute-storage",
+      "type": "multiple-choice",
+      "text": "A platform team must object storage for applications (variant 2). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Storage buckets"
+        },
+        {
+          "id": "b",
+          "text": "Block device on laptop"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCS stores objects with storage classes.",
+      "docs": [
+        {
+          "title": "Cloud Storage",
+          "url": "https://cloud.google.com/storage/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "ace-q043",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to private networking in GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "b",
+          "text": "Public IP only design"
+        },
+        {
+          "id": "c",
+          "text": "FTP VPN"
+        },
+        {
+          "id": "d",
+          "text": "ICMP mesh"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPCs isolate workloads.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q044",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to global HTTP(S) load balancing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "Round robin DNS only"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Google LB distributes traffic globally.",
+      "docs": [
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q045",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to private networking in GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "b",
+          "text": "Public IP only design"
+        },
+        {
+          "id": "c",
+          "text": "FTP VPN"
+        },
+        {
+          "id": "d",
+          "text": "ICMP mesh"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPCs isolate workloads.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q046",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to private networking in GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "b",
+          "text": "Public IP only design"
+        },
+        {
+          "id": "c",
+          "text": "FTP VPN"
+        },
+        {
+          "id": "d",
+          "text": "ICMP mesh"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPCs isolate workloads.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q047",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "A platform team must private networking in GCP. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "b",
+          "text": "Public IP only design"
+        },
+        {
+          "id": "c",
+          "text": "FTP VPN"
+        },
+        {
+          "id": "d",
+          "text": "ICMP mesh"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPCs isolate workloads.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q048",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to global HTTP(S) load balancing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "Round robin DNS only"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Google LB distributes traffic globally.",
+      "docs": [
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q049",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to global HTTP(S) load balancing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "Round robin DNS only"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Google LB distributes traffic globally.",
+      "docs": [
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q050",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "A platform team must global HTTP(S) load balancing. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "Round robin DNS only"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Google LB distributes traffic globally.",
+      "docs": [
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q051",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should private networking in GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "b",
+          "text": "Public IP only design"
+        },
+        {
+          "id": "c",
+          "text": "FTP VPN"
+        },
+        {
+          "id": "d",
+          "text": "ICMP mesh"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPCs isolate workloads.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q052",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to global HTTP(S) load balancing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "Round robin DNS only"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Google LB distributes traffic globally.",
+      "docs": [
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q053",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "A data team must private networking in GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "b",
+          "text": "Public IP only design"
+        },
+        {
+          "id": "c",
+          "text": "FTP VPN"
+        },
+        {
+          "id": "d",
+          "text": "ICMP mesh"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPCs isolate workloads.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q054",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to global HTTP(S) load balancing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "Round robin DNS only"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Google LB distributes traffic globally.",
+      "docs": [
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q055",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by VPC networks and subnets rather than Cloud Load Balancing when you need to private networking in GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "b",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "c",
+          "text": "Public IP only design"
+        },
+        {
+          "id": "d",
+          "text": "FTP VPN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPCs isolate workloads. Compare with Cloud Load Balancing: Google LB distributes traffic globally.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        },
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q056",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Cloud Load Balancing rather than VPC networks and subnets when you need to global HTTP(S) load balancing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "VPC networks and subnets"
+        },
+        {
+          "id": "c",
+          "text": "Single server"
+        },
+        {
+          "id": "d",
+          "text": "Round robin DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Google LB distributes traffic globally. Compare with VPC networks and subnets: VPCs isolate workloads.",
+      "docs": [
+        {
+          "title": "Load balancing",
+          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
+        },
+        {
+          "title": "VPC",
+          "url": "https://cloud.google.com/vpc/docs/vpc"
+        }
+      ]
+    },
+    {
+      "id": "ace-q057",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to grant roles to principals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q058",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to grant roles to principals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q059",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to grant roles to principals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q060",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "A platform team must grant roles to principals. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q061",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to grant roles to principals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q062",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "A data team must grant roles to principals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q063",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to grant roles to principals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q064",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should grant roles to principals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q065",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to grant roles to principals (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q066",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to grant roles to principals (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q067",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "A platform team must grant roles to principals (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q068",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to grant roles to principals (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q069",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to grant roles to principals (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q070",
+      "domain": "security-iam",
+      "type": "multiple-choice",
+      "text": "A platform team must grant roles to principals (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM bindings"
+        },
+        {
+          "id": "b",
+          "text": "ACL 777 on buckets"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM follows least privilege on resources.",
+      "docs": [
+        {
+          "title": "IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q071",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to run containers without managing nodes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "FTP deploy"
+        },
+        {
+          "id": "d",
+          "text": "On-prem only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run is serverless containers.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q072",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to managed Kubernetes control plane?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Manual k8s on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "No upgrades"
+        },
+        {
+          "id": "d",
+          "text": "Disable RBAC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages the control plane.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q073",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to run containers without managing nodes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "FTP deploy"
+        },
+        {
+          "id": "d",
+          "text": "On-prem only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run is serverless containers.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q074",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to run containers without managing nodes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "FTP deploy"
+        },
+        {
+          "id": "d",
+          "text": "On-prem only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run is serverless containers.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q075",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A platform team must run containers without managing nodes. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "FTP deploy"
+        },
+        {
+          "id": "d",
+          "text": "On-prem only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run is serverless containers.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q076",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to managed Kubernetes control plane?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Manual k8s on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "No upgrades"
+        },
+        {
+          "id": "d",
+          "text": "Disable RBAC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages the control plane.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q077",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to managed Kubernetes control plane?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Manual k8s on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "No upgrades"
+        },
+        {
+          "id": "d",
+          "text": "Disable RBAC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages the control plane.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q078",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A platform team must managed Kubernetes control plane. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Manual k8s on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "No upgrades"
+        },
+        {
+          "id": "d",
+          "text": "Disable RBAC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages the control plane.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q079",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A data team must run containers without managing nodes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "FTP deploy"
+        },
+        {
+          "id": "d",
+          "text": "On-prem only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run is serverless containers.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q080",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to managed Kubernetes control plane.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Manual k8s on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "No upgrades"
+        },
+        {
+          "id": "d",
+          "text": "Disable RBAC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages the control plane.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q081",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should run containers without managing nodes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "FTP deploy"
+        },
+        {
+          "id": "d",
+          "text": "On-prem only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run is serverless containers.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "ace-q082",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to managed Kubernetes control plane.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Manual k8s on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "No upgrades"
+        },
+        {
+          "id": "d",
+          "text": "Disable RBAC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages the control plane.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q083",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Cloud Run rather than Google Kubernetes Engine when you need to run containers without managing nodes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "c",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run is serverless containers. Compare with Google Kubernetes Engine: GKE manages the control plane.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        },
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "ace-q084",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Google Kubernetes Engine rather than Cloud Run when you need to managed Kubernetes control plane?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "c",
+          "text": "Manual k8s on laptop only"
+        },
+        {
+          "id": "d",
+          "text": "No upgrades"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages the control plane. Compare with Cloud Run: Cloud Run is serverless containers.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        },
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://cloud.google.com/learn/certification/cloud-engineer"
+}

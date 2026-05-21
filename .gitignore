@@ -2,10 +2,9 @@
 __pycache__/
 *.py[cod]
 
-# Generated SEO pages (built in CI via scripts/build-question-pages.py)
+# Optional static SEO HTML (not required for the app; generate locally if needed)
 questions/**/*
 !questions/.gitkeep
-data/questions-slugs.json
 sitemap.xml
 
 # Logs

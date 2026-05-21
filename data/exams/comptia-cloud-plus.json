@@ -814,7 +814,7 @@
       "id": "cptcld-q023",
       "domain": "cloud-architecture",
       "type": "multiple-choice",
-      "text": "Per CompTIA best practices, you should compare IaaS PaaS SaaS.",
+      "text": "For compliance, the team must compare IaaS PaaS SaaS.",
       "options": [
         {
           "id": "a",
@@ -882,7 +882,7 @@
       "id": "cptcld-q025",
       "domain": "cloud-architecture",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Multi-region deployment with load balancing rather than IaaS provides VMs; PaaS managed runtime; SaaS applications when you need to design highly available cloud workloads?",
+      "text": "Per CompTIA best practices, you should design highly available cloud workloads.",
       "options": [
         {
           "id": "a",
@@ -890,26 +890,22 @@
         },
         {
           "id": "b",
-          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
-        },
-        {
-          "id": "c",
           "text": "Single server"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "HA spans failure domains. Compare with IaaS provides VMs; PaaS managed runtime; SaaS applications: Models define management responsibility.",
+      "explanation": "HA spans failure domains.",
       "docs": [
-        {
-          "title": "Cloud+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/cloud"
-        },
         {
           "title": "Cloud+ objectives",
           "url": "https://www.comptia.org/en-us/certifications/cloud"
@@ -920,7 +916,7 @@
       "id": "cptcld-q026",
       "domain": "cloud-architecture",
       "type": "multiple-choice",
-      "text": "Which capability is provided by IaaS provides VMs; PaaS managed runtime; SaaS applications rather than VPN or dedicated interconnect to cloud when you need to compare IaaS PaaS SaaS?",
+      "text": "On the job, you need to compare IaaS PaaS SaaS.",
       "options": [
         {
           "id": "a",
@@ -928,26 +924,22 @@
         },
         {
           "id": "b",
-          "text": "VPN or dedicated interconnect to cloud"
-        },
-        {
-          "id": "c",
           "text": "IaaS is only email"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "SaaS is cabling"
+        },
+        {
+          "id": "d",
+          "text": "PaaS is DNS only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Models define management responsibility. Compare with VPN or dedicated interconnect to cloud: Hybrid links on-prem to cloud.",
+      "explanation": "Models define management responsibility.",
       "docs": [
-        {
-          "title": "Cloud+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/cloud"
-        },
         {
           "title": "Cloud+ objectives",
           "url": "https://www.comptia.org/en-us/certifications/cloud"
@@ -958,7 +950,7 @@
       "id": "cptcld-q027",
       "domain": "cloud-architecture",
       "type": "multiple-choice",
-      "text": "Which capability is provided by VPN or dedicated interconnect to cloud rather than Multi-region deployment with load balancing when you need to design hybrid connectivity?",
+      "text": "For compliance, the team must design hybrid connectivity.",
       "options": [
         {
           "id": "a",
@@ -966,26 +958,22 @@
         },
         {
           "id": "b",
-          "text": "Multi-region deployment with load balancing"
-        },
-        {
-          "id": "c",
           "text": "Expose DB to internet"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Telnet admin"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Hybrid links on-prem to cloud. Compare with Multi-region deployment with load balancing: HA spans failure domains.",
+      "explanation": "Hybrid links on-prem to cloud.",
       "docs": [
-        {
-          "title": "Cloud+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/cloud"
-        },
         {
           "title": "Cloud+ objectives",
           "url": "https://www.comptia.org/en-us/certifications/cloud"
@@ -994,6 +982,40 @@
     },
     {
       "id": "cptcld-q028",
+      "domain": "cloud-architecture",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must design highly available cloud workloads.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-region deployment with load balancing"
+        },
+        {
+          "id": "b",
+          "text": "Single server"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HA spans failure domains.",
+      "docs": [
+        {
+          "title": "Cloud+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q029",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to apply IAM least privilege in cloud?",
@@ -1027,7 +1049,7 @@
       ]
     },
     {
-      "id": "cptcld-q029",
+      "id": "cptcld-q030",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to encrypt data at rest in cloud?",
@@ -1061,7 +1083,7 @@
       ]
     },
     {
-      "id": "cptcld-q030",
+      "id": "cptcld-q031",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to segment workloads in cloud networks?",
@@ -1095,7 +1117,7 @@
       ]
     },
     {
-      "id": "cptcld-q031",
+      "id": "cptcld-q032",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to scan images for vulnerabilities?",
@@ -1129,7 +1151,7 @@
       ]
     },
     {
-      "id": "cptcld-q032",
+      "id": "cptcld-q033",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to manage API keys securely?",
@@ -1163,7 +1185,7 @@
       ]
     },
     {
-      "id": "cptcld-q033",
+      "id": "cptcld-q034",
       "domain": "security",
       "type": "multiple-choice",
       "text": "What should you do FIRST to apply IAM least privilege in cloud?",
@@ -1197,7 +1219,7 @@
       ]
     },
     {
-      "id": "cptcld-q034",
+      "id": "cptcld-q035",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which option is MOST appropriate to apply IAM least privilege in cloud?",
@@ -1231,7 +1253,7 @@
       ]
     },
     {
-      "id": "cptcld-q035",
+      "id": "cptcld-q036",
       "domain": "security",
       "type": "multiple-choice",
       "text": "A technician must apply IAM least privilege in cloud. What is the best choice?",
@@ -1265,7 +1287,7 @@
       ]
     },
     {
-      "id": "cptcld-q036",
+      "id": "cptcld-q037",
       "domain": "security",
       "type": "multiple-choice",
       "text": "What should you do FIRST to encrypt data at rest in cloud?",
@@ -1299,7 +1321,7 @@
       ]
     },
     {
-      "id": "cptcld-q037",
+      "id": "cptcld-q038",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which option is MOST appropriate to encrypt data at rest in cloud?",
@@ -1333,7 +1355,7 @@
       ]
     },
     {
-      "id": "cptcld-q038",
+      "id": "cptcld-q039",
       "domain": "security",
       "type": "multiple-choice",
       "text": "A technician must encrypt data at rest in cloud. What is the best choice?",
@@ -1367,7 +1389,7 @@
       ]
     },
     {
-      "id": "cptcld-q039",
+      "id": "cptcld-q040",
       "domain": "security",
       "type": "multiple-choice",
       "text": "What should you do FIRST to segment workloads in cloud networks?",
@@ -1401,7 +1423,7 @@
       ]
     },
     {
-      "id": "cptcld-q040",
+      "id": "cptcld-q041",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which option is MOST appropriate to segment workloads in cloud networks?",
@@ -1435,7 +1457,7 @@
       ]
     },
     {
-      "id": "cptcld-q041",
+      "id": "cptcld-q042",
       "domain": "security",
       "type": "multiple-choice",
       "text": "A technician must segment workloads in cloud networks. What is the best choice?",
@@ -1469,7 +1491,7 @@
       ]
     },
     {
-      "id": "cptcld-q042",
+      "id": "cptcld-q043",
       "domain": "security",
       "type": "multiple-choice",
       "text": "What should you do FIRST to scan images for vulnerabilities?",
@@ -1503,7 +1525,7 @@
       ]
     },
     {
-      "id": "cptcld-q043",
+      "id": "cptcld-q044",
       "domain": "security",
       "type": "multiple-choice",
       "text": "Which option is MOST appropriate to scan images for vulnerabilities?",
@@ -1537,7 +1559,7 @@
       ]
     },
     {
-      "id": "cptcld-q044",
+      "id": "cptcld-q045",
       "domain": "security",
       "type": "multiple-choice",
       "text": "A technician must scan images for vulnerabilities. What is the best choice?",
@@ -1571,7 +1593,7 @@
       ]
     },
     {
-      "id": "cptcld-q045",
+      "id": "cptcld-q046",
       "domain": "security",
       "type": "multiple-choice",
       "text": "What should you do FIRST to manage API keys securely?",
@@ -1605,44 +1627,10 @@
       ]
     },
     {
-      "id": "cptcld-q046",
-      "domain": "security",
-      "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to manage API keys securely?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Secrets vault with rotation"
-        },
-        {
-          "id": "b",
-          "text": "Commit keys to git"
-        },
-        {
-          "id": "c",
-          "text": "Email keys"
-        },
-        {
-          "id": "d",
-          "text": "Paste in chat"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Secrets management reduces exposure.",
-      "docs": [
-        {
-          "title": "Cloud+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/cloud"
-        }
-      ]
-    },
-    {
       "id": "cptcld-q047",
       "domain": "security",
       "type": "multiple-choice",
-      "text": "A technician must manage API keys securely. What is the best choice?",
+      "text": "Which option is MOST appropriate to manage API keys securely?",
       "options": [
         {
           "id": "a",
@@ -2320,40 +2308,6 @@
     },
     {
       "id": "cptcld-q067",
-      "domain": "deployment",
-      "type": "multiple-choice",
-      "text": "A technician must blue/green or canary releases. What is the best choice?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Gradual traffic shift"
-        },
-        {
-          "id": "b",
-          "text": "Big bang only"
-        },
-        {
-          "id": "c",
-          "text": "No monitoring"
-        },
-        {
-          "id": "d",
-          "text": "Ignore errors"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Progressive delivery limits blast radius.",
-      "docs": [
-        {
-          "title": "Cloud+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/cloud"
-        }
-      ]
-    },
-    {
-      "id": "cptcld-q068",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to right-size resources for cost?",
@@ -2387,7 +2341,7 @@
       ]
     },
     {
-      "id": "cptcld-q069",
+      "id": "cptcld-q068",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to restore service after outage?",
@@ -2421,7 +2375,7 @@
       ]
     },
     {
-      "id": "cptcld-q070",
+      "id": "cptcld-q069",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which approach BEST supports the objective to monitor SLA and SLO metrics?",
@@ -2455,7 +2409,7 @@
       ]
     },
     {
-      "id": "cptcld-q071",
+      "id": "cptcld-q070",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "What should you do FIRST to right-size resources for cost?",
@@ -2489,7 +2443,7 @@
       ]
     },
     {
-      "id": "cptcld-q072",
+      "id": "cptcld-q071",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which option is MOST appropriate to right-size resources for cost?",
@@ -2523,7 +2477,7 @@
       ]
     },
     {
-      "id": "cptcld-q073",
+      "id": "cptcld-q072",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "A technician must right-size resources for cost. What is the best choice?",
@@ -2557,7 +2511,7 @@
       ]
     },
     {
-      "id": "cptcld-q074",
+      "id": "cptcld-q073",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "What should you do FIRST to restore service after outage?",
@@ -2591,7 +2545,7 @@
       ]
     },
     {
-      "id": "cptcld-q075",
+      "id": "cptcld-q074",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which option is MOST appropriate to restore service after outage?",
@@ -2625,7 +2579,7 @@
       ]
     },
     {
-      "id": "cptcld-q076",
+      "id": "cptcld-q075",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "A technician must restore service after outage. What is the best choice?",
@@ -2659,7 +2613,7 @@
       ]
     },
     {
-      "id": "cptcld-q077",
+      "id": "cptcld-q076",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "What should you do FIRST to monitor SLA and SLO metrics?",
@@ -2693,7 +2647,7 @@
       ]
     },
     {
-      "id": "cptcld-q078",
+      "id": "cptcld-q077",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which option is MOST appropriate to monitor SLA and SLO metrics?",
@@ -2727,7 +2681,7 @@
       ]
     },
     {
-      "id": "cptcld-q079",
+      "id": "cptcld-q078",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "A technician must monitor SLA and SLO metrics. What is the best choice?",
@@ -2761,10 +2715,10 @@
       ]
     },
     {
-      "id": "cptcld-q080",
+      "id": "cptcld-q079",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "During troubleshooting, you must right-size resources for cost.",
+      "text": "On the job, you need to right-size resources for cost.",
       "options": [
         {
           "id": "a",
@@ -2795,7 +2749,7 @@
       ]
     },
     {
-      "id": "cptcld-q081",
+      "id": "cptcld-q080",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Per CompTIA best practices, you should restore service after outage.",
@@ -2829,10 +2783,10 @@
       ]
     },
     {
-      "id": "cptcld-q082",
+      "id": "cptcld-q081",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "On the job, you need to monitor SLA and SLO metrics.",
+      "text": "For compliance, the team must monitor SLA and SLO metrics.",
       "options": [
         {
           "id": "a",
@@ -2863,10 +2817,10 @@
       ]
     },
     {
-      "id": "cptcld-q083",
+      "id": "cptcld-q082",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Monitoring utilization and scaling policies rather than Runbooks and tested backups when you need to right-size resources for cost?",
+      "text": "During troubleshooting, you must right-size resources for cost.",
       "options": [
         {
           "id": "a",
@@ -2874,26 +2828,56 @@
         },
         {
           "id": "b",
-          "text": "Runbooks and tested backups"
-        },
-        {
-          "id": "c",
           "text": "Always max SKU"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Ignore metrics"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "FinOps uses data to optimize spend. Compare with Runbooks and tested backups: Operations includes recovery procedures.",
+      "explanation": "FinOps uses data to optimize spend.",
       "docs": [
         {
           "title": "Cloud+ objectives",
           "url": "https://www.comptia.org/en-us/certifications/cloud"
+        }
+      ]
+    },
+    {
+      "id": "cptcld-q083",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "On the job, you need to restore service after outage.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and tested backups"
         },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RTO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operations includes recovery procedures.",
+      "docs": [
         {
           "title": "Cloud+ objectives",
           "url": "https://www.comptia.org/en-us/certifications/cloud"
@@ -2904,34 +2888,30 @@
       "id": "cptcld-q084",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Runbooks and tested backups rather than Dashboards with alerting on error budgets when you need to restore service after outage?",
+      "text": "Per CompTIA best practices, you should monitor SLA and SLO metrics.",
       "options": [
         {
           "id": "a",
-          "text": "Runbooks and tested backups"
-        },
-        {
-          "id": "b",
           "text": "Dashboards with alerting on error budgets"
         },
         {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
           "id": "c",
-          "text": "Hope for best"
+          "text": "Annual manual check"
         },
         {
           "id": "d",
-          "text": "No RTO"
+          "text": "Disable paging"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Operations includes recovery procedures. Compare with Dashboards with alerting on error budgets: SLOs guide operational focus.",
+      "explanation": "SLOs guide operational focus.",
       "docs": [
-        {
-          "title": "Cloud+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/cloud"
-        },
         {
           "title": "Cloud+ objectives",
           "url": "https://www.comptia.org/en-us/certifications/cloud"
@@ -2942,34 +2922,30 @@
       "id": "cptcld-q085",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Dashboards with alerting on error budgets rather than Monitoring utilization and scaling policies when you need to monitor SLA and SLO metrics?",
+      "text": "For compliance, the team must right-size resources for cost.",
       "options": [
         {
           "id": "a",
-          "text": "Dashboards with alerting on error budgets"
-        },
-        {
-          "id": "b",
           "text": "Monitoring utilization and scaling policies"
         },
         {
+          "id": "b",
+          "text": "Always max SKU"
+        },
+        {
           "id": "c",
-          "text": "No metrics"
+          "text": "Ignore metrics"
         },
         {
           "id": "d",
-          "text": "Annual manual check"
+          "text": "Delete logs"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SLOs guide operational focus. Compare with Monitoring utilization and scaling policies: FinOps uses data to optimize spend.",
+      "explanation": "FinOps uses data to optimize spend.",
       "docs": [
-        {
-          "title": "Cloud+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/cloud"
-        },
         {
           "title": "Cloud+ objectives",
           "url": "https://www.comptia.org/en-us/certifications/cloud"

@@ -3002,39 +3002,38 @@
       "id": "mla-q087",
       "domain": "data-preparation",
       "type": "multiple-response",
-      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Machine Learning Engineer \u2013 Associate? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Design for failure and automate recovery"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Ignore monitoring to reduce cost"
+          "text": "Unofficial leaked exam dumps"
         },
         {
           "id": "c",
-          "text": "Test recovery procedures"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "Use single-AZ for all production data stores"
+          "text": "Disable all logging"
         },
         {
           "id": "e",
-          "text": "Document architecture decisions"
+          "text": "Share root account keys"
         }
       ],
       "correct": [
         "a",
-        "c",
-        "e"
+        "c"
       ],
-      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
       "docs": [
         {
-          "title": "Well-Architected Framework",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+          "title": "Amazon SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
         }
       ]
     },
@@ -3081,38 +3080,39 @@
       "id": "mla-q089",
       "domain": "data-preparation",
       "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Machine Learning Engineer \u2013 Associate? (Select TWO.)",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "Design for failure and automate recovery"
         },
         {
           "id": "b",
-          "text": "Unofficial leaked exam dumps"
+          "text": "Ignore monitoring to reduce cost"
         },
         {
           "id": "c",
-          "text": "AWS Glue"
+          "text": "Test recovery procedures"
         },
         {
           "id": "d",
-          "text": "Disable all logging"
+          "text": "Use single-AZ for all production data stores"
         },
         {
           "id": "e",
-          "text": "Share root account keys"
+          "text": "Document architecture decisions"
         }
       ],
       "correct": [
         "a",
-        "c"
+        "c",
+        "e"
       ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
       "docs": [
         {
-          "title": "Amazon SageMaker Data Wrangler",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
         }
       ]
     },

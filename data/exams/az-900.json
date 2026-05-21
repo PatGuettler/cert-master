@@ -1,0 +1,2614 @@
+{
+  "id": "az-900",
+  "name": "Microsoft Azure Fundamentals",
+  "code": "AZ-900",
+  "vendor": "azure",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 65,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "cloud-concepts",
+      "name": "Describe cloud concepts",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "AZ-900 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+        },
+        {
+          "title": "Benefits of cloud computing",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "azure-architecture",
+      "name": "Describe Azure architecture and services",
+      "weight": 35,
+      "resources": [
+        {
+          "title": "Azure compute options",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree"
+        },
+        {
+          "title": "Azure storage services",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction"
+        }
+      ]
+    },
+    {
+      "id": "azure-management",
+      "name": "Describe Azure management and governance",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        },
+        {
+          "title": "Azure Resource Manager",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "az9-q001",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Describe cloud concepts for Microsoft Azure Fundamentals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AZ-900 study guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AZ-900 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AZ-900 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+        }
+      ]
+    },
+    {
+      "id": "az9-q002",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "According to 'AZ-900 study guide', what is a documented best practice for Describe cloud concepts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AZ-900 study guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AZ-900 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+        }
+      ]
+    },
+    {
+      "id": "az9-q003",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "According to 'Benefits of cloud computing', what is a documented best practice for Describe cloud concepts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Benefits of cloud computing reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Benefits of cloud computing",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "az9-q004",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Describe Azure architecture and services for Microsoft Azure Fundamentals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure compute options"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure compute options and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure compute options",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree"
+        }
+      ]
+    },
+    {
+      "id": "az9-q005",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "According to 'Azure compute options', what is a documented best practice for Describe Azure architecture and services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure compute options reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure compute options",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree"
+        }
+      ]
+    },
+    {
+      "id": "az9-q006",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "According to 'Azure storage services', what is a documented best practice for Describe Azure architecture and services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure storage services reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure storage services",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az9-q007",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Describe Azure management and governance for Microsoft Azure Fundamentals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Microsoft Entra ID and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q008",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "According to 'Microsoft Entra ID', what is a documented best practice for Describe Azure management and governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft Entra ID reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q009",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Resource Manager', what is a documented best practice for Describe Azure management and governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Resource Manager reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Resource Manager",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q010",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to describe consumption-based pricing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pay-as-you-go model"
+        },
+        {
+          "id": "b",
+          "text": "Fixed perpetual license only"
+        },
+        {
+          "id": "c",
+          "text": "CapEx data center only"
+        },
+        {
+          "id": "d",
+          "text": "No metering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "docs": [
+        {
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q011",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to compare public vs private cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public cloud shared tenancy with isolation controls"
+        },
+        {
+          "id": "b",
+          "text": "Private cloud is always on laptops only"
+        },
+        {
+          "id": "c",
+          "text": "Hybrid removes all networking"
+        },
+        {
+          "id": "d",
+          "text": "Edge replaces cloud"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "docs": [
+        {
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "az9-q012",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to explain high availability concepts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability sets and zones"
+        },
+        {
+          "id": "b",
+          "text": "Single VM always sufficient"
+        },
+        {
+          "id": "c",
+          "text": "Disable redundancy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Zones isolate failure domains within a region.",
+      "docs": [
+        {
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q013",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to describe consumption-based pricing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pay-as-you-go model"
+        },
+        {
+          "id": "b",
+          "text": "Fixed perpetual license only"
+        },
+        {
+          "id": "c",
+          "text": "CapEx data center only"
+        },
+        {
+          "id": "d",
+          "text": "No metering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "docs": [
+        {
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q014",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to describe consumption-based pricing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pay-as-you-go model"
+        },
+        {
+          "id": "b",
+          "text": "Fixed perpetual license only"
+        },
+        {
+          "id": "c",
+          "text": "CapEx data center only"
+        },
+        {
+          "id": "d",
+          "text": "No metering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "docs": [
+        {
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q015",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Your team must describe consumption-based pricing. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pay-as-you-go model"
+        },
+        {
+          "id": "b",
+          "text": "Fixed perpetual license only"
+        },
+        {
+          "id": "c",
+          "text": "CapEx data center only"
+        },
+        {
+          "id": "d",
+          "text": "No metering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "docs": [
+        {
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q016",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to compare public vs private cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public cloud shared tenancy with isolation controls"
+        },
+        {
+          "id": "b",
+          "text": "Private cloud is always on laptops only"
+        },
+        {
+          "id": "c",
+          "text": "Hybrid removes all networking"
+        },
+        {
+          "id": "d",
+          "text": "Edge replaces cloud"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "docs": [
+        {
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "az9-q017",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to compare public vs private cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public cloud shared tenancy with isolation controls"
+        },
+        {
+          "id": "b",
+          "text": "Private cloud is always on laptops only"
+        },
+        {
+          "id": "c",
+          "text": "Hybrid removes all networking"
+        },
+        {
+          "id": "d",
+          "text": "Edge replaces cloud"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "docs": [
+        {
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "az9-q018",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Your team must compare public vs private cloud. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public cloud shared tenancy with isolation controls"
+        },
+        {
+          "id": "b",
+          "text": "Private cloud is always on laptops only"
+        },
+        {
+          "id": "c",
+          "text": "Hybrid removes all networking"
+        },
+        {
+          "id": "d",
+          "text": "Edge replaces cloud"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "docs": [
+        {
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "az9-q019",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to explain high availability concepts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability sets and zones"
+        },
+        {
+          "id": "b",
+          "text": "Single VM always sufficient"
+        },
+        {
+          "id": "c",
+          "text": "Disable redundancy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Zones isolate failure domains within a region.",
+      "docs": [
+        {
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q020",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to explain high availability concepts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability sets and zones"
+        },
+        {
+          "id": "b",
+          "text": "Single VM always sufficient"
+        },
+        {
+          "id": "c",
+          "text": "Disable redundancy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Zones isolate failure domains within a region.",
+      "docs": [
+        {
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q021",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Your team must explain high availability concepts. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability sets and zones"
+        },
+        {
+          "id": "b",
+          "text": "Single VM always sufficient"
+        },
+        {
+          "id": "c",
+          "text": "Disable redundancy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Zones isolate failure domains within a region.",
+      "docs": [
+        {
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q022",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to describe consumption-based pricing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pay-as-you-go model"
+        },
+        {
+          "id": "b",
+          "text": "Fixed perpetual license only"
+        },
+        {
+          "id": "c",
+          "text": "CapEx data center only"
+        },
+        {
+          "id": "d",
+          "text": "No metering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "docs": [
+        {
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q023",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "An Azure architect must compare public vs private cloud.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public cloud shared tenancy with isolation controls"
+        },
+        {
+          "id": "b",
+          "text": "Private cloud is always on laptops only"
+        },
+        {
+          "id": "c",
+          "text": "Hybrid removes all networking"
+        },
+        {
+          "id": "d",
+          "text": "Edge replaces cloud"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "docs": [
+        {
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "az9-q024",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Your organization plans to explain high availability concepts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability sets and zones"
+        },
+        {
+          "id": "b",
+          "text": "Single VM always sufficient"
+        },
+        {
+          "id": "c",
+          "text": "Disable redundancy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Zones isolate failure domains within a region.",
+      "docs": [
+        {
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q025",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should describe consumption-based pricing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pay-as-you-go model"
+        },
+        {
+          "id": "b",
+          "text": "Fixed perpetual license only"
+        },
+        {
+          "id": "c",
+          "text": "CapEx data center only"
+        },
+        {
+          "id": "d",
+          "text": "No metering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "docs": [
+        {
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q026",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to compare public vs private cloud.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public cloud shared tenancy with isolation controls"
+        },
+        {
+          "id": "b",
+          "text": "Private cloud is always on laptops only"
+        },
+        {
+          "id": "c",
+          "text": "Hybrid removes all networking"
+        },
+        {
+          "id": "d",
+          "text": "Edge replaces cloud"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "docs": [
+        {
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+        }
+      ]
+    },
+    {
+      "id": "az9-q027",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "An Azure architect must explain high availability concepts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability sets and zones"
+        },
+        {
+          "id": "b",
+          "text": "Single VM always sufficient"
+        },
+        {
+          "id": "c",
+          "text": "Disable redundancy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Zones isolate failure domains within a region.",
+      "docs": [
+        {
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q028",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Your organization plans to describe consumption-based pricing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pay-as-you-go model"
+        },
+        {
+          "id": "b",
+          "text": "Fixed perpetual license only"
+        },
+        {
+          "id": "c",
+          "text": "CapEx data center only"
+        },
+        {
+          "id": "d",
+          "text": "No metering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "docs": [
+        {
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q029",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to store unstructured objects at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Blob Storage"
+        },
+        {
+          "id": "b",
+          "text": "Azure SQL only for blobs"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Entra group mail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blob Storage is object storage for files and media.",
+      "docs": [
+        {
+          "title": "Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q030",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to run Linux VMs in Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Machines"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage"
+        },
+        {
+          "id": "c",
+          "text": "Logic Apps only"
+        },
+        {
+          "id": "d",
+          "text": "DNS zones only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMs provide IaaS compute.",
+      "docs": [
+        {
+          "title": "Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q031",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to serverless HTTP APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions"
+        },
+        {
+          "id": "b",
+          "text": "Virtual Network peering only"
+        },
+        {
+          "id": "c",
+          "text": "ExpressRoute only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions run event-driven code without managing servers.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q032",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to host managed web applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage only"
+        },
+        {
+          "id": "c",
+          "text": "VPN SKU"
+        },
+        {
+          "id": "d",
+          "text": "ICMP probe"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web apps.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q033",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to run managed relational databases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "CSV files only"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL Database is managed PaaS SQL.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q034",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to store unstructured objects at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Blob Storage"
+        },
+        {
+          "id": "b",
+          "text": "Azure SQL only for blobs"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Entra group mail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blob Storage is object storage for files and media.",
+      "docs": [
+        {
+          "title": "Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q035",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to store unstructured objects at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Blob Storage"
+        },
+        {
+          "id": "b",
+          "text": "Azure SQL only for blobs"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Entra group mail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blob Storage is object storage for files and media.",
+      "docs": [
+        {
+          "title": "Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q036",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Your team must store unstructured objects at scale. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Blob Storage"
+        },
+        {
+          "id": "b",
+          "text": "Azure SQL only for blobs"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Entra group mail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blob Storage is object storage for files and media.",
+      "docs": [
+        {
+          "title": "Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q037",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to run Linux VMs in Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Machines"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage"
+        },
+        {
+          "id": "c",
+          "text": "Logic Apps only"
+        },
+        {
+          "id": "d",
+          "text": "DNS zones only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMs provide IaaS compute.",
+      "docs": [
+        {
+          "title": "Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q038",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to run Linux VMs in Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Machines"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage"
+        },
+        {
+          "id": "c",
+          "text": "Logic Apps only"
+        },
+        {
+          "id": "d",
+          "text": "DNS zones only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMs provide IaaS compute.",
+      "docs": [
+        {
+          "title": "Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q039",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Your team must run Linux VMs in Azure. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Machines"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage"
+        },
+        {
+          "id": "c",
+          "text": "Logic Apps only"
+        },
+        {
+          "id": "d",
+          "text": "DNS zones only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMs provide IaaS compute.",
+      "docs": [
+        {
+          "title": "Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q040",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to serverless HTTP APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions"
+        },
+        {
+          "id": "b",
+          "text": "Virtual Network peering only"
+        },
+        {
+          "id": "c",
+          "text": "ExpressRoute only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions run event-driven code without managing servers.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q041",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to serverless HTTP APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions"
+        },
+        {
+          "id": "b",
+          "text": "Virtual Network peering only"
+        },
+        {
+          "id": "c",
+          "text": "ExpressRoute only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions run event-driven code without managing servers.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q042",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Your team must serverless HTTP APIs. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions"
+        },
+        {
+          "id": "b",
+          "text": "Virtual Network peering only"
+        },
+        {
+          "id": "c",
+          "text": "ExpressRoute only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions run event-driven code without managing servers.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q043",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to host managed web applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage only"
+        },
+        {
+          "id": "c",
+          "text": "VPN SKU"
+        },
+        {
+          "id": "d",
+          "text": "ICMP probe"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web apps.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q044",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to host managed web applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage only"
+        },
+        {
+          "id": "c",
+          "text": "VPN SKU"
+        },
+        {
+          "id": "d",
+          "text": "ICMP probe"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web apps.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q045",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Your team must host managed web applications. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage only"
+        },
+        {
+          "id": "c",
+          "text": "VPN SKU"
+        },
+        {
+          "id": "d",
+          "text": "ICMP probe"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web apps.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q046",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to run managed relational databases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "CSV files only"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL Database is managed PaaS SQL.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q047",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to run managed relational databases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "CSV files only"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL Database is managed PaaS SQL.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q048",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Your team must run managed relational databases. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "CSV files only"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL Database is managed PaaS SQL.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q049",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to store unstructured objects at scale.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Blob Storage"
+        },
+        {
+          "id": "b",
+          "text": "Azure SQL only for blobs"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Entra group mail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blob Storage is object storage for files and media.",
+      "docs": [
+        {
+          "title": "Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q050",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "Your organization plans to run Linux VMs in Azure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Machines"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage"
+        },
+        {
+          "id": "c",
+          "text": "Logic Apps only"
+        },
+        {
+          "id": "d",
+          "text": "DNS zones only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMs provide IaaS compute.",
+      "docs": [
+        {
+          "title": "Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q051",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "An Azure architect must serverless HTTP APIs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions"
+        },
+        {
+          "id": "b",
+          "text": "Virtual Network peering only"
+        },
+        {
+          "id": "c",
+          "text": "ExpressRoute only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions run event-driven code without managing servers.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q052",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should host managed web applications.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Blob Storage only"
+        },
+        {
+          "id": "c",
+          "text": "VPN SKU"
+        },
+        {
+          "id": "d",
+          "text": "ICMP probe"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web apps.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q053",
+      "domain": "azure-architecture",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to run managed relational databases.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "CSV files only"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL Database is managed PaaS SQL.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q054",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to deploy resources as a unit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q055",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to centralize identity for Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Blob lease only"
+        },
+        {
+          "id": "c",
+          "text": "NIC teaming"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Entra ID is the identity platform for Azure.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q056",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to organize subscriptions and management groups?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q057",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to deploy resources as a unit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q058",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to deploy resources as a unit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q059",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your team must deploy resources as a unit. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q060",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to centralize identity for Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Blob lease only"
+        },
+        {
+          "id": "c",
+          "text": "NIC teaming"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Entra ID is the identity platform for Azure.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q061",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to centralize identity for Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Blob lease only"
+        },
+        {
+          "id": "c",
+          "text": "NIC teaming"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Entra ID is the identity platform for Azure.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q062",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your team must centralize identity for Azure resources. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Blob lease only"
+        },
+        {
+          "id": "c",
+          "text": "NIC teaming"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Entra ID is the identity platform for Azure.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q063",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to organize subscriptions and management groups?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q064",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to organize subscriptions and management groups?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q065",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your team must organize subscriptions and management groups. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q066",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to deploy resources as a unit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q067",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your organization plans to centralize identity for Azure resources.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Blob lease only"
+        },
+        {
+          "id": "c",
+          "text": "NIC teaming"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Entra ID is the identity platform for Azure.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q068",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "An Azure architect must organize subscriptions and management groups.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q069",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should deploy resources as a unit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q070",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to centralize identity for Azure resources.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Blob lease only"
+        },
+        {
+          "id": "c",
+          "text": "NIC teaming"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Entra ID is the identity platform for Azure.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q071",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your organization plans to organize subscriptions and management groups.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q072",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "An Azure architect must deploy resources as a unit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q073",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should centralize identity for Azure resources.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Entra ID"
+        },
+        {
+          "id": "b",
+          "text": "Blob lease only"
+        },
+        {
+          "id": "c",
+          "text": "NIC teaming"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Entra ID is the identity platform for Azure.",
+      "docs": [
+        {
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+        }
+      ]
+    },
+    {
+      "id": "az9-q074",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to organize subscriptions and management groups.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q075",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your organization plans to deploy resources as a unit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Resource Manager templates"
+        },
+        {
+          "id": "b",
+          "text": "Manual portal clicks only policy"
+        },
+        {
+          "id": "c",
+          "text": "Local AD only"
+        },
+        {
+          "id": "d",
+          "text": "FTP deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARM provides declarative infrastructure deployment.",
+      "docs": [
+        {
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/"
+}

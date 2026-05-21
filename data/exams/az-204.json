@@ -1,0 +1,2932 @@
+{
+  "id": "az-204",
+  "name": "Microsoft Azure Developer Associate",
+  "code": "AZ-204",
+  "vendor": "azure",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "compute-solutions",
+      "name": "Develop Azure compute solutions",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "AZ-204 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204"
+        },
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "storage-solutions",
+      "name": "Develop for Azure storage",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Blob storage SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Implement Azure security",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        },
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "monitor-optimize",
+      "name": "Monitor, troubleshoot, and optimize",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "connect-consume",
+      "name": "Connect to and consume Azure services",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Azure Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        },
+        {
+          "title": "Azure Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "az204-q001",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Develop Azure compute solutions for Microsoft Azure Developer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AZ-204 study guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AZ-204 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AZ-204 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204"
+        }
+      ]
+    },
+    {
+      "id": "az204-q002",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "According to 'AZ-204 study guide', what is a documented best practice for Develop Azure compute solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AZ-204 study guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AZ-204 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204"
+        }
+      ]
+    },
+    {
+      "id": "az204-q003",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Functions', what is a documented best practice for Develop Azure compute solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Functions reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q004",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Develop for Azure storage for Microsoft Azure Developer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Blob storage SDK"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Blob storage SDK and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Blob storage SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q005",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "According to 'Blob storage SDK', what is a documented best practice for Develop for Azure storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Blob storage SDK reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Blob storage SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q006",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Implement Azure security for Microsoft Azure Developer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Microsoft Graph and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q007",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "According to 'Microsoft Graph', what is a documented best practice for Implement Azure security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft Graph reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q008",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "According to 'Managed identities', what is a documented best practice for Implement Azure security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q009",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Monitor, troubleshoot, and optimize for Microsoft Azure Developer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Application Insights and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q010",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "According to 'Application Insights', what is a documented best practice for Monitor, troubleshoot, and optimize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Application Insights reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q011",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Connect to and consume Azure services for Microsoft Azure Developer Associate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Service Bus and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q012",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Service Bus', what is a documented best practice for Connect to and consume Azure services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Service Bus reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q013",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Event Hubs', what is a documented best practice for Connect to and consume Azure services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Event Hubs reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q014",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to trigger code from HTTP requests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q015",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to containerize APIs on managed Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "FTP site"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q016",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to trigger code from HTTP requests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q017",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to trigger code from HTTP requests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q018",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must trigger code from HTTP requests. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q019",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to containerize APIs on managed Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "FTP site"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q020",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to containerize APIs on managed Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "FTP site"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q021",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must containerize APIs on managed Kubernetes. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "FTP site"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q022",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to trigger code from HTTP requests.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q023",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Your organization plans to containerize APIs on managed Kubernetes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "FTP site"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q024",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should trigger code from HTTP requests.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q025",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "An Azure architect must containerize APIs on managed Kubernetes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "FTP site"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q026",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Functions with HTTP trigger rather than Azure Kubernetes Service when you need to trigger code from HTTP requests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "c",
+          "text": "Static blob only"
+        },
+        {
+          "id": "d",
+          "text": "VPN gateway"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation. Compare with Azure Kubernetes Service: AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        },
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q027",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Kubernetes Service rather than Azure Functions with HTTP trigger when you need to containerize APIs on managed Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "c",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "d",
+          "text": "FTP site"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services. Compare with Azure Functions with HTTP trigger: Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        },
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q028",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to trigger code from HTTP requests (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q029",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to containerize APIs on managed Kubernetes (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Single process on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "FTP site"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AKS runs containerized services.",
+      "docs": [
+        {
+          "title": "AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az204-q030",
+      "domain": "compute-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must trigger code from HTTP requests (variant 2). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Functions with HTTP trigger"
+        },
+        {
+          "id": "b",
+          "text": "Static blob only"
+        },
+        {
+          "id": "c",
+          "text": "VPN gateway"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Functions scale per invocation.",
+      "docs": [
+        {
+          "title": "Azure Functions",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q031",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to upload large blobs with SDK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q032",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to upload large blobs with SDK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q033",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to upload large blobs with SDK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q034",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must upload large blobs with SDK. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q035",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "Your organization plans to upload large blobs with SDK.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q036",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to upload large blobs with SDK.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q037",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "An Azure architect must upload large blobs with SDK.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q038",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should upload large blobs with SDK.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q039",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to upload large blobs with SDK (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q040",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to upload large blobs with SDK (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q041",
+      "domain": "storage-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must upload large blobs with SDK (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Storage Blob SDK"
+        },
+        {
+          "id": "b",
+          "text": "Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Entra B2C only"
+        },
+        {
+          "id": "d",
+          "text": "VPN SKU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SDKs interact with Blob REST APIs.",
+      "docs": [
+        {
+          "title": "Blob SDK",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
+        }
+      ]
+    },
+    {
+      "id": "az204-q042",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to access Microsoft 365 data in apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "b",
+          "text": "SNMP traps"
+        },
+        {
+          "id": "c",
+          "text": "ICMP only"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graph is the unified API for Microsoft cloud data.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q043",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to authenticate apps without secrets in code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed identities"
+        },
+        {
+          "id": "b",
+          "text": "Embed passwords in repo"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys in JS"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities use Entra tokens automatically.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q044",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to access Microsoft 365 data in apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "b",
+          "text": "SNMP traps"
+        },
+        {
+          "id": "c",
+          "text": "ICMP only"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graph is the unified API for Microsoft cloud data.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q045",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to access Microsoft 365 data in apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "b",
+          "text": "SNMP traps"
+        },
+        {
+          "id": "c",
+          "text": "ICMP only"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graph is the unified API for Microsoft cloud data.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q046",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Your team must access Microsoft 365 data in apps. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "b",
+          "text": "SNMP traps"
+        },
+        {
+          "id": "c",
+          "text": "ICMP only"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graph is the unified API for Microsoft cloud data.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q047",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to authenticate apps without secrets in code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed identities"
+        },
+        {
+          "id": "b",
+          "text": "Embed passwords in repo"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys in JS"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities use Entra tokens automatically.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q048",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to authenticate apps without secrets in code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed identities"
+        },
+        {
+          "id": "b",
+          "text": "Embed passwords in repo"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys in JS"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities use Entra tokens automatically.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q049",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Your team must authenticate apps without secrets in code. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed identities"
+        },
+        {
+          "id": "b",
+          "text": "Embed passwords in repo"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys in JS"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities use Entra tokens automatically.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q050",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Your organization plans to access Microsoft 365 data in apps.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "b",
+          "text": "SNMP traps"
+        },
+        {
+          "id": "c",
+          "text": "ICMP only"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graph is the unified API for Microsoft cloud data.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q051",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to authenticate apps without secrets in code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed identities"
+        },
+        {
+          "id": "b",
+          "text": "Embed passwords in repo"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys in JS"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities use Entra tokens automatically.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q052",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should access Microsoft 365 data in apps.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "b",
+          "text": "SNMP traps"
+        },
+        {
+          "id": "c",
+          "text": "ICMP only"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graph is the unified API for Microsoft cloud data.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q053",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "An Azure architect must authenticate apps without secrets in code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed identities"
+        },
+        {
+          "id": "b",
+          "text": "Embed passwords in repo"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys in JS"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities use Entra tokens automatically.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q054",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Microsoft Graph API rather than Managed identities when you need to access Microsoft 365 data in apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "b",
+          "text": "Managed identities"
+        },
+        {
+          "id": "c",
+          "text": "SNMP traps"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graph is the unified API for Microsoft cloud data. Compare with Managed identities: Managed identities use Entra tokens automatically.",
+      "docs": [
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        },
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q055",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Managed identities rather than Microsoft Graph API when you need to authenticate apps without secrets in code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed identities"
+        },
+        {
+          "id": "b",
+          "text": "Microsoft Graph API"
+        },
+        {
+          "id": "c",
+          "text": "Embed passwords in repo"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys in JS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed identities use Entra tokens automatically. Compare with Microsoft Graph API: Graph is the unified API for Microsoft cloud data.",
+      "docs": [
+        {
+          "title": "Managed identities",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+        },
+        {
+          "title": "Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/graph/overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q056",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to trace distributed app requests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q057",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to trace distributed app requests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q058",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to trace distributed app requests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q059",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "Your team must trace distributed app requests. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q060",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "Your organization plans to trace distributed app requests.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q061",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "An Azure architect must trace distributed app requests.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q062",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should trace distributed app requests.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q063",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to trace distributed app requests.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q064",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to trace distributed app requests (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q065",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to trace distributed app requests (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q066",
+      "domain": "monitor-optimize",
+      "type": "multiple-choice",
+      "text": "Your team must trace distributed app requests (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Insights"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Paper logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Insights provides APM for Azure apps.",
+      "docs": [
+        {
+          "title": "Application Insights",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q067",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to decouple microservices with queues?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q068",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to ingest high-volume streaming events?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Email batch"
+        },
+        {
+          "id": "c",
+          "text": "Daily CSV"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q069",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to decouple microservices with queues?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q070",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to decouple microservices with queues?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q071",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Your team must decouple microservices with queues. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q072",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to ingest high-volume streaming events?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Email batch"
+        },
+        {
+          "id": "c",
+          "text": "Daily CSV"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q073",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to ingest high-volume streaming events?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Email batch"
+        },
+        {
+          "id": "c",
+          "text": "Daily CSV"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q074",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Your team must ingest high-volume streaming events. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Email batch"
+        },
+        {
+          "id": "c",
+          "text": "Daily CSV"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q075",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to decouple microservices with queues.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q076",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "An Azure architect must ingest high-volume streaming events.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Email batch"
+        },
+        {
+          "id": "c",
+          "text": "Daily CSV"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q077",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Your organization plans to decouple microservices with queues.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q078",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should ingest high-volume streaming events.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Email batch"
+        },
+        {
+          "id": "c",
+          "text": "Daily CSV"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q079",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Service Bus rather than Azure Event Hubs when you need to decouple microservices with queues?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "c",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "d",
+          "text": "Shared DB table lock"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging. Compare with Azure Event Hubs: Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        },
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q080",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Event Hubs rather than Azure Service Bus when you need to ingest high-volume streaming events?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "c",
+          "text": "Email batch"
+        },
+        {
+          "id": "d",
+          "text": "Daily CSV"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second. Compare with Azure Service Bus: Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        },
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q081",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to decouple microservices with queues (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    },
+    {
+      "id": "az204-q082",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to ingest high-volume streaming events (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Event Hubs"
+        },
+        {
+          "id": "b",
+          "text": "Email batch"
+        },
+        {
+          "id": "c",
+          "text": "Daily CSV"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event Hubs ingests millions of events per second.",
+      "docs": [
+        {
+          "title": "Event Hubs",
+          "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+        }
+      ]
+    },
+    {
+      "id": "az204-q083",
+      "domain": "connect-consume",
+      "type": "multiple-choice",
+      "text": "Your team must decouple microservices with queues (variant 2). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Service Bus"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared DB table lock"
+        },
+        {
+          "id": "d",
+          "text": "FTP polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Bus provides reliable messaging.",
+      "docs": [
+        {
+          "title": "Service Bus",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/"
+}

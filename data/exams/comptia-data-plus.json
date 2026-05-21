@@ -1,0 +1,2512 @@
+{
+  "id": "comptia-data-plus",
+  "name": "CompTIA Data+",
+  "code": "DA0-001",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 85,
+    "scoredQuestions": 75,
+    "timeLimitMinutes": 165,
+    "passingScore": 750,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "data-concepts",
+      "name": "Domain 1: Data Concepts and Environments",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        },
+        {
+          "title": "Data+ study resources",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "mining-analytics",
+      "name": "Domain 2: Data Mining, Analysis, and Visualization",
+      "weight": 35,
+      "resources": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        },
+        {
+          "title": "Data+ analytics objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "name": "Domain 3: Data Governance, Quality, and Controls",
+      "weight": 40,
+      "resources": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        },
+        {
+          "title": "Data+ governance objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptdat-q001",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Data Concepts and Environments for CompTIA Data+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data+ Exam Objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Data+ Exam Objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q002",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "According to 'Data+ Exam Objectives', what is a documented best practice for Data Concepts and Environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data+ Exam Objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q003",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "According to 'Data+ study resources', what is a documented best practice for Data Concepts and Environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data+ study resources reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Data+ study resources",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q004",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Data Mining, Analysis, and Visualization for CompTIA Data+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data+ Exam Objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Data+ Exam Objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q005",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "According to 'Data+ Exam Objectives', what is a documented best practice for Data Mining, Analysis, and Visualization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data+ Exam Objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q006",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "According to 'Data+ analytics objectives', what is a documented best practice for Data Mining, Analysis, and Visualization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data+ analytics objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Data+ analytics objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q007",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Data Governance, Quality, and Controls for CompTIA Data+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data+ Exam Objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Data+ Exam Objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q008",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "According to 'Data+ Exam Objectives', what is a documented best practice for Data Governance, Quality, and Controls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data+ Exam Objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Data+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q009",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "According to 'Data+ governance objectives', what is a documented best practice for Data Governance, Quality, and Controls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data+ governance objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Data+ governance objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q010",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to distinguish structured and unstructured data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tables vs documents/media"
+        },
+        {
+          "id": "b",
+          "text": "Only ICMP"
+        },
+        {
+          "id": "c",
+          "text": "DNS only"
+        },
+        {
+          "id": "d",
+          "text": "Cable types"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data type drives tooling.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q011",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to describe data life cycle stages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collection, processing, analysis, storage, sharing"
+        },
+        {
+          "id": "b",
+          "text": "Only delete"
+        },
+        {
+          "id": "c",
+          "text": "No catalog"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Life cycle informs controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q012",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to compare relational and dimensional models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Star/snowflake schemas for analytics"
+        },
+        {
+          "id": "b",
+          "text": "Only flat files"
+        },
+        {
+          "id": "c",
+          "text": "No keys"
+        },
+        {
+          "id": "d",
+          "text": "Random CSV"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models affect query performance.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q013",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to distinguish structured and unstructured data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tables vs documents/media"
+        },
+        {
+          "id": "b",
+          "text": "Only ICMP"
+        },
+        {
+          "id": "c",
+          "text": "DNS only"
+        },
+        {
+          "id": "d",
+          "text": "Cable types"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data type drives tooling.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q014",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to distinguish structured and unstructured data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tables vs documents/media"
+        },
+        {
+          "id": "b",
+          "text": "Only ICMP"
+        },
+        {
+          "id": "c",
+          "text": "DNS only"
+        },
+        {
+          "id": "d",
+          "text": "Cable types"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data type drives tooling.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q015",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "A technician must distinguish structured and unstructured data. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tables vs documents/media"
+        },
+        {
+          "id": "b",
+          "text": "Only ICMP"
+        },
+        {
+          "id": "c",
+          "text": "DNS only"
+        },
+        {
+          "id": "d",
+          "text": "Cable types"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data type drives tooling.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q016",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to describe data life cycle stages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collection, processing, analysis, storage, sharing"
+        },
+        {
+          "id": "b",
+          "text": "Only delete"
+        },
+        {
+          "id": "c",
+          "text": "No catalog"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Life cycle informs controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q017",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to describe data life cycle stages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collection, processing, analysis, storage, sharing"
+        },
+        {
+          "id": "b",
+          "text": "Only delete"
+        },
+        {
+          "id": "c",
+          "text": "No catalog"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Life cycle informs controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q018",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "A technician must describe data life cycle stages. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collection, processing, analysis, storage, sharing"
+        },
+        {
+          "id": "b",
+          "text": "Only delete"
+        },
+        {
+          "id": "c",
+          "text": "No catalog"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Life cycle informs controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q019",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to compare relational and dimensional models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Star/snowflake schemas for analytics"
+        },
+        {
+          "id": "b",
+          "text": "Only flat files"
+        },
+        {
+          "id": "c",
+          "text": "No keys"
+        },
+        {
+          "id": "d",
+          "text": "Random CSV"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models affect query performance.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q020",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to compare relational and dimensional models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Star/snowflake schemas for analytics"
+        },
+        {
+          "id": "b",
+          "text": "Only flat files"
+        },
+        {
+          "id": "c",
+          "text": "No keys"
+        },
+        {
+          "id": "d",
+          "text": "Random CSV"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models affect query performance.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q021",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "A technician must compare relational and dimensional models. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Star/snowflake schemas for analytics"
+        },
+        {
+          "id": "b",
+          "text": "Only flat files"
+        },
+        {
+          "id": "c",
+          "text": "No keys"
+        },
+        {
+          "id": "d",
+          "text": "Random CSV"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models affect query performance.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q022",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must distinguish structured and unstructured data.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tables vs documents/media"
+        },
+        {
+          "id": "b",
+          "text": "Only ICMP"
+        },
+        {
+          "id": "c",
+          "text": "DNS only"
+        },
+        {
+          "id": "d",
+          "text": "Cable types"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data type drives tooling.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q023",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "On the job, you need to describe data life cycle stages.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collection, processing, analysis, storage, sharing"
+        },
+        {
+          "id": "b",
+          "text": "Only delete"
+        },
+        {
+          "id": "c",
+          "text": "No catalog"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Life cycle informs controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q024",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must compare relational and dimensional models.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Star/snowflake schemas for analytics"
+        },
+        {
+          "id": "b",
+          "text": "Only flat files"
+        },
+        {
+          "id": "c",
+          "text": "No keys"
+        },
+        {
+          "id": "d",
+          "text": "Random CSV"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Models affect query performance.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q025",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should distinguish structured and unstructured data.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tables vs documents/media"
+        },
+        {
+          "id": "b",
+          "text": "Only ICMP"
+        },
+        {
+          "id": "c",
+          "text": "DNS only"
+        },
+        {
+          "id": "d",
+          "text": "Cable types"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data type drives tooling.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q026",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to visualize trends for stakeholders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with clear metrics"
+        },
+        {
+          "id": "b",
+          "text": "Raw tables only"
+        },
+        {
+          "id": "c",
+          "text": "Hide outliers always"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Visualization communicates insights.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q027",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to apply basic statistics to samples?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mean, median, variance with context"
+        },
+        {
+          "id": "b",
+          "text": "Cherry-pick only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore sample size"
+        },
+        {
+          "id": "d",
+          "text": "No units"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Statistics support decisions.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q028",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to handle missing and dirty data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiling, imputation, and validation rules"
+        },
+        {
+          "id": "b",
+          "text": "Ignore nulls"
+        },
+        {
+          "id": "c",
+          "text": "Drop all rows"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data quality affects analysis.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q029",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to find correlations between metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scatter plots and coefficient review"
+        },
+        {
+          "id": "b",
+          "text": "Guess causation"
+        },
+        {
+          "id": "c",
+          "text": "Single metric only"
+        },
+        {
+          "id": "d",
+          "text": "No baseline"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Correlation guides hypotheses.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q030",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to summarize datasets with aggregates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GROUP BY with clear grain definitions"
+        },
+        {
+          "id": "b",
+          "text": "Mix grains randomly"
+        },
+        {
+          "id": "c",
+          "text": "Duplicate rows"
+        },
+        {
+          "id": "d",
+          "text": "No keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aggregates must match business grain.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q031",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to communicate analytical limitations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Document assumptions and sample bias"
+        },
+        {
+          "id": "b",
+          "text": "Hide caveats"
+        },
+        {
+          "id": "c",
+          "text": "Overclaim accuracy"
+        },
+        {
+          "id": "d",
+          "text": "No peer review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transparency builds trust.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q032",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to select chart types appropriately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bar vs line vs histogram by data type"
+        },
+        {
+          "id": "b",
+          "text": "Pie chart for everything"
+        },
+        {
+          "id": "c",
+          "text": "3D clutter"
+        },
+        {
+          "id": "d",
+          "text": "No axis labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Chart choice affects interpretation.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q033",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to visualize trends for stakeholders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with clear metrics"
+        },
+        {
+          "id": "b",
+          "text": "Raw tables only"
+        },
+        {
+          "id": "c",
+          "text": "Hide outliers always"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Visualization communicates insights.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q034",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to visualize trends for stakeholders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with clear metrics"
+        },
+        {
+          "id": "b",
+          "text": "Raw tables only"
+        },
+        {
+          "id": "c",
+          "text": "Hide outliers always"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Visualization communicates insights.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q035",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "A technician must visualize trends for stakeholders. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dashboards with clear metrics"
+        },
+        {
+          "id": "b",
+          "text": "Raw tables only"
+        },
+        {
+          "id": "c",
+          "text": "Hide outliers always"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Visualization communicates insights.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q036",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to apply basic statistics to samples?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mean, median, variance with context"
+        },
+        {
+          "id": "b",
+          "text": "Cherry-pick only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore sample size"
+        },
+        {
+          "id": "d",
+          "text": "No units"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Statistics support decisions.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q037",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to apply basic statistics to samples?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mean, median, variance with context"
+        },
+        {
+          "id": "b",
+          "text": "Cherry-pick only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore sample size"
+        },
+        {
+          "id": "d",
+          "text": "No units"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Statistics support decisions.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q038",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "A technician must apply basic statistics to samples. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mean, median, variance with context"
+        },
+        {
+          "id": "b",
+          "text": "Cherry-pick only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore sample size"
+        },
+        {
+          "id": "d",
+          "text": "No units"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Statistics support decisions.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q039",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to handle missing and dirty data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiling, imputation, and validation rules"
+        },
+        {
+          "id": "b",
+          "text": "Ignore nulls"
+        },
+        {
+          "id": "c",
+          "text": "Drop all rows"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data quality affects analysis.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q040",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to handle missing and dirty data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiling, imputation, and validation rules"
+        },
+        {
+          "id": "b",
+          "text": "Ignore nulls"
+        },
+        {
+          "id": "c",
+          "text": "Drop all rows"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data quality affects analysis.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q041",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "A technician must handle missing and dirty data. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiling, imputation, and validation rules"
+        },
+        {
+          "id": "b",
+          "text": "Ignore nulls"
+        },
+        {
+          "id": "c",
+          "text": "Drop all rows"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data quality affects analysis.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q042",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to find correlations between metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scatter plots and coefficient review"
+        },
+        {
+          "id": "b",
+          "text": "Guess causation"
+        },
+        {
+          "id": "c",
+          "text": "Single metric only"
+        },
+        {
+          "id": "d",
+          "text": "No baseline"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Correlation guides hypotheses.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q043",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to find correlations between metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scatter plots and coefficient review"
+        },
+        {
+          "id": "b",
+          "text": "Guess causation"
+        },
+        {
+          "id": "c",
+          "text": "Single metric only"
+        },
+        {
+          "id": "d",
+          "text": "No baseline"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Correlation guides hypotheses.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q044",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "A technician must find correlations between metrics. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scatter plots and coefficient review"
+        },
+        {
+          "id": "b",
+          "text": "Guess causation"
+        },
+        {
+          "id": "c",
+          "text": "Single metric only"
+        },
+        {
+          "id": "d",
+          "text": "No baseline"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Correlation guides hypotheses.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q045",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to summarize datasets with aggregates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GROUP BY with clear grain definitions"
+        },
+        {
+          "id": "b",
+          "text": "Mix grains randomly"
+        },
+        {
+          "id": "c",
+          "text": "Duplicate rows"
+        },
+        {
+          "id": "d",
+          "text": "No keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aggregates must match business grain.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q046",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to summarize datasets with aggregates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GROUP BY with clear grain definitions"
+        },
+        {
+          "id": "b",
+          "text": "Mix grains randomly"
+        },
+        {
+          "id": "c",
+          "text": "Duplicate rows"
+        },
+        {
+          "id": "d",
+          "text": "No keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aggregates must match business grain.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q047",
+      "domain": "mining-analytics",
+      "type": "multiple-choice",
+      "text": "A technician must summarize datasets with aggregates. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GROUP BY with clear grain definitions"
+        },
+        {
+          "id": "b",
+          "text": "Mix grains randomly"
+        },
+        {
+          "id": "c",
+          "text": "Duplicate rows"
+        },
+        {
+          "id": "d",
+          "text": "No keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Aggregates must match business grain.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q048",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to protect sensitive columns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Masking and access controls"
+        },
+        {
+          "id": "b",
+          "text": "Email CSV of PII"
+        },
+        {
+          "id": "c",
+          "text": "Public share"
+        },
+        {
+          "id": "d",
+          "text": "No retention policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance reduces data risk.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q049",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to document data lineage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Catalog showing sources and transforms"
+        },
+        {
+          "id": "b",
+          "text": "Shadow spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No owners"
+        },
+        {
+          "id": "d",
+          "text": "Delete metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports audits.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q050",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to define data retention schedules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy-based retention and deletion"
+        },
+        {
+          "id": "b",
+          "text": "Keep forever"
+        },
+        {
+          "id": "c",
+          "text": "No legal review"
+        },
+        {
+          "id": "d",
+          "text": "Public archives"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retention limits risk and cost.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q051",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to assign data stewards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Named owners per dataset"
+        },
+        {
+          "id": "b",
+          "text": "Everyone owns nothing"
+        },
+        {
+          "id": "c",
+          "text": "No RACI"
+        },
+        {
+          "id": "d",
+          "text": "Ignore quality"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stewards accountability improves quality.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q052",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to measure data quality dimensions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accuracy, completeness, timeliness metrics"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Guess quality"
+        },
+        {
+          "id": "d",
+          "text": "Ignore duplicates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Quality metrics guide remediation.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q053",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to classify data by sensitivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Labels such as public, internal, confidential"
+        },
+        {
+          "id": "b",
+          "text": "One label for all"
+        },
+        {
+          "id": "c",
+          "text": "No training"
+        },
+        {
+          "id": "d",
+          "text": "Share externally"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Classification drives controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q054",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to apply role-based access to datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Least privilege for analysts and engineers"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "No reviews"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC limits exposure.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q055",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to protect sensitive columns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Masking and access controls"
+        },
+        {
+          "id": "b",
+          "text": "Email CSV of PII"
+        },
+        {
+          "id": "c",
+          "text": "Public share"
+        },
+        {
+          "id": "d",
+          "text": "No retention policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance reduces data risk.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q056",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to protect sensitive columns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Masking and access controls"
+        },
+        {
+          "id": "b",
+          "text": "Email CSV of PII"
+        },
+        {
+          "id": "c",
+          "text": "Public share"
+        },
+        {
+          "id": "d",
+          "text": "No retention policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance reduces data risk.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q057",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "A technician must protect sensitive columns. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Masking and access controls"
+        },
+        {
+          "id": "b",
+          "text": "Email CSV of PII"
+        },
+        {
+          "id": "c",
+          "text": "Public share"
+        },
+        {
+          "id": "d",
+          "text": "No retention policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance reduces data risk.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q058",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to document data lineage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Catalog showing sources and transforms"
+        },
+        {
+          "id": "b",
+          "text": "Shadow spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No owners"
+        },
+        {
+          "id": "d",
+          "text": "Delete metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports audits.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q059",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to document data lineage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Catalog showing sources and transforms"
+        },
+        {
+          "id": "b",
+          "text": "Shadow spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No owners"
+        },
+        {
+          "id": "d",
+          "text": "Delete metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports audits.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q060",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "A technician must document data lineage. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Catalog showing sources and transforms"
+        },
+        {
+          "id": "b",
+          "text": "Shadow spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No owners"
+        },
+        {
+          "id": "d",
+          "text": "Delete metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports audits.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q061",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to define data retention schedules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy-based retention and deletion"
+        },
+        {
+          "id": "b",
+          "text": "Keep forever"
+        },
+        {
+          "id": "c",
+          "text": "No legal review"
+        },
+        {
+          "id": "d",
+          "text": "Public archives"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retention limits risk and cost.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q062",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to define data retention schedules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy-based retention and deletion"
+        },
+        {
+          "id": "b",
+          "text": "Keep forever"
+        },
+        {
+          "id": "c",
+          "text": "No legal review"
+        },
+        {
+          "id": "d",
+          "text": "Public archives"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retention limits risk and cost.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q063",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "A technician must define data retention schedules. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy-based retention and deletion"
+        },
+        {
+          "id": "b",
+          "text": "Keep forever"
+        },
+        {
+          "id": "c",
+          "text": "No legal review"
+        },
+        {
+          "id": "d",
+          "text": "Public archives"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retention limits risk and cost.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q064",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to assign data stewards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Named owners per dataset"
+        },
+        {
+          "id": "b",
+          "text": "Everyone owns nothing"
+        },
+        {
+          "id": "c",
+          "text": "No RACI"
+        },
+        {
+          "id": "d",
+          "text": "Ignore quality"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stewards accountability improves quality.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q065",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to assign data stewards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Named owners per dataset"
+        },
+        {
+          "id": "b",
+          "text": "Everyone owns nothing"
+        },
+        {
+          "id": "c",
+          "text": "No RACI"
+        },
+        {
+          "id": "d",
+          "text": "Ignore quality"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stewards accountability improves quality.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q066",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "A technician must assign data stewards. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Named owners per dataset"
+        },
+        {
+          "id": "b",
+          "text": "Everyone owns nothing"
+        },
+        {
+          "id": "c",
+          "text": "No RACI"
+        },
+        {
+          "id": "d",
+          "text": "Ignore quality"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stewards accountability improves quality.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q067",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to measure data quality dimensions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accuracy, completeness, timeliness metrics"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Guess quality"
+        },
+        {
+          "id": "d",
+          "text": "Ignore duplicates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Quality metrics guide remediation.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q068",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to measure data quality dimensions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accuracy, completeness, timeliness metrics"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Guess quality"
+        },
+        {
+          "id": "d",
+          "text": "Ignore duplicates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Quality metrics guide remediation.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q069",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "A technician must measure data quality dimensions. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accuracy, completeness, timeliness metrics"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Guess quality"
+        },
+        {
+          "id": "d",
+          "text": "Ignore duplicates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Quality metrics guide remediation.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q070",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to classify data by sensitivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Labels such as public, internal, confidential"
+        },
+        {
+          "id": "b",
+          "text": "One label for all"
+        },
+        {
+          "id": "c",
+          "text": "No training"
+        },
+        {
+          "id": "d",
+          "text": "Share externally"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Classification drives controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q071",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to classify data by sensitivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Labels such as public, internal, confidential"
+        },
+        {
+          "id": "b",
+          "text": "One label for all"
+        },
+        {
+          "id": "c",
+          "text": "No training"
+        },
+        {
+          "id": "d",
+          "text": "Share externally"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Classification drives controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q072",
+      "domain": "governance",
+      "type": "multiple-choice",
+      "text": "A technician must classify data by sensitivity. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Labels such as public, internal, confidential"
+        },
+        {
+          "id": "b",
+          "text": "One label for all"
+        },
+        {
+          "id": "c",
+          "text": "No training"
+        },
+        {
+          "id": "d",
+          "text": "Share externally"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Classification drives controls.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://www.comptia.org/en-us/certifications/data"
+}

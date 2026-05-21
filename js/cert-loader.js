@@ -83,7 +83,7 @@ export async function loadExamIndex(opts = {}) {
   });
   if (!res.ok) {
     throw new Error(
-      "Failed to load exam index. Run: python3 scripts/build-exams-index.py"
+      "Failed to load exam index (data/exams-index.json). Check the file is present in the repo."
     );
   }
   const json = await res.json();

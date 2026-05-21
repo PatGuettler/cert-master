@@ -1,0 +1,2731 @@
+{
+  "id": "professional-cloud-devops-engineer",
+  "name": "Google Professional Cloud DevOps Engineer",
+  "code": "PCDO",
+  "vendor": "google",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "cicd",
+      "name": "Bootstrapping a Google Cloud organization for DevOps",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "PCDO exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-devops-engineer"
+        },
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "sre",
+      "name": "Building and implementing CI/CD pipelines",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "monitoring",
+      "name": "Implementing service monitoring strategies",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "optimization",
+      "name": "Optimizing service performance and cost",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        },
+        {
+          "title": "Operational excellence",
+          "url": "https://cloud.google.com/architecture/framework/operational-excellence"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "pcdo-q001",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Bootstrapping a Google Cloud organization for DevOps for Google Professional Cloud DevOps Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PCDO exam guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use PCDO exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "PCDO exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-devops-engineer"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q002",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "According to 'PCDO exam guide', what is a documented best practice for Bootstrapping a Google Cloud organization for DevOps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PCDO exam guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "PCDO exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-devops-engineer"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q003",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud Build', what is a documented best practice for Bootstrapping a Google Cloud organization for DevOps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q004",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Building and implementing CI/CD pipelines for Google Professional Cloud DevOps Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Artifact Registry and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q005",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "According to 'Artifact Registry', what is a documented best practice for Building and implementing CI/CD pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q006",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Implementing service monitoring strategies for Google Professional Cloud DevOps Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud Monitoring and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q007",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud Monitoring', what is a documented best practice for Implementing service monitoring strategies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Monitoring reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q008",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Optimizing service performance and cost for Google Professional Cloud DevOps Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cost optimization and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q009",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "According to 'Cost optimization', what is a documented best practice for Optimizing service performance and cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cost optimization reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q010",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "According to 'Operational excellence', what is a documented best practice for Optimizing service performance and cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational excellence reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Operational excellence",
+          "url": "https://cloud.google.com/architecture/framework/operational-excellence"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q011",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to build containers in CI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q012",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to build containers in CI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q013",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to build containers in CI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q014",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "A platform team must build containers in CI. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q015",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "A data team must build containers in CI.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q016",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to build containers in CI.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q017",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should build containers in CI.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q018",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to build containers in CI.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q019",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to build containers in CI (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q020",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to build containers in CI (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q021",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "A platform team must build containers in CI (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q022",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to build containers in CI (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q023",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to build containers in CI (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q024",
+      "domain": "cicd",
+      "type": "multiple-choice",
+      "text": "A platform team must build containers in CI (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Build"
+        },
+        {
+          "id": "b",
+          "text": "Manual docker load"
+        },
+        {
+          "id": "c",
+          "text": "FTP artifacts"
+        },
+        {
+          "id": "d",
+          "text": "No tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Build executes build steps.",
+      "docs": [
+        {
+          "title": "Cloud Build",
+          "url": "https://cloud.google.com/build/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q025",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to store build artifacts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q026",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store build artifacts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q027",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store build artifacts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q028",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "A platform team must store build artifacts. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q029",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "A data team must store build artifacts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q030",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to store build artifacts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q031",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should store build artifacts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q032",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to store build artifacts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q033",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store build artifacts (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q034",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store build artifacts (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q035",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "A platform team must store build artifacts (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q036",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store build artifacts (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q037",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store build artifacts (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q038",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "A platform team must store build artifacts (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q039",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store build artifacts (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q040",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store build artifacts (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q041",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "A platform team must store build artifacts (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q042",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to store build artifacts (variant 10)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q043",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to store build artifacts (variant 11)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q044",
+      "domain": "sre",
+      "type": "multiple-choice",
+      "text": "A platform team must store build artifacts (variant 12). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Artifact Registry"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact Registry hosts images and packages.",
+      "docs": [
+        {
+          "title": "Artifact Registry",
+          "url": "https://cloud.google.com/artifact-registry/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q045",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to SLO-based alerting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q046",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to SLO-based alerting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q047",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to SLO-based alerting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q048",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "A platform team must SLO-based alerting. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q049",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to SLO-based alerting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q050",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should SLO-based alerting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q051",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "A data team must SLO-based alerting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q052",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to SLO-based alerting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q053",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to SLO-based alerting (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q054",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to SLO-based alerting (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q055",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "A platform team must SLO-based alerting (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q056",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to SLO-based alerting (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q057",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to SLO-based alerting (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q058",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "A platform team must SLO-based alerting (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q059",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to SLO-based alerting (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q060",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to SLO-based alerting (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q061",
+      "domain": "monitoring",
+      "type": "multiple-choice",
+      "text": "A platform team must SLO-based alerting (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring alerting policies"
+        },
+        {
+          "id": "b",
+          "text": "Hope users call"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ping script"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring integrates metrics and SLOs.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q062",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to error budgets and toil reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q063",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to optimize service cost on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "c",
+          "text": "Single SKU forever"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q064",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to error budgets and toil reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q065",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to error budgets and toil reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q066",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "A platform team must error budgets and toil reduction. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q067",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to optimize service cost on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "c",
+          "text": "Single SKU forever"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q068",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to optimize service cost on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "c",
+          "text": "Single SKU forever"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q069",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "A platform team must optimize service cost on GCP. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "c",
+          "text": "Single SKU forever"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q070",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should error budgets and toil reduction.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q071",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to optimize service cost on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "c",
+          "text": "Single SKU forever"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q072",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "A data team must error budgets and toil reduction.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q073",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to optimize service cost on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "c",
+          "text": "Single SKU forever"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q074",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Cloud Monitoring SLOs and error budgets rather than Cost optimization in the Architecture Framework when you need to error budgets and toil reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "c",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "d",
+          "text": "Manual only ops"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity. Compare with Cost optimization in the Architecture Framework: Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        },
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q075",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Cost optimization in the Architecture Framework rather than Cloud Monitoring SLOs and error budgets when you need to optimize service cost on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "c",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "d",
+          "text": "Single SKU forever"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads. Compare with Cloud Monitoring SLOs and error budgets: SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        },
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q076",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to error budgets and toil reduction (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q077",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to optimize service cost on GCP (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost optimization in the Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Ignore billing"
+        },
+        {
+          "id": "c",
+          "text": "Single SKU forever"
+        },
+        {
+          "id": "d",
+          "text": "No labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guidance helps right-size workloads.",
+      "docs": [
+        {
+          "title": "Cost optimization",
+          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
+        }
+      ]
+    },
+    {
+      "id": "pcdo-q078",
+      "domain": "optimization",
+      "type": "multiple-choice",
+      "text": "A platform team must error budgets and toil reduction (variant 2). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring SLOs and error budgets"
+        },
+        {
+          "id": "b",
+          "text": "100% uptime heroics"
+        },
+        {
+          "id": "c",
+          "text": "Manual only ops"
+        },
+        {
+          "id": "d",
+          "text": "No postmortems"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SLOs balance reliability and release velocity.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring SLOs",
+          "url": "https://cloud.google.com/stackdriver/docs/solutions/slo"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://cloud.google.com/learn/certification/cloud-devops-engineer"
+}

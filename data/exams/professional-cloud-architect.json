@@ -1,0 +1,2832 @@
+{
+  "id": "professional-cloud-architect",
+  "name": "Google Professional Cloud Architect",
+  "code": "PCA",
+  "vendor": "google",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "design-plan",
+      "name": "Designing and planning a cloud solution architecture",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "PCA exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-architect"
+        },
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "manage-provision",
+      "name": "Managing and provisioning a solution infrastructure",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Terraform on Google Cloud",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "security-compliance",
+      "name": "Designing for security and compliance",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Security foundations",
+          "url": "https://cloud.google.com/architecture/framework/security"
+        }
+      ]
+    },
+    {
+      "id": "reliability",
+      "name": "Analyzing and optimizing technology and business processes",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "implementation",
+      "name": "Managing implementation",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "pca-q001",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Designing and planning a cloud solution architecture for Google Professional Cloud Architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PCA exam guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use PCA exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "PCA exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-architect"
+        }
+      ]
+    },
+    {
+      "id": "pca-q002",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "According to 'PCA exam guide', what is a documented best practice for Designing and planning a cloud solution architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PCA exam guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "PCA exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-architect"
+        }
+      ]
+    },
+    {
+      "id": "pca-q003",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "According to 'Architecture Framework', what is a documented best practice for Designing and planning a cloud solution architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Architecture Framework reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q004",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Managing and provisioning a solution infrastructure for Google Professional Cloud Architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform on Google Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Terraform on Google Cloud and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Terraform on Google Cloud",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q005",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "According to 'Terraform on Google Cloud', what is a documented best practice for Managing and provisioning a solution infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Terraform on Google Cloud reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Terraform on Google Cloud",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q006",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Designing for security and compliance for Google Professional Cloud Architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security foundations"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Security foundations and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Security foundations",
+          "url": "https://cloud.google.com/architecture/framework/security"
+        }
+      ]
+    },
+    {
+      "id": "pca-q007",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "According to 'Security foundations', what is a documented best practice for Designing for security and compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security foundations reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Security foundations",
+          "url": "https://cloud.google.com/architecture/framework/security"
+        }
+      ]
+    },
+    {
+      "id": "pca-q008",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Analyzing and optimizing technology and business processes for Google Professional Cloud Architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reliability pillar"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Reliability pillar and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q009",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "According to 'Reliability pillar', what is a documented best practice for Analyzing and optimizing technology and business processes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q010",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Managing implementation for Google Professional Cloud Architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Deployment Manager and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q011",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "According to 'Deployment Manager', what is a documented best practice for Managing implementation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Deployment Manager reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q012",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to design reliable systems on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q013",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to design reliable systems on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q014",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to design reliable systems on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q015",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "A platform team must design reliable systems on GCP. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q016",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "A data team must design reliable systems on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q017",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to design reliable systems on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q018",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should design reliable systems on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q019",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to design reliable systems on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q020",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to design reliable systems on GCP (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q021",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to design reliable systems on GCP (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q022",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "A platform team must design reliable systems on GCP (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q023",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to design reliable systems on GCP (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q024",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to design reliable systems on GCP (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q025",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "A platform team must design reliable systems on GCP (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q026",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to design reliable systems on GCP (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q027",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to design reliable systems on GCP (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q028",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "A platform team must design reliable systems on GCP (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q029",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to design reliable systems on GCP (variant 10)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q030",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to design reliable systems on GCP (variant 11)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q031",
+      "domain": "design-plan",
+      "type": "multiple-choice",
+      "text": "A platform team must design reliable systems on GCP (variant 12). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow Google Cloud Architecture Framework"
+        },
+        {
+          "id": "b",
+          "text": "Skip monitoring"
+        },
+        {
+          "id": "c",
+          "text": "Single zone only"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Framework guides design decisions.",
+      "docs": [
+        {
+          "title": "Architecture Framework",
+          "url": "https://cloud.google.com/architecture/framework"
+        }
+      ]
+    },
+    {
+      "id": "pca-q032",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to infrastructure as code on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q033",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to infrastructure as code on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q034",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to infrastructure as code on GCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q035",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "A platform team must infrastructure as code on GCP. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q036",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should infrastructure as code on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q037",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "A data team must infrastructure as code on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q038",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to infrastructure as code on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q039",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to infrastructure as code on GCP.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q040",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to infrastructure as code on GCP (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q041",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to infrastructure as code on GCP (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q042",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "A platform team must infrastructure as code on GCP (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q043",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to infrastructure as code on GCP (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q044",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to infrastructure as code on GCP (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q045",
+      "domain": "manage-provision",
+      "type": "multiple-choice",
+      "text": "A platform team must infrastructure as code on GCP (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terraform or Deployment Manager"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "Email configs"
+        },
+        {
+          "id": "d",
+          "text": "USB scripts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC enables repeatable environments.",
+      "docs": [
+        {
+          "title": "Terraform",
+          "url": "https://cloud.google.com/docs/terraform"
+        }
+      ]
+    },
+    {
+      "id": "pca-q046",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to encrypt data with customer-managed keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q047",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to encrypt data with customer-managed keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q048",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to encrypt data with customer-managed keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q049",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A platform team must encrypt data with customer-managed keys. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q050",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should encrypt data with customer-managed keys.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q051",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A data team must encrypt data with customer-managed keys.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q052",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to encrypt data with customer-managed keys.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q053",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to encrypt data with customer-managed keys.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q054",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to encrypt data with customer-managed keys (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q055",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to encrypt data with customer-managed keys (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q056",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A platform team must encrypt data with customer-managed keys (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q057",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to encrypt data with customer-managed keys (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q058",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to encrypt data with customer-managed keys (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q059",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A platform team must encrypt data with customer-managed keys (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext secrets in git"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys email"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages encryption keys.",
+      "docs": [
+        {
+          "title": "Cloud KMS",
+          "url": "https://cloud.google.com/kms/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q060",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to design for failure domains?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q061",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to design for failure domains?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q062",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to design for failure domains?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q063",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "A platform team must design for failure domains. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q064",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to design for failure domains.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q065",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "A data team must design for failure domains.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q066",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should design for failure domains.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q067",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to design for failure domains.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q068",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to design for failure domains (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q069",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to design for failure domains (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q070",
+      "domain": "reliability",
+      "type": "multiple-choice",
+      "text": "A platform team must design for failure domains (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-zone and multi-region patterns"
+        },
+        {
+          "id": "b",
+          "text": "Single VM"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reliability pillar defines failure handling.",
+      "docs": [
+        {
+          "title": "Reliability",
+          "url": "https://cloud.google.com/architecture/framework/reliability"
+        }
+      ]
+    },
+    {
+      "id": "pca-q071",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to repeatable deployments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q072",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to repeatable deployments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q073",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to repeatable deployments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q074",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "A platform team must repeatable deployments. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q075",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to repeatable deployments.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q076",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should repeatable deployments.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q077",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "A data team must repeatable deployments.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q078",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to repeatable deployments.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q079",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to repeatable deployments (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q080",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to repeatable deployments (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    },
+    {
+      "id": "pca-q081",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "A platform team must repeatable deployments (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Deployment Manager or Terraform"
+        },
+        {
+          "id": "b",
+          "text": "Manual only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Templates version infrastructure.",
+      "docs": [
+        {
+          "title": "Deployment Manager",
+          "url": "https://cloud.google.com/deployment-manager/docs"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://cloud.google.com/learn/certification/cloud-architect"
+}

@@ -2909,45 +2909,6 @@
       "id": "saa-q084",
       "domain": "resilient-architectures",
       "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Associate? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "SAA-C03 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Reliability pillar"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "SAA-C03 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
-        }
-      ]
-    },
-    {
-      "id": "saa-q085",
-      "domain": "resilient-architectures",
-      "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
       "options": [
         {
@@ -2981,6 +2942,45 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q085",
+      "domain": "resilient-architectures",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Associate? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "SAA-C03 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Reliability pillar"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "SAA-C03 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
         }
       ]
     },

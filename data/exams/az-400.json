@@ -1,0 +1,2832 @@
+{
+  "id": "az-400",
+  "name": "Microsoft Azure DevOps Engineer Expert",
+  "code": "AZ-400",
+  "vendor": "azure",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "devops-process",
+      "name": "Design and implement DevOps processes",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "AZ-400 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"
+        },
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "source-control",
+      "name": "Implement source control",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Git workflows",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/gitworkflow"
+        }
+      ]
+    },
+    {
+      "id": "ci-cd",
+      "name": "Design and implement build and release pipelines",
+      "weight": 40,
+      "resources": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "dependency-security",
+      "name": "Develop security and compliance plan",
+      "weight": 10,
+      "resources": [
+        {
+          "title": "Microsoft Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "instrumentation",
+      "name": "Implement instrumentation strategy",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Monitor Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "az400-q001",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Design and implement DevOps processes for Microsoft Azure DevOps Engineer Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AZ-400 study guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AZ-400 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AZ-400 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"
+        }
+      ]
+    },
+    {
+      "id": "az400-q002",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "According to 'AZ-400 study guide', what is a documented best practice for Design and implement DevOps processes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AZ-400 study guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AZ-400 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"
+        }
+      ]
+    },
+    {
+      "id": "az400-q003",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "According to 'Azure DevOps', what is a documented best practice for Design and implement DevOps processes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q004",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Implement source control for Microsoft Azure DevOps Engineer Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Git workflows"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Git workflows and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Git workflows",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/gitworkflow"
+        }
+      ]
+    },
+    {
+      "id": "az400-q005",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "According to 'Git workflows', what is a documented best practice for Implement source control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Git workflows reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Git workflows",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/gitworkflow"
+        }
+      ]
+    },
+    {
+      "id": "az400-q006",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Design and implement build and release pipelines for Microsoft Azure DevOps Engineer Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Pipelines and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q007",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Pipelines', what is a documented best practice for Design and implement build and release pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Pipelines reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q008",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Develop security and compliance plan for Microsoft Azure DevOps Engineer Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Microsoft Defender for Cloud and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Microsoft Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q009",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "According to 'Microsoft Defender for Cloud', what is a documented best practice for Develop security and compliance plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft Defender for Cloud reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Microsoft Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q010",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Implement instrumentation strategy for Microsoft Azure DevOps Engineer Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitor Azure Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Monitor Azure Pipelines and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Monitor Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q011",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "According to 'Monitor Azure Pipelines', what is a documented best practice for Implement instrumentation strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor Azure Pipelines reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Monitor Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q012",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to manage boards repos pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q013",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to manage boards repos pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q014",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to manage boards repos pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q015",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Your team must manage boards repos pipelines. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q016",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "An Azure architect must manage boards repos pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q017",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should manage boards repos pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q018",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Your organization plans to manage boards repos pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q019",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to manage boards repos pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q020",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to manage boards repos pipelines (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q021",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to manage boards repos pipelines (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q022",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Your team must manage boards repos pipelines (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q023",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to manage boards repos pipelines (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q024",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to manage boards repos pipelines (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q025",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Your team must manage boards repos pipelines (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure DevOps organization"
+        },
+        {
+          "id": "b",
+          "text": "Email zip deployments"
+        },
+        {
+          "id": "c",
+          "text": "Shared prod password"
+        },
+        {
+          "id": "d",
+          "text": "No CI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure DevOps covers plan/build/release.",
+      "docs": [
+        {
+          "title": "Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+        }
+      ]
+    },
+    {
+      "id": "az400-q026",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to branch policies for quality gates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q027",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to branch policies for quality gates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q028",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to branch policies for quality gates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q029",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "Your team must branch policies for quality gates. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q030",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to branch policies for quality gates.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q031",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "Your organization plans to branch policies for quality gates.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q032",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should branch policies for quality gates.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q033",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "An Azure architect must branch policies for quality gates.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q034",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to branch policies for quality gates (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q035",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to branch policies for quality gates (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q036",
+      "domain": "source-control",
+      "type": "multiple-choice",
+      "text": "Your team must branch policies for quality gates (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Repos branch policies"
+        },
+        {
+          "id": "b",
+          "text": "Force push to main always"
+        },
+        {
+          "id": "c",
+          "text": "No reviews"
+        },
+        {
+          "id": "d",
+          "text": "Delete history"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Branch policies enforce reviews and builds.",
+      "docs": [
+        {
+          "title": "Branch policies",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+        }
+      ]
+    },
+    {
+      "id": "az400-q037",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to build and release pipelines as code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q038",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to build and release pipelines as code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q039",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to build and release pipelines as code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q040",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your team must build and release pipelines as code. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q041",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "An Azure architect must build and release pipelines as code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q042",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to build and release pipelines as code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q043",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your organization plans to build and release pipelines as code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q044",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should build and release pipelines as code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q045",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to build and release pipelines as code (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q046",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q047",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your team must build and release pipelines as code (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q048",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to build and release pipelines as code (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q049",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q050",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your team must build and release pipelines as code (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q051",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to build and release pipelines as code (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q052",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q053",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your team must build and release pipelines as code (variant 9). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q054",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to build and release pipelines as code (variant 10)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q055",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 11)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q056",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your team must build and release pipelines as code (variant 12). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q057",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to build and release pipelines as code (variant 13)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q058",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 14)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q059",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your team must build and release pipelines as code (variant 15). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q060",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to build and release pipelines as code (variant 16)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q061",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 17)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q062",
+      "domain": "ci-cd",
+      "type": "multiple-choice",
+      "text": "Your team must build and release pipelines as code (variant 18). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Pipelines YAML"
+        },
+        {
+          "id": "b",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "c",
+          "text": "Copy binaries email"
+        },
+        {
+          "id": "d",
+          "text": "Disable tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YAML pipelines version CI/CD definitions.",
+      "docs": [
+        {
+          "title": "Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        }
+      ]
+    },
+    {
+      "id": "az400-q063",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to secure cloud posture continuously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q064",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to secure cloud posture continuously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q065",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to secure cloud posture continuously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q066",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "Your team must secure cloud posture continuously. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q067",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should secure cloud posture continuously.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q068",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "An Azure architect must secure cloud posture continuously.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q069",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "Your organization plans to secure cloud posture continuously.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q070",
+      "domain": "dependency-security",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to secure cloud posture continuously.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Defender for Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public storage keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defender for Cloud assesses workload security.",
+      "docs": [
+        {
+          "title": "Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az400-q071",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to monitor pipeline runs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q072",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to monitor pipeline runs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q073",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to monitor pipeline runs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q074",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Your team must monitor pipeline runs. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q075",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to monitor pipeline runs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q076",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "An Azure architect must monitor pipeline runs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q077",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should monitor pipeline runs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q078",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Your organization plans to monitor pipeline runs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q079",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to monitor pipeline runs (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q080",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to monitor pipeline runs (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    },
+    {
+      "id": "az400-q081",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Your team must monitor pipeline runs (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor integration with Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Ping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitor links pipeline failures to alerts.",
+      "docs": [
+        {
+          "title": "Pipeline monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/"
+}

@@ -266,7 +266,8 @@ GCP_BANKS: dict[str, dict[str, list[Fact]]] = {
             _f("SLO-based alerting", "Cloud Monitoring alerting policies", ("Hope users call", "No metrics", "Ping script"), "Monitoring integrates metrics and SLOs.", "Cloud Monitoring", "https://cloud.google.com/monitoring/docs"),
         ],
         "optimization": [
-            _f("error budgets and toil reduction", "SRE practices from Google SRE book", ("100% uptime heroics", "Manual only ops", "No postmortems"), "SRE balances reliability and velocity.", "SRE workbook", "https://sre.google/workbook/table-of-contents/"),
+            _f("error budgets and toil reduction", "Cloud Monitoring SLOs and error budgets", ("100% uptime heroics", "Manual only ops", "No postmortems"), "SLOs balance reliability and release velocity.", "Cloud Monitoring SLOs", "https://cloud.google.com/stackdriver/docs/solutions/slo"),
+            _f("optimize service cost on GCP", "Cost optimization in the Architecture Framework", ("Ignore billing", "Single SKU forever", "No labels"), "Framework guidance helps right-size workloads.", "Cost optimization", "https://cloud.google.com/architecture/framework/cost-optimization"),
         ],
     },
 }

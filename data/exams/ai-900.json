@@ -1,0 +1,2685 @@
+{
+  "id": "ai-900",
+  "name": "Microsoft Azure AI Fundamentals",
+  "code": "AI-900",
+  "vendor": "azure",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 65,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "ai-workloads",
+      "name": "Describe AI workloads and considerations",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "AI-900 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900"
+        },
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "name": "Describe fundamental ML principles",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "computer-vision",
+      "name": "Describe computer vision workloads",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "nlp",
+      "name": "Describe natural language processing workloads",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ai9-q001",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Describe AI workloads and considerations for Microsoft Azure AI Fundamentals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AI-900 study guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AI-900 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AI-900 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q002",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "According to 'AI-900 study guide', what is a documented best practice for Describe AI workloads and considerations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AI-900 study guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AI-900 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q003",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "According to 'Responsible AI', what is a documented best practice for Describe AI workloads and considerations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Responsible AI reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q004",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Describe fundamental ML principles for Microsoft Azure AI Fundamentals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Machine Learning and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q005",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Machine Learning', what is a documented best practice for Describe fundamental ML principles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Machine Learning reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q006",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Describe computer vision workloads for Microsoft Azure AI Fundamentals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure AI Vision and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q007",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "According to 'Azure AI Vision', what is a documented best practice for Describe computer vision workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure AI Vision reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q008",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Describe natural language processing workloads for Microsoft Azure AI Fundamentals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure OpenAI and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q009",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "According to 'Azure OpenAI', what is a documented best practice for Describe natural language processing workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q010",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to fairness and transparency in ML?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q011",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to fairness and transparency in ML?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q012",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to fairness and transparency in ML?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q013",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Your team must fairness and transparency in ML. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q014",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "An Azure architect must fairness and transparency in ML.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q015",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Your organization plans to fairness and transparency in ML.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q016",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to fairness and transparency in ML.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q017",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should fairness and transparency in ML.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q018",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to fairness and transparency in ML (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q019",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to fairness and transparency in ML (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q020",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Your team must fairness and transparency in ML (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q021",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to fairness and transparency in ML (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q022",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to fairness and transparency in ML (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q023",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Your team must fairness and transparency in ML (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q024",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to fairness and transparency in ML (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q025",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to fairness and transparency in ML (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q026",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Your team must fairness and transparency in ML (variant 9). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q027",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to fairness and transparency in ML (variant 10)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q028",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to fairness and transparency in ML (variant 11)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q029",
+      "domain": "ai-workloads",
+      "type": "multiple-choice",
+      "text": "Your team must fairness and transparency in ML (variant 12). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI principles"
+        },
+        {
+          "id": "b",
+          "text": "Ignore bias"
+        },
+        {
+          "id": "c",
+          "text": "Black box only"
+        },
+        {
+          "id": "d",
+          "text": "No documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Microsoft documents responsible AI practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q030",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to managed ML workspace and pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q031",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed ML workspace and pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q032",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed ML workspace and pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q033",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Your team must managed ML workspace and pipelines. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q034",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Your organization plans to managed ML workspace and pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q035",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "An Azure architect must managed ML workspace and pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q036",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to managed ML workspace and pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q037",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should managed ML workspace and pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q038",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed ML workspace and pipelines (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q039",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed ML workspace and pipelines (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q040",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Your team must managed ML workspace and pipelines (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q041",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed ML workspace and pipelines (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q042",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed ML workspace and pipelines (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q043",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Your team must managed ML workspace and pipelines (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q044",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed ML workspace and pipelines (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q045",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed ML workspace and pipelines (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q046",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Your team must managed ML workspace and pipelines (variant 9). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q047",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed ML workspace and pipelines (variant 10)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q048",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed ML workspace and pipelines (variant 11)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q049",
+      "domain": "machine-learning",
+      "type": "multiple-choice",
+      "text": "Your team must managed ML workspace and pipelines (variant 12). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel regression only"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "FTP datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure ML covers training, deployment, monitoring.",
+      "docs": [
+        {
+          "title": "Azure Machine Learning",
+          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q050",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to detect objects in images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q051",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to detect objects in images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q052",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to detect objects in images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q053",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Your team must detect objects in images. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q054",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "An Azure architect must detect objects in images.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q055",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Your organization plans to detect objects in images.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q056",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should detect objects in images.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q057",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to detect objects in images.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q058",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to detect objects in images (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q059",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to detect objects in images (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q060",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Your team must detect objects in images (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q061",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to detect objects in images (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q062",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to detect objects in images (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q063",
+      "domain": "computer-vision",
+      "type": "multiple-choice",
+      "text": "Your team must detect objects in images (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure AI Vision"
+        },
+        {
+          "id": "b",
+          "text": "Ping utility"
+        },
+        {
+          "id": "c",
+          "text": "SNMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vision APIs classify and detect objects.",
+      "docs": [
+        {
+          "title": "Azure AI Vision",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q064",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to use large language models on Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q065",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to use large language models on Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q066",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to use large language models on Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q067",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Your team must use large language models on Azure. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q068",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Your organization plans to use large language models on Azure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q069",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should use large language models on Azure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q070",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "An Azure architect must use large language models on Azure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q071",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to use large language models on Azure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q072",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to use large language models on Azure (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q073",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to use large language models on Azure (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q074",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Your team must use large language models on Azure (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q075",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to use large language models on Azure (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q076",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to use large language models on Azure (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    },
+    {
+      "id": "ai9-q077",
+      "domain": "nlp",
+      "type": "multiple-choice",
+      "text": "Your team must use large language models on Azure (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "id": "b",
+          "text": "Telnet to router"
+        },
+        {
+          "id": "c",
+          "text": "ICMP flood"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
+      "docs": [
+        {
+          "title": "Azure OpenAI",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/"
+}

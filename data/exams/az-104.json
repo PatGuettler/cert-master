@@ -1,0 +1,3016 @@
+{
+  "id": "az-104",
+  "name": "Microsoft Azure Administrator",
+  "code": "AZ-104",
+  "vendor": "azure",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "identity-governance",
+      "name": "Manage Azure identities and governance",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "AZ-104 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"
+        },
+        {
+          "title": "Role-based access control",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "Implement and manage storage",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Azure Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        },
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "name": "Deploy and manage Azure compute resources",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Azure Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        },
+        {
+          "title": "Azure App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Implement and manage virtual networking",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Azure Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        },
+        {
+          "title": "Azure VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "monitor-backup",
+      "name": "Monitor and maintain Azure resources",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        },
+        {
+          "title": "Azure Backup",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "az104-q001",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Manage Azure identities and governance for Microsoft Azure Administrator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AZ-104 study guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AZ-104 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AZ-104 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"
+        }
+      ]
+    },
+    {
+      "id": "az104-q002",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "According to 'AZ-104 study guide', what is a documented best practice for Manage Azure identities and governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AZ-104 study guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AZ-104 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"
+        }
+      ]
+    },
+    {
+      "id": "az104-q003",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "According to 'Role-based access control', what is a documented best practice for Manage Azure identities and governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Role-based access control reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Role-based access control",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q004",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Implement and manage storage for Microsoft Azure Administrator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Blob Storage"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Blob Storage and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q005",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Blob Storage', what is a documented best practice for Implement and manage storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Blob Storage reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Blob Storage",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q006",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Files', what is a documented best practice for Implement and manage storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q007",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Deploy and manage Azure compute resources for Microsoft Azure Administrator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Machines"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Virtual Machines and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q008",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Virtual Machines', what is a documented best practice for Deploy and manage Azure compute resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Virtual Machines reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Virtual Machines",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q009",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "According to 'Azure App Service', what is a documented best practice for Deploy and manage Azure compute resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure App Service reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q010",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Implement and manage virtual networking for Microsoft Azure Administrator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Virtual Network and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q011",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Virtual Network', what is a documented best practice for Implement and manage virtual networking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Virtual Network reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q012",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "According to 'Azure VPN Gateway', what is a documented best practice for Implement and manage virtual networking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure VPN Gateway reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q013",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Monitor and maintain Azure resources for Microsoft Azure Administrator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Monitor and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q014",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Monitor', what is a documented best practice for Monitor and maintain Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Monitor reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q015",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Backup', what is a documented best practice for Monitor and maintain Azure resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Backup reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Backup",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q016",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to assign permissions at resource scope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "c",
+          "text": "Public blob ACL only"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC grants least-privilege access to Azure resources.",
+      "docs": [
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q017",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to apply policies across subscriptions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "b",
+          "text": "Manual spreadsheet tracking"
+        },
+        {
+          "id": "c",
+          "text": "Ignore compliance"
+        },
+        {
+          "id": "d",
+          "text": "Guest accounts only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Policy enforces organizational standards.",
+      "docs": [
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q018",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to assign permissions at resource scope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "c",
+          "text": "Public blob ACL only"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC grants least-privilege access to Azure resources.",
+      "docs": [
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q019",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to assign permissions at resource scope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "c",
+          "text": "Public blob ACL only"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC grants least-privilege access to Azure resources.",
+      "docs": [
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q020",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Your team must assign permissions at resource scope. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "c",
+          "text": "Public blob ACL only"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC grants least-privilege access to Azure resources.",
+      "docs": [
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q021",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to apply policies across subscriptions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "b",
+          "text": "Manual spreadsheet tracking"
+        },
+        {
+          "id": "c",
+          "text": "Ignore compliance"
+        },
+        {
+          "id": "d",
+          "text": "Guest accounts only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Policy enforces organizational standards.",
+      "docs": [
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q022",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to apply policies across subscriptions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "b",
+          "text": "Manual spreadsheet tracking"
+        },
+        {
+          "id": "c",
+          "text": "Ignore compliance"
+        },
+        {
+          "id": "d",
+          "text": "Guest accounts only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Policy enforces organizational standards.",
+      "docs": [
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q023",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Your team must apply policies across subscriptions. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "b",
+          "text": "Manual spreadsheet tracking"
+        },
+        {
+          "id": "c",
+          "text": "Ignore compliance"
+        },
+        {
+          "id": "d",
+          "text": "Guest accounts only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Policy enforces organizational standards.",
+      "docs": [
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q024",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to assign permissions at resource scope.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "c",
+          "text": "Public blob ACL only"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC grants least-privilege access to Azure resources.",
+      "docs": [
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q025",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "An Azure architect must apply policies across subscriptions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "b",
+          "text": "Manual spreadsheet tracking"
+        },
+        {
+          "id": "c",
+          "text": "Ignore compliance"
+        },
+        {
+          "id": "d",
+          "text": "Guest accounts only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Policy enforces organizational standards.",
+      "docs": [
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q026",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Your organization plans to assign permissions at resource scope.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "b",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "c",
+          "text": "Public blob ACL only"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC grants least-privilege access to Azure resources.",
+      "docs": [
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q027",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should apply policies across subscriptions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "b",
+          "text": "Manual spreadsheet tracking"
+        },
+        {
+          "id": "c",
+          "text": "Ignore compliance"
+        },
+        {
+          "id": "d",
+          "text": "Guest accounts only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Policy enforces organizational standards.",
+      "docs": [
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q028",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure RBAC role assignments rather than Azure Policy when you need to assign permissions at resource scope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "b",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "d",
+          "text": "Public blob ACL only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RBAC grants least-privilege access to Azure resources. Compare with Azure Policy: Azure Policy enforces organizational standards.",
+      "docs": [
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        },
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q029",
+      "domain": "identity-governance",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Policy rather than Azure RBAC role assignments when you need to apply policies across subscriptions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Policy"
+        },
+        {
+          "id": "b",
+          "text": "Azure RBAC role assignments"
+        },
+        {
+          "id": "c",
+          "text": "Manual spreadsheet tracking"
+        },
+        {
+          "id": "d",
+          "text": "Ignore compliance"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Policy enforces organizational standards. Compare with Azure RBAC role assignments: RBAC grants least-privilege access to Azure resources.",
+      "docs": [
+        {
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
+        },
+        {
+          "title": "Azure RBAC",
+          "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q030",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to host SMB file shares in Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Files"
+        },
+        {
+          "id": "b",
+          "text": "Blob block only for SMB"
+        },
+        {
+          "id": "c",
+          "text": "VPN only"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files provides managed SMB/NFS shares.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q031",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to tier infrequently accessed blobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "b",
+          "text": "Premium SSD VM disks for archives"
+        },
+        {
+          "id": "c",
+          "text": "Hot tier only always"
+        },
+        {
+          "id": "d",
+          "text": "Delete all versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access tiers optimize blob storage cost.",
+      "docs": [
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q032",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to host SMB file shares in Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Files"
+        },
+        {
+          "id": "b",
+          "text": "Blob block only for SMB"
+        },
+        {
+          "id": "c",
+          "text": "VPN only"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files provides managed SMB/NFS shares.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q033",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to host SMB file shares in Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Files"
+        },
+        {
+          "id": "b",
+          "text": "Blob block only for SMB"
+        },
+        {
+          "id": "c",
+          "text": "VPN only"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files provides managed SMB/NFS shares.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q034",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Your team must host SMB file shares in Azure. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Files"
+        },
+        {
+          "id": "b",
+          "text": "Blob block only for SMB"
+        },
+        {
+          "id": "c",
+          "text": "VPN only"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files provides managed SMB/NFS shares.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q035",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to tier infrequently accessed blobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "b",
+          "text": "Premium SSD VM disks for archives"
+        },
+        {
+          "id": "c",
+          "text": "Hot tier only always"
+        },
+        {
+          "id": "d",
+          "text": "Delete all versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access tiers optimize blob storage cost.",
+      "docs": [
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q036",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to tier infrequently accessed blobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "b",
+          "text": "Premium SSD VM disks for archives"
+        },
+        {
+          "id": "c",
+          "text": "Hot tier only always"
+        },
+        {
+          "id": "d",
+          "text": "Delete all versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access tiers optimize blob storage cost.",
+      "docs": [
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q037",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Your team must tier infrequently accessed blobs. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "b",
+          "text": "Premium SSD VM disks for archives"
+        },
+        {
+          "id": "c",
+          "text": "Hot tier only always"
+        },
+        {
+          "id": "d",
+          "text": "Delete all versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access tiers optimize blob storage cost.",
+      "docs": [
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q038",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to host SMB file shares in Azure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Files"
+        },
+        {
+          "id": "b",
+          "text": "Blob block only for SMB"
+        },
+        {
+          "id": "c",
+          "text": "VPN only"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files provides managed SMB/NFS shares.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q039",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should tier infrequently accessed blobs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "b",
+          "text": "Premium SSD VM disks for archives"
+        },
+        {
+          "id": "c",
+          "text": "Hot tier only always"
+        },
+        {
+          "id": "d",
+          "text": "Delete all versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access tiers optimize blob storage cost.",
+      "docs": [
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q040",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Your organization plans to host SMB file shares in Azure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Files"
+        },
+        {
+          "id": "b",
+          "text": "Blob block only for SMB"
+        },
+        {
+          "id": "c",
+          "text": "VPN only"
+        },
+        {
+          "id": "d",
+          "text": "DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files provides managed SMB/NFS shares.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q041",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "An Azure architect must tier infrequently accessed blobs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "b",
+          "text": "Premium SSD VM disks for archives"
+        },
+        {
+          "id": "c",
+          "text": "Hot tier only always"
+        },
+        {
+          "id": "d",
+          "text": "Delete all versions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access tiers optimize blob storage cost.",
+      "docs": [
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q042",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Files rather than Cool or Archive access tiers when you need to host SMB file shares in Azure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Files"
+        },
+        {
+          "id": "b",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "c",
+          "text": "Blob block only for SMB"
+        },
+        {
+          "id": "d",
+          "text": "VPN only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Files provides managed SMB/NFS shares. Compare with Cool or Archive access tiers: Access tiers optimize blob storage cost.",
+      "docs": [
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        },
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q043",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Cool or Archive access tiers rather than Azure Files when you need to tier infrequently accessed blobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cool or Archive access tiers"
+        },
+        {
+          "id": "b",
+          "text": "Azure Files"
+        },
+        {
+          "id": "c",
+          "text": "Premium SSD VM disks for archives"
+        },
+        {
+          "id": "d",
+          "text": "Hot tier only always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access tiers optimize blob storage cost. Compare with Azure Files: Azure Files provides managed SMB/NFS shares.",
+      "docs": [
+        {
+          "title": "Access tiers",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+        },
+        {
+          "title": "Azure Files",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+        }
+      ]
+    },
+    {
+      "id": "az104-q044",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to scale VM sets automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q045",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to host web apps without managing VMs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "On-prem IIS only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q046",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to scale VM sets automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q047",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to scale VM sets automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q048",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Your team must scale VM sets automatically. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q049",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to host web apps without managing VMs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "On-prem IIS only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q050",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to host web apps without managing VMs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "On-prem IIS only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q051",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Your team must host web apps without managing VMs. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "On-prem IIS only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q052",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to scale VM sets automatically.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q053",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should host web apps without managing VMs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "On-prem IIS only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q054",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "An Azure architect must scale VM sets automatically.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q055",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Your organization plans to host web apps without managing VMs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "On-prem IIS only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q056",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Virtual Machine Scale Sets rather than Azure App Service when you need to scale VM sets automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "c",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "d",
+          "text": "Static HTML only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs. Compare with Azure App Service: App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        },
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q057",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure App Service rather than Virtual Machine Scale Sets when you need to host web apps without managing VMs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "c",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "d",
+          "text": "On-prem IIS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads. Compare with Virtual Machine Scale Sets: VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        },
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q058",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to scale VM sets automatically (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q059",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to host web apps without managing VMs (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure App Service"
+        },
+        {
+          "id": "b",
+          "text": "Bare metal only"
+        },
+        {
+          "id": "c",
+          "text": "On-prem IIS only"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Service is PaaS for web workloads.",
+      "docs": [
+        {
+          "title": "App Service",
+          "url": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q060",
+      "domain": "compute",
+      "type": "multiple-choice",
+      "text": "Your team must scale VM sets automatically (variant 2). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machine Scale Sets"
+        },
+        {
+          "id": "b",
+          "text": "Single VM manual resize only"
+        },
+        {
+          "id": "c",
+          "text": "Static HTML only"
+        },
+        {
+          "id": "d",
+          "text": "ExpressRoute circuit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMSS provides autoscale for identical VMs.",
+      "docs": [
+        {
+          "title": "VM Scale Sets",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q061",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to isolate subnets in a region?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Public internet only design"
+        },
+        {
+          "id": "c",
+          "text": "Blob containers"
+        },
+        {
+          "id": "d",
+          "text": "Key Vault secrets only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VNets provide private RFC1918 networking in Azure.",
+      "docs": [
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q062",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to connect on-premises to Azure privately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "b",
+          "text": "Email attachments"
+        },
+        {
+          "id": "c",
+          "text": "Public RDP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
+      "docs": [
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q063",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to isolate subnets in a region?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Public internet only design"
+        },
+        {
+          "id": "c",
+          "text": "Blob containers"
+        },
+        {
+          "id": "d",
+          "text": "Key Vault secrets only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VNets provide private RFC1918 networking in Azure.",
+      "docs": [
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q064",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to isolate subnets in a region?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Public internet only design"
+        },
+        {
+          "id": "c",
+          "text": "Blob containers"
+        },
+        {
+          "id": "d",
+          "text": "Key Vault secrets only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VNets provide private RFC1918 networking in Azure.",
+      "docs": [
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q065",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Your team must isolate subnets in a region. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Public internet only design"
+        },
+        {
+          "id": "c",
+          "text": "Blob containers"
+        },
+        {
+          "id": "d",
+          "text": "Key Vault secrets only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VNets provide private RFC1918 networking in Azure.",
+      "docs": [
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q066",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to connect on-premises to Azure privately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "b",
+          "text": "Email attachments"
+        },
+        {
+          "id": "c",
+          "text": "Public RDP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
+      "docs": [
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q067",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to connect on-premises to Azure privately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "b",
+          "text": "Email attachments"
+        },
+        {
+          "id": "c",
+          "text": "Public RDP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
+      "docs": [
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q068",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Your team must connect on-premises to Azure privately. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "b",
+          "text": "Email attachments"
+        },
+        {
+          "id": "c",
+          "text": "Public RDP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
+      "docs": [
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q069",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "An Azure architect must isolate subnets in a region.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Public internet only design"
+        },
+        {
+          "id": "c",
+          "text": "Blob containers"
+        },
+        {
+          "id": "d",
+          "text": "Key Vault secrets only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VNets provide private RFC1918 networking in Azure.",
+      "docs": [
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q070",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should connect on-premises to Azure privately.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "b",
+          "text": "Email attachments"
+        },
+        {
+          "id": "c",
+          "text": "Public RDP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
+      "docs": [
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q071",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Your organization plans to isolate subnets in a region.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Public internet only design"
+        },
+        {
+          "id": "c",
+          "text": "Blob containers"
+        },
+        {
+          "id": "d",
+          "text": "Key Vault secrets only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VNets provide private RFC1918 networking in Azure.",
+      "docs": [
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q072",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to connect on-premises to Azure privately.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "b",
+          "text": "Email attachments"
+        },
+        {
+          "id": "c",
+          "text": "Public RDP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
+      "docs": [
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q073",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Virtual Network rather than Site-to-site VPN or ExpressRoute when you need to isolate subnets in a region?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "b",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "c",
+          "text": "Public internet only design"
+        },
+        {
+          "id": "d",
+          "text": "Blob containers"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VNets provide private RFC1918 networking in Azure. Compare with Site-to-site VPN or ExpressRoute: VPN/ExpressRoute extend hybrid connectivity.",
+      "docs": [
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        },
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        }
+      ]
+    },
+    {
+      "id": "az104-q074",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Site-to-site VPN or ExpressRoute rather than Azure Virtual Network when you need to connect on-premises to Azure privately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "b",
+          "text": "Azure Virtual Network"
+        },
+        {
+          "id": "c",
+          "text": "Email attachments"
+        },
+        {
+          "id": "d",
+          "text": "Public RDP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN/ExpressRoute extend hybrid connectivity. Compare with Azure Virtual Network: VNets provide private RFC1918 networking in Azure.",
+      "docs": [
+        {
+          "title": "VPN Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+        },
+        {
+          "title": "Virtual Network",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q075",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to collect metrics and logs centrally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet polling"
+        },
+        {
+          "id": "c",
+          "text": "Disable diagnostics"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only on-prem"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Monitor aggregates platform and app telemetry.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q076",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to backup VMs and workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB only policy"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Backup provides policy-driven recovery points.",
+      "docs": [
+        {
+          "title": "Azure Backup",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q077",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to collect metrics and logs centrally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet polling"
+        },
+        {
+          "id": "c",
+          "text": "Disable diagnostics"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only on-prem"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Monitor aggregates platform and app telemetry.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q078",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to collect metrics and logs centrally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet polling"
+        },
+        {
+          "id": "c",
+          "text": "Disable diagnostics"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only on-prem"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Monitor aggregates platform and app telemetry.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q079",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "Your team must collect metrics and logs centrally. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet polling"
+        },
+        {
+          "id": "c",
+          "text": "Disable diagnostics"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only on-prem"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Monitor aggregates platform and app telemetry.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q080",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to backup VMs and workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB only policy"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Backup provides policy-driven recovery points.",
+      "docs": [
+        {
+          "title": "Azure Backup",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q081",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to backup VMs and workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB only policy"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Backup provides policy-driven recovery points.",
+      "docs": [
+        {
+          "title": "Azure Backup",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q082",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "Your team must backup VMs and workloads. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB only policy"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Backup provides policy-driven recovery points.",
+      "docs": [
+        {
+          "title": "Azure Backup",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q083",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "An Azure architect must collect metrics and logs centrally.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet polling"
+        },
+        {
+          "id": "c",
+          "text": "Disable diagnostics"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only on-prem"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Monitor aggregates platform and app telemetry.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q084",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to backup VMs and workloads.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual USB only policy"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Backup provides policy-driven recovery points.",
+      "docs": [
+        {
+          "title": "Azure Backup",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+        }
+      ]
+    },
+    {
+      "id": "az104-q085",
+      "domain": "monitor-backup",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should collect metrics and logs centrally.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet polling"
+        },
+        {
+          "id": "c",
+          "text": "Disable diagnostics"
+        },
+        {
+          "id": "d",
+          "text": "SNMP only on-prem"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Monitor aggregates platform and app telemetry.",
+      "docs": [
+        {
+          "title": "Azure Monitor",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/"
+}

@@ -1,0 +1,2769 @@
+{
+  "id": "az-305",
+  "name": "Microsoft Azure Solutions Architect Expert",
+  "code": "AZ-305",
+  "vendor": "azure",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "identity-data",
+      "name": "Design identity, governance, and monitoring",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "AZ-305 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"
+        },
+        {
+          "title": "Azure landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "data-solutions",
+      "name": "Design data solutions",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        },
+        {
+          "title": "Azure Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "business-continuity",
+      "name": "Design business continuity solutions",
+      "weight": 10,
+      "resources": [
+        {
+          "title": "Azure Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Design infrastructure solutions",
+      "weight": 40,
+      "resources": [
+        {
+          "title": "Azure Kubernetes Service",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        },
+        {
+          "title": "Azure Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "az305-q001",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Design identity, governance, and monitoring for Microsoft Azure Solutions Architect Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AZ-305 study guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use AZ-305 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "AZ-305 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"
+        }
+      ]
+    },
+    {
+      "id": "az305-q002",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "According to 'AZ-305 study guide', what is a documented best practice for Design identity, governance, and monitoring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AZ-305 study guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "AZ-305 study guide",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"
+        }
+      ]
+    },
+    {
+      "id": "az305-q003",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "According to 'Azure landing zones', what is a documented best practice for Design identity, governance, and monitoring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure landing zones reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q004",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Design data solutions for Microsoft Azure Solutions Architect Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure SQL Database and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q005",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "According to 'Azure SQL Database', what is a documented best practice for Design data solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL Database reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q006",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Cosmos DB', what is a documented best practice for Design data solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Cosmos DB reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q007",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Design business continuity solutions for Microsoft Azure Solutions Architect Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Site Recovery and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q008",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Site Recovery', what is a documented best practice for Design business continuity solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Site Recovery reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q009",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Per official Microsoft Learn and Azure documentation, which source should you use when studying Design infrastructure solutions for Microsoft Azure Solutions Architect Expert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Azure Kubernetes Service and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Azure Kubernetes Service",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az305-q010",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Kubernetes Service', what is a documented best practice for Design infrastructure solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Kubernetes Service reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Kubernetes Service",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+        }
+      ]
+    },
+    {
+      "id": "az305-q011",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "According to 'Azure Application Gateway', what is a documented best practice for Design infrastructure solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure Application Gateway reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Azure Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q012",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to design multi-subscription governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q013",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to globally distributed NoSQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q014",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to design multi-subscription governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q015",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to design multi-subscription governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q016",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Your team must design multi-subscription governance. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q017",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to globally distributed NoSQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q018",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to globally distributed NoSQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q019",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Your team must globally distributed NoSQL. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q020",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should design multi-subscription governance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q021",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Your organization plans to globally distributed NoSQL.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q022",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to design multi-subscription governance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q023",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "An Azure architect must globally distributed NoSQL.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q024",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure landing zones rather than Azure Cosmos DB when you need to design multi-subscription governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "c",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations. Compare with Azure Cosmos DB: Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        },
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q025",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Cosmos DB rather than Azure landing zones when you need to globally distributed NoSQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "c",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "d",
+          "text": "FTP share"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs. Compare with Azure landing zones: Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        },
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q026",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to design multi-subscription governance (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q027",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to globally distributed NoSQL (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "b",
+          "text": "Single-server SQLite at scale"
+        },
+        {
+          "id": "c",
+          "text": "FTP share"
+        },
+        {
+          "id": "d",
+          "text": "Cool tier only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "docs": [
+        {
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        }
+      ]
+    },
+    {
+      "id": "az305-q028",
+      "domain": "identity-data",
+      "type": "multiple-choice",
+      "text": "Your team must design multi-subscription governance (variant 2). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure landing zones"
+        },
+        {
+          "id": "b",
+          "text": "Ad-hoc subscriptions"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Single admin account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Landing zones standardize platform foundations.",
+      "docs": [
+        {
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+        }
+      ]
+    },
+    {
+      "id": "az305-q029",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to managed relational PaaS database?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q030",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed relational PaaS database?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q031",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed relational PaaS database?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q032",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must managed relational PaaS database. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q033",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Your organization plans to managed relational PaaS database.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q034",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should managed relational PaaS database.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q035",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to managed relational PaaS database.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q036",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "An Azure architect must managed relational PaaS database.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q037",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed relational PaaS database (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q038",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed relational PaaS database (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q039",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must managed relational PaaS database (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q040",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed relational PaaS database (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q041",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed relational PaaS database (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q042",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must managed relational PaaS database (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q043",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to managed relational PaaS database (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q044",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to managed relational PaaS database (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q045",
+      "domain": "data-solutions",
+      "type": "multiple-choice",
+      "text": "Your team must managed relational PaaS database (variant 9). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "b",
+          "text": "Excel on desktop only"
+        },
+        {
+          "id": "c",
+          "text": "Local tape"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "docs": [
+        {
+          "title": "Azure SQL Database",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q046",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to replicate VMs for disaster recovery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q047",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to replicate VMs for disaster recovery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q048",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to replicate VMs for disaster recovery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q049",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "Your team must replicate VMs for disaster recovery. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q050",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should replicate VMs for disaster recovery.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q051",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "An Azure architect must replicate VMs for disaster recovery.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q052",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to replicate VMs for disaster recovery.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q053",
+      "domain": "business-continuity",
+      "type": "multiple-choice",
+      "text": "Your organization plans to replicate VMs for disaster recovery.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Site Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Manual USB only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ASR orchestrates failover and failback.",
+      "docs": [
+        {
+          "title": "Site Recovery",
+          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q054",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure service or capability is BEST to Layer 7 load balancing for web apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q055",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q056",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q057",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must Layer 7 load balancing for web apps. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q058",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "For a hybrid workload, you should Layer 7 load balancing for web apps.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q059",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your organization plans to Layer 7 load balancing for web apps.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q060",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to Layer 7 load balancing for web apps.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q061",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "An Azure architect must Layer 7 load balancing for web apps.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q062",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q063",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q064",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must Layer 7 load balancing for web apps (variant 3). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q065",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q066",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q067",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must Layer 7 load balancing for web apps (variant 6). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q068",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q069",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q070",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must Layer 7 load balancing for web apps (variant 9). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q071",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 10)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q072",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 11)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q073",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must Layer 7 load balancing for web apps (variant 12). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q074",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 13)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q075",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 14)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q076",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must Layer 7 load balancing for web apps (variant 15). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q077",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 16)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q078",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 17)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q079",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must Layer 7 load balancing for web apps (variant 18). Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Application Gateway"
+        },
+        {
+          "id": "b",
+          "text": "DNS CNAME only always"
+        },
+        {
+          "id": "c",
+          "text": "Single NIC"
+        },
+        {
+          "id": "d",
+          "text": "Archive tier"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Gateway provides WAF and routing.",
+      "docs": [
+        {
+          "title": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/"
+}

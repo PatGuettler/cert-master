@@ -9,12 +9,84 @@
       "questionCount": 97
     },
     {
+      "id": "ai-900",
+      "name": "Microsoft Azure AI Fundamentals",
+      "code": "AI-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/ai-900.json",
+      "questionCount": 77
+    },
+    {
       "id": "ai-practitioner",
       "name": "AWS Certified AI Practitioner",
       "code": "AIF-C01",
       "vendor": "aws",
       "dataFile": "data/exams/ai-practitioner.json",
       "questionCount": 100
+    },
+    {
+      "id": "associate-cloud-engineer",
+      "name": "Google Associate Cloud Engineer",
+      "code": "ACE",
+      "vendor": "google",
+      "dataFile": "data/exams/associate-cloud-engineer.json",
+      "questionCount": 84
+    },
+    {
+      "id": "az-104",
+      "name": "Microsoft Azure Administrator",
+      "code": "AZ-104",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-104.json",
+      "questionCount": 85
+    },
+    {
+      "id": "az-204",
+      "name": "Microsoft Azure Developer Associate",
+      "code": "AZ-204",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-204.json",
+      "questionCount": 83
+    },
+    {
+      "id": "az-305",
+      "name": "Microsoft Azure Solutions Architect Expert",
+      "code": "AZ-305",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-305.json",
+      "questionCount": 79
+    },
+    {
+      "id": "az-400",
+      "name": "Microsoft Azure DevOps Engineer Expert",
+      "code": "AZ-400",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-400.json",
+      "questionCount": 81
+    },
+    {
+      "id": "az-500",
+      "name": "Microsoft Azure Security Engineer Associate",
+      "code": "AZ-500",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-500.json",
+      "questionCount": 78
+    },
+    {
+      "id": "az-900",
+      "name": "Microsoft Azure Fundamentals",
+      "code": "AZ-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-900.json",
+      "questionCount": 75
+    },
+    {
+      "id": "cloud-digital-leader",
+      "name": "Google Cloud Digital Leader",
+      "code": "CDL",
+      "vendor": "google",
+      "dataFile": "data/exams/cloud-digital-leader.json",
+      "questionCount": 77
     },
     {
       "id": "cloud-practitioner",
@@ -57,6 +129,14 @@
       "questionCount": 86
     },
     {
+      "id": "comptia-data-plus",
+      "name": "CompTIA Data+",
+      "code": "DA0-001",
+      "vendor": "comptia",
+      "dataFile": "data/exams/comptia-data-plus.json",
+      "questionCount": 72
+    },
+    {
       "id": "comptia-linux-plus",
       "name": "CompTIA Linux+",
       "code": "XK0-005",
@@ -71,6 +151,14 @@
       "vendor": "comptia",
       "dataFile": "data/exams/comptia-network-plus.json",
       "questionCount": 90
+    },
+    {
+      "id": "comptia-pentest-plus",
+      "name": "CompTIA PenTest+",
+      "code": "PT0-002",
+      "vendor": "comptia",
+      "dataFile": "data/exams/comptia-pentest-plus.json",
+      "questionCount": 70
     },
     {
       "id": "comptia-security-plus",
@@ -94,7 +182,7 @@
       "code": "DBS-C01",
       "vendor": "aws",
       "dataFile": "data/exams/database-specialty.json",
-      "questionCount": 94
+      "questionCount": 93
     },
     {
       "id": "developer-associate",
@@ -111,6 +199,14 @@
       "vendor": "aws",
       "dataFile": "data/exams/devops-engineer-professional.json",
       "questionCount": 108
+    },
+    {
+      "id": "dp-900",
+      "name": "Microsoft Azure Data Fundamentals",
+      "code": "DP-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/dp-900.json",
+      "questionCount": 77
     },
     {
       "id": "generative-ai-developer-professional",
@@ -137,6 +233,46 @@
       "questionCount": 93
     },
     {
+      "id": "professional-cloud-architect",
+      "name": "Google Professional Cloud Architect",
+      "code": "PCA",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-cloud-architect.json",
+      "questionCount": 81
+    },
+    {
+      "id": "professional-cloud-devops-engineer",
+      "name": "Google Professional Cloud DevOps Engineer",
+      "code": "PCDO",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-cloud-devops-engineer.json",
+      "questionCount": 78
+    },
+    {
+      "id": "professional-cloud-security-engineer",
+      "name": "Google Professional Cloud Security Engineer",
+      "code": "PCSE",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-cloud-security-engineer.json",
+      "questionCount": 79
+    },
+    {
+      "id": "professional-data-engineer",
+      "name": "Google Professional Data Engineer",
+      "code": "PDE",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-data-engineer.json",
+      "questionCount": 78
+    },
+    {
+      "id": "sc-900",
+      "name": "Microsoft Security, Compliance, and Identity Fundamentals",
+      "code": "SC-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/sc-900.json",
+      "questionCount": 77
+    },
+    {
       "id": "security-specialty",
       "name": "AWS Certified Security \u2013 Specialty",
       "code": "SCS-C02",
@@ -161,5 +297,5 @@
       "questionCount": 103
     }
   ],
-  "generatedAt": "2026-05-21T02:30:10.077007+00:00"
+  "generatedAt": "2026-05-21T02:57:04.473289+00:00"
 }

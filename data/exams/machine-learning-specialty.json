@@ -1204,7 +1204,7 @@
       "id": "mls-q034",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "An organization wants to prepare ML features at scale.",
+      "text": "A solutions architect needs to prepare ML features at scale.",
       "options": [
         {
           "id": "a",
@@ -1238,7 +1238,7 @@
       "id": "mls-q035",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "A development team must ETL for ML datasets.",
+      "text": "An organization wants to ETL for ML datasets.",
       "options": [
         {
           "id": "a",
@@ -1816,7 +1816,7 @@
       "id": "mls-q052",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "For a regulated workload, you should managed Jupyter for exploration.",
+      "text": "An organization wants to managed Jupyter for exploration.",
       "options": [
         {
           "id": "a",
@@ -1850,7 +1850,7 @@
       "id": "mls-q053",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "A development team must query data lakes for features.",
+      "text": "A solutions architect needs to query data lakes for features.",
       "options": [
         {
           "id": "a",
@@ -1884,7 +1884,7 @@
       "id": "mls-q054",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "An organization wants to visualize dataset bias.",
+      "text": "For a regulated workload, you should visualize dataset bias.",
       "options": [
         {
           "id": "a",
@@ -2666,7 +2666,7 @@
       "id": "mls-q077",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "A development team must distributed training on GPU clusters.",
+      "text": "A solutions architect needs to distributed training on GPU clusters.",
       "options": [
         {
           "id": "a",
@@ -2700,7 +2700,7 @@
       "id": "mls-q078",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "An organization wants to feature store for training and serving.",
+      "text": "For a regulated workload, you should feature store for training and serving.",
       "options": [
         {
           "id": "a",
@@ -2768,7 +2768,7 @@
       "id": "mls-q080",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Amazon SageMaker built-in algorithms rather than Amazon SageMaker automatic model tuning when you need to train models with built-in algorithms?",
+      "text": "An organization wants to train models with built-in algorithms.",
       "options": [
         {
           "id": "a",
@@ -2776,29 +2776,25 @@
         },
         {
           "id": "b",
-          "text": "Amazon SageMaker automatic model tuning"
-        },
-        {
-          "id": "c",
           "text": "Manual C only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "No evaluation"
+        },
+        {
+          "id": "d",
+          "text": "Leak test labels"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Built-ins cover common ML tasks. Compare with Amazon SageMaker automatic model tuning: Tuning searches hyperparameter space.",
+      "explanation": "Built-ins cover common ML tasks.",
       "docs": [
         {
           "title": "Built-in algorithms",
           "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html"
-        },
-        {
-          "title": "Model tuning",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
         }
       ]
     },
@@ -2806,7 +2802,7 @@
       "id": "mls-q081",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Amazon SageMaker automatic model tuning rather than SageMaker distributed training when you need to hyperparameter tuning jobs?",
+      "text": "A solutions architect needs to hyperparameter tuning jobs.",
       "options": [
         {
           "id": "a",
@@ -2814,29 +2810,25 @@
         },
         {
           "id": "b",
-          "text": "SageMaker distributed training"
-        },
-        {
-          "id": "c",
           "text": "Guess parameters"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "One manual run"
+        },
+        {
+          "id": "d",
+          "text": "Disable validation"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Tuning searches hyperparameter space. Compare with SageMaker distributed training: Distributed jobs scale training.",
+      "explanation": "Tuning searches hyperparameter space.",
       "docs": [
         {
           "title": "Model tuning",
           "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
-        },
-        {
-          "title": "Distributed training",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
         }
       ]
     },
@@ -2844,7 +2836,7 @@
       "id": "mls-q082",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which capability is provided by SageMaker distributed training rather than Amazon SageMaker Feature Store when you need to distributed training on GPU clusters?",
+      "text": "For a regulated workload, you should distributed training on GPU clusters.",
       "options": [
         {
           "id": "a",
@@ -2852,29 +2844,25 @@
         },
         {
           "id": "b",
-          "text": "Amazon SageMaker Feature Store"
-        },
-        {
-          "id": "c",
           "text": "Single thread only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "No GPU"
+        },
+        {
+          "id": "d",
+          "text": "FTP data"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Distributed jobs scale training. Compare with Amazon SageMaker Feature Store: Feature Store shares features across teams.",
+      "explanation": "Distributed jobs scale training.",
       "docs": [
         {
           "title": "Distributed training",
           "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html"
-        },
-        {
-          "title": "Feature Store",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
         }
       ]
     },
@@ -3188,7 +3176,7 @@
       "id": "mls-q092",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "An organization wants to detect model drift.",
+      "text": "A development team must detect model drift.",
       "options": [
         {
           "id": "a",
@@ -3222,7 +3210,7 @@
       "id": "mls-q093",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Amazon SageMaker endpoints rather than Amazon SageMaker Model Monitor when you need to deploy real-time inference endpoints?",
+      "text": "A solutions architect needs to deploy real-time inference endpoints.",
       "options": [
         {
           "id": "a",
@@ -3230,29 +3218,25 @@
         },
         {
           "id": "b",
-          "text": "Amazon SageMaker Model Monitor"
-        },
-        {
-          "id": "c",
           "text": "Batch only always"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "FTP model"
+        },
+        {
+          "id": "d",
+          "text": "Email weights"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Endpoints host models for low-latency inference. Compare with Amazon SageMaker Model Monitor: Model Monitor tracks data and quality drift.",
+      "explanation": "Endpoints host models for low-latency inference.",
       "docs": [
         {
           "title": "SageMaker endpoints",
           "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
-        },
-        {
-          "title": "Model Monitor",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
         }
       ]
     }

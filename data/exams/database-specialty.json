@@ -1204,7 +1204,7 @@
       "id": "dbs-q034",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "A development team must OLTP with MySQL compatibility on Aurora.",
+      "text": "A solutions architect needs to OLTP with MySQL compatibility on Aurora.",
       "options": [
         {
           "id": "a",
@@ -2018,40 +2018,6 @@
     },
     {
       "id": "dbs-q058",
-      "domain": "deployment-migration",
-      "type": "multiple-choice",
-      "text": "A team must export/import large datasets to RDS. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "RDS snapshot export to S3"
-        },
-        {
-          "id": "b",
-          "text": "Email mbox"
-        },
-        {
-          "id": "c",
-          "text": "Telnet"
-        },
-        {
-          "id": "d",
-          "text": "Ping flood"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Snapshot export enables analytics on backups.",
-      "docs": [
-        {
-          "title": "Snapshot export",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q059",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which AWS service or feature is BEST to automate patching for RDS?",
@@ -2085,7 +2051,7 @@
       ]
     },
     {
-      "id": "dbs-q060",
+      "id": "dbs-q059",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which AWS service or feature is BEST to monitor DB performance insights?",
@@ -2119,7 +2085,7 @@
       ]
     },
     {
-      "id": "dbs-q061",
+      "id": "dbs-q060",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which AWS service or feature is BEST to global read scaling for Aurora?",
@@ -2153,7 +2119,7 @@
       ]
     },
     {
-      "id": "dbs-q062",
+      "id": "dbs-q061",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which AWS service or feature is BEST to secrets rotation for database credentials?",
@@ -2187,7 +2153,7 @@
       ]
     },
     {
-      "id": "dbs-q063",
+      "id": "dbs-q062",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to automate patching for RDS?",
@@ -2221,7 +2187,7 @@
       ]
     },
     {
-      "id": "dbs-q064",
+      "id": "dbs-q063",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to automate patching for RDS?",
@@ -2255,7 +2221,7 @@
       ]
     },
     {
-      "id": "dbs-q065",
+      "id": "dbs-q064",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must automate patching for RDS. Which option meets the requirement?",
@@ -2289,7 +2255,7 @@
       ]
     },
     {
-      "id": "dbs-q066",
+      "id": "dbs-q065",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to monitor DB performance insights?",
@@ -2323,7 +2289,7 @@
       ]
     },
     {
-      "id": "dbs-q067",
+      "id": "dbs-q066",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to monitor DB performance insights?",
@@ -2357,7 +2323,7 @@
       ]
     },
     {
-      "id": "dbs-q068",
+      "id": "dbs-q067",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must monitor DB performance insights. Which option meets the requirement?",
@@ -2391,7 +2357,7 @@
       ]
     },
     {
-      "id": "dbs-q069",
+      "id": "dbs-q068",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to global read scaling for Aurora?",
@@ -2425,7 +2391,7 @@
       ]
     },
     {
-      "id": "dbs-q070",
+      "id": "dbs-q069",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to global read scaling for Aurora?",
@@ -2459,7 +2425,7 @@
       ]
     },
     {
-      "id": "dbs-q071",
+      "id": "dbs-q070",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must global read scaling for Aurora. Which option meets the requirement?",
@@ -2493,7 +2459,7 @@
       ]
     },
     {
-      "id": "dbs-q072",
+      "id": "dbs-q071",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to secrets rotation for database credentials?",
@@ -2527,7 +2493,7 @@
       ]
     },
     {
-      "id": "dbs-q073",
+      "id": "dbs-q072",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to secrets rotation for database credentials?",
@@ -2561,7 +2527,7 @@
       ]
     },
     {
-      "id": "dbs-q074",
+      "id": "dbs-q073",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must secrets rotation for database credentials. Which option meets the requirement?",
@@ -2595,10 +2561,10 @@
       ]
     },
     {
-      "id": "dbs-q075",
+      "id": "dbs-q074",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to automate patching for RDS.",
+      "text": "An organization wants to automate patching for RDS.",
       "options": [
         {
           "id": "a",
@@ -2629,10 +2595,10 @@
       ]
     },
     {
-      "id": "dbs-q076",
+      "id": "dbs-q075",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "An organization wants to monitor DB performance insights.",
+      "text": "A solutions architect needs to monitor DB performance insights.",
       "options": [
         {
           "id": "a",
@@ -2663,10 +2629,10 @@
       ]
     },
     {
-      "id": "dbs-q077",
+      "id": "dbs-q076",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "An organization wants to global read scaling for Aurora.",
+      "text": "For a regulated workload, you should global read scaling for Aurora.",
       "options": [
         {
           "id": "a",
@@ -2697,7 +2663,7 @@
       ]
     },
     {
-      "id": "dbs-q078",
+      "id": "dbs-q077",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which AWS service or feature is BEST to slow query analysis for Aurora?",
@@ -2731,7 +2697,7 @@
       ]
     },
     {
-      "id": "dbs-q079",
+      "id": "dbs-q078",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which AWS service or feature is BEST to alarms on replica lag?",
@@ -2765,7 +2731,7 @@
       ]
     },
     {
-      "id": "dbs-q080",
+      "id": "dbs-q079",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which AWS service or feature is BEST to audit SQL activity on RDS?",
@@ -2799,7 +2765,7 @@
       ]
     },
     {
-      "id": "dbs-q081",
+      "id": "dbs-q080",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which service should you use to slow query analysis for Aurora?",
@@ -2833,7 +2799,7 @@
       ]
     },
     {
-      "id": "dbs-q082",
+      "id": "dbs-q081",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to slow query analysis for Aurora?",
@@ -2867,7 +2833,7 @@
       ]
     },
     {
-      "id": "dbs-q083",
+      "id": "dbs-q082",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A team must slow query analysis for Aurora. Which option meets the requirement?",
@@ -2901,7 +2867,7 @@
       ]
     },
     {
-      "id": "dbs-q084",
+      "id": "dbs-q083",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which service should you use to alarms on replica lag?",
@@ -2935,7 +2901,7 @@
       ]
     },
     {
-      "id": "dbs-q085",
+      "id": "dbs-q084",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to alarms on replica lag?",
@@ -2969,7 +2935,7 @@
       ]
     },
     {
-      "id": "dbs-q086",
+      "id": "dbs-q085",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A team must alarms on replica lag. Which option meets the requirement?",
@@ -3003,7 +2969,7 @@
       ]
     },
     {
-      "id": "dbs-q087",
+      "id": "dbs-q086",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which service should you use to audit SQL activity on RDS?",
@@ -3037,7 +3003,7 @@
       ]
     },
     {
-      "id": "dbs-q088",
+      "id": "dbs-q087",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to audit SQL activity on RDS?",
@@ -3071,7 +3037,7 @@
       ]
     },
     {
-      "id": "dbs-q089",
+      "id": "dbs-q088",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A team must audit SQL activity on RDS. Which option meets the requirement?",
@@ -3105,7 +3071,109 @@
       ]
     },
     {
+      "id": "dbs-q089",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "For a regulated workload, you should slow query analysis for Aurora.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
       "id": "dbs-q090",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "An organization wants to alarms on replica lag.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "c",
+          "text": "Email once a year"
+        },
+        {
+          "id": "d",
+          "text": "Disable replicas"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q091",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A solutions architect needs to audit SQL activity on RDS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit"
+        },
+        {
+          "id": "c",
+          "text": "Public logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q092",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A development team must slow query analysis for Aurora.",
@@ -3139,7 +3207,7 @@
       ]
     },
     {
-      "id": "dbs-q091",
+      "id": "dbs-q093",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "For a regulated workload, you should alarms on replica lag.",
@@ -3169,116 +3237,6 @@
         {
           "title": "RDS CloudWatch",
           "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q092",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "A development team must audit SQL activity on RDS.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Database Activity Streams"
-        },
-        {
-          "id": "b",
-          "text": "Disable audit"
-        },
-        {
-          "id": "c",
-          "text": "Public logs"
-        },
-        {
-          "id": "d",
-          "text": "No retention"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Activity Streams capture database audit events.",
-      "docs": [
-        {
-          "title": "Database Activity Streams",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q093",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "Which capability is provided by Database Insights and Performance Insights rather than Amazon CloudWatch metrics for RDS when you need to slow query analysis for Aurora?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Database Insights and Performance Insights"
-        },
-        {
-          "id": "b",
-          "text": "Amazon CloudWatch metrics for RDS"
-        },
-        {
-          "id": "c",
-          "text": "No logs"
-        },
-        {
-          "id": "d",
-          "text": "Telnet"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Insights help find bottlenecks. Compare with Amazon CloudWatch metrics for RDS: CloudWatch metrics trigger remediation.",
-      "docs": [
-        {
-          "title": "Database Insights",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
-        },
-        {
-          "title": "RDS CloudWatch",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q094",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "Which capability is provided by Amazon CloudWatch metrics for RDS rather than Database Activity Streams when you need to alarms on replica lag?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon CloudWatch metrics for RDS"
-        },
-        {
-          "id": "b",
-          "text": "Database Activity Streams"
-        },
-        {
-          "id": "c",
-          "text": "Ignore lag"
-        },
-        {
-          "id": "d",
-          "text": "Email once a year"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CloudWatch metrics trigger remediation. Compare with Database Activity Streams: Activity Streams capture database audit events.",
-      "docs": [
-        {
-          "title": "RDS CloudWatch",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
-        },
-        {
-          "title": "Database Activity Streams",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
         }
       ]
     }

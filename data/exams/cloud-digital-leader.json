@@ -1,0 +1,2685 @@
+{
+  "id": "cloud-digital-leader",
+  "name": "Google Cloud Digital Leader",
+  "code": "CDL",
+  "vendor": "google",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 90,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "digital-transformation",
+      "name": "Digital transformation with Google Cloud",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "Cloud Digital Leader guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-digital-leader"
+        },
+        {
+          "title": "Why Google Cloud",
+          "url": "https://cloud.google.com/why-google-cloud"
+        }
+      ]
+    },
+    {
+      "id": "innovating",
+      "name": "Innovating with data and Google Cloud",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "BigQuery overview",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure and application modernization",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "security-ops",
+      "name": "Understanding Google Cloud security and operations",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Security overview",
+          "url": "https://cloud.google.com/security"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cdl-q001",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Digital transformation with Google Cloud for Google Cloud Digital Leader?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Digital Leader guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Cloud Digital Leader guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Cloud Digital Leader guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-digital-leader"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q002",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "According to 'Cloud Digital Leader guide', what is a documented best practice for Digital transformation with Google Cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Digital Leader guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Cloud Digital Leader guide",
+          "url": "https://cloud.google.com/learn/certification/guides/cloud-digital-leader"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q003",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "According to 'Why Google Cloud', what is a documented best practice for Digital transformation with Google Cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Why Google Cloud reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Why Google Cloud",
+          "url": "https://cloud.google.com/why-google-cloud"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q004",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Innovating with data and Google Cloud for Google Cloud Digital Leader?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery overview"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use BigQuery overview and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "BigQuery overview",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q005",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "According to 'BigQuery overview', what is a documented best practice for Innovating with data and Google Cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery overview reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "BigQuery overview",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q006",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Infrastructure and application modernization for Google Cloud Digital Leader?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Compute Engine and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q007",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "According to 'Compute Engine', what is a documented best practice for Infrastructure and application modernization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compute Engine reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q008",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Understanding Google Cloud security and operations for Google Cloud Digital Leader?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security overview"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Security overview and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Security overview",
+          "url": "https://cloud.google.com/security"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q009",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "According to 'Security overview', what is a documented best practice for Understanding Google Cloud security and operations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security overview reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Security overview",
+          "url": "https://cloud.google.com/security"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q010",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to explain why organizations adopt cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic scale and innovation velocity"
+        },
+        {
+          "id": "b",
+          "text": "Fixed mainframe only forever"
+        },
+        {
+          "id": "c",
+          "text": "No internet"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud enables faster experimentation.",
+      "docs": [
+        {
+          "title": "Why Google Cloud",
+          "url": "https://cloud.google.com/why-google-cloud"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q011",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to describe Google Cloud regions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Geographically isolated regions with zones"
+        },
+        {
+          "id": "b",
+          "text": "Single laptop datacenter"
+        },
+        {
+          "id": "c",
+          "text": "FTP only"
+        },
+        {
+          "id": "d",
+          "text": "SNMP hub"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regions provide disaster isolation.",
+      "docs": [
+        {
+          "title": "Regions and zones",
+          "url": "https://cloud.google.com/compute/docs/regions-zones"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q012",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to compare CapEx vs OpEx in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Operational expenditure with usage-based billing"
+        },
+        {
+          "id": "b",
+          "text": "Only CapEx"
+        },
+        {
+          "id": "c",
+          "text": "No invoices"
+        },
+        {
+          "id": "d",
+          "text": "Free always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spending models.",
+      "docs": [
+        {
+          "title": "Cloud economics",
+          "url": "https://cloud.google.com/docs/overview/cloud-economics"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q013",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to enable digital transformation programs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modernize apps and data on cloud foundations"
+        },
+        {
+          "id": "b",
+          "text": "Keep legacy only"
+        },
+        {
+          "id": "c",
+          "text": "No strategy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transformation uses cloud as enabler.",
+      "docs": [
+        {
+          "title": "Digital transformation",
+          "url": "https://cloud.google.com/transform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q014",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to explain why organizations adopt cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic scale and innovation velocity"
+        },
+        {
+          "id": "b",
+          "text": "Fixed mainframe only forever"
+        },
+        {
+          "id": "c",
+          "text": "No internet"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud enables faster experimentation.",
+      "docs": [
+        {
+          "title": "Why Google Cloud",
+          "url": "https://cloud.google.com/why-google-cloud"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q015",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to explain why organizations adopt cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic scale and innovation velocity"
+        },
+        {
+          "id": "b",
+          "text": "Fixed mainframe only forever"
+        },
+        {
+          "id": "c",
+          "text": "No internet"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud enables faster experimentation.",
+      "docs": [
+        {
+          "title": "Why Google Cloud",
+          "url": "https://cloud.google.com/why-google-cloud"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q016",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "A platform team must explain why organizations adopt cloud. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic scale and innovation velocity"
+        },
+        {
+          "id": "b",
+          "text": "Fixed mainframe only forever"
+        },
+        {
+          "id": "c",
+          "text": "No internet"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud enables faster experimentation.",
+      "docs": [
+        {
+          "title": "Why Google Cloud",
+          "url": "https://cloud.google.com/why-google-cloud"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q017",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to describe Google Cloud regions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Geographically isolated regions with zones"
+        },
+        {
+          "id": "b",
+          "text": "Single laptop datacenter"
+        },
+        {
+          "id": "c",
+          "text": "FTP only"
+        },
+        {
+          "id": "d",
+          "text": "SNMP hub"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regions provide disaster isolation.",
+      "docs": [
+        {
+          "title": "Regions and zones",
+          "url": "https://cloud.google.com/compute/docs/regions-zones"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q018",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to describe Google Cloud regions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Geographically isolated regions with zones"
+        },
+        {
+          "id": "b",
+          "text": "Single laptop datacenter"
+        },
+        {
+          "id": "c",
+          "text": "FTP only"
+        },
+        {
+          "id": "d",
+          "text": "SNMP hub"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regions provide disaster isolation.",
+      "docs": [
+        {
+          "title": "Regions and zones",
+          "url": "https://cloud.google.com/compute/docs/regions-zones"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q019",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "A platform team must describe Google Cloud regions. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Geographically isolated regions with zones"
+        },
+        {
+          "id": "b",
+          "text": "Single laptop datacenter"
+        },
+        {
+          "id": "c",
+          "text": "FTP only"
+        },
+        {
+          "id": "d",
+          "text": "SNMP hub"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regions provide disaster isolation.",
+      "docs": [
+        {
+          "title": "Regions and zones",
+          "url": "https://cloud.google.com/compute/docs/regions-zones"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q020",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to compare CapEx vs OpEx in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Operational expenditure with usage-based billing"
+        },
+        {
+          "id": "b",
+          "text": "Only CapEx"
+        },
+        {
+          "id": "c",
+          "text": "No invoices"
+        },
+        {
+          "id": "d",
+          "text": "Free always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spending models.",
+      "docs": [
+        {
+          "title": "Cloud economics",
+          "url": "https://cloud.google.com/docs/overview/cloud-economics"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q021",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to compare CapEx vs OpEx in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Operational expenditure with usage-based billing"
+        },
+        {
+          "id": "b",
+          "text": "Only CapEx"
+        },
+        {
+          "id": "c",
+          "text": "No invoices"
+        },
+        {
+          "id": "d",
+          "text": "Free always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spending models.",
+      "docs": [
+        {
+          "title": "Cloud economics",
+          "url": "https://cloud.google.com/docs/overview/cloud-economics"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q022",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "A platform team must compare CapEx vs OpEx in cloud. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Operational expenditure with usage-based billing"
+        },
+        {
+          "id": "b",
+          "text": "Only CapEx"
+        },
+        {
+          "id": "c",
+          "text": "No invoices"
+        },
+        {
+          "id": "d",
+          "text": "Free always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spending models.",
+      "docs": [
+        {
+          "title": "Cloud economics",
+          "url": "https://cloud.google.com/docs/overview/cloud-economics"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q023",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to enable digital transformation programs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modernize apps and data on cloud foundations"
+        },
+        {
+          "id": "b",
+          "text": "Keep legacy only"
+        },
+        {
+          "id": "c",
+          "text": "No strategy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transformation uses cloud as enabler.",
+      "docs": [
+        {
+          "title": "Digital transformation",
+          "url": "https://cloud.google.com/transform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q024",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to enable digital transformation programs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modernize apps and data on cloud foundations"
+        },
+        {
+          "id": "b",
+          "text": "Keep legacy only"
+        },
+        {
+          "id": "c",
+          "text": "No strategy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transformation uses cloud as enabler.",
+      "docs": [
+        {
+          "title": "Digital transformation",
+          "url": "https://cloud.google.com/transform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q025",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "A platform team must enable digital transformation programs. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modernize apps and data on cloud foundations"
+        },
+        {
+          "id": "b",
+          "text": "Keep legacy only"
+        },
+        {
+          "id": "c",
+          "text": "No strategy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transformation uses cloud as enabler.",
+      "docs": [
+        {
+          "title": "Digital transformation",
+          "url": "https://cloud.google.com/transform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q026",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to explain why organizations adopt cloud.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic scale and innovation velocity"
+        },
+        {
+          "id": "b",
+          "text": "Fixed mainframe only forever"
+        },
+        {
+          "id": "c",
+          "text": "No internet"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud enables faster experimentation.",
+      "docs": [
+        {
+          "title": "Why Google Cloud",
+          "url": "https://cloud.google.com/why-google-cloud"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q027",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to describe Google Cloud regions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Geographically isolated regions with zones"
+        },
+        {
+          "id": "b",
+          "text": "Single laptop datacenter"
+        },
+        {
+          "id": "c",
+          "text": "FTP only"
+        },
+        {
+          "id": "d",
+          "text": "SNMP hub"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regions provide disaster isolation.",
+      "docs": [
+        {
+          "title": "Regions and zones",
+          "url": "https://cloud.google.com/compute/docs/regions-zones"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q028",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should compare CapEx vs OpEx in cloud.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Operational expenditure with usage-based billing"
+        },
+        {
+          "id": "b",
+          "text": "Only CapEx"
+        },
+        {
+          "id": "c",
+          "text": "No invoices"
+        },
+        {
+          "id": "d",
+          "text": "Free always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud shifts spending models.",
+      "docs": [
+        {
+          "title": "Cloud economics",
+          "url": "https://cloud.google.com/docs/overview/cloud-economics"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q029",
+      "domain": "digital-transformation",
+      "type": "multiple-choice",
+      "text": "A data team must enable digital transformation programs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modernize apps and data on cloud foundations"
+        },
+        {
+          "id": "b",
+          "text": "Keep legacy only"
+        },
+        {
+          "id": "c",
+          "text": "No strategy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transformation uses cloud as enabler.",
+      "docs": [
+        {
+          "title": "Digital transformation",
+          "url": "https://cloud.google.com/transform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q030",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to analyze petabytes with SQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery serverless warehouse"
+        },
+        {
+          "id": "b",
+          "text": "Desktop Excel cluster"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV only"
+        },
+        {
+          "id": "d",
+          "text": "Local USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery separates storage and compute.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q031",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to build ML models on managed AI platform?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex AI"
+        },
+        {
+          "id": "b",
+          "text": "Notepad regression"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "FTP weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vertex AI unifies ML workflows.",
+      "docs": [
+        {
+          "title": "Vertex AI",
+          "url": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q032",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to stream analytics in real time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub with Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Batch USB weekly"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables timely insights.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q033",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to analyze petabytes with SQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery serverless warehouse"
+        },
+        {
+          "id": "b",
+          "text": "Desktop Excel cluster"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV only"
+        },
+        {
+          "id": "d",
+          "text": "Local USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery separates storage and compute.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q034",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to analyze petabytes with SQL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery serverless warehouse"
+        },
+        {
+          "id": "b",
+          "text": "Desktop Excel cluster"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV only"
+        },
+        {
+          "id": "d",
+          "text": "Local USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery separates storage and compute.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q035",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "A platform team must analyze petabytes with SQL. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery serverless warehouse"
+        },
+        {
+          "id": "b",
+          "text": "Desktop Excel cluster"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV only"
+        },
+        {
+          "id": "d",
+          "text": "Local USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery separates storage and compute.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q036",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to build ML models on managed AI platform?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex AI"
+        },
+        {
+          "id": "b",
+          "text": "Notepad regression"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "FTP weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vertex AI unifies ML workflows.",
+      "docs": [
+        {
+          "title": "Vertex AI",
+          "url": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q037",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to build ML models on managed AI platform?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex AI"
+        },
+        {
+          "id": "b",
+          "text": "Notepad regression"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "FTP weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vertex AI unifies ML workflows.",
+      "docs": [
+        {
+          "title": "Vertex AI",
+          "url": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q038",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "A platform team must build ML models on managed AI platform. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex AI"
+        },
+        {
+          "id": "b",
+          "text": "Notepad regression"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "FTP weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vertex AI unifies ML workflows.",
+      "docs": [
+        {
+          "title": "Vertex AI",
+          "url": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q039",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to stream analytics in real time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub with Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Batch USB weekly"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables timely insights.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q040",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to stream analytics in real time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub with Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Batch USB weekly"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables timely insights.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q041",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "A platform team must stream analytics in real time. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub with Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Batch USB weekly"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables timely insights.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q042",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should analyze petabytes with SQL.",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery serverless warehouse"
+        },
+        {
+          "id": "b",
+          "text": "Desktop Excel cluster"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV only"
+        },
+        {
+          "id": "d",
+          "text": "Local USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery separates storage and compute.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q043",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to build ML models on managed AI platform.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex AI"
+        },
+        {
+          "id": "b",
+          "text": "Notepad regression"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "FTP weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vertex AI unifies ML workflows.",
+      "docs": [
+        {
+          "title": "Vertex AI",
+          "url": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q044",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "A data team must stream analytics in real time.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub with Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Batch USB weekly"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables timely insights.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q045",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to analyze petabytes with SQL.",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery serverless warehouse"
+        },
+        {
+          "id": "b",
+          "text": "Desktop Excel cluster"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV only"
+        },
+        {
+          "id": "d",
+          "text": "Local USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery separates storage and compute.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q046",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should build ML models on managed AI platform.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex AI"
+        },
+        {
+          "id": "b",
+          "text": "Notepad regression"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "FTP weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vertex AI unifies ML workflows.",
+      "docs": [
+        {
+          "title": "Vertex AI",
+          "url": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q047",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to stream analytics in real time.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub with Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Batch USB weekly"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables timely insights.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q048",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "A data team must analyze petabytes with SQL.",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery serverless warehouse"
+        },
+        {
+          "id": "b",
+          "text": "Desktop Excel cluster"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV only"
+        },
+        {
+          "id": "d",
+          "text": "Local USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery separates storage and compute.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q049",
+      "domain": "innovating",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to build ML models on managed AI platform.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertex AI"
+        },
+        {
+          "id": "b",
+          "text": "Notepad regression"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "FTP weights"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vertex AI unifies ML workflows.",
+      "docs": [
+        {
+          "title": "Vertex AI",
+          "url": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q050",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to run VMs on Google infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Tape backup only"
+        },
+        {
+          "id": "c",
+          "text": "Dial-up"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCE provides IaaS VMs.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q051",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to run containers on managed Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Single VM forever"
+        },
+        {
+          "id": "c",
+          "text": "No orchestration"
+        },
+        {
+          "id": "d",
+          "text": "Manual SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages Kubernetes.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q052",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to serverless request-driven compute?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Always-on VM"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run runs containers on demand.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q053",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to run VMs on Google infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Tape backup only"
+        },
+        {
+          "id": "c",
+          "text": "Dial-up"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCE provides IaaS VMs.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q054",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to run VMs on Google infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Tape backup only"
+        },
+        {
+          "id": "c",
+          "text": "Dial-up"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCE provides IaaS VMs.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q055",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "A platform team must run VMs on Google infrastructure. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Tape backup only"
+        },
+        {
+          "id": "c",
+          "text": "Dial-up"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCE provides IaaS VMs.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q056",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to run containers on managed Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Single VM forever"
+        },
+        {
+          "id": "c",
+          "text": "No orchestration"
+        },
+        {
+          "id": "d",
+          "text": "Manual SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages Kubernetes.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q057",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to run containers on managed Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Single VM forever"
+        },
+        {
+          "id": "c",
+          "text": "No orchestration"
+        },
+        {
+          "id": "d",
+          "text": "Manual SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages Kubernetes.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q058",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "A platform team must run containers on managed Kubernetes. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Single VM forever"
+        },
+        {
+          "id": "c",
+          "text": "No orchestration"
+        },
+        {
+          "id": "d",
+          "text": "Manual SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages Kubernetes.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q059",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to serverless request-driven compute?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Always-on VM"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run runs containers on demand.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q060",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to serverless request-driven compute?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Always-on VM"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run runs containers on demand.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q061",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "A platform team must serverless request-driven compute. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Always-on VM"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run runs containers on demand.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q062",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to run VMs on Google infrastructure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Tape backup only"
+        },
+        {
+          "id": "c",
+          "text": "Dial-up"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCE provides IaaS VMs.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q063",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should run containers on managed Kubernetes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Single VM forever"
+        },
+        {
+          "id": "c",
+          "text": "No orchestration"
+        },
+        {
+          "id": "d",
+          "text": "Manual SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages Kubernetes.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q064",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to serverless request-driven compute.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Run"
+        },
+        {
+          "id": "b",
+          "text": "Always-on VM"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Ping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud Run runs containers on demand.",
+      "docs": [
+        {
+          "title": "Cloud Run",
+          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q065",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "A data team must run VMs on Google infrastructure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute Engine"
+        },
+        {
+          "id": "b",
+          "text": "Tape backup only"
+        },
+        {
+          "id": "c",
+          "text": "Dial-up"
+        },
+        {
+          "id": "d",
+          "text": "ICMP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCE provides IaaS VMs.",
+      "docs": [
+        {
+          "title": "Compute Engine",
+          "url": "https://cloud.google.com/compute/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q066",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to run containers on managed Kubernetes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Kubernetes Engine"
+        },
+        {
+          "id": "b",
+          "text": "Single VM forever"
+        },
+        {
+          "id": "c",
+          "text": "No orchestration"
+        },
+        {
+          "id": "d",
+          "text": "Manual SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GKE manages Kubernetes.",
+      "docs": [
+        {
+          "title": "GKE",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q067",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to shared responsibility on Google Cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google secures infrastructure; customers secure workloads"
+        },
+        {
+          "id": "b",
+          "text": "Google patches guest OS always"
+        },
+        {
+          "id": "c",
+          "text": "No customer IAM"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customers configure identity, data, apps.",
+      "docs": [
+        {
+          "title": "Security",
+          "url": "https://cloud.google.com/security"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q068",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to manage identities and roles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM"
+        },
+        {
+          "id": "b",
+          "text": "Shared root password"
+        },
+        {
+          "id": "c",
+          "text": "Public admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM controls who can do what.",
+      "docs": [
+        {
+          "title": "Cloud IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q069",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to monitor workloads and SLOs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual check"
+        },
+        {
+          "id": "d",
+          "text": "Ignore alerts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring supports operations.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q070",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to shared responsibility on Google Cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google secures infrastructure; customers secure workloads"
+        },
+        {
+          "id": "b",
+          "text": "Google patches guest OS always"
+        },
+        {
+          "id": "c",
+          "text": "No customer IAM"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customers configure identity, data, apps.",
+      "docs": [
+        {
+          "title": "Security",
+          "url": "https://cloud.google.com/security"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q071",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to shared responsibility on Google Cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google secures infrastructure; customers secure workloads"
+        },
+        {
+          "id": "b",
+          "text": "Google patches guest OS always"
+        },
+        {
+          "id": "c",
+          "text": "No customer IAM"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customers configure identity, data, apps.",
+      "docs": [
+        {
+          "title": "Security",
+          "url": "https://cloud.google.com/security"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q072",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "A platform team must shared responsibility on Google Cloud. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google secures infrastructure; customers secure workloads"
+        },
+        {
+          "id": "b",
+          "text": "Google patches guest OS always"
+        },
+        {
+          "id": "c",
+          "text": "No customer IAM"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customers configure identity, data, apps.",
+      "docs": [
+        {
+          "title": "Security",
+          "url": "https://cloud.google.com/security"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q073",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to manage identities and roles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM"
+        },
+        {
+          "id": "b",
+          "text": "Shared root password"
+        },
+        {
+          "id": "c",
+          "text": "Public admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM controls who can do what.",
+      "docs": [
+        {
+          "title": "Cloud IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q074",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to manage identities and roles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM"
+        },
+        {
+          "id": "b",
+          "text": "Shared root password"
+        },
+        {
+          "id": "c",
+          "text": "Public admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM controls who can do what.",
+      "docs": [
+        {
+          "title": "Cloud IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q075",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "A platform team must manage identities and roles. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud IAM"
+        },
+        {
+          "id": "b",
+          "text": "Shared root password"
+        },
+        {
+          "id": "c",
+          "text": "Public admin"
+        },
+        {
+          "id": "d",
+          "text": "No audit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM controls who can do what.",
+      "docs": [
+        {
+          "title": "Cloud IAM",
+          "url": "https://cloud.google.com/iam/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q076",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to monitor workloads and SLOs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual check"
+        },
+        {
+          "id": "d",
+          "text": "Ignore alerts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring supports operations.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "cdl-q077",
+      "domain": "security-ops",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to monitor workloads and SLOs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual check"
+        },
+        {
+          "id": "d",
+          "text": "Ignore alerts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring supports operations.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://cloud.google.com/learn/certification/cloud-digital-leader"
+}

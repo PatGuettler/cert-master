@@ -200,7 +200,8 @@ GCP_EXAMS: list[dict[str, Any]] = [
                 ("Cloud Monitoring", "https://cloud.google.com/monitoring/docs"),
             ]),
             domain("optimization", "Optimizing service performance and cost", 25, [
-                ("SRE workbook", "https://sre.google/workbook/table-of-contents/"),
+                ("Cost optimization", "https://cloud.google.com/architecture/framework/cost-optimization"),
+                ("Operational excellence", "https://cloud.google.com/architecture/framework/operational-excellence"),
             ]),
         ],
     },

@@ -1,0 +1,2731 @@
+{
+  "id": "professional-data-engineer",
+  "name": "Google Professional Data Engineer",
+  "code": "PDE",
+  "vendor": "google",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 55,
+    "timeLimitMinutes": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "data-lifecycle",
+      "name": "Designing data processing systems",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "PDE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/data-engineer"
+        },
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "ingestion-storage",
+      "name": "Ingesting and processing data",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        },
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "analysis-modeling",
+      "name": "Storing and analyzing data",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "reliability-ops",
+      "name": "Reliability, policies, and processes",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "pde-q001",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Designing data processing systems for Google Professional Data Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PDE exam guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use PDE exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "PDE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/data-engineer"
+        }
+      ]
+    },
+    {
+      "id": "pde-q002",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "According to 'PDE exam guide', what is a documented best practice for Designing data processing systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PDE exam guide reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "PDE exam guide",
+          "url": "https://cloud.google.com/learn/certification/guides/data-engineer"
+        }
+      ]
+    },
+    {
+      "id": "pde-q003",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "According to 'Dataflow', what is a documented best practice for Designing data processing systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q004",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Ingesting and processing data for Google Professional Data Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Pub/Sub and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q005",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "According to 'Pub/Sub', what is a documented best practice for Ingesting and processing data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q006",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "According to 'BigQuery', what is a documented best practice for Ingesting and processing data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q007",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Storing and analyzing data for Google Professional Data Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Bigtable and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q008",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "According to 'Bigtable', what is a documented best practice for Storing and analyzing data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q009",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Reliability, policies, and processes for Google Professional Data Engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Dataplex and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q010",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "According to 'Dataplex', what is a documented best practice for Reliability, policies, and processes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q011",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to batch and stream with Apache Beam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q012",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q013",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q014",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A platform team must batch and stream with Apache Beam. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q015",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to batch and stream with Apache Beam.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q016",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to batch and stream with Apache Beam.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q017",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A data team must batch and stream with Apache Beam.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q018",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should batch and stream with Apache Beam.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q019",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q020",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q021",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A platform team must batch and stream with Apache Beam (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q022",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q023",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q024",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A platform team must batch and stream with Apache Beam (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q025",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q026",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q027",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A platform team must batch and stream with Apache Beam (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q028",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 10)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q029",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 11)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q030",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A platform team must batch and stream with Apache Beam (variant 12). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q031",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to real-time messaging?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q032",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to warehouse analytics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q033",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to real-time messaging?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q034",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to real-time messaging?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q035",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "A platform team must real-time messaging. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q036",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to warehouse analytics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q037",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to warehouse analytics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q038",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "A platform team must warehouse analytics. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q039",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "A data team must real-time messaging.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q040",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should warehouse analytics.",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q041",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to real-time messaging.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q042",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to warehouse analytics.",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q043",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Pub/Sub rather than BigQuery when you need to real-time messaging?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "BigQuery"
+        },
+        {
+          "id": "c",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "d",
+          "text": "Daily USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers. Compare with BigQuery: BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        },
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q044",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by BigQuery rather than Pub/Sub when you need to warehouse analytics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "c",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "d",
+          "text": "Paper reports"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics. Compare with Pub/Sub: Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        },
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q045",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to real-time messaging (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q046",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to warehouse analytics (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q047",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "A platform team must real-time messaging (variant 2). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pub/Sub"
+        },
+        {
+          "id": "b",
+          "text": "Polling FTP"
+        },
+        {
+          "id": "c",
+          "text": "Daily USB"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pub/Sub decouples producers and consumers.",
+      "docs": [
+        {
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q048",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to wide-column low-latency store?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q049",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to wide-column low-latency store?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q050",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to wide-column low-latency store?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q051",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "A platform team must wide-column low-latency store. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q052",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to wide-column low-latency store.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q053",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "A data team must wide-column low-latency store.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q054",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to wide-column low-latency store.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q055",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should wide-column low-latency store.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q056",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q057",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to wide-column low-latency store (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q058",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "A platform team must wide-column low-latency store (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q059",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q060",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to wide-column low-latency store (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q061",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "A platform team must wide-column low-latency store (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q062",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 7)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q063",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to wide-column low-latency store (variant 8)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q064",
+      "domain": "analysis-modeling",
+      "type": "multiple-choice",
+      "text": "A platform team must wide-column low-latency store (variant 9). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Bigtable"
+        },
+        {
+          "id": "b",
+          "text": "Relational only always"
+        },
+        {
+          "id": "c",
+          "text": "Notepad"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "docs": [
+        {
+          "title": "Bigtable",
+          "url": "https://cloud.google.com/bigtable/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pde-q065",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud product or feature is BEST to govern data lakes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q066",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to govern data lakes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q067",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to govern data lakes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q068",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "A platform team must govern data lakes. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q069",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should govern data lakes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q070",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "A data team must govern data lakes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q071",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to govern data lakes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q072",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to govern data lakes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q073",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to govern data lakes (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q074",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to govern data lakes (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q075",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "A platform team must govern data lakes (variant 3). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q076",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to govern data lakes (variant 4)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q077",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to govern data lakes (variant 5)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q078",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "A platform team must govern data lakes (variant 6). Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://cloud.google.com/learn/certification/data-engineer"
+}
