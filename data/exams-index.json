@@ -233,6 +233,86 @@
       "questionCount": 82
     },
     {
+      "id": "keytrain-application-security",
+      "name": "KeyTrain's Key Training \u2014 Application Security",
+      "code": "KT-APP",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-application-security.json",
+      "questionCount": 20
+    },
+    {
+      "id": "keytrain-compliance-governance",
+      "name": "KeyTrain's Key Training \u2014 Compliance & Governance",
+      "code": "KT-CG",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-compliance-governance.json",
+      "questionCount": 25
+    },
+    {
+      "id": "keytrain-data-protection",
+      "name": "KeyTrain's Key Training \u2014 Data Protection",
+      "code": "KT-DP",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-data-protection.json",
+      "questionCount": 25
+    },
+    {
+      "id": "keytrain-email-security",
+      "name": "KeyTrain's Key Training \u2014 Email Security",
+      "code": "KT-EMS",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-email-security.json",
+      "questionCount": 20
+    },
+    {
+      "id": "keytrain-endpoint-security",
+      "name": "KeyTrain's Key Training \u2014 Endpoint Security",
+      "code": "KT-EPS",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-endpoint-security.json",
+      "questionCount": 25
+    },
+    {
+      "id": "keytrain-financial-security",
+      "name": "KeyTrain's Key Training \u2014 Financial Security",
+      "code": "KT-FIN",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-financial-security.json",
+      "questionCount": 20
+    },
+    {
+      "id": "keytrain-identity-access",
+      "name": "KeyTrain's Key Training \u2014 Identity & Access Security",
+      "code": "KT-IAS",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-identity-access.json",
+      "questionCount": 25
+    },
+    {
+      "id": "keytrain-network-security",
+      "name": "KeyTrain's Key Training \u2014 Network Security",
+      "code": "KT-NET",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-network-security.json",
+      "questionCount": 30
+    },
+    {
+      "id": "keytrain-physical-security",
+      "name": "KeyTrain's Key Training \u2014 Physical Security",
+      "code": "KT-PHY",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-physical-security.json",
+      "questionCount": 20
+    },
+    {
+      "id": "keytrain-system-hygiene",
+      "name": "KeyTrain's Key Training \u2014 System Hygiene",
+      "code": "KT-SYS",
+      "vendor": "keytraining",
+      "dataFile": "data/exams/keytrain-system-hygiene.json",
+      "questionCount": 25
+    },
+    {
       "id": "machine-learning-engineer-associate",
       "name": "AWS Certified Machine Learning Engineer \u2013 Associate",
       "code": "MLA-C01",
@@ -313,5 +393,5 @@
       "questionCount": 88
     }
   ],
-  "generatedAt": "2026-05-21T22:46:21.592802+00:00"
+  "generatedAt": "2026-05-21T23:03:14.867892+00:00"
 }

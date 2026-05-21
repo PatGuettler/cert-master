@@ -272,6 +272,32 @@ const DRILL_MAX = 20;
  * @param {Record<string, { attempts: number, correct: number }>} weakMap
  * @returns {Question[]}
  */
+export const WORKSHOP_MAX = 12;
+
+/**
+ * One sampled question per domain for guided workshops (immediate feedback).
+ * @param {CertData} cert
+ */
+export function selectWorkshopQuestions(cert) {
+  /** @type {Record<string, Question[]>} */
+  const byDomain = {};
+  for (const q of cert.questions) {
+    (byDomain[q.domain] ??= []).push(q);
+  }
+
+  /** @type {Question[]} */
+  const selected = [];
+  for (const domain of cert.domains) {
+    const pool = byDomain[domain.id] ?? [];
+    if (!pool.length) continue;
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    selected.push(prepareQuestionForExam(pick));
+  }
+
+  shuffle(selected);
+  return selected.slice(0, WORKSHOP_MAX);
+}
+
 export function selectDrillQuestions(cert, missedIds, weakMap = {}) {
   const bank = new Map(cert.questions.map((q) => [q.id, q]));
   /** @type {Question[]} */

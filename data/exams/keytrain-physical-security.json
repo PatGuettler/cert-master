@@ -1,0 +1,839 @@
+{
+  "id": "keytrain-physical-security",
+  "name": "KeyTrain's Key Training \u2014 Physical Security",
+  "code": "KT-PHY",
+  "vendor": "keytraining",
+  "program": "key-training",
+  "exam": {
+    "totalQuestions": 15,
+    "scoredQuestions": 15,
+    "timeLimitMinutes": 40,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "unauthorized-access",
+      "name": "Unauthorized access",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "device-theft",
+      "name": "Device theft",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "badge-access",
+      "name": "Badge and access control",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "cctv",
+      "name": "CCTV-related concerns",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ktphy-q001",
+      "domain": "unauthorized-access",
+      "type": "multiple-choice",
+      "text": "After-hours badge swipes in a data center from a terminated contractor badge. Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable fire alarms"
+        },
+        {
+          "id": "b",
+          "text": "Ignore if door locked"
+        },
+        {
+          "id": "c",
+          "text": "Deactivate badge, review CCTV, and audit access logs for tailgating partners"
+        },
+        {
+          "id": "d",
+          "text": "Share badge with security guard"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Physical access logs must tie to active authorization.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q002",
+      "domain": "unauthorized-access",
+      "type": "multiple-choice",
+      "text": "A propped-open fire door alarm is muted for 'convenience.' Risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unauthorized entry and fire code violation"
+        },
+        {
+          "id": "b",
+          "text": "Stops phishing"
+        },
+        {
+          "id": "c",
+          "text": "Improves cooling only"
+        },
+        {
+          "id": "d",
+          "text": "Required for HIPAA Wi-Fi"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Prop alarms exist to prevent uncontrolled entry.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q003",
+      "domain": "unauthorized-access",
+      "type": "multiple-choice",
+      "text": "Visitor logs are blank but deliveries increased. Control gap?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lack of visitor management and escort policy enforcement"
+        },
+        {
+          "id": "b",
+          "text": "Over-patching servers"
+        },
+        {
+          "id": "c",
+          "text": "Too many CCTV cameras"
+        },
+        {
+          "id": "d",
+          "text": "Excess MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Visitor procedures document who entered sensitive areas.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q004",
+      "domain": "unauthorized-access",
+      "type": "multiple-choice",
+      "text": "During a tabletop on unauthorized access, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "b",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Documented incidents or control failures tied to unauthorized access trending down quarter over quarter"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Effective unauthorized access programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q005",
+      "domain": "unauthorized-access",
+      "type": "multiple-choice",
+      "text": "An audit sampling unauthorized access controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "b",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "c",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "d",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for unauthorized access.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q004",
+      "domain": "device-theft",
+      "type": "multiple-choice",
+      "text": "Laptop stolen from a car; drive encrypted, device not managed. Concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encryption useless"
+        },
+        {
+          "id": "b",
+          "text": "HIPAA bans laptops"
+        },
+        {
+          "id": "c",
+          "text": "Theft impossible on Mac"
+        },
+        {
+          "id": "d",
+          "text": "If logged in recently, data in use may be accessible; no remote wipe"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "MDM enables wipe and attestation; encryption helps at rest only.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q005",
+      "domain": "device-theft",
+      "type": "multiple-choice",
+      "text": "Spare phones disappear from a stock room without inventory updates. Process fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leave room unlocked for convenience"
+        },
+        {
+          "id": "b",
+          "text": "Disable all mobile MDM"
+        },
+        {
+          "id": "c",
+          "text": "Publish IMEI list publicly"
+        },
+        {
+          "id": "d",
+          "text": "Asset tracking with check-in/out and alarm on high-value storage"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Inventory controls deter insider theft and aid recovery.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q006",
+      "domain": "device-theft",
+      "type": "multiple-choice",
+      "text": "Stolen tablet had clinical app logged in. Immediate steps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait for user to buy replacement"
+        },
+        {
+          "id": "b",
+          "text": "Disable encryption"
+        },
+        {
+          "id": "c",
+          "text": "Post patient list online"
+        },
+        {
+          "id": "d",
+          "text": "Remote wipe via MDM, force session logout, breach assessment per HIPAA"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Mobile clinical theft requires wipe and PHI breach evaluation.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q007",
+      "domain": "device-theft",
+      "type": "multiple-choice",
+      "text": "During a tabletop on device theft, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "b",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "c",
+          "text": "Documented incidents or control failures tied to device theft trending down quarter over quarter"
+        },
+        {
+          "id": "d",
+          "text": "Number of marketing emails sent"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Effective device theft programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q008",
+      "domain": "device-theft",
+      "type": "multiple-choice",
+      "text": "An audit sampling device theft controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "b",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for device theft.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q007",
+      "domain": "badge-access",
+      "type": "multiple-choice",
+      "text": "Employees lend badges to coworkers. Policy fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anti-passback and disciplinary enforcement with role-based access reviews"
+        },
+        {
+          "id": "b",
+          "text": "Issue one badge per team"
+        },
+        {
+          "id": "c",
+          "text": "Disable access logs"
+        },
+        {
+          "id": "d",
+          "text": "Remove cameras"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Badge sharing breaks non-repudiation; technical anti-passback helps.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q008",
+      "domain": "badge-access",
+      "type": "multiple-choice",
+      "text": "Access control system uses default vendor password on the controller. Risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only affects lighting"
+        },
+        {
+          "id": "b",
+          "text": "Required for PCI only"
+        },
+        {
+          "id": "c",
+          "text": "Remote unlock of doors and badge cloning via admin interface"
+        },
+        {
+          "id": "d",
+          "text": "Improves MFA"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Physical access controllers are critical infrastructure\u2014change defaults.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q009",
+      "domain": "badge-access",
+      "type": "multiple-choice",
+      "text": "Tailgating incidents rise at the main entrance. Mitigation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable badges"
+        },
+        {
+          "id": "b",
+          "text": "Mantraps or staffed reception with challenge of unbadged followers"
+        },
+        {
+          "id": "c",
+          "text": "Open turnstiles 24/7"
+        },
+        {
+          "id": "d",
+          "text": "Remove all doors"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Layered physical entry controls reduce tailgating.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q010",
+      "domain": "badge-access",
+      "type": "multiple-choice",
+      "text": "During a tabletop on badge and access control, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "b",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Documented incidents or control failures tied to badge and access control trending down quarter over quarter"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Effective badge and access control programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q011",
+      "domain": "badge-access",
+      "type": "multiple-choice",
+      "text": "An audit sampling badge and access control controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "b",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable training to save time"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for badge and access control.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q010",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "CCTV retention is 7 days but incident discovered on day 10. Impact?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Longer retention always illegal"
+        },
+        {
+          "id": "b",
+          "text": "HIPAA bans cameras"
+        },
+        {
+          "id": "c",
+          "text": "CCTV replaces SIEM"
+        },
+        {
+          "id": "d",
+          "text": "Evidence may be lost\u2014align retention to investigation and policy needs"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Retention must meet investigative timelines.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q011",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "Camera covers ATM area but blinds spot hides safe access. Issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixes patch management"
+        },
+        {
+          "id": "b",
+          "text": "Improves privacy for attackers"
+        },
+        {
+          "id": "c",
+          "text": "Required by encryption standards"
+        },
+        {
+          "id": "d",
+          "text": "Gap in coverage allows undetected physical theft"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Camera placement should eliminate blind spots on high-value assets.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q012",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "NVR firmware is three years old on the security VLAN. Recommendation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expose NVR to internet for remote viewing"
+        },
+        {
+          "id": "b",
+          "text": "Disable authentication"
+        },
+        {
+          "id": "c",
+          "text": "Share admin password with vendors via email"
+        },
+        {
+          "id": "d",
+          "text": "Patch or replace per vendor; segment NVR from corporate user VLANs"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "NVRs are targets; patching and segmentation reduce compromise risk.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q013",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "During a tabletop on cctv-related concerns, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documented incidents or control failures tied to cctv-related concerns trending down quarter over quarter"
+        },
+        {
+          "id": "b",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "c",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "d",
+          "text": "Average desk chair height"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective cctv-related concerns programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q014",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "An audit sampling cctv-related concerns controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "b",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "c",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "d",
+          "text": "Remove all logging to reduce findings"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for cctv-related concerns.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ]
+}

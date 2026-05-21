@@ -3,6 +3,7 @@ import {
   loadCert,
   selectExamQuestions,
   selectDrillQuestions,
+  selectWorkshopQuestions,
   getDomainPoolStatus,
   getDomainAccuracySummary,
   clearExamCaches,
@@ -39,6 +40,9 @@ import {
   navigateCert,
   navigateKeytrainHub,
   navigateKeytrainCert,
+  navigateKeyTrainingHub,
+  navigateKeyTrainingWorkshops,
+  navigateKeyTrainingWorkshop,
   isBrowsePathActive,
   appPathUrl,
 } from "./routes.js";
@@ -56,6 +60,10 @@ import {
   saveKeytrainIssuance,
   makeCertificateId,
 } from "./keytrain-storage.js";
+import {
+  renderKeyTrainingHub,
+  renderKeyTrainingWorkshops,
+} from "./key-training-ui.js";
 
 const LAST_CERT_KEY = `${APP_SLUG}:lastCert`;
 
@@ -82,7 +90,7 @@ let responses = {};
 let lastResult = null;
 /** @type {{ stopTimer: () => void }|null} */
 let examController = null;
-/** @type {'exam'|'drill'|'keytrain'} */
+/** @type {'exam'|'drill'|'keytrain'|'workshop'} */
 let sessionMode = "exam";
 
 /** @type {import('./keytrain-loader.js').KeytrainCertSummary[]} */
@@ -109,6 +117,8 @@ const views = {
   keytrainCert: document.getElementById("view-keytrain-cert"),
   keytrainResults: document.getElementById("view-keytrain-results"),
   keytrainCertificate: document.getElementById("view-keytrain-certificate"),
+  keyTrainingHub: document.getElementById("view-key-training-hub"),
+  keyTrainingWorkshops: document.getElementById("view-key-training-workshops"),
 };
 
 /** @type {{ stop: () => void }|null} */
@@ -184,6 +194,34 @@ function goBrowse() {
   applyRoute({ type: "browse" });
 }
 
+function showKeyTrainingHubView() {
+  showView("keyTrainingHub");
+  setHeaderTitle("KeyTrain's Key Training");
+  renderKeyTrainingHub(
+    examIndexList,
+    openCert,
+    startWorkshop,
+    openKeytrainCert,
+    keytrainCatalog
+  );
+}
+
+function goKeyTraining() {
+  if (!appReady) return;
+  applyRoute({ type: "key-training-hub" });
+}
+
+function showKeyTrainingWorkshopsView() {
+  showView("keyTrainingWorkshops");
+  setHeaderTitle("Workshops");
+  renderKeyTrainingWorkshops(examIndexList, startWorkshop);
+}
+
+function goKeyTrainingWorkshops() {
+  if (!appReady) return;
+  applyRoute({ type: "key-training-workshops" });
+}
+
 function showCertView() {
   if (!currentCert) return;
   showView("cert");
@@ -205,7 +243,7 @@ async function openCert(certId) {
 function syncCertFilterOptions(select, selectedId) {
   if (!select) return;
   const allExams = [...examIndexList].sort((a, b) => {
-    const order = { aws: 0, azure: 1, google: 2, comptia: 3 };
+    const order = { keytraining: -1, aws: 0, azure: 1, google: 2, comptia: 3 };
     const va = order[a.vendor ?? "aws"] ?? 9;
     const vb = order[b.vendor ?? "aws"] ?? 9;
     if (va !== vb) return va - vb;
@@ -218,6 +256,7 @@ function syncCertFilterOptions(select, selectedId) {
     const opt = document.createElement("option");
     opt.value = exam.id;
     const vendorLabels = {
+      keytraining: "Key Training",
       aws: "AWS",
       azure: "Azure",
       google: "Google",
@@ -241,6 +280,9 @@ function buildCertDescription(cert) {
   const weights = cert.domains.map((d) => `${d.weight}%`).join(" / ");
   const e = cert.exam;
   const vendor = cert.vendor ?? "aws";
+  if (vendor === "keytraining") {
+    return `Each attempt draws <strong>${e.totalQuestions} random questions</strong> across <strong>${cert.code}</strong> topic areas (${weights}). Scenarios cover the sub-topics in this Key Training domain—study mode with optional feedback and pause/resume. Formal pass/fail certification is available from the KeyTrain's Key Training hub.`;
+  }
   const vendorName =
     vendor === "azure"
       ? "Microsoft"
@@ -397,6 +439,34 @@ async function applyRoute(route) {
   if (route.type === "cert") {
     await switchCert(route.certId, { fromRoute: true });
     await tryResumePrompt();
+    return;
+  }
+
+  if (route.type === "key-training-hub") {
+    acronymController?.stop();
+    examController?.stopTimer?.();
+    currentCert = null;
+    if (!window.location.pathname.includes("/key-training")) {
+      navigateKeyTrainingHub();
+    }
+    showKeyTrainingHubView();
+    return;
+  }
+
+  if (route.type === "key-training-workshops") {
+    acronymController?.stop();
+    examController?.stopTimer?.();
+    currentCert = null;
+    if (!window.location.pathname.includes("/key-training/workshops")) {
+      navigateKeyTrainingWorkshops();
+    }
+    showKeyTrainingWorkshopsView();
+    return;
+  }
+
+  if (route.type === "key-training-workshop" && route.certId) {
+    await switchCert(route.certId, { fromRoute: true });
+    startWorkshop({ fromRoute: true });
     return;
   }
 
@@ -588,6 +658,7 @@ async function init() {
       onNavigateHome: goLanding,
       onNavigateBrowse: () => {},
       onNavigateKeytrain: goKeytrain,
+      onNavigateKeyTraining: goKeyTraining,
       onNavigateDashboard: () => {},
     });
     initDataPanel({
@@ -612,6 +683,7 @@ async function init() {
     onNavigateHome: goLanding,
     onNavigateBrowse: goBrowse,
     onNavigateKeytrain: goKeytrain,
+    onNavigateKeyTraining: goKeyTraining,
     onNavigateDashboard: showDashboard,
   });
 
@@ -780,6 +852,15 @@ function populateCert() {
     "hidden",
     !showAcr
   );
+
+  const isKeyTraining = cert.vendor === "keytraining";
+  document.getElementById("btn-start-workshop")?.classList.toggle("hidden", !isKeyTraining);
+  const backBtn = document.getElementById("btn-back-browse");
+  if (backBtn) {
+    backBtn.textContent = isKeyTraining
+      ? "← KeyTrain's Key Training"
+      : "← All certifications";
+  }
 }
 
 /**
@@ -840,7 +921,7 @@ async function showDashboard() {
 
 /**
  * @param {import('./cert-loader.js').Question[]} questions
- * @param {'exam'|'drill'|'keytrain'} mode
+ * @param {'exam'|'drill'|'keytrain'|'workshop'} mode
  * @param {object} [resume]
  */
 function launchExamSession(questions, mode, resume) {
@@ -854,9 +935,11 @@ function launchExamSession(questions, mode, resume) {
   const title =
     mode === "keytrain"
       ? `KeyTrain — ${currentCert.code}`
-      : mode === "drill"
-        ? `${currentCert.code} — Drill`
-        : `${currentCert.code} — Practice Exam`;
+      : mode === "workshop"
+        ? `${currentCert.code} — Workshop`
+        : mode === "drill"
+          ? `${currentCert.code} — Drill`
+          : `${currentCert.code} — Practice Exam`;
   setHeaderTitle(title);
 
   examController?.stopTimer?.();
@@ -868,11 +951,17 @@ function launchExamSession(questions, mode, resume) {
           immediateFeedback: false,
           showDocLinks: false,
         }
-      : mode === "drill"
-        ? { ...settings, timeLimitEnabled: false }
-        : resume?.settings
-          ? { ...settings, ...resume.settings }
-          : settings;
+      : mode === "workshop"
+        ? {
+            timeLimitEnabled: false,
+            immediateFeedback: true,
+            showDocLinks: true,
+          }
+        : mode === "drill"
+          ? { ...settings, timeLimitEnabled: false }
+          : resume?.settings
+            ? { ...settings, ...resume.settings }
+            : settings;
 
   const certId =
     mode === "keytrain" && keytrainProgram ? keytrainProgram.cert.id : activeCertId;
@@ -888,6 +977,7 @@ function launchExamSession(questions, mode, resume) {
     },
     onFinish: mode === "keytrain" ? finishKeytrainExam : finishExam,
     isDrill: mode === "drill",
+    isWorkshop: mode === "workshop",
     isKeytrain: mode === "keytrain",
     resume: resume
       ? {
@@ -987,6 +1077,21 @@ function discardResume() {
   updateResumeBanner();
 }
 
+/**
+ * @param {{ fromRoute?: boolean }} [opts]
+ */
+function startWorkshop(opts = {}) {
+  if (!currentCert) return;
+  clearResumeState(activeCertId);
+  const questions = selectWorkshopQuestions(currentCert);
+  if (questions.length === 0) {
+    window.alert("No questions available for this workshop.");
+    return;
+  }
+  if (!opts.fromRoute) navigateKeyTrainingWorkshop(activeCertId);
+  launchExamSession(questions, "workshop");
+}
+
 function startDrill() {
   if (!currentCert || !lastResult) return;
   clearResumeState(activeCertId);
@@ -1027,7 +1132,12 @@ function finishExam(meta = {}) {
     domainBreakdown: lastResult.domainBreakdown,
     missedQuestions: lastResult.missedQuestions,
     durationSeconds: meta.durationSeconds ?? 0,
-    type: sessionMode === "drill" ? "drill" : "exam",
+    type:
+      sessionMode === "drill"
+        ? "drill"
+        : sessionMode === "workshop"
+          ? "workshop"
+          : "exam",
   };
 
   appendHistory(activeCertId, entry);
@@ -1043,7 +1153,11 @@ function finishExam(meta = {}) {
   renderResults();
   showView("results");
   setHeaderTitle(
-    sessionMode === "drill" ? "Drill Results" : "Exam Results"
+    sessionMode === "workshop"
+      ? "Workshop Results"
+      : sessionMode === "drill"
+        ? "Drill Results"
+        : "Exam Results"
   );
 }
 
@@ -1058,34 +1172,41 @@ function renderResults() {
 
   const pass = lastResult.passed;
   const isDrill = sessionMode === "drill";
+  const isWorkshop = sessionMode === "workshop";
+  const isInformal = isDrill || isWorkshop;
 
-  header?.classList.toggle("pass", pass && !isDrill);
-  header?.classList.toggle("fail", !pass && !isDrill);
+  header?.classList.toggle("pass", pass && !isInformal);
+  header?.classList.toggle("fail", !pass && !isInformal);
 
   if (title) {
-    title.textContent = isDrill
-      ? "Drill complete"
-      : pass
-        ? "Pass"
-        : "Fail";
+    title.textContent = isWorkshop
+      ? "Workshop complete"
+      : isDrill
+        ? "Drill complete"
+        : pass
+          ? "Pass"
+          : "Fail";
   }
   if (scoreEl) {
-    scoreEl.textContent = isDrill
+    scoreEl.textContent = isInformal
       ? `${lastResult.percent}% correct`
       : `${lastResult.scaledScore} / ${currentCert.exam.maxScore}`;
   }
   if (detail) {
     detail.textContent = `${lastResult.correctCount} of ${lastResult.totalScored} scored questions correct (${lastResult.percent}%).${
-      isDrill
+      isWorkshop
+        ? " Workshops sample one scenario per topic area with immediate feedback."
+        : isDrill
         ? ""
         : ` Passing score: ${currentCert.exam.passingScore}.`
     }`;
   }
 
   if (trendEl) {
-    if (isDrill) {
-      trendEl.textContent =
-        "Drill sessions are saved separately and do not affect your main exam score trend.";
+    if (isInformal) {
+      trendEl.textContent = isWorkshop
+        ? "Workshop sessions are saved in your history for review."
+        : "Drill sessions are saved separately and do not affect your main exam score trend.";
       trendEl.classList.remove("hidden");
     } else {
       const line = buildTrendLine(activeCertId, currentCert, lastResult);
@@ -1120,7 +1241,7 @@ function renderResults() {
   }
 
   const drillBtn = document.getElementById("btn-drill");
-  drillBtn?.classList.toggle("hidden", isDrill);
+  drillBtn?.classList.toggle("hidden", isInformal);
 
   const bookmarkBtn = document.getElementById("btn-review-bookmarks");
   const bookmarks = getBookmarks(activeCertId);
@@ -1194,12 +1315,22 @@ document.getElementById("btn-resume-exam")?.addEventListener("click", resumeExam
 document.getElementById("btn-discard-resume")?.addEventListener("click", discardResume);
 document.getElementById("btn-pause-exam")?.addEventListener("click", pauseAndExitExam);
 document.getElementById("btn-open-dashboard")?.addEventListener("click", showDashboard);
-document.getElementById("btn-back-browse")?.addEventListener("click", goBrowse);
+function goBackFromCertPage() {
+  if (currentCert?.vendor === "keytraining") goKeyTraining();
+  else goBrowse();
+}
+
+document.getElementById("btn-back-browse")?.addEventListener("click", goBackFromCertPage);
 document.getElementById("btn-browse-home")?.addEventListener("click", goLanding);
 document.getElementById("btn-dashboard-home")?.addEventListener("click", goLanding);
 document.getElementById("landing-tile-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("landing-tile-browse")?.addEventListener("click", goBrowse);
+document.getElementById("landing-tile-key-training")?.addEventListener("click", goKeyTraining);
 document.getElementById("landing-tile-keytrain")?.addEventListener("click", goKeytrain);
+document.getElementById("btn-keytraining-hub-home")?.addEventListener("click", goLanding);
+document.getElementById("btn-keytraining-workshops-back")?.addEventListener("click", goKeyTraining);
+document.getElementById("btn-keytraining-all-workshops")?.addEventListener("click", goKeyTrainingWorkshops);
+document.getElementById("btn-start-workshop")?.addEventListener("click", () => startWorkshop());
 document.getElementById("btn-keytrain-hub-home")?.addEventListener("click", goLanding);
 document.getElementById("btn-keytrain-back-hub")?.addEventListener("click", goKeytrain);
 document.getElementById("btn-keytrain-start")?.addEventListener("click", startKeytrainExam);
@@ -1239,13 +1370,21 @@ document.getElementById("btn-retake")?.addEventListener("click", startExam);
 document.getElementById("btn-drill")?.addEventListener("click", startDrill);
 document.getElementById("btn-study-plan")?.addEventListener("click", renderStudyPlan);
 document.getElementById("btn-review-bookmarks")?.addEventListener("click", openBookmarkReview);
+function resultsHeaderTitle() {
+  return sessionMode === "workshop"
+    ? "Workshop Results"
+    : sessionMode === "drill"
+      ? "Drill Results"
+      : "Exam Results";
+}
+
 document.getElementById("btn-back-results")?.addEventListener("click", () => {
   showView("results");
-  setHeaderTitle(sessionMode === "drill" ? "Drill Results" : "Exam Results");
+  setHeaderTitle(resultsHeaderTitle());
 });
 document.getElementById("btn-back-results-from-review")?.addEventListener("click", () => {
   showView("results");
-  setHeaderTitle(sessionMode === "drill" ? "Drill Results" : "Exam Results");
+  setHeaderTitle(resultsHeaderTitle());
 });
 
 document.getElementById("btn-retake-study")?.addEventListener("click", startExam);

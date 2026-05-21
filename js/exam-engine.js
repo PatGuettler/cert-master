@@ -19,6 +19,7 @@ import { questionPageUrl } from "./routes.js";
  * @param {(responses: Record<string, string[]>) => void} opts.onResponsesChange
  * @param {(meta: { durationSeconds: number }) => void} opts.onFinish
  * @param {boolean} [opts.isDrill]
+ * @param {boolean} [opts.isWorkshop]
  * @param {boolean} [opts.isKeytrain]
  * @param {{ index?: number, remainingSeconds?: number, revealed?: string[] }} [opts.resume]
  */
@@ -31,9 +32,11 @@ export function runExam({
   onResponsesChange,
   onFinish,
   isDrill = false,
+  isWorkshop = false,
   isKeytrain = false,
   resume,
 }) {
+  const noResume = isDrill || isWorkshop || isKeytrain;
   let index = resume?.index ?? 0;
   /** @type {number|null} */
   let timerId = null;
@@ -70,7 +73,7 @@ export function runExam({
   const btnPause = document.getElementById("btn-pause-exam");
 
   function persistResume() {
-    if (isDrill || isKeytrain) return;
+    if (noResume) return;
     saveResumeState(certId, {
       mode: "exam",
       questions,
@@ -91,8 +94,12 @@ export function runExam({
 
   function updateTimerDisplay() {
     if (!timerEl) return;
-    if (!settings.timeLimitEnabled || isDrill) {
-      timerEl.textContent = isDrill ? "Drill — no limit" : "No limit";
+    if (!settings.timeLimitEnabled || isDrill || isWorkshop) {
+      timerEl.textContent = isWorkshop
+        ? "Workshop — no limit"
+        : isDrill
+          ? "Drill — no limit"
+          : "No limit";
       timerEl.classList.remove("warning");
       return;
     }
@@ -103,7 +110,7 @@ export function runExam({
   function startTimer() {
     timerEl?.classList.remove("hidden");
     updateTimerDisplay();
-    if (!settings.timeLimitEnabled || isDrill) return;
+    if (!settings.timeLimitEnabled || isDrill || isWorkshop) return;
 
     timerId = window.setInterval(() => {
       remainingSeconds--;
@@ -359,12 +366,14 @@ export function runExam({
       btnFinish.classList.toggle("hidden", !atEnd);
       btnFinish.textContent = awaitingReveal
         ? "Check answer"
-        : isDrill
-          ? "Finish drill"
-          : "Submit exam";
+        : isWorkshop
+          ? "Finish workshop"
+          : isDrill
+            ? "Finish drill"
+            : "Submit exam";
     }
     if (btnPause) {
-      btnPause.classList.toggle("hidden", isDrill || isKeytrain);
+      btnPause.classList.toggle("hidden", noResume);
     }
   }
 
@@ -403,7 +412,7 @@ export function runExam({
   });
 
   startTimer();
-  if (!isDrill && !isKeytrain) {
+  if (!noResume) {
     saveIntervalId = window.setInterval(persistResume, 30000);
     persistResume();
   }

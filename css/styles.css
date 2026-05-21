@@ -631,6 +631,36 @@ main {
   border-color: var(--aws-orange);
 }
 
+.landing-tile-keytraining {
+  border-color: #3d7ab8;
+}
+
+.keytraining-tile {
+  border-left: 3px solid #3d7ab8;
+}
+
+.keytraining-hub-header h2 {
+  margin: 0 0 0.5rem;
+}
+
+.keytraining-hub-lead {
+  margin: 0 0 1.25rem;
+  color: var(--text-muted);
+  max-width: 42rem;
+}
+
+.keytraining-hub-section {
+  margin-bottom: 2rem;
+}
+
+.keytraining-hub-section h3 {
+  margin: 0 0 0.35rem;
+}
+
+.keytraining-hub-more {
+  margin-top: 1rem;
+}
+
 .keytrain-hub-header h2 {
   margin: 0 0 0.5rem;
 }

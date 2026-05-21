@@ -82,6 +82,35 @@ const VENDOR_BROWSE = {
       "professional-cloud-devops-engineer": "Professional",
     },
   },
+  keytraining: {
+    label: "KeyTrain's Key Training",
+    metaSuffix: " · cybersecurity scenarios",
+    hint: "Hands-on security topics: identity, email, endpoint, network, compliance, and more.",
+    sort: {
+      "keytrain-identity-access": 10,
+      "keytrain-email-security": 20,
+      "keytrain-data-protection": 30,
+      "keytrain-endpoint-security": 40,
+      "keytrain-network-security": 50,
+      "keytrain-system-hygiene": 60,
+      "keytrain-application-security": 70,
+      "keytrain-financial-security": 80,
+      "keytrain-physical-security": 90,
+      "keytrain-compliance-governance": 100,
+    },
+    level: {
+      "keytrain-identity-access": "Identity & access",
+      "keytrain-email-security": "Email",
+      "keytrain-data-protection": "Data protection",
+      "keytrain-endpoint-security": "Endpoint",
+      "keytrain-network-security": "Network",
+      "keytrain-system-hygiene": "System hygiene",
+      "keytrain-application-security": "Application",
+      "keytrain-financial-security": "Financial",
+      "keytrain-physical-security": "Physical",
+      "keytrain-compliance-governance": "Compliance",
+    },
+  },
   comptia: {
     label: "CompTIA",
     metaSuffix: " · includes acronym drill",
@@ -101,7 +130,7 @@ const VENDOR_BROWSE = {
   },
 };
 
-const VENDOR_ORDER = ["aws", "azure", "google", "comptia"];
+const VENDOR_ORDER = ["keytraining", "aws", "azure", "google", "comptia"];
 
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams

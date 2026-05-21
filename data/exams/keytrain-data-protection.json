@@ -1,0 +1,1044 @@
+{
+  "id": "keytrain-data-protection",
+  "name": "KeyTrain's Key Training \u2014 Data Protection",
+  "code": "KT-DP",
+  "vendor": "keytraining",
+  "program": "key-training",
+  "exam": {
+    "totalQuestions": 15,
+    "scoredQuestions": 15,
+    "timeLimitMinutes": 40,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "sensitive-exposure",
+      "name": "Sensitive data exposure",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "encryption",
+      "name": "Encryption",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "dlp",
+      "name": "Data loss prevention (DLP)",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "removable-media",
+      "name": "Removable media",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "backups",
+      "name": "Backups",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ktdp-q001",
+      "domain": "sensitive-exposure",
+      "type": "multiple-choice",
+      "text": "A public S3 bucket listing contains customer medical record filenames. What is the IMMEDIATE priority?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete logs to save storage costs"
+        },
+        {
+          "id": "b",
+          "text": "Block public access, preserve logs, and initiate breach assessment per policy"
+        },
+        {
+          "id": "c",
+          "text": "Post an apology tweet before containment"
+        },
+        {
+          "id": "d",
+          "text": "Rename the bucket and keep it public"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Exposure of health data triggers containment and regulated breach workflows.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q002",
+      "domain": "sensitive-exposure",
+      "type": "multiple-choice",
+      "text": "DLP alerts on a spreadsheet labeled 'Internal' leaving via personal webmail. Best FIRST step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Publish the file on the intranet"
+        },
+        {
+          "id": "b",
+          "text": "Fire the user automatically"
+        },
+        {
+          "id": "c",
+          "text": "Disable DLP to reduce noise"
+        },
+        {
+          "id": "d",
+          "text": "Confirm classification, block transmission if policy requires, and interview user with HR guidance"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Validate sensitivity and policy, then respond proportionally with HR/legal as needed.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q003",
+      "domain": "sensitive-exposure",
+      "type": "multiple-choice",
+      "text": "Git history contains AWS keys for a retired project. What reduces future sensitive exposure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make the repo private without rotation"
+        },
+        {
+          "id": "b",
+          "text": "Add a README saying 'do not use keys'"
+        },
+        {
+          "id": "c",
+          "text": "Rotate keys, purge secrets from history, and enable secret scanning on all repos"
+        },
+        {
+          "id": "d",
+          "text": "Ignore because the project is old"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Secrets in VCS remain reachable until rotated and removed; scanning prevents recurrence.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q004",
+      "domain": "sensitive-exposure",
+      "type": "multiple-choice",
+      "text": "During a tabletop on sensitive data exposure, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "b",
+          "text": "Documented incidents or control failures tied to sensitive data exposure trending down quarter over quarter"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Average desk chair height"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Effective sensitive data exposure programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q005",
+      "domain": "sensitive-exposure",
+      "type": "multiple-choice",
+      "text": "An audit sampling sensitive data exposure controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "b",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "d",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for sensitive data exposure.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q004",
+      "domain": "encryption",
+      "type": "multiple-choice",
+      "text": "Laptops are stolen from a locked office; drives use BitLocker with TPM+PIN. Which data state is MOST protected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Printed documents in recycling"
+        },
+        {
+          "id": "b",
+          "text": "Data in use while logged in and unlocked"
+        },
+        {
+          "id": "c",
+          "text": "Data in transit inside the LAN only"
+        },
+        {
+          "id": "d",
+          "text": "Data at rest on disk while powered off"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Full-disk encryption protects at rest when off; logged-in sessions remain exposed.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q005",
+      "domain": "encryption",
+      "type": "multiple-choice",
+      "text": "A team proposes TLS 1.0 for legacy clients on an internet-facing API. What is the BEST security stance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enable SSLv3 for compatibility"
+        },
+        {
+          "id": "b",
+          "text": "Use self-signed certs without rotation"
+        },
+        {
+          "id": "c",
+          "text": "Terminate TLS at the user's browser only"
+        },
+        {
+          "id": "d",
+          "text": "Deprecate TLS 1.0/1.1 and document exceptions with compensating controls and timelines"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Legacy TLS is broken; phased migration beats indefinite weak protocols on public APIs.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q006",
+      "domain": "encryption",
+      "type": "multiple-choice",
+      "text": "Database backups are copied to tape unencrypted for 'speed.' What risk should leadership accept if continuing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Physical loss of tapes exposes all backup contents without key compromise"
+        },
+        {
+          "id": "b",
+          "text": "Cloud backups are automatically encrypted at rest always"
+        },
+        {
+          "id": "c",
+          "text": "Encryption slows restores so it is never needed"
+        },
+        {
+          "id": "d",
+          "text": "No risk if tapes stay in the server room"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Offline media theft bypasses network controls; encryption at rest for backups is standard.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q007",
+      "domain": "encryption",
+      "type": "multiple-choice",
+      "text": "During a tabletop on encryption, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documented incidents or control failures tied to encryption trending down quarter over quarter"
+        },
+        {
+          "id": "b",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "c",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "d",
+          "text": "Number of marketing emails sent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective encryption programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q008",
+      "domain": "encryption",
+      "type": "multiple-choice",
+      "text": "An audit sampling encryption controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "b",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Allow each site to opt out silently"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for encryption.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q007",
+      "domain": "dlp",
+      "type": "multiple-choice",
+      "text": "DLP blocks a nurse emailing treatment notes to a personal account for 'convenience.' Which outcome is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Block stands; offer approved secure transfer methods"
+        },
+        {
+          "id": "b",
+          "text": "Forward blocked content to IT via CC"
+        },
+        {
+          "id": "c",
+          "text": "Disable DLP for clinical staff"
+        },
+        {
+          "id": "d",
+          "text": "Allow if the user is senior"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HIPAA-aligned environments require controlling PHI egress; approved tools replace personal email.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q008",
+      "domain": "dlp",
+      "type": "multiple-choice",
+      "text": "Endpoint DLP generates many false positives on source code zips. What tuning is BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scope policies to labeled repositories and exfil channels, not all zip creation"
+        },
+        {
+          "id": "b",
+          "text": "Turn off endpoint DLP entirely"
+        },
+        {
+          "id": "c",
+          "text": "Alert on every file save"
+        },
+        {
+          "id": "d",
+          "text": "Whitelist all developers permanently"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective DLP targets high-risk egress with context to limit alert fatigue.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q009",
+      "domain": "dlp",
+      "type": "multiple-choice",
+      "text": "A contractor pastes customer PII into a public ChatGPT session. Which combined control helps MOST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Block all HTTPS"
+        },
+        {
+          "id": "b",
+          "text": "Remove contractor laptops"
+        },
+        {
+          "id": "c",
+          "text": "Disable spelling checker"
+        },
+        {
+          "id": "d",
+          "text": "Browser DLP, acceptable-use policy, and enterprise AI gateway with logging"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "GenAI paste is a new exfil path; technical and contractual controls together reduce risk.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q010",
+      "domain": "dlp",
+      "type": "multiple-choice",
+      "text": "During a tabletop on data loss prevention (dlp), leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "b",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Documented incidents or control failures tied to data loss prevention (dlp) trending down quarter over quarter"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Effective data loss prevention (dlp) programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q011",
+      "domain": "dlp",
+      "type": "multiple-choice",
+      "text": "An audit sampling data loss prevention (dlp) controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "b",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Allow each site to opt out silently"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for data loss prevention (dlp).",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q010",
+      "domain": "removable-media",
+      "type": "multiple-choice",
+      "text": "USB storage is disabled, but staff use phone charging cables that mount as MTP devices. What should you add?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow all USB if labeled with asset tags"
+        },
+        {
+          "id": "b",
+          "text": "Disable only Wi-Fi instead"
+        },
+        {
+          "id": "c",
+          "text": "Remove antivirus to improve speed"
+        },
+        {
+          "id": "d",
+          "text": "Device control policies blocking unauthorized portable storage classes"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Charging-only vs data-capable USB requires device control, not just drive letters.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q011",
+      "domain": "removable-media",
+      "type": "multiple-choice",
+      "text": "A found USB drive is plugged into a SOC analyst machine 'to see who lost it.' What is the SAFE procedure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insert into the domain controller to scan faster"
+        },
+        {
+          "id": "b",
+          "text": "Email the files to the whole team"
+        },
+        {
+          "id": "c",
+          "text": "Analyze only in a dedicated malware sandbox VM disconnected from production"
+        },
+        {
+          "id": "d",
+          "text": "Open on the analyst daily workstation"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Unknown USBs are bait; sandbox isolation prevents accidental infection.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q012",
+      "domain": "removable-media",
+      "type": "multiple-choice",
+      "text": "Marketing requests USB giveaways with preloaded brochures. Security concern to raise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "USBs are always read-only"
+        },
+        {
+          "id": "b",
+          "text": "HIPAA requires USB giveaways"
+        },
+        {
+          "id": "c",
+          "text": "Supply-chain integrity\u2014USBs could be tampered before distribution"
+        },
+        {
+          "id": "d",
+          "text": "Brochures cannot contain malware"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Preloaded media is a supply-chain risk; sourced devices and hashing matter.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q013",
+      "domain": "removable-media",
+      "type": "multiple-choice",
+      "text": "During a tabletop on removable media, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documented incidents or control failures tied to removable media trending down quarter over quarter"
+        },
+        {
+          "id": "b",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "c",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "d",
+          "text": "Average desk chair height"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective removable media programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q014",
+      "domain": "removable-media",
+      "type": "multiple-choice",
+      "text": "An audit sampling removable media controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "b",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Allow each site to opt out silently"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for removable media.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q013",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "Ransomware encrypts production; backups exist but are on the same VLAN as servers. Likely failure mode?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tape libraries on VLAN are immune without testing"
+        },
+        {
+          "id": "b",
+          "text": "Backups automatically decrypt files"
+        },
+        {
+          "id": "c",
+          "text": "Ransomware deletes or encrypts online-connected backup shares"
+        },
+        {
+          "id": "d",
+          "text": "Snapshots cannot be targeted"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Immutable or offline backups are required; network-local copies often die with production.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q014",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "Restore test last ran three years ago. Which risk is MOST acute?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Backups run too frequently"
+        },
+        {
+          "id": "b",
+          "text": "RPO is automatically zero"
+        },
+        {
+          "id": "c",
+          "text": "Backups may be corrupt or procedures untested when needed"
+        },
+        {
+          "id": "d",
+          "text": "Encryption is impossible on tape"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Untested backups are a common disaster recovery gap.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q015",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "A cloud admin can delete production and backup vaults with one role. Best fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Store backups only on the admin laptop"
+        },
+        {
+          "id": "b",
+          "text": "One super-admin for speed"
+        },
+        {
+          "id": "c",
+          "text": "Disable logging on backup API"
+        },
+        {
+          "id": "d",
+          "text": "Separate backup admin role with MFA, immutability, and break-glass monitoring"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Backup integrity requires separation of duties and immutability features.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q016",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "During a tabletop on backups, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documented incidents or control failures tied to backups trending down quarter over quarter"
+        },
+        {
+          "id": "b",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Average desk chair height"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective backups programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q017",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "An audit sampling backups controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "b",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable training to save time"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for backups.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ]
+}

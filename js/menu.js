@@ -9,6 +9,7 @@ import { loadSettings, saveSettings } from "./storage.js";
  * @param {() => void} opts.onNavigateBrowse
  * @param {() => void} opts.onNavigateDashboard
  * @param {() => void} [opts.onNavigateKeytrain]
+ * @param {() => void} [opts.onNavigateKeyTraining]
  */
 export function initMenu({
   getActiveCertId,
@@ -17,6 +18,7 @@ export function initMenu({
   onNavigateHome,
   onNavigateBrowse,
   onNavigateKeytrain,
+  onNavigateKeyTraining,
   onNavigateDashboard,
 }) {
   const menuBtn = document.getElementById("menu-btn");
@@ -55,6 +57,11 @@ export function initMenu({
 
   document.getElementById("drawer-nav-browse")?.addEventListener("click", () => {
     onNavigateBrowse();
+    closeDrawer();
+  });
+
+  document.getElementById("drawer-nav-key-training")?.addEventListener("click", () => {
+    onNavigateKeyTraining?.();
     closeDrawer();
   });
 

@@ -1,0 +1,1044 @@
+{
+  "id": "keytrain-identity-access",
+  "name": "KeyTrain's Key Training \u2014 Identity & Access Security",
+  "code": "KT-IAS",
+  "vendor": "keytraining",
+  "program": "key-training",
+  "exam": {
+    "totalQuestions": 15,
+    "scoredQuestions": 15,
+    "timeLimitMinutes": 40,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "authentication",
+      "name": "Authentication",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "mfa",
+      "name": "Multi-factor authentication (MFA)",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "privilege-escalation",
+      "name": "Privilege escalation",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "account-misuse",
+      "name": "Account misuse",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "credential-abuse",
+      "name": "Credential abuse",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ktias-q001",
+      "domain": "authentication",
+      "type": "multiple-choice",
+      "text": "A help desk ticket reports repeated lockouts for one user after they traveled. Logs show failed logins from two countries within minutes. What is the BEST first response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore lockouts if the user confirms they remember their password"
+        },
+        {
+          "id": "b",
+          "text": "Disable the account permanently without investigation"
+        },
+        {
+          "id": "c",
+          "text": "Share the user's password hash with the manager to verify identity"
+        },
+        {
+          "id": "d",
+          "text": "Treat as potential credential compromise: force password reset, revoke sessions, and verify MFA enrollment"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Impossible-travel patterns suggest stolen credentials; reset and session revocation limit abuse while MFA reduces replay risk.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q002",
+      "domain": "authentication",
+      "type": "multiple-choice",
+      "text": "Your org is rolling out passwordless sign-in for contractors. Which control MOST directly reduces phishing of static passwords?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shared contractor kiosk accounts"
+        },
+        {
+          "id": "b",
+          "text": "Annual security awareness posters"
+        },
+        {
+          "id": "c",
+          "text": "Phishing-resistant authenticators (FIDO2 / passkeys) bound to the identity provider"
+        },
+        {
+          "id": "d",
+          "text": "Longer password complexity rules only"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Passwordless FIDO2 resists credential phishing; complexity alone does not stop real-time proxy attacks.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q003",
+      "domain": "authentication",
+      "type": "multiple-choice",
+      "text": "SSO logs show an application accepting SAML assertions after certificate rollover, but only for one legacy app. What should you verify FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whether users cleared browser cache"
+        },
+        {
+          "id": "b",
+          "text": "DNS TTL for the marketing site"
+        },
+        {
+          "id": "c",
+          "text": "If the app supports biometric unlock on mobile"
+        },
+        {
+          "id": "d",
+          "text": "The service provider metadata and signing certificate trust store match the new IdP certificate"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "SAML trust breaks when SP metadata is stale; certificate mismatch is the typical root cause after IdP rotation.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q004",
+      "domain": "authentication",
+      "type": "multiple-choice",
+      "text": "During a tabletop on authentication, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "b",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "c",
+          "text": "Documented incidents or control failures tied to authentication trending down quarter over quarter"
+        },
+        {
+          "id": "d",
+          "text": "Total pages printed in color only"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Effective authentication programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q005",
+      "domain": "authentication",
+      "type": "multiple-choice",
+      "text": "An audit sampling authentication controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "b",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "d",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for authentication.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q004",
+      "domain": "mfa",
+      "type": "multiple-choice",
+      "text": "An executive refuses hardware tokens but approves SMS codes for banking-style apps. Which risk should you document in the exception?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SMS messages are always encrypted end-to-end"
+        },
+        {
+          "id": "b",
+          "text": "MFA fatigue only affects push notifications"
+        },
+        {
+          "id": "c",
+          "text": "Hardware tokens cannot be used on laptops"
+        },
+        {
+          "id": "d",
+          "text": "SIM-swap and SS7 attacks can bypass SMS OTP without attacking the application directly"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "SMS OTP is better than nothing but is not phishing-resistant; SIM swap is a known bypass path.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q005",
+      "domain": "mfa",
+      "type": "multiple-choice",
+      "text": "Users report MFA push approval prompts they did not initiate. What is the BEST immediate mitigation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase session timeout to 30 days"
+        },
+        {
+          "id": "b",
+          "text": "Disable MFA globally for 24 hours"
+        },
+        {
+          "id": "c",
+          "text": "Enforce number matching or phishing-resistant MFA and investigate for password spray preceding pushes"
+        },
+        {
+          "id": "d",
+          "text": "Allow users to approve pushes from unknown locations"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Unsolicited pushes indicate MFA fatigue attacks; number matching and investigating spray reduce success rates.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q006",
+      "domain": "mfa",
+      "type": "multiple-choice",
+      "text": "During a tabletop, the team must choose MFA for privileged break-glass accounts. What is the MOST appropriate design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Same SMS OTP as standard users for simplicity"
+        },
+        {
+          "id": "b",
+          "text": "No MFA on break-glass to speed recovery"
+        },
+        {
+          "id": "c",
+          "text": "Hardware tokens stored in a physical safe with dual control and separate from daily user MFA"
+        },
+        {
+          "id": "d",
+          "text": "Shared TOTP seed in a wiki page"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Break-glass accounts need strongest factors and procedural controls; shared seeds defeat MFA purpose.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q007",
+      "domain": "mfa",
+      "type": "multiple-choice",
+      "text": "During a tabletop on multi-factor authentication (mfa), leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documented incidents or control failures tied to multi-factor authentication (mfa) trending down quarter over quarter"
+        },
+        {
+          "id": "b",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Total pages printed in color only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective multi-factor authentication (mfa) programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q008",
+      "domain": "mfa",
+      "type": "multiple-choice",
+      "text": "An audit sampling multi-factor authentication (mfa) controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "b",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "c",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "d",
+          "text": "Allow each site to opt out silently"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for multi-factor authentication (mfa).",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q007",
+      "domain": "privilege-escalation",
+      "type": "multiple-choice",
+      "text": "A junior analyst discovers they can add themselves to a cloud admin group via a misconfigured automation role. What is the BEST remediation sequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete all automation in the environment"
+        },
+        {
+          "id": "b",
+          "text": "Promote the analyst to admin so they can monitor themselves"
+        },
+        {
+          "id": "c",
+          "text": "Publish the role ARN in the team chat for transparency"
+        },
+        {
+          "id": "d",
+          "text": "Remove excessive permissions from the role, audit CloudTrail for prior abuse, and enforce least privilege on CI pipelines"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Fix the permission path, then determine if the flaw was exploited; CI roles are a common escalation vector.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q008",
+      "domain": "privilege-escalation",
+      "type": "multiple-choice",
+      "text": "Endpoint EDR flags PowerShell downloading a script that modifies local admin group membership. Which indicator BEST supports privilege escalation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antivirus definition update"
+        },
+        {
+          "id": "b",
+          "text": "Scheduled Windows Update reboot"
+        },
+        {
+          "id": "c",
+          "text": "User opened a PDF brochure"
+        },
+        {
+          "id": "d",
+          "text": "Use of a living-off-the-land binary to run unsigned code that adds a new local administrator"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Adding local admins via LOLBins is classic escalation after initial access.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q009",
+      "domain": "privilege-escalation",
+      "type": "multiple-choice",
+      "text": "A service account in Active Directory has unconstrained delegation. Why is this a critical escalation risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It encrypts all file shares automatically"
+        },
+        {
+          "id": "b",
+          "text": "It only affects password expiration policy"
+        },
+        {
+          "id": "c",
+          "text": "Compromise of the service account can yield Kerberos TGTs usable against other hosts"
+        },
+        {
+          "id": "d",
+          "text": "It disables NTLM company-wide"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Unconstrained delegation allows TGT theft and lateral movement\u2014high severity misconfiguration.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q010",
+      "domain": "privilege-escalation",
+      "type": "multiple-choice",
+      "text": "During a tabletop on privilege escalation, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "b",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Documented incidents or control failures tied to privilege escalation trending down quarter over quarter"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Effective privilege escalation programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q011",
+      "domain": "privilege-escalation",
+      "type": "multiple-choice",
+      "text": "An audit sampling privilege escalation controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "b",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "c",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "d",
+          "text": "Remove all logging to reduce findings"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for privilege escalation.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q010",
+      "domain": "account-misuse",
+      "type": "multiple-choice",
+      "text": "HR terminates an employee, but their SaaS account stays active two weeks because provisioning is manual. Which control gap does this illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Overly strict DLP on USB drives"
+        },
+        {
+          "id": "b",
+          "text": "Joiner-mover-leaver process failure and lack of automated deprovisioning tied to HRIS"
+        },
+        {
+          "id": "c",
+          "text": "Missing patch Tuesday calendar"
+        },
+        {
+          "id": "d",
+          "text": "Insufficient MFA on printers"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Stale accounts are a top misuse vector; HR-driven deprovisioning closes the window.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q011",
+      "domain": "account-misuse",
+      "type": "multiple-choice",
+      "text": "Shared credentials for a production monitoring dashboard are posted in a team channel. What is the BEST replacement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rotate the shared password monthly without changing practice"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce evidence"
+        },
+        {
+          "id": "c",
+          "text": "Add the password to the email signature for visibility"
+        },
+        {
+          "id": "d",
+          "text": "Individual accounts with RBAC, optional break-glass procedure, and secrets removed from chat history"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Shared accounts prevent attribution; RBAC and individual identity restore accountability.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q012",
+      "domain": "account-misuse",
+      "type": "multiple-choice",
+      "text": "Audit finds contractors using former employees' accounts. What policy enforcement MOST directly stops this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Longer minimum password length only"
+        },
+        {
+          "id": "b",
+          "text": "Increasing CCTV retention"
+        },
+        {
+          "id": "c",
+          "text": "Periodic access reviews and automated disablement when employment status changes"
+        },
+        {
+          "id": "d",
+          "text": "Blocking USB ports on laptops"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Access reviews and lifecycle automation address account sharing and ex-employee reuse.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q013",
+      "domain": "account-misuse",
+      "type": "multiple-choice",
+      "text": "During a tabletop on account misuse, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "b",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Documented incidents or control failures tied to account misuse trending down quarter over quarter"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Effective account misuse programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q014",
+      "domain": "account-misuse",
+      "type": "multiple-choice",
+      "text": "An audit sampling account misuse controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "b",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable training to save time"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for account misuse.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q013",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "Dark web monitoring shows corporate emails in a breach dump. What is the FIRST technical action aligned to credential abuse defense?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Force password reset and invalidate refresh tokens for affected identities"
+        },
+        {
+          "id": "b",
+          "text": "Disable TLS on the mail gateway"
+        },
+        {
+          "id": "c",
+          "text": "Publish the dump internally for awareness"
+        },
+        {
+          "id": "d",
+          "text": "Block all outbound email for a week"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reset and token revocation contain reuse of stolen passwords and session artifacts.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q014",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "Authentication logs show 40,000 failed logins against one legacy IMAP service from one ASN. Which attack type is MOST likely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Password spraying against a single protocol before attempting valid pairs elsewhere"
+        },
+        {
+          "id": "b",
+          "text": "SAST false positive on a web app"
+        },
+        {
+          "id": "c",
+          "text": "Physical tailgating at the front desk"
+        },
+        {
+          "id": "d",
+          "text": "ARP spoofing on the data center VLAN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "High-volume failures on one service suggest spray, often preceding targeted login attempts.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q015",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "Developers store API keys in public GitHub repos. Which practice BEST reduces credential abuse long term?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rename repos to private after launch only"
+        },
+        {
+          "id": "b",
+          "text": "Disable Git entirely"
+        },
+        {
+          "id": "c",
+          "text": "Use one global API key for all microservices"
+        },
+        {
+          "id": "d",
+          "text": "Secret scanning in CI/CD, pre-commit hooks, and short-lived scoped tokens"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Prevention and rotation limit blast radius when keys leak; scanning catches commits early.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q016",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "During a tabletop on credential abuse, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "b",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "c",
+          "text": "Documented incidents or control failures tied to credential abuse trending down quarter over quarter"
+        },
+        {
+          "id": "d",
+          "text": "Number of marketing emails sent"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Effective credential abuse programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q017",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "An audit sampling credential abuse controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "b",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "c",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "d",
+          "text": "Disable training to save time"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for credential abuse.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ]
+}

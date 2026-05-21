@@ -3,124 +3,347 @@
   "tagline": "Formal certification assessments with pass/fail results and downloadable certificates.",
   "certifications": [
     {
-      "id": "kt-advanced-networking-specialty",
-      "examId": "advanced-networking-specialty",
-      "certificateTitle": "KeyTrain Certified Advanced Networking — Specialty",
-      "level": "Specialty"
-    },
-    {
       "id": "kt-ai-practitioner",
       "examId": "ai-practitioner",
       "certificateTitle": "KeyTrain Certified AI Practitioner",
-      "level": "Foundational"
+      "level": "Foundational",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-advanced-networking-specialty",
+      "examId": "advanced-networking-specialty",
+      "certificateTitle": "KeyTrain Certified Advanced Networking – Specialty",
+      "level": "Specialty",
+      "group": "vendor"
     },
     {
       "id": "kt-cloud-practitioner",
       "examId": "cloud-practitioner",
       "certificateTitle": "KeyTrain Certified Cloud Practitioner",
-      "level": "Foundational"
+      "level": "Foundational",
+      "group": "vendor"
     },
     {
       "id": "kt-cloudops-engineer-associate",
       "examId": "cloudops-engineer-associate",
-      "certificateTitle": "KeyTrain Certified CloudOps Engineer — Associate",
-      "level": "Associate"
-    },
-    {
-      "id": "kt-comptia-a-plus",
-      "examId": "comptia-a-plus",
-      "certificateTitle": "KeyTrain Certified A+",
-      "level": "Core"
-    },
-    {
-      "id": "kt-comptia-cloud-plus",
-      "examId": "comptia-cloud-plus",
-      "certificateTitle": "KeyTrain Certified Cloud+",
-      "level": "Core"
-    },
-    {
-      "id": "kt-comptia-cysa-plus",
-      "examId": "comptia-cysa-plus",
-      "certificateTitle": "KeyTrain Certified CySA+",
-      "level": "Core"
-    },
-    {
-      "id": "kt-comptia-linux-plus",
-      "examId": "comptia-linux-plus",
-      "certificateTitle": "KeyTrain Certified Linux+",
-      "level": "Core"
-    },
-    {
-      "id": "kt-comptia-network-plus",
-      "examId": "comptia-network-plus",
-      "certificateTitle": "KeyTrain Certified Network+",
-      "level": "Core"
-    },
-    {
-      "id": "kt-comptia-security-plus",
-      "examId": "comptia-security-plus",
-      "certificateTitle": "KeyTrain Certified Security+",
-      "level": "Core"
+      "certificateTitle": "KeyTrain Certified CloudOps Engineer – Associate",
+      "level": "Associate",
+      "group": "vendor"
     },
     {
       "id": "kt-data-engineer-associate",
       "examId": "data-engineer-associate",
-      "certificateTitle": "KeyTrain Certified Data Engineer — Associate",
-      "level": "Associate"
+      "certificateTitle": "KeyTrain Certified Data Engineer – Associate",
+      "level": "Associate",
+      "group": "vendor"
     },
     {
       "id": "kt-database-specialty",
       "examId": "database-specialty",
-      "certificateTitle": "KeyTrain Certified Database — Specialty",
-      "level": "Specialty"
-    },
-    {
-      "id": "kt-developer-associate",
-      "examId": "developer-associate",
-      "certificateTitle": "KeyTrain Certified Developer — Associate",
-      "level": "Associate"
+      "certificateTitle": "KeyTrain Certified Database – Specialty",
+      "level": "Specialty",
+      "group": "vendor"
     },
     {
       "id": "kt-devops-engineer-professional",
       "examId": "devops-engineer-professional",
-      "certificateTitle": "KeyTrain Certified DevOps Engineer — Professional",
-      "level": "Professional"
+      "certificateTitle": "KeyTrain Certified DevOps Engineer – Professional",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-developer-associate",
+      "examId": "developer-associate",
+      "certificateTitle": "KeyTrain Certified Developer – Associate",
+      "level": "Associate",
+      "group": "vendor"
     },
     {
       "id": "kt-generative-ai-developer-professional",
       "examId": "generative-ai-developer-professional",
-      "certificateTitle": "KeyTrain Certified Generative AI Developer — Professional",
-      "level": "Professional"
+      "certificateTitle": "KeyTrain Certified Generative AI Developer – Professional",
+      "level": "Professional",
+      "group": "vendor"
     },
     {
       "id": "kt-machine-learning-engineer-associate",
       "examId": "machine-learning-engineer-associate",
-      "certificateTitle": "KeyTrain Certified Machine Learning Engineer — Associate",
-      "level": "Associate"
+      "certificateTitle": "KeyTrain Certified Machine Learning Engineer – Associate",
+      "level": "Associate",
+      "group": "vendor"
     },
     {
       "id": "kt-machine-learning-specialty",
       "examId": "machine-learning-specialty",
-      "certificateTitle": "KeyTrain Certified Machine Learning — Specialty",
-      "level": "Specialty"
+      "certificateTitle": "KeyTrain Certified Machine Learning – Specialty",
+      "level": "Specialty",
+      "group": "vendor"
     },
     {
       "id": "kt-security-specialty",
       "examId": "security-specialty",
-      "certificateTitle": "KeyTrain Certified Security — Specialty",
-      "level": "Specialty"
+      "certificateTitle": "KeyTrain Certified Security – Specialty",
+      "level": "Specialty",
+      "group": "vendor"
     },
     {
       "id": "kt-solutions-architect-associate",
       "examId": "solutions-architect-associate",
-      "certificateTitle": "KeyTrain Certified Solutions Architect — Associate",
-      "level": "Associate"
+      "certificateTitle": "KeyTrain Certified Solutions Architect – Associate",
+      "level": "Associate",
+      "group": "vendor"
     },
     {
       "id": "kt-solutions-architect-professional",
       "examId": "solutions-architect-professional",
-      "certificateTitle": "KeyTrain Certified Solutions Architect — Professional",
-      "level": "Professional"
+      "certificateTitle": "KeyTrain Certified Solutions Architect – Professional",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-a-plus",
+      "examId": "comptia-a-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA A+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-cloud-plus",
+      "examId": "comptia-cloud-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA Cloud+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-cysa-plus",
+      "examId": "comptia-cysa-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA CySA+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-data-plus",
+      "examId": "comptia-data-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA Data+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-linux-plus",
+      "examId": "comptia-linux-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA Linux+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-network-plus",
+      "examId": "comptia-network-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA Network+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-pentest-plus",
+      "examId": "comptia-pentest-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA PenTest+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-project-plus",
+      "examId": "comptia-project-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA Project+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-security-plus",
+      "examId": "comptia-security-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA Security+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-comptia-server-plus",
+      "examId": "comptia-server-plus",
+      "certificateTitle": "KeyTrain Certified CompTIA Server+",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-associate-cloud-engineer",
+      "examId": "associate-cloud-engineer",
+      "certificateTitle": "KeyTrain Certified Associate Cloud Engineer",
+      "level": "Associate",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-cloud-digital-leader",
+      "examId": "cloud-digital-leader",
+      "certificateTitle": "KeyTrain Certified Cloud Digital Leader",
+      "level": "Fundamentals",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-professional-cloud-architect",
+      "examId": "professional-cloud-architect",
+      "certificateTitle": "KeyTrain Certified Professional Cloud Architect",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-professional-cloud-devops-engineer",
+      "examId": "professional-cloud-devops-engineer",
+      "certificateTitle": "KeyTrain Certified Professional Cloud DevOps Engineer",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-professional-cloud-security-engineer",
+      "examId": "professional-cloud-security-engineer",
+      "certificateTitle": "KeyTrain Certified Professional Cloud Security Engineer",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-professional-data-engineer",
+      "examId": "professional-data-engineer",
+      "certificateTitle": "KeyTrain Certified Professional Data Engineer",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-keytrain-application-security",
+      "examId": "keytrain-application-security",
+      "certificateTitle": "KeyTrain Certified Application Security",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-compliance-governance",
+      "examId": "keytrain-compliance-governance",
+      "certificateTitle": "KeyTrain Certified Compliance & Governance",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-data-protection",
+      "examId": "keytrain-data-protection",
+      "certificateTitle": "KeyTrain Certified Data Protection",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-email-security",
+      "examId": "keytrain-email-security",
+      "certificateTitle": "KeyTrain Certified Email Security",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-endpoint-security",
+      "examId": "keytrain-endpoint-security",
+      "certificateTitle": "KeyTrain Certified Endpoint Security",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-financial-security",
+      "examId": "keytrain-financial-security",
+      "certificateTitle": "KeyTrain Certified Financial Security",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-identity-access",
+      "examId": "keytrain-identity-access",
+      "certificateTitle": "KeyTrain Certified Identity & Access Security",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-network-security",
+      "examId": "keytrain-network-security",
+      "certificateTitle": "KeyTrain Certified Network Security",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-physical-security",
+      "examId": "keytrain-physical-security",
+      "certificateTitle": "KeyTrain Certified Physical Security",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-keytrain-system-hygiene",
+      "examId": "keytrain-system-hygiene",
+      "certificateTitle": "KeyTrain Certified System Hygiene",
+      "level": "Core",
+      "group": "key-training"
+    },
+    {
+      "id": "kt-ai-900",
+      "examId": "ai-900",
+      "certificateTitle": "KeyTrain Certified Azure AI Fundamentals",
+      "level": "Fundamentals",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-az-104",
+      "examId": "az-104",
+      "certificateTitle": "KeyTrain Certified Azure Administrator",
+      "level": "Certification",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-dp-900",
+      "examId": "dp-900",
+      "certificateTitle": "KeyTrain Certified Azure Data Fundamentals",
+      "level": "Fundamentals",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-az-400",
+      "examId": "az-400",
+      "certificateTitle": "KeyTrain Certified Azure DevOps Engineer Expert",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-az-204",
+      "examId": "az-204",
+      "certificateTitle": "KeyTrain Certified Azure Developer Associate",
+      "level": "Associate",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-az-900",
+      "examId": "az-900",
+      "certificateTitle": "KeyTrain Certified Azure Fundamentals",
+      "level": "Fundamentals",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-az-500",
+      "examId": "az-500",
+      "certificateTitle": "KeyTrain Certified Azure Security Engineer Associate",
+      "level": "Associate",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-az-305",
+      "examId": "az-305",
+      "certificateTitle": "KeyTrain Certified Azure Solutions Architect Expert",
+      "level": "Professional",
+      "group": "vendor"
+    },
+    {
+      "id": "kt-sc-900",
+      "examId": "sc-900",
+      "certificateTitle": "KeyTrain Certified Security, Compliance, and Identity Fundamentals",
+      "level": "Fundamentals",
+      "group": "vendor"
     }
   ]
 }

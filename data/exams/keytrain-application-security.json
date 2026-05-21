@@ -1,0 +1,839 @@
+{
+  "id": "keytrain-application-security",
+  "name": "KeyTrain's Key Training \u2014 Application Security",
+  "code": "KT-APP",
+  "vendor": "keytraining",
+  "program": "key-training",
+  "exam": {
+    "totalQuestions": 15,
+    "scoredQuestions": 15,
+    "timeLimitMinutes": 40,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "vulnerable-apps",
+      "name": "Vulnerable applications",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "insecure-coding",
+      "name": "Insecure coding",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "exploits",
+      "name": "Software exploits",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "sast",
+      "name": "SAST findings",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ktapp-q001",
+      "domain": "vulnerable-apps",
+      "type": "multiple-choice",
+      "text": "WAF blocks SQLi on a public form; app team says 'WAF handles it.' Your concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defense in depth\u2014fix input validation and parameterized queries at source"
+        },
+        {
+          "id": "b",
+          "text": "SQLi is only a network issue"
+        },
+        {
+          "id": "c",
+          "text": "Disable WAF to reduce latency"
+        },
+        {
+          "id": "d",
+          "text": "WAF replaces secure coding"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Relying solely on WAF leaves gaps when rules fail or traffic is internal.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q002",
+      "domain": "vulnerable-apps",
+      "type": "multiple-choice",
+      "text": "Dependency scan shows log4j vulnerable library in three microservices. FIRST step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete microservices"
+        },
+        {
+          "id": "b",
+          "text": "Identify versions in prod, upgrade or mitigate per vendor guidance, emergency change"
+        },
+        {
+          "id": "c",
+          "text": "Hide scan results"
+        },
+        {
+          "id": "d",
+          "text": "Wait for annual pen test"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Known exploited vulns need rapid inventory and patching.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q003",
+      "domain": "vulnerable-apps",
+      "type": "multiple-choice",
+      "text": "Legacy PHP 5.6 internet app cannot be retired yet. Control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reverse proxy with modern TLS, WAF, and strict network ACL to app tier"
+        },
+        {
+          "id": "b",
+          "text": "Expose database port 3306 publicly"
+        },
+        {
+          "id": "c",
+          "text": "Merge with Active Directory admin tier"
+        },
+        {
+          "id": "d",
+          "text": "Turn off authentication for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compensating perimeter controls while planning retirement.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q004",
+      "domain": "vulnerable-apps",
+      "type": "multiple-choice",
+      "text": "During a tabletop on vulnerable applications, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "b",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "c",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "d",
+          "text": "Documented incidents or control failures tied to vulnerable applications trending down quarter over quarter"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Effective vulnerable applications programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q005",
+      "domain": "vulnerable-apps",
+      "type": "multiple-choice",
+      "text": "An audit sampling vulnerable applications controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "b",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "c",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "d",
+          "text": "Allow each site to opt out silently"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for vulnerable applications.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q004",
+      "domain": "insecure-coding",
+      "type": "multiple-choice",
+      "text": "Code review finds user input concatenated into OS commands. Fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escape only single quotes"
+        },
+        {
+          "id": "b",
+          "text": "Add a comment 'sanitize later'"
+        },
+        {
+          "id": "c",
+          "text": "Trust internal users only"
+        },
+        {
+          "id": "d",
+          "text": "Use parameterized APIs or strict allowlists; never shell out with raw input"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Command injection is prevented by avoiding shell concatenation.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q005",
+      "domain": "insecure-coding",
+      "type": "multiple-choice",
+      "text": "JWTs are accepted with alg=none in a mobile API. Severity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Low because mobile is encrypted"
+        },
+        {
+          "id": "b",
+          "text": "Critical authentication bypass\u2014enforce algorithm allowlist server-side"
+        },
+        {
+          "id": "c",
+          "text": "Fixed by longer passwords only"
+        },
+        {
+          "id": "d",
+          "text": "Not relevant to APIs"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "JWT alg none is a known auth bypass pattern.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q006",
+      "domain": "insecure-coding",
+      "type": "multiple-choice",
+      "text": "Secrets are hard-coded in a mobile app binary. BEST remediation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use longer secret strings"
+        },
+        {
+          "id": "b",
+          "text": "Remove secrets from client; use backend broker with short-lived tokens"
+        },
+        {
+          "id": "c",
+          "text": "Obfuscate variable names"
+        },
+        {
+          "id": "d",
+          "text": "Publish app only on Fridays"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Client binaries are extractable; secrets belong server-side.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q007",
+      "domain": "insecure-coding",
+      "type": "multiple-choice",
+      "text": "During a tabletop on insecure coding, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documented incidents or control failures tied to insecure coding trending down quarter over quarter"
+        },
+        {
+          "id": "b",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Total pages printed in color only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective insecure coding programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q008",
+      "domain": "insecure-coding",
+      "type": "multiple-choice",
+      "text": "An audit sampling insecure coding controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "b",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "c",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "d",
+          "text": "Allow each site to opt out silently"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for insecure coding.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q007",
+      "domain": "exploits",
+      "type": "multiple-choice",
+      "text": "Threat intel lists active exploitation of a VPN appliance CVE. Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable VPN and use telnet"
+        },
+        {
+          "id": "b",
+          "text": "Post CVE on social media only"
+        },
+        {
+          "id": "c",
+          "text": "Wait for quarterly patch cycle"
+        },
+        {
+          "id": "d",
+          "text": "Emergency patch or disconnect appliance per vendor advisory and IR plan"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Known exploited vulns need immediate vendor-guided response.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q008",
+      "domain": "exploits",
+      "type": "multiple-choice",
+      "text": "Pen test achieves domain admin via PrintNightmare-style vuln. Lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Patch print spooler services and restrict driver installation privileges"
+        },
+        {
+          "id": "b",
+          "text": "Add users to Domain Admins for support"
+        },
+        {
+          "id": "c",
+          "text": "Ignore if printers work"
+        },
+        {
+          "id": "d",
+          "text": "Disable printing forever"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Print subsystem bugs have been critical; privilege reduction matters.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q009",
+      "domain": "exploits",
+      "type": "multiple-choice",
+      "text": "Browser zero-day is announced; no patch for 48 hours. Mitigation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uninstall all browsers"
+        },
+        {
+          "id": "b",
+          "text": "Allow only IE6"
+        },
+        {
+          "id": "c",
+          "text": "Disable EDR"
+        },
+        {
+          "id": "d",
+          "text": "Enable enhanced protective mode, restrict browsing on sensitive assets, monitor IOCs"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Temporary hardening and monitoring bridge zero-day windows.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q010",
+      "domain": "exploits",
+      "type": "multiple-choice",
+      "text": "During a tabletop on software exploits, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average desk chair height"
+        },
+        {
+          "id": "b",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "c",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "d",
+          "text": "Documented incidents or control failures tied to software exploits trending down quarter over quarter"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Effective software exploits programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q011",
+      "domain": "exploits",
+      "type": "multiple-choice",
+      "text": "An audit sampling software exploits controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "b",
+          "text": "Allow each site to opt out silently"
+        },
+        {
+          "id": "c",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable training to save time"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for software exploits.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q010",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "SAST pipeline fails build on hard-coded AWS keys in a feature branch. Correct outcome?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Block merge until secrets removed and rotated if ever committed to default branch"
+        },
+        {
+          "id": "b",
+          "text": "Override because deadline is today"
+        },
+        {
+          "id": "c",
+          "text": "Disable SAST permanently"
+        },
+        {
+          "id": "d",
+          "text": "Move keys to comments"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SAST gating prevents secret leakage into production lineage.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q011",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "Developers complain SAST has 10,000 findings. Prioritization approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete the codebase"
+        },
+        {
+          "id": "b",
+          "text": "Ignore all findings"
+        },
+        {
+          "id": "c",
+          "text": "Focus on critical severity in attack surface paths; tune false positive rules"
+        },
+        {
+          "id": "d",
+          "text": "Run SAST only yearly"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Risk-based triage makes SAST sustainable.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q012",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "SAST flags SSRF in a webhook feature. Why is this high risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Webhooks cannot call URLs"
+        },
+        {
+          "id": "b",
+          "text": "Server may fetch internal metadata URLs exposing cloud credentials"
+        },
+        {
+          "id": "c",
+          "text": "SSRF only affects CSS colors"
+        },
+        {
+          "id": "d",
+          "text": "SAST never finds real bugs"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "SSRF to cloud metadata is a common critical finding.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q013",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "During a tabletop on sast findings, leadership asks for a measurable KPI. Which metric fits BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documented incidents or control failures tied to sast findings trending down quarter over quarter"
+        },
+        {
+          "id": "b",
+          "text": "Number of marketing emails sent"
+        },
+        {
+          "id": "c",
+          "text": "Total pages printed in color only"
+        },
+        {
+          "id": "d",
+          "text": "Average desk chair height"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Effective sast findings programs use measurable outcomes, not vanity metrics.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q014",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "An audit sampling sast findings controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
+        },
+        {
+          "id": "b",
+          "text": "Remove all logging to reduce findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable training to save time"
+        },
+        {
+          "id": "d",
+          "text": "Allow each site to opt out silently"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Consistency requires written baselines and attestations for sast findings.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    }
+  ]
+}

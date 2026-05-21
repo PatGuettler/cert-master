@@ -3,7 +3,13 @@
  * Custom domains (e.g. practicecert.com) always use "/".
  * GitHub project pages use "/cert-master/" or "/aws-cert-master/" only.
  */
-const APP_ROUTE_SEGMENTS = new Set(["cert", "browse", "questions", "keytrain"]);
+const APP_ROUTE_SEGMENTS = new Set([
+  "cert",
+  "browse",
+  "questions",
+  "keytrain",
+  "key-training",
+]);
 const PROJECT_ROOT_SEGMENTS = new Set(["aws-cert-master", "cert-master"]);
 
 /**

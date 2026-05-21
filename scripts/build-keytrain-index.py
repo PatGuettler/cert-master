@@ -3,14 +3,17 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXAMS_INDEX = ROOT / "data" / "exams-index.json"
 OUT = ROOT / "data" / "keytrain-index.json"
+sys.path.insert(0, str(ROOT / "scripts"))
+from question_bank.key_training_catalog import BY_ID  # noqa: E402
 
-# Exams to include in KeyTrain (edit this list or leave empty to include all)
-ENABLED_EXAM_IDS: set[str] | None = None
+# Exams to include in KeyTrain vendor cloud/comptia (None = all non-keytraining)
+ENABLED_VENDOR_EXAM_IDS: set[str] | None = None
 
 
 def certificate_title(name: str) -> str:
@@ -39,11 +42,31 @@ def level_for(exam: dict) -> str:
     return "Certification"
 
 
+def is_key_training_exam(exam: dict) -> bool:
+    return exam.get("vendor") == "keytraining" or exam.get("program") == "key-training"
+
+
+def key_training_entry(exam: dict) -> dict:
+    cat = BY_ID.get(exam["id"])
+    title = cat.certificate_title if cat else certificate_title(exam["name"])
+    level = cat.level if cat else "Core"
+    return {
+        "id": f"kt-{exam['id']}",
+        "examId": exam["id"],
+        "certificateTitle": title,
+        "level": level,
+        "group": "key-training",
+    }
+
+
 def main() -> int:
     exams = json.loads(EXAMS_INDEX.read_text(encoding="utf-8"))["exams"]
     certs = []
     for e in sorted(exams, key=lambda x: x["name"]):
-        if ENABLED_EXAM_IDS is not None and e["id"] not in ENABLED_EXAM_IDS:
+        if is_key_training_exam(e):
+            certs.append(key_training_entry(e))
+            continue
+        if ENABLED_VENDOR_EXAM_IDS is not None and e["id"] not in ENABLED_VENDOR_EXAM_IDS:
             continue
         certs.append(
             {
@@ -51,6 +74,7 @@ def main() -> int:
                 "examId": e["id"],
                 "certificateTitle": certificate_title(e["name"]),
                 "level": level_for(e),
+                "group": "vendor",
             }
         )
     payload = {

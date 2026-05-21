@@ -52,6 +52,16 @@ export function parseRoute(exams, keytrainIds = []) {
 
   if (parts[0] === "browse") return { type: "browse" };
 
+  if (parts[0] === "key-training") {
+    if (!parts[1]) return { type: "key-training-hub" };
+    if (parts[1] === "workshops") return { type: "key-training-workshops" };
+    if (parts[1] === "workshop" && parts[2]) {
+      if (!exams.some((e) => e.id === parts[2])) return { type: "key-training-hub" };
+      return { type: "key-training-workshop", certId: parts[2] };
+    }
+    return { type: "key-training-hub" };
+  }
+
   if (parts[0] === "keytrain") {
     if (!parts[1]) return { type: "keytrain-hub" };
     if (!keytrainIds.includes(parts[1])) return { type: "keytrain-hub" };
@@ -133,6 +143,21 @@ export function navigateBrowse() {
 
 export function navigateKeytrainHub() {
   history.pushState(null, "", appPathUrl("keytrain"));
+}
+
+export function navigateKeyTrainingHub() {
+  history.pushState(null, "", appPathUrl("key-training"));
+}
+
+export function navigateKeyTrainingWorkshops() {
+  history.pushState(null, "", appPathUrl("key-training/workshops"));
+}
+
+/**
+ * @param {string} certId
+ */
+export function navigateKeyTrainingWorkshop(certId) {
+  history.pushState(null, "", appPathUrl(`key-training/workshop/${certId}`));
 }
 
 /**

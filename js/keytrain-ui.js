@@ -5,12 +5,15 @@ import { downloadKeytrainCertificatePdf } from "./keytrain-certificate.js";
  * @param {import('./keytrain-loader.js').KeytrainCertSummary[]} catalog
  * @param {(keytrainId: string) => void} onSelect
  */
-export function renderKeytrainHub(catalog, onSelect) {
-  const grid = document.getElementById("keytrain-cert-grid");
+/**
+ * @param {import('./keytrain-loader.js').KeytrainCertSummary[]} items
+ * @param {HTMLElement|null} grid
+ * @param {(keytrainId: string) => void} onSelect
+ */
+function renderKeytrainGrid(items, grid, onSelect) {
   if (!grid) return;
   grid.innerHTML = "";
-
-  for (const item of catalog) {
+  for (const item of items) {
     const tile = document.createElement("button");
     tile.type = "button";
     tile.className = "landing-cert-tile keytrain-tile";
@@ -37,6 +40,41 @@ export function renderKeytrainHub(catalog, onSelect) {
     tile.append(level, title, code, meta);
     tile.addEventListener("click", () => onSelect(item.id));
     grid.appendChild(tile);
+  }
+}
+
+/**
+ * @param {import('./keytrain-loader.js').KeytrainCertSummary[]} catalog
+ * @param {(keytrainId: string) => void} onSelect
+ */
+export function renderKeytrainHub(catalog, onSelect) {
+  const keyTraining = catalog.filter((c) => c.group === "key-training");
+  const vendor = catalog.filter((c) => c.group !== "key-training");
+
+  const ktSection = document.getElementById("keytrain-section-keytraining");
+  const vendorSection = document.getElementById("keytrain-section-vendor");
+  const ktCount = document.getElementById("keytrain-keytraining-count");
+  const vendorCount = document.getElementById("keytrain-vendor-count");
+
+  if (ktCount) ktCount.textContent = String(keyTraining.length);
+  if (vendorCount) vendorCount.textContent = String(vendor.length);
+  ktSection?.classList.toggle("hidden", keyTraining.length === 0);
+  vendorSection?.classList.toggle("hidden", vendor.length === 0);
+
+  renderKeytrainGrid(
+    keyTraining,
+    document.getElementById("keytrain-cert-grid-keytraining"),
+    onSelect
+  );
+  renderKeytrainGrid(
+    vendor,
+    document.getElementById("keytrain-cert-grid-vendor"),
+    onSelect
+  );
+
+  const legacyGrid = document.getElementById("keytrain-cert-grid");
+  if (legacyGrid && !document.getElementById("keytrain-cert-grid-vendor")) {
+    renderKeytrainGrid(catalog, legacyGrid, onSelect);
   }
 }
 
