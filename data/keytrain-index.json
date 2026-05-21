@@ -1,0 +1,126 @@
+{
+  "brand": "KeyTrain",
+  "tagline": "Formal certification assessments with pass/fail results and downloadable certificates.",
+  "certifications": [
+    {
+      "id": "kt-advanced-networking-specialty",
+      "examId": "advanced-networking-specialty",
+      "certificateTitle": "KeyTrain Certified Advanced Networking — Specialty",
+      "level": "Specialty"
+    },
+    {
+      "id": "kt-ai-practitioner",
+      "examId": "ai-practitioner",
+      "certificateTitle": "KeyTrain Certified AI Practitioner",
+      "level": "Foundational"
+    },
+    {
+      "id": "kt-cloud-practitioner",
+      "examId": "cloud-practitioner",
+      "certificateTitle": "KeyTrain Certified Cloud Practitioner",
+      "level": "Foundational"
+    },
+    {
+      "id": "kt-cloudops-engineer-associate",
+      "examId": "cloudops-engineer-associate",
+      "certificateTitle": "KeyTrain Certified CloudOps Engineer — Associate",
+      "level": "Associate"
+    },
+    {
+      "id": "kt-comptia-a-plus",
+      "examId": "comptia-a-plus",
+      "certificateTitle": "KeyTrain Certified A+",
+      "level": "Core"
+    },
+    {
+      "id": "kt-comptia-cloud-plus",
+      "examId": "comptia-cloud-plus",
+      "certificateTitle": "KeyTrain Certified Cloud+",
+      "level": "Core"
+    },
+    {
+      "id": "kt-comptia-cysa-plus",
+      "examId": "comptia-cysa-plus",
+      "certificateTitle": "KeyTrain Certified CySA+",
+      "level": "Core"
+    },
+    {
+      "id": "kt-comptia-linux-plus",
+      "examId": "comptia-linux-plus",
+      "certificateTitle": "KeyTrain Certified Linux+",
+      "level": "Core"
+    },
+    {
+      "id": "kt-comptia-network-plus",
+      "examId": "comptia-network-plus",
+      "certificateTitle": "KeyTrain Certified Network+",
+      "level": "Core"
+    },
+    {
+      "id": "kt-comptia-security-plus",
+      "examId": "comptia-security-plus",
+      "certificateTitle": "KeyTrain Certified Security+",
+      "level": "Core"
+    },
+    {
+      "id": "kt-data-engineer-associate",
+      "examId": "data-engineer-associate",
+      "certificateTitle": "KeyTrain Certified Data Engineer — Associate",
+      "level": "Associate"
+    },
+    {
+      "id": "kt-database-specialty",
+      "examId": "database-specialty",
+      "certificateTitle": "KeyTrain Certified Database — Specialty",
+      "level": "Specialty"
+    },
+    {
+      "id": "kt-developer-associate",
+      "examId": "developer-associate",
+      "certificateTitle": "KeyTrain Certified Developer — Associate",
+      "level": "Associate"
+    },
+    {
+      "id": "kt-devops-engineer-professional",
+      "examId": "devops-engineer-professional",
+      "certificateTitle": "KeyTrain Certified DevOps Engineer — Professional",
+      "level": "Professional"
+    },
+    {
+      "id": "kt-generative-ai-developer-professional",
+      "examId": "generative-ai-developer-professional",
+      "certificateTitle": "KeyTrain Certified Generative AI Developer — Professional",
+      "level": "Professional"
+    },
+    {
+      "id": "kt-machine-learning-engineer-associate",
+      "examId": "machine-learning-engineer-associate",
+      "certificateTitle": "KeyTrain Certified Machine Learning Engineer — Associate",
+      "level": "Associate"
+    },
+    {
+      "id": "kt-machine-learning-specialty",
+      "examId": "machine-learning-specialty",
+      "certificateTitle": "KeyTrain Certified Machine Learning — Specialty",
+      "level": "Specialty"
+    },
+    {
+      "id": "kt-security-specialty",
+      "examId": "security-specialty",
+      "certificateTitle": "KeyTrain Certified Security — Specialty",
+      "level": "Specialty"
+    },
+    {
+      "id": "kt-solutions-architect-associate",
+      "examId": "solutions-architect-associate",
+      "certificateTitle": "KeyTrain Certified Solutions Architect — Associate",
+      "level": "Associate"
+    },
+    {
+      "id": "kt-solutions-architect-professional",
+      "examId": "solutions-architect-professional",
+      "certificateTitle": "KeyTrain Certified Solutions Architect — Professional",
+      "level": "Professional"
+    }
+  ]
+}
