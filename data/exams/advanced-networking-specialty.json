@@ -3006,6 +3006,46 @@
       "id": "ans-q087",
       "domain": "network-design",
       "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q088",
+      "domain": "network-design",
+      "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified Advanced Networking \u2013 Specialty? (Select TWO.)",
       "options": [
         {
@@ -3042,7 +3082,7 @@
       ]
     },
     {
-      "id": "ans-q088",
+      "id": "ans-q089",
       "domain": "network-implementation",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -3077,46 +3117,6 @@
         {
           "title": "AWS KMS",
           "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q089",
-      "domain": "network-design",
-      "type": "multiple-response",
-      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Design for failure and automate recovery"
-        },
-        {
-          "id": "b",
-          "text": "Ignore monitoring to reduce cost"
-        },
-        {
-          "id": "c",
-          "text": "Test recovery procedures"
-        },
-        {
-          "id": "d",
-          "text": "Use single-AZ for all production data stores"
-        },
-        {
-          "id": "e",
-          "text": "Document architecture decisions"
-        }
-      ],
-      "correct": [
-        "a",
-        "c",
-        "e"
-      ],
-      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
-      "docs": [
-        {
-          "title": "Well-Architected Framework",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
         }
       ]
     },

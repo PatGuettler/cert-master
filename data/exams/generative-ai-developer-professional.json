@@ -308,7 +308,7 @@
       "docs": [
         {
           "title": "GenAI patterns",
-          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/ai-ml.html"
         }
       ]
     },
@@ -2280,7 +2280,7 @@
       "docs": [
         {
           "title": "GenAI security",
-          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/ai-ml.html"
         }
       ]
     },
@@ -2620,7 +2620,7 @@
       "docs": [
         {
           "title": "GenAI security",
-          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/ai-ml.html"
         }
       ]
     },
@@ -2654,7 +2654,7 @@
       "docs": [
         {
           "title": "GenAI security",
-          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/ai-ml.html"
         }
       ]
     },
@@ -2688,7 +2688,7 @@
       "docs": [
         {
           "title": "GenAI security",
-          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/ai-ml.html"
         }
       ]
     },
@@ -2900,46 +2900,6 @@
       "id": "aip-q084",
       "domain": "foundation-model-integration",
       "type": "multiple-response",
-      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Design for failure and automate recovery"
-        },
-        {
-          "id": "b",
-          "text": "Ignore monitoring to reduce cost"
-        },
-        {
-          "id": "c",
-          "text": "Test recovery procedures"
-        },
-        {
-          "id": "d",
-          "text": "Use single-AZ for all production data stores"
-        },
-        {
-          "id": "e",
-          "text": "Document architecture decisions"
-        }
-      ],
-      "correct": [
-        "a",
-        "c",
-        "e"
-      ],
-      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
-      "docs": [
-        {
-          "title": "Well-Architected Framework",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q085",
-      "domain": "foundation-model-integration",
-      "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified Generative AI Developer \u2013 Professional? (Select TWO.)",
       "options": [
         {
@@ -2976,7 +2936,7 @@
       ]
     },
     {
-      "id": "aip-q086",
+      "id": "aip-q085",
       "domain": "rag-knowledge",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -3011,6 +2971,46 @@
         {
           "title": "AWS KMS",
           "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q086",
+      "domain": "foundation-model-integration",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
         }
       ]
     },

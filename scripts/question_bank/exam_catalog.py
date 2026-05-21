@@ -329,7 +329,7 @@ EXAMS: list[dict[str, Any]] = [
                 22,
                 [
                     ("AWS CloudFormation", "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"),
-                    ("AWS OpsWorks", "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html"),
+                    ("Systems Manager State Manager", "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"),
                 ],
             ),
             domain(

@@ -202,7 +202,7 @@
       "docs": [
         {
           "title": "EKS GitOps",
-          "url": "https://aws.amazon.com/kubernetes/gitops/"
+          "url": "https://docs.aws.amazon.com/eks/latest/userguide/argocd.html"
         }
       ]
     },
@@ -610,7 +610,7 @@
       "docs": [
         {
           "title": "EKS GitOps",
-          "url": "https://aws.amazon.com/kubernetes/gitops/"
+          "url": "https://docs.aws.amazon.com/eks/latest/userguide/argocd.html"
         }
       ]
     },
@@ -644,7 +644,7 @@
       "docs": [
         {
           "title": "EKS GitOps",
-          "url": "https://aws.amazon.com/kubernetes/gitops/"
+          "url": "https://docs.aws.amazon.com/eks/latest/userguide/argocd.html"
         }
       ]
     },
@@ -678,7 +678,7 @@
       "docs": [
         {
           "title": "EKS GitOps",
-          "url": "https://aws.amazon.com/kubernetes/gitops/"
+          "url": "https://docs.aws.amazon.com/eks/latest/userguide/argocd.html"
         }
       ]
     },
@@ -881,8 +881,8 @@
       "explanation": "Configuration management enforces desired state.",
       "docs": [
         {
-          "title": "OpsWorks",
-          "url": "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html"
+          "title": "Systems Manager State Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
         }
       ]
     },
@@ -1935,8 +1935,8 @@
       "explanation": "DORA metrics measure delivery performance.",
       "docs": [
         {
-          "title": "DORA",
-          "url": "https://aws.amazon.com/devops/dora-metrics/"
+          "title": "CodePipeline metrics",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/metrics.html"
         }
       ]
     },
@@ -3268,46 +3268,6 @@
     },
     {
       "id": "dop-q094",
-      "domain": "sdlc-automation",
-      "type": "multiple-response",
-      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Design for failure and automate recovery"
-        },
-        {
-          "id": "b",
-          "text": "Ignore monitoring to reduce cost"
-        },
-        {
-          "id": "c",
-          "text": "Test recovery procedures"
-        },
-        {
-          "id": "d",
-          "text": "Use single-AZ for all production data stores"
-        },
-        {
-          "id": "e",
-          "text": "Document architecture decisions"
-        }
-      ],
-      "correct": [
-        "a",
-        "c",
-        "e"
-      ],
-      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
-      "docs": [
-        {
-          "title": "Well-Architected Framework",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q095",
       "domain": "config-management-iac",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -3346,7 +3306,7 @@
       ]
     },
     {
-      "id": "dop-q096",
+      "id": "dop-q095",
       "domain": "sdlc-automation",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified DevOps Engineer \u2013 Professional? (Select TWO.)",
@@ -3381,6 +3341,46 @@
         {
           "title": "DOP-C02 Exam Guide",
           "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q096",
+      "domain": "sdlc-automation",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
         }
       ]
     },

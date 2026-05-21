@@ -2412,7 +2412,7 @@
       "docs": [
         {
           "title": "PCI on AWS",
-          "url": "https://docs.aws.amazon.com/whitepapers/latest/pci-dss-payment-applications-on-aws/pci-dss-payment-applications-on-aws.html"
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standard.html"
         }
       ]
     },
@@ -3166,45 +3166,6 @@
     },
     {
       "id": "scs-q091",
-      "domain": "detection",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Security \u2013 Specialty? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "SCS-C02 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon GuardDuty"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "SCS-C02 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-security-specialty/"
-        }
-      ]
-    },
-    {
-      "id": "scs-q092",
       "domain": "incident-response",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -3243,7 +3204,7 @@
       ]
     },
     {
-      "id": "scs-q093",
+      "id": "scs-q092",
       "domain": "detection",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3279,6 +3240,45 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q093",
+      "domain": "detection",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Security \u2013 Specialty? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "SCS-C02 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "SCS-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-security-specialty/"
         }
       ]
     },

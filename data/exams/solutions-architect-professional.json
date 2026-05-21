@@ -2688,7 +2688,7 @@
       "docs": [
         {
           "title": "VMware Cloud on AWS",
-          "url": "https://docs.aws.amazon.com/vmc/latest/userguide/what-is-vmware-cloud-on-aws.html"
+          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
         }
       ]
     },
@@ -3204,40 +3204,40 @@
     },
     {
       "id": "sap-q093",
-      "domain": "organizational-complexity",
+      "domain": "new-solutions",
       "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Professional? (Select TWO.)",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "SAP-C02 Exam Guide"
+          "text": "AWS KMS"
         },
         {
           "id": "b",
-          "text": "Unofficial leaked exam dumps"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "AWS Organizations"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Disable all logging"
+          "text": "Amazon CloudFront only for DNS"
         },
         {
           "id": "e",
-          "text": "Share root account keys"
+          "text": "AWS Batch"
         }
       ],
       "correct": [
         "a",
         "c"
       ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
       "docs": [
         {
-          "title": "SAP-C02 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     },
@@ -3283,40 +3283,40 @@
     },
     {
       "id": "sap-q095",
-      "domain": "new-solutions",
+      "domain": "organizational-complexity",
       "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Professional? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS"
+          "text": "SAP-C02 Exam Guide"
         },
         {
           "id": "b",
-          "text": "Amazon Route 53"
+          "text": "Unofficial leaked exam dumps"
         },
         {
           "id": "c",
-          "text": "AWS Secrets Manager"
+          "text": "AWS Organizations"
         },
         {
           "id": "d",
-          "text": "Amazon CloudFront only for DNS"
+          "text": "Disable all logging"
         },
         {
           "id": "e",
-          "text": "AWS Batch"
+          "text": "Share root account keys"
         }
       ],
       "correct": [
         "a",
         "c"
       ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
       "docs": [
         {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+          "title": "SAP-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
         }
       ]
     },

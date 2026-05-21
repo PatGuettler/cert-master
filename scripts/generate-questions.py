@@ -19,7 +19,7 @@ DOMAINS = [
         "resources": [
             {
                 "title": "AWS Cloud Practitioner Essentials (Skill Builder)",
-                "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/16434/cloud-practitioner-essentials",
+                "url": "https://aws.amazon.com/training/learn-about/cloud-practitioner/",
             },
             {
                 "title": "What is Cloud Computing?",
@@ -96,7 +96,7 @@ DOMAINS = [
             },
             {
                 "title": "AWS Support Plans",
-                "url": "https://aws.amazon.com/premiumsupport/plans/",
+                "url": "https://aws.amazon.com/premiumsupport/",
             },
             {
                 "title": "AWS Cost Explorer",
@@ -379,7 +379,7 @@ RAW = [
      "Which support plan includes 24/7 access to Cloud Support Engineers via phone and chat?",
      [("a", "Basic"), ("b", "Developer"), ("c", "Business or Enterprise On-Ramp/Enterprise")], ["c"],
      "Business and Enterprise plans include 24/7 technical support by phone and chat.",
-     [("AWS Support Plans", "https://aws.amazon.com/premiumsupport/plans/")]),
+     [("AWS Support Plans", "https://aws.amazon.com/premiumsupport/")]),
     ("billing-pricing-support", "multiple-choice",
      "The AWS Free Tier:",
      [("a", "Offers limited free usage for new and eligible services under stated terms"), ("b", "Makes all AWS usage free forever"), ("c", "Applies only to Enterprise support"), ("d", "Replaces billing accounts")], ["a"],
@@ -414,7 +414,7 @@ RAW = [
      "Which is TRUE about AWS Support Basic plan?",
      [("a", "It is included for all AWS customers at no additional charge"), ("b", "It includes 15-minute response for production down"), ("c", "It includes TAM assignment"), ("d", "It includes AWS Managed Services")], ["a"],
      "Basic support is free and includes customer service and documentation access.",
-     [("Support plans comparison", "https://aws.amazon.com/premiumsupport/plans/")]),
+     [("Support plans comparison", "https://aws.amazon.com/premiumsupport/")]),
     ("billing-pricing-support", "multiple-choice",
      "AWS Cost and Usage Report (CUR) delivers:",
      [("a", "Detailed line-item billing data to an S3 bucket you own"), ("b", "EC2 AMI catalogs"), ("c", "Route 53 health checks only"), ("d", "IAM user passwords")], ["a"],

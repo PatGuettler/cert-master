@@ -40,13 +40,21 @@ def _multi(
     return (domain, "multiple-response", stem, options, correct, explanation, [doc])
 
 
+def _domain_doc(spec: dict, domain_id: str) -> tuple[str, str]:
+    for domain in spec["domains"]:
+        if domain["id"] == domain_id and domain.get("resources"):
+            res = domain["resources"][0]
+            return res["title"], res["url"]
+    fallback = spec["domains"][0]["resources"][0]
+    return fallback["title"], fallback["url"]
+
+
 def _expand_bank(exam_id: str, bank: dict[str, list[tuple]]) -> list[RawQuestion]:
     spec = COMPTIA_BY_ID[exam_id]
-    guide = spec["domains"][0]["resources"][0]
-    doc = (guide["title"], guide["url"])
     raw: list[RawQuestion] = []
 
     for domain_id, items in bank.items():
+        doc = _domain_doc(spec, domain_id)
         for item in items:
             if len(item) == 5:
                 stem, correct, wrong, expl, alt_stem = item

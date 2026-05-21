@@ -22,7 +22,7 @@
       "code": "CLF-C02",
       "vendor": "aws",
       "dataFile": "data/exams/cloud-practitioner.json",
-      "questionCount": 225
+      "questionCount": 148
     },
     {
       "id": "cloudops-engineer-associate",
@@ -137,5 +137,5 @@
       "questionCount": 103
     }
   ],
-  "generatedAt": "2026-05-20T11:46:22.615419+00:00"
+  "generatedAt": "2026-05-20T21:27:21.718066+00:00"
 }

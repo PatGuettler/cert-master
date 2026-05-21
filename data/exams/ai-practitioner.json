@@ -1517,7 +1517,7 @@
       "docs": [
         {
           "title": "Caching best practices",
-          "url": "https://aws.amazon.com/builders-library/implementing-health-aware-load-balancing/"
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
         }
       ]
     },
@@ -2265,7 +2265,7 @@
       "docs": [
         {
           "title": "Data privacy",
-          "url": "https://docs.aws.amazon.com/whitepapers/latest/architecting-for-the-cloud/data-privacy.html"
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/data-protection.html"
         }
       ]
     },

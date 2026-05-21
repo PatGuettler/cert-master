@@ -3000,6 +3000,45 @@
     },
     {
       "id": "mla-q087",
+      "domain": "data-preparation",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Machine Learning Engineer \u2013 Associate? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Data Wrangler"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker Data Wrangler",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
+        }
+      ]
+    },
+    {
+      "id": "mla-q088",
       "domain": "model-development",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -3038,7 +3077,7 @@
       ]
     },
     {
-      "id": "mla-q088",
+      "id": "mla-q089",
       "domain": "data-preparation",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3074,45 +3113,6 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q089",
-      "domain": "data-preparation",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Machine Learning Engineer \u2013 Associate? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "AWS Glue"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker Data Wrangler",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
         }
       ]
     },

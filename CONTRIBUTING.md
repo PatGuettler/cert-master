@@ -34,7 +34,23 @@ python3 scripts/generate-questions.py
 - Multiple-response questions must require **two or more** correct answers; say so in the stem.
 - Explanations should teach *why* the answer is correct, not just restate it.
 - Do not copy verbatim from paid practice tests or brain dumps.
-- Link to official `aws.amazon.com`, `docs.aws.amazon.com`, or `explore.skillbuilder.aws` URLs only.
+- Link to official `aws.amazon.com`, `docs.aws.amazon.com`, `explore.skillbuilder.aws`, or `www.comptia.org` URLs only.
+- Each `docs` link should match the topic of the question (service docs for service questions, exam objectives for CompTIA, etc.).
+
+### Checking reference links
+
+Before opening a PR that touches questions or generators:
+
+```bash
+python3 scripts/audit_doc_links.py --fix   # apply known URL fixes, then check
+python3 scripts/audit_doc_links.py         # exit 1 if any URL fails HTTP check
+```
+
+To patch known stale URLs without a full regen:
+
+```bash
+python3 scripts/fix_doc_links.py
+```
 
 ## Suggesting a question without a PR
 
