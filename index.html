@@ -9,6 +9,28 @@
       content="Free AWS and CompTIA certification practice exams — no login. Timed exams, acronym drills, progress tracking, and study plans."
     />
     <title>AWS Cert Master — Practice Tests</title>
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+    <script>
+      (function () {
+        var params = new URLSearchParams(location.search);
+        var p = params.get("p");
+        if (p) {
+          var decoded = p.replace(/~and~/g, "&");
+          if (!decoded.startsWith("/")) decoded = "/" + decoded;
+          history.replaceState(
+            null,
+            "",
+            location.pathname.replace(/\/?$/, "/") + decoded + location.hash
+          );
+        }
+        var start = params.get("start");
+        if (start) {
+          try {
+            sessionStorage.setItem("aws-cert-master:autoStart", start);
+          } catch (e) {}
+        }
+      })();
+    </script>
     <script>
       (function () {
         var p = location.pathname;
@@ -182,6 +204,10 @@
             Progress is saved in this browser only. Use <em>Export backup</em> before switching
             devices. Practice questions are not copied from real AWS exams.
           </p>
+          <p class="landing-note">
+            <a href="questions/">Browse the practice question library</a> — each question has its
+            own page for search and study (programmatic SEO).
+          </p>
         </section>
       </section>
 
@@ -294,6 +320,11 @@
           <h3 id="domain-heading">Exam domains</h3>
           <ul id="domain-list" class="domain-list"></ul>
         </div>
+        <p class="cert-seo-link-wrap">
+          <a id="cert-question-library-link" class="btn-text-link" href="questions/">
+            Browse individual practice questions for this exam →
+          </a>
+        </p>
         <section class="progress-teaser" aria-labelledby="progress-teaser-heading">
           <h3 id="progress-teaser-heading">Your progress</h3>
           <p id="progress-teaser-summary" class="progress-teaser-summary">

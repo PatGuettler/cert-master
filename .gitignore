@@ -2,6 +2,12 @@
 __pycache__/
 *.py[cod]
 
+# Generated SEO pages (built in CI via scripts/build-question-pages.py)
+questions/**/*
+!questions/.gitkeep
+data/questions-slugs.json
+sitemap.xml
+
 # Logs
 logs
 *.log

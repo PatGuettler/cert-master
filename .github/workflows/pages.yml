@@ -24,12 +24,16 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Build exam index
+      - name: Build exam index and SEO question pages
         run: |
           python3 scripts/build-exams-index.py
           if [ -f scripts/generate_comptia_exams.py ]; then
             python3 scripts/generate_comptia_exams.py || true
           fi
+          python3 scripts/build-question-pages.py
+        env:
+          SITE_ORIGIN: https://patguettler.github.io
+          SITE_PATH: /aws-cert-master
 
       - uses: actions/configure-pages@v5
 

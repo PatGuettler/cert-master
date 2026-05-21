@@ -1858,6 +1858,173 @@ footer.site-footer {
   font-weight: 600;
 }
 
+/* Programmatic SEO — standalone question pages */
+.seo-question-body {
+  min-height: 100vh;
+}
+
+.seo-question-header {
+  padding: 0.75rem 1rem;
+}
+
+.seo-brand-link {
+  font-weight: 700;
+  color: var(--aws-orange);
+  text-decoration: none;
+}
+
+.seo-brand-link:hover {
+  text-decoration: underline;
+}
+
+.seo-question-main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+
+.seo-breadcrumb {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.seo-breadcrumb a {
+  color: var(--link);
+}
+
+.seo-question-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.seo-badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--cert-active-bg);
+  color: var(--aws-orange);
+}
+
+.seo-badge-domain {
+  background: var(--surface-elevated);
+  color: var(--text-muted);
+}
+
+.seo-question-article h1 {
+  font-size: 1.35rem;
+  line-height: 1.4;
+  margin: 0 0 0.75rem;
+}
+
+.seo-question-type {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.seo-options-list {
+  list-style: upper-alpha;
+  padding-left: 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+.seo-option {
+  margin-bottom: 0.5rem;
+  line-height: 1.45;
+}
+
+.seo-option-id {
+  font-weight: 600;
+}
+
+.seo-breakdown {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border-radius: 8px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+}
+
+.seo-breakdown h2 {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.seo-doc-links {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.seo-cta {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.seo-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.seo-hub-main h1 {
+  margin-bottom: 0.5rem;
+}
+
+.seo-hub-lead {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.seo-hub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.seo-hub-list li {
+  margin-bottom: 0.5rem;
+}
+
+.seo-hub-list a {
+  color: var(--link);
+}
+
+.seo-hub-code {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+.seo-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.cert-seo-link-wrap {
+  margin: 1rem 0 0.5rem;
+}
+
+.seo-breakdown-link-wrap {
+  margin-top: 0.75rem;
+}
+
+.seo-breakdown-link {
+  font-weight: 600;
+}
+
 @media (max-width: 600px) {
   .exam-nav {
     flex-direction: column;
@@ -1869,5 +2036,9 @@ footer.site-footer {
 
   .history-table {
     font-size: 0.75rem;
+  }
+
+  .seo-cta-actions .btn {
+    width: 100%;
   }
 }

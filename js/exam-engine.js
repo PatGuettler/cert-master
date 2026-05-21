@@ -1,5 +1,6 @@
 import { isQuestionCorrect } from "./scoring.js";
 import { getBookmarks, toggleBookmark, saveResumeState } from "./storage.js";
+import { getQuestionPageHref } from "./question-slugs.js";
 
 /**
  * @typedef {import('./cert-loader.js').Question} Question
@@ -14,6 +15,7 @@ import { getBookmarks, toggleBookmark, saveResumeState } from "./storage.js";
  * @param {Question[]} opts.questions
  * @param {ExamSettings} opts.settings
  * @param {Record<string, string[]>} opts.responses
+ * @param {Record<string, unknown>|null} [opts.questionSlugRegistry]
  * @param {(responses: Record<string, string[]>) => void} opts.onResponsesChange
  * @param {(meta: { durationSeconds: number }) => void} opts.onFinish
  * @param {boolean} [opts.isDrill]
@@ -25,6 +27,7 @@ export function runExam({
   questions,
   settings,
   responses,
+  questionSlugRegistry = null,
   onResponsesChange,
   onFinish,
   isDrill = false,
@@ -251,6 +254,18 @@ export function runExam({
         ul.appendChild(li);
       }
       panel.appendChild(ul);
+    }
+
+    const seoHref = getQuestionPageHref(questionSlugRegistry, certId, q.id);
+    if (seoHref) {
+      const seoP = document.createElement("p");
+      seoP.className = "seo-breakdown-link-wrap";
+      const seoA = document.createElement("a");
+      seoA.href = seoHref;
+      seoA.className = "seo-breakdown-link";
+      seoA.textContent = "View full breakdown on its own page (shareable URL)";
+      seoP.appendChild(seoA);
+      panel.appendChild(seoP);
     }
 
     return panel;

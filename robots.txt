@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://patguettler.github.io/aws-cert-master/aws-cert-master/sitemap.xml

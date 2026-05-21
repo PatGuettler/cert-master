@@ -31,6 +31,16 @@ import { runAcronymQuiz } from "./acronym-engine.js";
 import { initDataPanel } from "./data-panel.js";
 import { renderBookmarkReview } from "./review-ui.js";
 import { getSiteRoot } from "./paths.js";
+import {
+  parseRoute,
+  normalizeLegacyRoutes,
+  navigateHome,
+  navigateBrowse,
+  navigateCert,
+  isBrowsePathActive,
+  appPathUrl,
+} from "./routes.js";
+import { loadQuestionSlugRegistry } from "./question-slugs.js";
 
 const LAST_CERT_KEY = "aws-cert-master:lastCert";
 
@@ -76,6 +86,9 @@ const views = {
 /** @type {{ stop: () => void }|null} */
 let acronymController = null;
 
+/** @type {Record<string, unknown>|null} */
+let questionSlugRegistry = null;
+
 const headerTitle = document.getElementById("header-title");
 const examTimer = document.getElementById("exam-timer");
 
@@ -99,54 +112,6 @@ function setHeaderTitle(text) {
 
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
- * @returns {{ type: 'landing' } | { type: 'browse' } | { type: 'cert', certId: string } | { type: 'acronyms', certId: string }}
- */
-function parseRoute(exams) {
-  const raw = window.location.hash.replace(/^#/, "").trim();
-  if (!raw) return { type: "landing" };
-  if (raw === "browse") return { type: "browse" };
-
-  const parts = raw.split("/").filter(Boolean);
-
-  if (parts[0] === "cert" && parts[1]) {
-    if (!exams.some((e) => e.id === parts[1])) return { type: "landing" };
-    if (parts[2] === "acronyms") {
-      return { type: "acronyms", certId: parts[1] };
-    }
-    return { type: "cert", certId: parts[1] };
-  }
-
-  const legacyId = parts[0];
-  if (legacyId && exams.some((e) => e.id === legacyId)) {
-    return { type: "cert", certId: legacyId };
-  }
-
-  return { type: "landing" };
-}
-
-/**
- * Redirect #cloud-practitioner → #cert/cloud-practitioner and strip unknown hashes.
- * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
- */
-function normalizeHash(exams) {
-  const raw = window.location.hash.replace(/^#/, "").trim();
-  if (!raw) return;
-
-  if (raw.startsWith("cert/") || raw === "browse") return;
-
-  const legacyId = raw.split("/")[0];
-  const base = window.location.pathname + window.location.search;
-
-  if (exams.some((e) => e.id === legacyId)) {
-    history.replaceState(null, "", `${base}#cert/${legacyId}`);
-    return;
-  }
-
-  history.replaceState(null, "", base);
-}
-
-/**
- * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
  */
 function getDefaultCertId(exams) {
   const last = localStorage.getItem(LAST_CERT_KEY);
@@ -157,16 +122,7 @@ function getDefaultCertId(exams) {
 }
 
 function setCertHash(certId, sub = "") {
-  const hash = sub ? `cert/${certId}/${sub}` : `cert/${certId}`;
-  const current = window.location.hash.replace(/^#/, "");
-  if (current !== hash) {
-    window.location.hash = hash;
-  }
-}
-
-function clearAppHash() {
-  const base = window.location.pathname + window.location.search;
-  history.replaceState(null, "", base);
+  navigateCert(certId, sub);
 }
 
 function saveLastCert(certId) {
@@ -174,8 +130,8 @@ function saveLastCert(certId) {
 }
 
 function setBrowseHash() {
-  if (window.location.hash.replace(/^#/, "") !== "browse") {
-    window.location.hash = "browse";
+  if (!isBrowsePathActive()) {
+    navigateBrowse();
   }
 }
 
@@ -325,6 +281,7 @@ function restoreExam(resume) {
     questions: examQuestions,
     settings,
     responses,
+    questionSlugRegistry,
     onResponsesChange: (r) => {
       responses = r;
     },
@@ -377,7 +334,7 @@ async function applyRoute(route) {
     acronymController?.stop();
     examController?.stopTimer?.();
     currentCert = null;
-    clearAppHash();
+    navigateHome();
     showLanding();
     return;
   }
@@ -386,8 +343,8 @@ async function applyRoute(route) {
     acronymController?.stop();
     examController?.stopTimer?.();
     currentCert = null;
-    const fromHash = window.location.hash.replace(/^#/, "") === "browse";
-    showBrowse({ fromRoute: fromHash });
+    if (!isBrowsePathActive()) navigateBrowse();
+    showBrowse({ fromRoute: true });
     return;
   }
 
@@ -445,7 +402,8 @@ async function init() {
     return;
   }
 
-  normalizeHash(exams);
+  normalizeLegacyRoutes(exams);
+  questionSlugRegistry = await loadQuestionSlugRegistry();
   activeCertId = getDefaultCertId(exams);
   settings = loadSettings(activeCertId);
 
@@ -464,18 +422,29 @@ async function init() {
 
   window.addEventListener("hashchange", () => {
     if (!appReady) return;
-    normalizeHash(examIndexList);
+    normalizeLegacyRoutes(examIndexList);
     applyRoute(parseRoute(examIndexList));
   });
 
   window.addEventListener("popstate", () => {
     if (!appReady) return;
-    normalizeHash(examIndexList);
     applyRoute(parseRoute(examIndexList));
   });
 
   appReady = true;
   await applyRoute(parseRoute(exams));
+
+  try {
+    const autoStart = sessionStorage.getItem("aws-cert-master:autoStart");
+    if (autoStart && exams.some((e) => e.id === autoStart)) {
+      sessionStorage.removeItem("aws-cert-master:autoStart");
+      await switchCert(autoStart, { fromRoute: true });
+      navigateCert(autoStart);
+      startExam();
+    }
+  } catch {
+    /* ignore */
+  }
 
   initDataPanel({
     getScopeCertId: () => {
@@ -602,6 +571,11 @@ function populateCert() {
 
   renderProgressTeaser(activeCertId, cert);
 
+  const libLink = document.getElementById("cert-question-library-link");
+  if (libLink) {
+    libLink.href = appPathUrl("questions/");
+  }
+
   const isComptia = cert.vendor === "comptia";
   const hasAcronyms = (cert.acronyms?.length ?? 0) > 0;
   const showAcr = isComptia && hasAcronyms;
@@ -660,7 +634,7 @@ async function showDashboard() {
     currentCert = await loadCert(activeCertId);
     settings = loadSettings(activeCertId);
   }
-  clearAppHash();
+  navigateHome();
   showView("dashboard");
   setHeaderTitle("Your progress");
   syncCertFilterOptions(
@@ -695,6 +669,7 @@ function launchExamSession(questions, mode) {
         ? { ...settings, timeLimitEnabled: false }
         : settings,
     responses,
+    questionSlugRegistry,
     onResponsesChange: (r) => {
       responses = r;
     },
