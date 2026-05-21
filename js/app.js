@@ -40,7 +40,6 @@ import {
   isBrowsePathActive,
   appPathUrl,
 } from "./routes.js";
-import { loadQuestionSlugRegistry } from "./question-slugs.js";
 import { APP_NAME, APP_SLUG } from "./config.js";
 
 const LAST_CERT_KEY = `${APP_SLUG}:lastCert`;
@@ -88,7 +87,6 @@ const views = {
 let acronymController = null;
 
 /** @type {Record<string, unknown>|null} */
-let questionSlugRegistry = null;
 
 const headerTitle = document.getElementById("header-title");
 const examTimer = document.getElementById("exam-timer");
@@ -297,7 +295,6 @@ function restoreExam(resume) {
     questions: examQuestions,
     settings,
     responses,
-    questionSlugRegistry,
     onResponsesChange: (r) => {
       responses = r;
     },
@@ -419,7 +416,6 @@ async function init() {
   }
 
   normalizeLegacyRoutes(exams);
-  questionSlugRegistry = await loadQuestionSlugRegistry();
   activeCertId = getDefaultCertId(exams);
   settings = loadSettings(activeCertId);
 
@@ -587,11 +583,6 @@ function populateCert() {
 
   renderProgressTeaser(activeCertId, cert);
 
-  const libLink = document.getElementById("cert-question-library-link");
-  if (libLink) {
-    libLink.href = appPathUrl("questions/");
-  }
-
   const isComptia = cert.vendor === "comptia";
   const hasAcronyms = (cert.acronyms?.length ?? 0) > 0;
   const showAcr = isComptia && hasAcronyms;
@@ -685,7 +676,6 @@ function launchExamSession(questions, mode) {
         ? { ...settings, timeLimitEnabled: false }
         : settings,
     responses,
-    questionSlugRegistry,
     onResponsesChange: (r) => {
       responses = r;
     },
