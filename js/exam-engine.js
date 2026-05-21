@@ -1,5 +1,7 @@
 import { isQuestionCorrect } from "./scoring.js";
 import { getBookmarks, toggleBookmark, saveResumeState } from "./storage.js";
+import { loadSlugRegistry, slugForQuestion } from "./seo-slugs.js";
+import { questionPageUrl } from "./routes.js";
 
 /**
  * @typedef {import('./cert-loader.js').Question} Question
@@ -40,6 +42,11 @@ export function runExam({
   const revealed = new Set(resume?.revealed ?? []);
   const sessionStartedAt = resume?.startedAt ?? Date.now();
   let bookmarks = getBookmarks(certId);
+  /** @type {{ byQuestionKey?: Record<string, string> } | null} */
+  let slugRegistry = null;
+  loadSlugRegistry().then((r) => {
+    slugRegistry = r;
+  });
 
   function getDurationSeconds() {
     return Math.max(1, Math.round((Date.now() - sessionStartedAt) / 1000));
@@ -251,6 +258,20 @@ export function runExam({
         ul.appendChild(li);
       }
       panel.appendChild(ul);
+    }
+
+    const slug = slugForQuestion(slugRegistry, certId, q.id);
+    if (slug) {
+      const wrap = document.createElement("p");
+      wrap.className = "seo-breakdown-link-wrap";
+      const a = document.createElement("a");
+      a.className = "seo-breakdown-link";
+      a.href = questionPageUrl(slug);
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = "Open full study page (indexed for search)";
+      wrap.appendChild(a);
+      panel.appendChild(wrap);
     }
 
     return panel;

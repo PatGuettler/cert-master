@@ -2,9 +2,12 @@
 __pycache__/
 *.py[cod]
 
-# Optional static SEO HTML (not required for the app; generate locally if needed)
+# Static SEO HTML generated on deploy (scripts/build-question-pages.py)
 questions/**/*
 !questions/.gitkeep
+cert/**/*
+!cert/.gitkeep
+browse/index.html
 sitemap.xml
 
 # Logs

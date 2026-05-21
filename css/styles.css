@@ -2002,6 +2002,30 @@ footer.site-footer {
   font-size: 0.9em;
 }
 
+.seo-hub-more {
+  margin: 0.5rem 0 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.seo-cert-domains {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.seo-cert-domains th,
+.seo-cert-domains td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.seo-cert-domains th {
+  background: var(--surface-elevated);
+}
+
 .seo-sr-only {
   position: absolute;
   width: 1px;

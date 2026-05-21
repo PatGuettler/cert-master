@@ -49,4 +49,8 @@ See `scripts/question_bank/official_docs.py` if you use the optional generators.
 
 ## Bulk regeneration (optional)
 
-Python scripts under `scripts/` can rebuild entire banks from fact catalogs. They are **not** run in CI — maintainers run them locally when adding hundreds of questions at once, then commit the JSON here.
+Python scripts under `scripts/` can rebuild entire banks from fact catalogs. They are **not** run for exam JSON in CI — maintainers run them locally when adding hundreds of questions at once, then commit the JSON here.
+
+## SEO pages (automatic on deploy)
+
+CI runs `scripts/build-question-pages.py`, which generates crawlable HTML from these JSON files (`questions/`, `cert/`, `browse/`, `sitemap.xml`). See `docs/SEO.md`. The slug index `data/questions-slugs.json` is updated on each deploy build (committed copy is optional for local preview).

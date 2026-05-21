@@ -20,7 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Exam content lives in data/exams/*.json (committed). No Python build on deploy.
+      - name: Build SEO pages (questions, cert landings, sitemap)
+        run: python3 scripts/build-question-pages.py
+        env:
+          SITE_ORIGIN: https://practicecert.com
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
