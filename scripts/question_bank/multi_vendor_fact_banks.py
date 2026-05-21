@@ -22,6 +22,8 @@ AZURE_BANKS: dict[str, dict[str, list[Fact]]] = {
             _f("store unstructured objects at scale", "Azure Blob Storage", ("Azure SQL only for blobs", "VPN gateway", "Entra group mail"), "Blob Storage is object storage for files and media.", "Blob Storage", "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"),
             _f("run Linux VMs in Azure", "Azure Virtual Machines", ("Blob Storage", "Logic Apps only", "DNS zones only"), "VMs provide IaaS compute.", "Virtual Machines", "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"),
             _f("serverless HTTP APIs", "Azure Functions", ("Virtual Network peering only", "ExpressRoute only", "Archive tier only"), "Functions run event-driven code without managing servers.", "Azure Functions", "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"),
+            _f("host managed web applications", "Azure App Service", ("Blob Storage only", "VPN SKU", "ICMP probe"), "App Service is PaaS for web apps.", "App Service", "https://learn.microsoft.com/en-us/azure/app-service/overview"),
+            _f("run managed relational databases", "Azure SQL Database", ("CSV files only", "FTP share", "Telnet"), "Azure SQL Database is managed PaaS SQL.", "Azure SQL Database", "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"),
         ],
         "azure-management": [
             _f("deploy resources as a unit", "Azure Resource Manager templates", ("Manual portal clicks only policy", "Local AD only", "FTP deploy"), "ARM provides declarative infrastructure deployment.", "ARM templates", "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"),
@@ -167,15 +169,23 @@ GCP_BANKS: dict[str, dict[str, list[Fact]]] = {
         "digital-transformation": [
             _f("explain why organizations adopt cloud", "Elastic scale and innovation velocity", ("Fixed mainframe only forever", "No internet", "Ignore SLAs"), "Cloud enables faster experimentation.", "Why Google Cloud", "https://cloud.google.com/why-google-cloud"),
             _f("describe Google Cloud regions", "Geographically isolated regions with zones", ("Single laptop datacenter", "FTP only", "SNMP hub"), "Regions provide disaster isolation.", "Regions and zones", "https://cloud.google.com/compute/docs/regions-zones"),
+            _f("compare CapEx vs OpEx in cloud", "Operational expenditure with usage-based billing", ("Only CapEx", "No invoices", "Free always"), "Cloud shifts spending models.", "Cloud economics", "https://cloud.google.com/docs/overview/cloud-economics"),
+            _f("enable digital transformation programs", "Modernize apps and data on cloud foundations", ("Keep legacy only", "No strategy", "Ignore users"), "Transformation uses cloud as enabler.", "Digital transformation", "https://cloud.google.com/transform"),
         ],
         "innovating": [
             _f("analyze petabytes with SQL", "BigQuery serverless warehouse", ("Desktop Excel cluster", "Email CSV only", "Local USB"), "BigQuery separates storage and compute.", "BigQuery", "https://cloud.google.com/bigquery/docs/introduction"),
+            _f("build ML models on managed AI platform", "Vertex AI", ("Notepad regression", "No data", "FTP weights"), "Vertex AI unifies ML workflows.", "Vertex AI", "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform"),
+            _f("stream analytics in real time", "Pub/Sub with Dataflow", ("Batch USB weekly", "Email CSV", "Telnet"), "Streaming enables timely insights.", "Pub/Sub", "https://cloud.google.com/pubsub/docs/overview"),
         ],
         "infrastructure": [
             _f("run VMs on Google infrastructure", "Compute Engine", ("Tape backup only", "Dial-up", "ICMP only"), "GCE provides IaaS VMs.", "Compute Engine", "https://cloud.google.com/compute/docs"),
+            _f("run containers on managed Kubernetes", "Google Kubernetes Engine", ("Single VM forever", "No orchestration", "Manual SSH"), "GKE manages Kubernetes.", "GKE", "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"),
+            _f("serverless request-driven compute", "Cloud Run", ("Always-on VM", "FTP", "Ping"), "Cloud Run runs containers on demand.", "Cloud Run", "https://cloud.google.com/run/docs/overview/what-is-cloud-run"),
         ],
         "security-ops": [
             _f("shared responsibility on Google Cloud", "Google secures infrastructure; customers secure workloads", ("Google patches guest OS always", "No customer IAM", "Disable logging"), "Customers configure identity, data, apps.", "Security", "https://cloud.google.com/security"),
+            _f("manage identities and roles", "Cloud IAM", ("Shared root password", "Public admin", "No audit"), "IAM controls who can do what.", "Cloud IAM", "https://cloud.google.com/iam/docs/overview"),
+            _f("monitor workloads and SLOs", "Cloud Monitoring", ("No metrics", "Annual check", "Ignore alerts"), "Monitoring supports operations.", "Cloud Monitoring", "https://cloud.google.com/monitoring/docs"),
         ],
     },
     "associate-cloud-engineer": {
@@ -349,16 +359,25 @@ COMPTIA_EXTRA_BANKS: dict[str, dict[str, list[Fact]]] = {
         "data-concepts": [
             _f("distinguish structured and unstructured data", "Tables vs documents/media", ("Only ICMP", "DNS only", "Cable types"), "Data type drives tooling.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
             _f("describe data life cycle stages", "Collection, processing, analysis, storage, sharing", ("Only delete", "No catalog", "Random USB"), "Life cycle informs controls.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("compare relational and dimensional models", "Star/snowflake schemas for analytics", ("Only flat files", "No keys", "Random CSV"), "Models affect query performance.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
         ],
         "mining-analytics": [
             _f("visualize trends for stakeholders", "Dashboards with clear metrics", ("Raw tables only", "Hide outliers always", "No labels"), "Visualization communicates insights.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
             _f("apply basic statistics to samples", "Mean, median, variance with context", ("Cherry-pick only", "Ignore sample size", "No units"), "Statistics support decisions.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("handle missing and dirty data", "Profiling, imputation, and validation rules", ("Ignore nulls", "Drop all rows", "No documentation"), "Data quality affects analysis.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("find correlations between metrics", "Scatter plots and coefficient review", ("Guess causation", "Single metric only", "No baseline"), "Correlation guides hypotheses.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("summarize datasets with aggregates", "GROUP BY with clear grain definitions", ("Mix grains randomly", "Duplicate rows", "No keys"), "Aggregates must match business grain.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("communicate analytical limitations", "Document assumptions and sample bias", ("Hide caveats", "Overclaim accuracy", "No peer review"), "Transparency builds trust.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("select chart types appropriately", "Bar vs line vs histogram by data type", ("Pie chart for everything", "3D clutter", "No axis labels"), "Chart choice affects interpretation.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
         ],
         "governance": [
             _f("protect sensitive columns", "Masking and access controls", ("Email CSV of PII", "Public share", "No retention policy"), "Governance reduces data risk.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
             _f("document data lineage", "Catalog showing sources and transforms", ("Shadow spreadsheets", "No owners", "Delete metadata"), "Lineage supports audits.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
             _f("define data retention schedules", "Policy-based retention and deletion", ("Keep forever", "No legal review", "Public archives"), "Retention limits risk and cost.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
             _f("assign data stewards", "Named owners per dataset", ("Everyone owns nothing", "No RACI", "Ignore quality"), "Stewards accountability improves quality.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("measure data quality dimensions", "Accuracy, completeness, timeliness metrics", ("No metrics", "Guess quality", "Ignore duplicates"), "Quality metrics guide remediation.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("classify data by sensitivity", "Labels such as public, internal, confidential", ("One label for all", "No training", "Share externally"), "Classification drives controls.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
+            _f("apply role-based access to datasets", "Least privilege for analysts and engineers", ("Shared admin", "Public buckets", "No reviews"), "RBAC limits exposure.", "Data+ objectives", "https://www.comptia.org/en-us/certifications/data"),
         ],
     },
     "comptia-pentest-plus": {
@@ -373,6 +392,11 @@ COMPTIA_EXTRA_BANKS: dict[str, dict[str, list[Fact]]] = {
             _f("exploit misconfigured cloud storage", "Verify bucket/blob ACLs and policies", ("Assume private", "No evidence", "Publish findings early"), "Misconfigurations are common findings.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
             _f("test wireless segmentation", "Validate guest vs corporate isolation", ("Share PSK company-wide", "Open SSID", "No monitoring"), "Wireless tests find isolation gaps.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
             _f("use credential stuffing responsibly", "Test with approved wordlists and limits", ("Lock out all users", "No scope", "Live prod creds"), "Controlled testing validates auth controls.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            _f("identify XSS in web apps", "Test reflected and stored XSS with safe payloads", ("Ignore input fields", "Disable CSP always", "Test prod users"), "XSS can steal sessions or deface apps.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            _f("test for insecure deserialization", "Review parsers and object injection points", ("Trust all serialized blobs", "Disable logging", "Public admin API"), "Unsafe deserialization enables RCE.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            _f("perform privilege escalation checks", "Validate local and domain privilege boundaries", ("Assume least privilege works", "No enumeration", "Single test user"), "Escalation paths are high impact.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            _f("assess default credentials on appliances", "Check vendor default accounts are changed", ("Assume changed", "No scan", "Ignore IoT"), "Defaults are common in appliances.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+            _f("test LDAP injection paths", "Validate input sanitization on directory queries", ("Concatenate filters", "Disable auth", "Anonymous bind prod"), "LDAPi can bypass authentication.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),
         ],
         "reporting": [
             _f("communicate findings to leadership", "Executive summary with risk rating", ("Raw tool output only", "No remediation", "Ignore business impact"), "Reports drive remediation priorities.", "PenTest+ objectives", "https://www.comptia.org/en-us/certifications/pentest"),

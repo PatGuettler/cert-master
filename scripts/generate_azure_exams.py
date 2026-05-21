@@ -26,17 +26,28 @@ def rebuild_index() -> None:
     mod.main()
 
 
-def main() -> None:
+def main() -> int:
+    errors: list[str] = []
     for exam in AZURE_EXAMS:
         exam_id = exam["id"]
-        payload = build_vendor_payload(exam_id, AZURE_BY_ID, AZURE_BANKS, AZURE_CONFIG)
-        validate_pool(payload["questions"], payload["domains"], exam.get("min_questions", 70))
-        assert_official_exam(payload)
-        out = EXAMS_DIR / f"{exam_id}.json"
-        write_exam(out, payload)
-        print(f"Wrote {len(payload['questions'])} questions -> {out}")
+        try:
+            payload = build_vendor_payload(exam_id, AZURE_BY_ID, AZURE_BANKS, AZURE_CONFIG)
+            validate_pool(payload["questions"], payload["domains"], exam.get("min_questions", 70))
+            assert_official_exam(payload)
+            out = EXAMS_DIR / f"{exam_id}.json"
+            write_exam(out, payload)
+            print(f"Wrote {len(payload['questions'])} questions -> {out}")
+        except (SystemExit, Exception) as e:
+            errors.append(f"{exam_id}: {e}")
+            print(f"FAILED {exam_id}: {e}", file=sys.stderr)
+
     rebuild_index()
+    if errors:
+        for err in errors:
+            print(err, file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

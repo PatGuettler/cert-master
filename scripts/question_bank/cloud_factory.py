@@ -171,6 +171,18 @@ def _resource_questions(spec: dict, cfg: VendorBuildConfig) -> list[RawQuestion]
     return raw
 
 
+def _seen_stems(raw: list[RawQuestion]) -> set[str]:
+    return {r[2] for r in raw}
+
+
+def _append_unique(raw: list[RawQuestion], seen: set[str], row: RawQuestion) -> bool:
+    if row[2] in seen:
+        return False
+    raw.append(row)
+    seen.add(row[2])
+    return True
+
+
 def _pad_domain(
     domain_id: str,
     facts: list[Fact],
@@ -178,41 +190,66 @@ def _pad_domain(
     cfg: VendorBuildConfig,
     rng: random.Random,
 ) -> list[RawQuestion]:
+    if not facts:
+        return []
+
     raw: list[RawQuestion] = []
+    seen = _seen_stems(raw)
     for fact in facts:
-        raw.append(_fact_mcq(domain_id, fact, cfg))
+        _append_unique(raw, seen, _fact_mcq(domain_id, fact, cfg))
+
     for fact in facts:
         if len(raw) >= target:
             break
         for alt in cfg.stem_alt:
-            raw.append(_fact_mcq(domain_id, fact, cfg, alt.format(suffix=fact[0])))
-    for fact in facts:
-        if len(raw) >= target:
-            break
-        prefix = rng.choice(cfg.scenario_prefixes)
-        stem = f"{prefix} {fact[0]}."
-        raw.append(_fact_mcq(domain_id, fact, cfg, stem))
-    idx = 0
-    while len(raw) < target and len(facts) >= 2:
-        f1, f2 = facts[idx % len(facts)], facts[(idx + 1) % len(facts)]
-        idx += 1
-        _, c1, w1, e1, t1, u1 = f1
-        _, c2, _, e2, t2, u2 = f2
-        stem = (
-            f"Which capability is provided by {c1} rather than {c2} when you need to {f1[0]}?"
-        )
-        raw.append(
-            (
-                domain_id,
-                "multiple-choice",
-                stem,
-                [("a", c1), ("b", c2), ("c", w1[0]), ("d", w1[1])],
-                ["a"],
-                f"{e1} Compare with {c2}: {e2}",
-                [(t1, u1), (t2, u2)],
+            _append_unique(
+                raw, seen, _fact_mcq(domain_id, fact, cfg, alt.format(suffix=fact[0]))
             )
-        )
-    return raw[: max(target, len(raw))]
+
+    prefix_cycle = list(cfg.scenario_prefixes)
+    rng.shuffle(prefix_cycle)
+    pi = 0
+    while len(raw) < target and pi < len(facts) * max(len(prefix_cycle), 1) * 4:
+        fact = facts[pi % len(facts)]
+        prefix = prefix_cycle[pi % len(prefix_cycle)]
+        _append_unique(raw, seen, _fact_mcq(domain_id, fact, cfg, f"{prefix} {fact[0]}."))
+        pi += 1
+
+    if len(facts) >= 2:
+        idx = 0
+        while len(raw) < target and idx < len(facts) * (len(facts) - 1) * 2:
+            f1, f2 = facts[idx % len(facts)], facts[(idx + 1) % len(facts)]
+            idx += 1
+            _, c1, w1, e1, t1, u1 = f1
+            _, c2, _, e2, t2, u2 = f2
+            stem = (
+                f"Which capability is provided by {c1} rather than {c2} "
+                f"when you need to {f1[0]}?"
+            )
+            _append_unique(
+                raw,
+                seen,
+                (
+                    domain_id,
+                    "multiple-choice",
+                    stem,
+                    [("a", c1), ("b", c2), ("c", w1[0]), ("d", w1[1])],
+                    ["a"],
+                    f"{e1} Compare with {c2}: {e2}",
+                    [(t1, u1), (t2, u2)],
+                ),
+            )
+
+    # Last resort: rotate alt stems with numeric suffix so stems stay unique.
+    attempt = 0
+    while len(raw) < target and attempt < target * 3:
+        fact = facts[attempt % len(facts)]
+        alt = cfg.stem_alt[attempt % len(cfg.stem_alt)]
+        stem = alt.format(suffix=f"{fact[0]} (variant {attempt // len(facts) + 1})")
+        _append_unique(raw, seen, _fact_mcq(domain_id, fact, cfg, stem))
+        attempt += 1
+
+    return raw[:target] if len(raw) >= target else raw
 
 
 def build_raw_questions(

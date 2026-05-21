@@ -37,6 +37,7 @@ def main() -> int:
     LOG.write_text("", encoding="utf-8")
     ok = True
     for script in (
+        "check_vendor_pools.py",
         "generate_comptia_exams.py",
         "generate_azure_exams.py",
         "generate_gcp_exams.py",

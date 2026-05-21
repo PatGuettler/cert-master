@@ -22,17 +22,23 @@ def main() -> None:
         "generate_comptia_exams.py",
         "generate_azure_exams.py",
         "generate_gcp_exams.py",
-        "build-exams-index.py",
     ]
     failed: list[str] = []
     for script in steps:
-        try:
-            run(script)
-        except subprocess.CalledProcessError:
+        print(f"\n=== {script} ===")
+        result = subprocess.run(
+            [sys.executable, str(SCRIPTS / script)],
+            cwd=str(ROOT),
+        )
+        if result.returncode != 0:
             failed.append(script)
-            print(f"WARNING: {script} failed — continuing with remaining steps")
+            print(f"FAILED: {script} (exit {result.returncode})", file=sys.stderr)
+
+    print("\n=== build-exams-index.py ===")
+    subprocess.run([sys.executable, str(SCRIPTS / "build-exams-index.py")], check=True, cwd=str(ROOT))
+
     if failed:
-        print("\nCompleted with failures:", ", ".join(failed))
+        print("\nCompleted with failures:", ", ".join(failed), file=sys.stderr)
         raise SystemExit(1)
     print("\nAll vendor exams generated.")
 

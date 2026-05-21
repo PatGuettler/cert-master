@@ -42,7 +42,7 @@ def exam_domain_minimums(domains: list[dict], total: int) -> dict[str, int]:
     mins: dict[str, int] = {}
     for d in domains:
         share = max(1, math.ceil(total * d["weight"] / 100))
-        mins[d["id"]] = share + 2
+        mins[d["id"]] = share + 1
     return mins
 
 

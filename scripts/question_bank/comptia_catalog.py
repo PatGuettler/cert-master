@@ -226,12 +226,15 @@ COMPTIA_EXAMS: list[dict[str, Any]] = [
         "domains": [
             domain("data-concepts", "Domain 1: Data Concepts and Environments", 25, [
                 ("Data+ Exam Objectives", "https://www.comptia.org/en-us/certifications/data"),
+                ("Data+ study resources", "https://www.comptia.org/en-us/certifications/data"),
             ]),
             domain("mining-analytics", "Domain 2: Data Mining, Analysis, and Visualization", 35, [
                 ("Data+ Exam Objectives", "https://www.comptia.org/en-us/certifications/data"),
+                ("Data+ analytics objectives", "https://www.comptia.org/en-us/certifications/data"),
             ]),
             domain("governance", "Domain 3: Data Governance, Quality, and Controls", 40, [
                 ("Data+ Exam Objectives", "https://www.comptia.org/en-us/certifications/data"),
+                ("Data+ governance objectives", "https://www.comptia.org/en-us/certifications/data"),
             ]),
         ],
     },
@@ -249,6 +252,7 @@ COMPTIA_EXAMS: list[dict[str, Any]] = [
             ]),
             domain("attacks-exploits", "Domain 2: Attacks and Exploits", 45, [
                 ("PenTest+ Exam Objectives", "https://www.comptia.org/en-us/certifications/pentest"),
+                ("PenTest+ attack objectives", "https://www.comptia.org/en-us/certifications/pentest"),
             ]),
             domain("reporting", "Domain 3: Reporting and Communication", 35, [
                 ("PenTest+ Exam Objectives", "https://www.comptia.org/en-us/certifications/pentest"),
