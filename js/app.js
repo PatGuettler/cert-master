@@ -63,6 +63,11 @@ import {
 import { renderKeytrainHub, renderKeytrainWorkshops } from "./key-training-ui.js";
 import { getKeytrainWorkshop } from "./workshops/keytrain-workshop-content.js";
 import { runWorkshop } from "./workshop-runner.js";
+import { recordWorkshopCompletion } from "./keytrain-progress-storage.js";
+import { renderKeytrainProgressDashboard } from "./keytrain-progress-ui.js";
+
+/** Dashboard filter value for KeyTrain overview (all categories). */
+const KEYTRAIN_OVERVIEW_ID = "__keytrain_overview__";
 
 const LAST_CERT_KEY = `${APP_SLUG}:lastCert`;
 
@@ -280,15 +285,104 @@ function buildCertDescription(cert) {
   return `Each attempt draws <strong>${e.totalQuestions} random questions</strong> from the bank using official <strong>${cert.code}</strong> domain weights (${weights}), with shuffled order and answer choices. Mirrors the real exam format: ${e.scoredQuestions} scored questions, ${e.timeLimitMinutes} minutes, pass/fail at ${e.passingScore}. Original practice aligned to ${vendorName} exam guides—with reference links to official documentation, not copied exam items.`;
 }
 
+/**
+ * @param {HTMLSelectElement|null} select
+ * @param {string} selectedId
+ */
+function syncDashboardCertFilter(select, selectedId) {
+  if (!select) return;
+  const keytrain = examIndexList
+    .filter((e) => e.vendor === "keytraining")
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const other = examIndexList
+    .filter((e) => e.vendor !== "keytraining")
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const prev = select.value || selectedId;
+  select.innerHTML = "";
+
+  if (keytrain.length > 0) {
+    const overview = document.createElement("option");
+    overview.value = KEYTRAIN_OVERVIEW_ID;
+    overview.textContent = "KeyTrain — all categories (overview)";
+    select.appendChild(overview);
+
+    const ktGroup = document.createElement("optgroup");
+    ktGroup.label = "KeyTrain — drill down by category";
+    for (const exam of keytrain) {
+      const opt = document.createElement("option");
+      opt.value = exam.id;
+      opt.textContent = `${exam.name.replace(/^KeyTrain's Key Training — /, "")} (${exam.code || exam.id})`;
+      ktGroup.appendChild(opt);
+    }
+    select.appendChild(ktGroup);
+  }
+
+  if (other.length > 0) {
+    const og = document.createElement("optgroup");
+    og.label = "Other certifications";
+    for (const exam of other) {
+      const opt = document.createElement("option");
+      opt.value = exam.id;
+      const vendor = exam.vendor ?? "aws";
+      opt.textContent = exam.code
+        ? `[${vendor}] ${exam.name} (${exam.code})`
+        : `[${vendor}] ${exam.name}`;
+      og.appendChild(opt);
+    }
+    select.appendChild(og);
+  }
+
+  if (prev === KEYTRAIN_OVERVIEW_ID) select.value = KEYTRAIN_OVERVIEW_ID;
+  else if (examIndexList.some((e) => e.id === prev)) select.value = prev;
+  else if (keytrain.length > 0) select.value = KEYTRAIN_OVERVIEW_ID;
+  else if (examIndexList.some((e) => e.id === selectedId)) select.value = selectedId;
+  else if (examIndexList[0]) select.value = examIndexList[0].id;
+}
+
 async function renderDashboardForFilter() {
   const select = document.getElementById("dashboard-cert-filter");
   const certId = select?.value || activeCertId;
+  const nameEl = document.getElementById("dashboard-cert-name");
+  const codeEl = document.getElementById("dashboard-cert-code");
+  const startBtn = document.getElementById("btn-dashboard-start");
+
+  const examMeta = examIndexList.find((e) => e.id === certId);
+  const showKeytrainView =
+    certId === KEYTRAIN_OVERVIEW_ID ||
+    examMeta?.vendor === "keytraining";
+
+  if (showKeytrainView && examIndexList.some((e) => e.vendor === "keytraining")) {
+    if (nameEl) nameEl.textContent = "KeyTrain progress";
+    if (codeEl) {
+      codeEl.textContent =
+        certId === KEYTRAIN_OVERVIEW_ID
+          ? "All categories · workshops & practice"
+          : examMeta?.code ?? certId;
+    }
+    startBtn?.classList.add("hidden");
+    renderKeytrainProgressDashboard({
+      examIndexList,
+      selectedCategoryId:
+        certId === KEYTRAIN_OVERVIEW_ID ? null : certId,
+      onOpenWorkshop: (categoryId, level) => startWorkshop(categoryId, level),
+      onOpenPractice: (id) => openCert(id),
+      loadCert,
+      onHistoryChange: refreshDataViews,
+    });
+    return;
+  }
+
+  startBtn?.classList.remove("hidden");
   if (!certId) return;
 
   const cert =
     certId === activeCertId && currentCert
       ? currentCert
       : await loadCert(certId);
+
+  if (nameEl) nameEl.textContent = cert.name;
+  if (codeEl) codeEl.textContent = cert.code;
 
   renderDashboard(certId, cert, { onHistoryChange: refreshDataViews });
 }
@@ -893,7 +987,7 @@ async function showDashboard() {
   navigateHome();
   showView("dashboard");
   setHeaderTitle("Your progress");
-  syncCertFilterOptions(
+  syncDashboardCertFilter(
     document.getElementById("dashboard-cert-filter"),
     activeCertId
   );
@@ -1094,6 +1188,10 @@ function startWorkshop(categoryId, level = "medium", opts = {}) {
     onExit: () => {
       workshopController = null;
       goKeytrain();
+    },
+    onComplete: (stats) => {
+      recordWorkshopCompletion(id, lv, stats);
+      refreshDataViews();
     },
   });
 }
@@ -1332,6 +1430,11 @@ document.getElementById("btn-dashboard-home")?.addEventListener("click", goLandi
 document.getElementById("landing-tile-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("landing-tile-browse")?.addEventListener("click", goBrowse);
 document.getElementById("landing-tile-keytrain")?.addEventListener("click", goKeytrain);
+document.getElementById("btn-keytrain-view-progress")?.addEventListener("click", () => {
+  const select = document.getElementById("dashboard-cert-filter");
+  if (select) select.value = KEYTRAIN_OVERVIEW_ID;
+  showDashboard();
+});
 document.getElementById("btn-keytrain-workshops-back")?.addEventListener("click", goKeytrain);
 document.getElementById("btn-keytrain-all-workshops")?.addEventListener("click", goKeytrainWorkshops);
 document.getElementById("btn-start-workshop")?.addEventListener("click", () => {

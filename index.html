@@ -269,6 +269,11 @@
             and more. Expand a section below to start <strong>training</strong>, join a
             <strong>workshop</strong>, or take a formal <strong>certification</strong> exam.
           </p>
+          <p class="keytraining-hub-more">
+            <button type="button" id="btn-keytrain-view-progress" class="btn btn-outline">
+              View your progress
+            </button>
+          </p>
         </div>
         <details id="keytrain-section-training" class="page-collapse keytraining-hub-section">
           <summary class="browse-vendor-summary">
@@ -648,10 +653,13 @@
       <section id="view-dashboard" class="view hidden">
         <div class="dashboard-header">
           <label class="dashboard-cert-filter" for="dashboard-cert-filter">
-            <span class="dashboard-cert-filter-label">View progress for</span>
-            <select id="dashboard-cert-filter" class="dashboard-cert-select"></select>
+            <span class="dashboard-cert-filter-label">Scope</span>
+            <select id="dashboard-cert-filter" class="dashboard-cert-select" aria-describedby="dashboard-filter-hint"></select>
           </label>
-          <h2 id="dashboard-cert-name">Progress</h2>
+          <p id="dashboard-filter-hint" class="dashboard-filter-hint">
+            Start with <strong>KeyTrain — all categories</strong> for the big picture, then pick a category to drill into workshops and practice scores.
+          </p>
+          <h2 id="dashboard-cert-name">Your progress</h2>
           <p class="cert-code" id="dashboard-cert-code"></p>
         </div>
         <div id="dashboard-root" class="dashboard-root"></div>

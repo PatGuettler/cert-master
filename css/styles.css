@@ -2468,6 +2468,211 @@ body.has-ad-bar {
   font-weight: 600;
 }
 
+/* KeyTrain progress dashboard */
+.dashboard-filter-hint {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  max-width: 42rem;
+}
+
+.kt-progress-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kt-progress-heading {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.kt-progress-lead {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 40rem;
+}
+
+.kt-overview-stats {
+  margin-bottom: 0.75rem;
+}
+
+.kt-overview-bar-wrap {
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.kt-overview-bar {
+  height: 100%;
+  background: var(--aws-orange);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.kt-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.65rem;
+}
+
+.kt-category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.kt-category-card:hover,
+.kt-category-card.is-selected {
+  border-color: var(--aws-orange);
+  background: var(--cert-active-bg);
+}
+
+.kt-category-card-code {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--aws-orange);
+  text-transform: uppercase;
+}
+
+.kt-category-card-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.kt-category-card-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.kt-category-card-cta {
+  font-size: 0.75rem;
+  color: var(--aws-blue);
+  margin-top: 0.25rem;
+}
+
+.kt-drilldown {
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.kt-drilldown-placeholder {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.kt-drilldown-header {
+  margin-bottom: 1rem;
+}
+
+.kt-drilldown-tagline {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.kt-drill-section {
+  margin-top: 0.75rem;
+}
+
+.kt-level-progress-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.kt-level-progress-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.35rem 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.kt-level-progress-head {
+  grid-column: 1 / -1;
+}
+
+.kt-level-name {
+  display: block;
+}
+
+.kt-level-hint {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-top: 0.15rem;
+}
+
+.kt-level-meta {
+  grid-column: 1;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.kt-open-workshop {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  align-self: center;
+}
+
+.kt-status {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.kt-status--good {
+  color: var(--aws-green);
+}
+
+.kt-status--ok {
+  color: var(--aws-orange);
+}
+
+.kt-status--low {
+  color: var(--aws-red);
+}
+
+.kt-status--none {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.kt-cert-banner {
+  margin: 0.75rem 0 0;
+  padding: 0.65rem 0.85rem;
+  background: var(--cert-active-bg);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85rem;
+}
+
 /* KeyTrain leveled workshops */
 .keytrain-leveled-grid {
   display: flex;
