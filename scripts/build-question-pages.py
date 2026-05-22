@@ -117,6 +117,56 @@ def render_seo_footer(*, include_disclaimer: bool = True) -> str:
     return f'<footer class="site-footer site-footer--expanded">{links}{disclaimer}</footer>'
 
 
+def render_seo_app_chrome(*, asset_prefix: str = "../") -> str:
+    """Hamburger header + drawer for static pages (links to main app routes)."""
+    home = site_url("/")
+    browse = site_url("/browse/")
+    keytrain = site_url("/keytrain/")
+    about = site_url("/about/")
+    contact = site_url("/contact/")
+    privacy = site_url("/privacy/")
+    js_href = f"{asset_prefix}js/static-menu.js"
+    return f"""
+    <header class="site-header">
+      <button
+        id="menu-btn"
+        class="menu-btn"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="drawer"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <h1 class="site-title"><a href="{escape(home)}">Cert Master</a></h1>
+    </header>
+    <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+    <aside id="drawer" class="drawer" aria-label="Menu">
+      <div class="drawer-header">
+        <h2>Menu</h2>
+      </div>
+      <div class="drawer-main">
+        <nav class="drawer-nav" aria-label="Main navigation">
+          <a href="{escape(home)}" class="drawer-nav-btn drawer-nav-link">Home</a>
+          <a href="{escape(browse)}" class="drawer-nav-btn drawer-nav-link">Practice certifications</a>
+          <a href="{escape(keytrain)}" class="drawer-nav-btn drawer-nav-link">KeyTrain</a>
+          <a href="{escape(home)}" class="drawer-nav-btn drawer-nav-link">Your progress</a>
+        </nav>
+        <footer class="drawer-footer">
+          <nav class="drawer-footer-links" aria-label="Site information">
+            <a href="{escape(about)}">About</a>
+            <a href="{escape(contact)}">Contact</a>
+            <a href="{escape(privacy)}">Privacy</a>
+          </nav>
+        </footer>
+      </div>
+    </aside>
+    <script type="module" src="{escape(js_href)}"></script>
+    """
+
+
 def render_trust_shell(
     *,
     title: str,
@@ -140,9 +190,7 @@ def render_trust_shell(
 {head}
   </head>
   <body class="{seo_body_class("seo-trust-body")}">
-    <header class="site-header seo-question-header">
-      <a href="{escape(home)}" class="seo-brand-link">Cert Master</a>
-    </header>
+    {render_seo_app_chrome(asset_prefix="../")}
     <main class="seo-question-main seo-trust-main">
       <nav class="seo-breadcrumb" aria-label="Breadcrumb">
         <a href="{escape(home)}">Home</a> / {escape(breadcrumb_label)}

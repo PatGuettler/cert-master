@@ -11,7 +11,6 @@ import {
   bindLearnMorePanel,
   buildTeachingContent,
   renderLearnMorePanelHtml,
-  renderQuizWrongPickCallout,
   renderWarningFlagsSection,
 } from "./workshops/workshop-teaching.js";
 
@@ -90,6 +89,10 @@ export function runWorkshop({
   const checklistState = {};
   /** @type {Set<string>} */
   const revealedQuizzes = new Set();
+  /** @type {Set<string>} */
+  const quizEverWrong = new Set();
+  /** @type {Set<string>} */
+  const revealedChecklists = new Set();
 
   const levelClass = workshop.level ? ` workshop-level-${workshop.level}` : "";
   const levelBadge = workshop.level
@@ -145,6 +148,25 @@ export function runWorkshop({
   }
 
   /** @param {WorkshopStep} s */
+  function quizCountsForScore(s) {
+    return quizCorrect(s, quizAnswers[s.id] ?? []) && !quizEverWrong.has(s.id);
+  }
+
+  /**
+   * @param {WorkshopStep} s
+   * @param {string} optId
+   * @param {'wrong'|'correct'} kind
+   */
+  function quizOptionRevealNote(s, optId, kind) {
+    const note = s.optionNotes?.[optId];
+    if (note) return note;
+    if (kind === "correct" && s.explanation) return s.explanation;
+    return kind === "wrong"
+      ? "This is not the best choice for this scenario."
+      : "This is the recommended response.";
+  }
+
+  /** @param {WorkshopStep} s */
   function quizBlocksNavigation(s) {
     if (!isQuizStep(s)) return false;
     const selected = quizAnswers[s.id] ?? [];
@@ -166,14 +188,22 @@ export function runWorkshop({
   }
 
   /** @param {WorkshopStep} s */
-  function checklistAllReviewed(s) {
+  function checklistAllSelected(s) {
     const items = s.items ?? [];
     return items.length > 0 && checklistReviewedCount(s) === items.length;
   }
 
   /** @param {WorkshopStep} s */
+  function checklistChecked(s) {
+    return revealedChecklists.has(s.id);
+  }
+
+  /** @param {WorkshopStep} s */
   function checklistBlocksNavigation(s) {
-    return s.type === "checklist" && !checklistAllReviewed(s);
+    return (
+      s.type === "checklist" &&
+      (!checklistAllSelected(s) || !checklistChecked(s))
+    );
   }
 
   /** @param {WorkshopStep} s */
@@ -214,6 +244,9 @@ export function runWorkshop({
     const submitted = revealedQuizzes.has(s.id);
     const correct = submitted && quizCorrect(s, selected);
     const locked = submitted && correct;
+    const showAnswerKey = submitted && !correct;
+    const correctIds = new Set(s.correct ?? []);
+    const missedFirstTry = correct && quizEverWrong.has(s.id);
 
     let html = `<h3 class="workshop-step-title">${escapeHtml(s.title)}</h3>`;
     if (s.prompt) {
@@ -222,12 +255,35 @@ export function runWorkshop({
     html += `<fieldset class="workshop-quiz-options" ${locked ? "disabled" : ""}>`;
     for (const opt of s.options ?? []) {
       const checked = selected.includes(opt.id);
+      const isCorrectOpt = correctIds.has(opt.id);
+      const isWrongPick = showAnswerKey && checked && !isCorrectOpt;
+      const isCorrectReveal = showAnswerKey && isCorrectOpt;
       const inputType = multi ? "checkbox" : "radio";
       const name = multi ? `ws-${s.id}` : `ws-${s.id}`;
-      html += `<label class="workshop-quiz-option${checked ? " is-selected" : ""}">
-        <input type="${inputType}" name="${name}" value="${opt.id}" ${checked ? "checked" : ""} />
-        <span>${escapeHtml(opt.text)}</span>
-      </label>`;
+      let optClass = "workshop-quiz-option";
+      if (checked && !showAnswerKey) optClass += " is-selected";
+      if (isWrongPick) optClass += " is-wrong-pick";
+      if (isCorrectReveal) optClass += " is-correct-answer";
+      if (locked && checked && isCorrectOpt) optClass += " is-correct-answer";
+
+      html += `<label class="${optClass}">`;
+      html += `<span class="workshop-quiz-option-row">`;
+      html += `<input type="${inputType}" name="${name}" value="${opt.id}" ${checked ? "checked" : ""} />`;
+      html += `<span>${escapeHtml(opt.text)}</span>`;
+      html += `</span>`;
+      if (isWrongPick) {
+        html += `<div class="workshop-quiz-option-reveal is-incorrect" role="note">`;
+        html += `<strong>Your choice</strong>`;
+        html += `<p>${escapeHtml(quizOptionRevealNote(s, opt.id, "wrong"))}</p>`;
+        html += `</div>`;
+      }
+      if (isCorrectReveal) {
+        html += `<div class="workshop-quiz-option-reveal is-correct" role="note">`;
+        html += `<strong>Correct answer</strong>`;
+        html += `<p>${escapeHtml(quizOptionRevealNote(s, opt.id, "correct"))}</p>`;
+        html += `</div>`;
+      }
+      html += `</label>`;
     }
     html += "</fieldset>";
 
@@ -238,17 +294,18 @@ export function runWorkshop({
     if (submitted) {
       html += `<div class="workshop-feedback ${correct ? "is-correct" : "is-incorrect"}" role="status">`;
       html += `<strong>${correct ? "Correct" : "Not quite"}</strong>`;
-      if (s.explanation) {
-        html += `<p>${escapeHtml(s.explanation)}</p>`;
-      }
       if (!correct) {
         if (s.warningFlags?.length) {
           html += renderWarningFlagsSection(s.warningFlags);
         }
-        html += renderQuizWrongPickCallout(s, selected);
-        html += `<p>Review the warning flags above, then pick the best response and check again. <strong>Next</strong> stays disabled until you get it right.</p>`;
+        html += `<p>The correct answer is highlighted in green above; your choice stays expanded so you can compare. Pick the best response and check again — <strong>Next</strong> stays disabled until you get it right.</p>`;
         html += `<p class="workshop-hint workshop-hint-secondary">Want every option explained? Open <strong>Get more information on this</strong> below.</p>`;
+      } else if (missedFirstTry) {
+        html += `<p>You can continue to the next step. This knowledge check will not count toward your workshop score because the first attempt was incorrect.</p>`;
       } else {
+        if (s.explanation) {
+          html += `<p>${escapeHtml(s.explanation)}</p>`;
+        }
         html += `<p>You can continue to the next step.</p>`;
       }
       html += "</div>";
@@ -285,31 +342,34 @@ export function runWorkshop({
 
   function renderChecklist(s) {
     const items = s.items ?? [];
-    const reviewed = checklistReviewedCount(s);
-    const allReviewed = checklistAllReviewed(s);
+    const selected = checklistReviewedCount(s);
+    const allSelected = checklistAllSelected(s);
+    const checked = checklistChecked(s);
 
     let html = `<h3 class="workshop-step-title">${escapeHtml(s.title)}</h3>`;
     if (s.paragraphs?.[0]) {
       html += `<p class="workshop-p">${escapeHtml(s.paragraphs[0])}</p>`;
     }
     if (items.length) {
-      html += `<p class="workshop-checklist-progress" aria-live="polite">Reviewed <strong>${reviewed}</strong> of <strong>${items.length}</strong></p>`;
+      const progressLabel = checked ? "Reviewed" : "Selected";
+      html += `<p class="workshop-checklist-progress" aria-live="polite">${progressLabel} <strong>${selected}</strong> of <strong>${items.length}</strong></p>`;
     }
     html += '<ul class="workshop-checklist">';
     for (const item of items) {
       const key = checklistItemKey(s.id, item.id);
       const on = checklistState[key];
       const isGood = item.good !== false;
+      const showVerdict = checked && on;
       html += `<li class="workshop-checklist-row">`;
-      html += `<button type="button" class="workshop-checklist-item${on ? " is-checked" : ""}${on && !isGood ? " is-discouraged" : ""}" data-check-id="${escapeHtml(item.id)}" aria-expanded="${on ? "true" : "false"}">`;
+      html += `<button type="button" class="workshop-checklist-item${on ? " is-checked" : ""}${showVerdict && !isGood ? " is-discouraged" : ""}" data-check-id="${escapeHtml(item.id)}" aria-expanded="${showVerdict ? "true" : "false"}">`;
       html += `<span class="workshop-check-box" aria-hidden="true">${on ? "✓" : ""}</span>`;
       html += `<span class="workshop-check-text">`;
       html += `<strong>${escapeHtml(item.label)}</strong>`;
-      if (item.detail && !on) {
+      if (item.detail && !showVerdict) {
         html += `<span class="workshop-check-detail">${escapeHtml(item.detail)}</span>`;
       }
       html += `</span></button>`;
-      if (on) {
+      if (showVerdict) {
         const verdict = isGood ? "Recommended habit" : "Not recommended";
         const verdictClass = isGood ? "is-affirming" : "is-warning";
         html += `<div class="workshop-checklist-feedback ${verdictClass}" role="status">`;
@@ -321,7 +381,10 @@ export function runWorkshop({
     }
     html += "</ul>";
 
-    if (allReviewed) {
+    if (!checked) {
+      html += `<p class="workshop-hint">Select each item you want to include, then press <strong>Check selections</strong>. <strong>Next</strong> unlocks after you check all ${items.length}.</p>`;
+      html += `<button type="button" class="btn btn-secondary workshop-check-btn" id="workshop-check-checklist"${allSelected ? "" : " disabled"}>Check selections</button>`;
+    } else if (allSelected) {
       const msg =
         s.checklistCompleteMessage ??
         "You reviewed every item. Each one above is a habit security teams want people to practice—not optional trivia.";
@@ -330,8 +393,6 @@ export function runWorkshop({
       html += `<p>${escapeHtml(msg)}</p>`;
       html += `<p>You can continue to the next step.</p>`;
       html += `</div>`;
-    } else {
-      html += `<p class="workshop-hint">Tap each item to see whether it is recommended and why. <strong>Next</strong> unlocks after you review all ${items.length}.</p>`;
     }
     return html;
   }
@@ -357,7 +418,7 @@ export function runWorkshop({
     for (const s of workshop.steps) {
       if (s.type !== "quiz") continue;
       total += 1;
-      if (quizCorrect(s, quizAnswers[s.id] ?? [])) correct += 1;
+      if (quizCountsForScore(s)) correct += 1;
     }
 
     const practiceId = followUp.practiceExamId ?? null;
@@ -441,6 +502,21 @@ export function runWorkshop({
         return;
       }
       revealedQuizzes.add(s.id);
+      if (!quizCorrect(s, selected)) {
+        quizEverWrong.add(s.id);
+      }
+      render();
+      return;
+    }
+
+    const checkListBtn = target.closest("#workshop-check-checklist");
+    if (checkListBtn && s.type === "checklist") {
+      e.preventDefault();
+      if (!checklistAllSelected(s)) {
+        window.alert(`Select all ${s.items?.length ?? 0} items first.`);
+        return;
+      }
+      revealedChecklists.add(s.id);
       render();
       return;
     }
@@ -452,6 +528,9 @@ export function runWorkshop({
       if (!id) return;
       const key = checklistItemKey(s.id, id);
       checklistState[key] = !checklistState[key];
+      if (revealedChecklists.has(s.id)) {
+        revealedChecklists.delete(s.id);
+      }
       render();
       return;
     }
@@ -474,8 +553,8 @@ export function runWorkshop({
       quizAnswers[s.id] = [target.value];
     }
 
-    if (revealedQuizzes.has(s.id) && !quizCorrect(s, quizAnswers[s.id] ?? [])) {
-      revealedQuizzes.delete(s.id);
+    if (revealedQuizzes.has(s.id) && quizCorrect(s, quizAnswers[s.id] ?? [])) {
+      return;
     }
     render();
   });
@@ -525,7 +604,9 @@ export function runWorkshop({
     } else if (checklistBlocksNavigation(s)) {
       const total = s.items?.length ?? 0;
       const done = checklistReviewedCount(s);
-      navHint = `Review all checklist items to continue (${done} of ${total} done)`;
+      navHint = !checklistAllSelected(s)
+        ? `Select all checklist items (${done} of ${total} selected)`
+        : "Press Check selections to continue";
     }
 
     btnNext.classList.toggle("hidden", atEnd);

@@ -394,7 +394,7 @@ function renderOrderShell(visual) {
       <p class="workshop-order-prompt">${escapeHtml(prompt)}</p>
       <p class="workshop-order-help">Not sure yet? Open <strong>Get more information on this</strong> below for the full reasoning.</p>
       <div class="workshop-order-pool" data-order-pool>${chips}</div>
-      <ol class="workshop-order-slots" data-order-slots aria-label="Your order"></ol>
+      <ul class="workshop-order-slots" data-order-slots aria-label="Your order"></ul>
       <div class="workshop-order-actions">
         <button type="button" class="btn btn-outline btn-sm" data-order-reset>Reset</button>
         <button type="button" class="btn btn-secondary btn-sm" data-order-check>Check order</button>

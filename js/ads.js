@@ -50,12 +50,12 @@ function applyBarLayout() {
 function renderCustomAd(cfg) {
   if (!adContainer || !cfg.custom?.href || !cfg.custom?.text) return;
 
-  const label = cfg.custom.label ?? "Sponsored";
+  const label = cfg.custom.label ?? "Study link";
   const link = document.createElement("a");
   link.className = "ad-custom-link";
   link.href = cfg.custom.href;
   link.target = "_blank";
-  link.rel = "noopener noreferrer sponsored";
+  link.rel = "noopener noreferrer";
   link.textContent = cfg.custom.text;
 
   const caption = document.createElement("span");

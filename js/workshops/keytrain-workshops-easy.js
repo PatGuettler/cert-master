@@ -76,7 +76,7 @@ function easy(c) {
       type: "checklist",
       title: "Habits that protect you every day",
       paragraphs: [
-        "Good security is mostly steady habits—not one big heroic moment. Tap each item to see whether it is recommended and why—then continue when you have reviewed all of them.",
+        "Good security is mostly steady habits—not one big heroic moment. Select each item below, then press Check selections to see whether each is recommended and why.",
       ],
       checklistCompleteMessage:
         "Every habit listed here is recommended. None are tricks—your job is to understand why each one protects you.",

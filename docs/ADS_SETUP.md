@@ -55,17 +55,19 @@ File: **`data/ads-config.json`**
 
 ### Custom link (`provider: "custom"`)
 
-No Google account required. Good for a single affiliate or training link.
+Optional bar text when you are **not** using AdSense, or as a dev fallback if you add a `custom` block back to `ads-config.json`.
+
+**Do not use “Sponsored” unless you have a paid sponsorship or affiliate relationship** with that brand. Cert Master is not affiliated with AWS, Microsoft, Google, or CompTIA — linking to their free training is fine in question feedback, but must not be labeled as sponsorship in the ad bar.
 
 ```json
 {
   "enabled": true,
-  "placement": "bottom",
+  "placement": "bar",
   "provider": "custom",
   "custom": {
-    "label": "Sponsored link",
-    "text": "AWS Cloud Practitioner Essentials on Skill Builder",
-    "href": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/16434/cloud-practitioner-essentials"
+    "label": "Study link",
+    "text": "Your short description here",
+    "href": "https://example.com/resource"
   }
 }
 ```
